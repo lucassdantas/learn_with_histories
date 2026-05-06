@@ -1,0 +1,40 @@
+{
+  "id": "1",
+  "slug": "the-little-prince",
+  "title": {
+    "en": "The Little Prince",
+    "pt": "O Pequeno Príncipe",
+    "fr": "Le Petit Prince"
+  },
+  "description": {
+    "en": "A famous story about a young prince who visits various planets.",
+    "pt": "Uma história famosa sobre um jovem príncipe que visita vários planetas.",
+    "fr": "Une histoire célèbre à propos d'un jeune prince qui visite plusieurs planètes."
+  },
+  "content": [
+    {
+      "id": "p1",
+      "text": {
+        "en": "Once when I was six years old I saw a magnificent picture in a book, called True Stories from Nature, about the primeval forest.",
+        "pt": "Certa vez, quando eu tinha seis anos, vi uma imagem magnífica em um livro chamado Histórias Verdadeiras da Natureza, sobre a floresta primordial.",
+        "fr": "Lorsque j'avais six ans, j'ai vu une magnifique image dans un livre appelé Histoires Vraies de la Nature, sur la forêt vierge."
+      }
+    },
+    {
+      "id": "p2",
+      "text": {
+        "en": "It was a picture of a boa constrictor in the act of swallowing an animal.",
+        "pt": "Era uma imagem de uma jibóia no ato de engolir um animal.",
+        "fr": "C'était une image d'un boa constrictor en train d'avaler um animal."
+      }
+    },
+    {
+      "id": "p3",
+      "text": {
+        "en": "In the book it said: 'Boa constrictors swallow their prey whole, without chewing it.'",
+        "pt": "No livro dizia: 'As jibóias engolem suas presas inteiras, sem mastigá-las.'",
+        "fr": "Dans le livre, il était dit : 'Les boas constrictors avalent leur proie entière, sans la mâcher.'"
+      }
+    }
+  ]
+}

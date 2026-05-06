@@ -1,0 +1,40 @@
+{
+  "id": "2",
+  "slug": "daily-routine",
+  "title": {
+    "en": "Daily Routine",
+    "pt": "Rotina Diária",
+    "fr": "Routine Quotidienne"
+  },
+  "description": {
+    "en": "Learn common vocabulary about everyday activities.",
+    "pt": "Aprenda vocabulário comum sobre atividades cotidianas.",
+    "fr": "Apprenez le vocabulaire courant sur les activités quotidiennes."
+  },
+  "content": [
+    {
+      "id": "p1",
+      "text": {
+        "en": "I wake up at seven o'clock every morning.",
+        "pt": "Eu acordo às sete horas todas as manhãs.",
+        "fr": "Je me réveille à sept heures tous les matins."
+      }
+    },
+    {
+      "id": "p2",
+      "text": {
+        "en": "Then I go to the kitchen to drink some coffee.",
+        "pt": "Depois vou à cozinha para beber um café.",
+        "fr": "Ensuite, je vais à la cuisine pour boire du café."
+      }
+    },
+    {
+      "id": "p3",
+      "text": {
+        "en": "After breakfast, I start working.",
+        "pt": "Depois do café da manhã, começo a trabalhar.",
+        "fr": "Après le petit déjeuner, je commence à travailler."
+      }
+    }
+  ]
+}
