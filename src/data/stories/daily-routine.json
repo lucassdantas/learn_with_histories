@@ -27,6 +27,22 @@
         "pt": "À tarde, gosto de passear no parque. Isso me ajuda a clarear a mente.\n\nÀ noite, preparo o jantar e assisto a alguns filmes antes de ir para a cama.",
         "fr": "L'après-midi, j'aime aller me promener dans le parc. Cela m'aide à me vider l'esprit.\n\nLe soir, je prépare le dîner et je regarde des films avant d'aller me coucher."
       }
+    },
+    {
+      "id": "s3",
+      "text": {
+        "en": "Before sleeping, I like to read a few pages of a book. Reading helps me relax after a busy day.\n\nSometimes, I also listen to soft music while preparing for the next day.",
+        "pt": "Antes de dormir, gosto de ler algumas páginas de um livro. Ler me ajuda a relaxar depois de um dia agitado.\n\nÀs vezes, também escuto músicas calmas enquanto me preparo para o próximo dia.",
+        "fr": "Avant de dormir, j'aime lire quelques pages d'un livre. La lecture m'aide à me détendre après une journée chargée.\n\nParfois, j'écoute aussi de la musique douce pendant que je me prépare pour le lendemain."
+      }
+    },
+    {
+      "id": "s4",
+      "text": {
+        "en": "On weekends, my routine changes a little. I wake up later and spend more time with my family and friends.\n\nWe often go to restaurants, visit new places, or simply stay home and talk for hours.",
+        "pt": "Nos fins de semana, minha rotina muda um pouco. Eu acordo mais tarde e passo mais tempo com minha família e amigos.\n\nNós frequentemente vamos a restaurantes, visitamos novos lugares ou simplesmente ficamos em casa conversando por horas.",
+        "fr": "Le week-end, ma routine change un peu. Je me réveille plus tard et je passe plus de temps avec ma famille et mes amis.\n\nNous allons souvent au restaurant, visitons de nouveaux endroits ou restons simplement à la maison à discuter pendant des heures."
+      }
     }
   ]
 }
