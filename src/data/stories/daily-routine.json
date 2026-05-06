@@ -13,27 +13,19 @@
   },
   "content": [
     {
-      "id": "p1",
+      "id": "s1",
       "text": {
-        "en": "I wake up at seven o'clock every morning.",
-        "pt": "Eu acordo às sete horas todas as manhãs.",
-        "fr": "Je me réveille à sept heures tous les matins."
+        "en": "I wake up at seven o'clock every morning. Then I go to the kitchen to drink some coffee.\n\nAfter breakfast, I start working. I usually work from home on my computer.",
+        "pt": "Eu acordo às sete horas todas as manhãs. Depois vou à cozinha para beber um café.\n\nDepois do café da manhã, começo a trabalhar. Eu costumo trabalhar em casa no meu computador.",
+        "fr": "Je me réveille à sept heures tous les matins. Ensuite, je vais à la cuisine pour boire du café.\n\nAprès le petit déjeuner, je commence à travailler. Je travaille généralement à domicile sur mon ordinateur."
       }
     },
     {
-      "id": "p2",
+      "id": "s2",
       "text": {
-        "en": "Then I go to the kitchen to drink some coffee.",
-        "pt": "Depois vou à cozinha para beber um café.",
-        "fr": "Ensuite, je vais à la cuisine pour boire du café."
-      }
-    },
-    {
-      "id": "p3",
-      "text": {
-        "en": "After breakfast, I start working.",
-        "pt": "Depois do café da manhã, começo a trabalhar.",
-        "fr": "Après le petit déjeuner, je commence à travailler."
+        "en": "In the afternoon, I like to go for a walk in the park. It helps me clear my mind.\n\nIn the evening, I cook dinner and watch some movies before going to bed.",
+        "pt": "À tarde, gosto de passear no parque. Isso me ajuda a clarear a mente.\n\nÀ noite, preparo o jantar e assisto a alguns filmes antes de ir para a cama.",
+        "fr": "L'après-midi, j'aime aller me promener dans le parc. Cela m'aide à me vider l'esprit.\n\nLe soir, je prépare le dîner et je regarde des films avant d'aller me coucher."
       }
     }
   ]

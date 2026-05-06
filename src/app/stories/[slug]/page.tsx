@@ -8,6 +8,8 @@ import { Story } from '@/lib/stories';
 import { getStoryBySlugApi } from '@/lib/api';
 import AdBanner from '@/components/AdBanner';
 import AdPopup from '@/components/AdPopup';
+import Header from '@/components/Header';
+import { ADS_CONFIG } from '@/config/ads';
 
 export default function StoryDetail() {
   const params = useParams();
@@ -33,6 +35,17 @@ export default function StoryDetail() {
     }
     loadStory();
   }, [slug]);
+
+  // Sidebar Ad Initialization
+  useEffect(() => {
+    if (!loading && story) {
+      try {
+        (window.adsbygoogle = window.adsbygoogle || []).push({});
+      } catch (e) {
+        console.error('Sidebar AdSense error:', e);
+      }
+    }
+  }, [loading, story]);
 
   const toggleTranslation = (id: string) => {
     setVisibleTranslations((prev) => ({
@@ -74,9 +87,10 @@ export default function StoryDetail() {
 
   return (
     <div className="min-h-screen bg-white text-gray-900 flex flex-col">
+      <Header />
       <AdPopup isOpen={showExitAd} onClose={closeAdAndGoBack} />
 
-      <header className="border-b border-gray-100 py-4 px-6 flex items-center justify-between sticky top-0 bg-white/80 backdrop-blur-md z-10">
+      <header className="border-b border-gray-100 py-4 px-6 flex items-center justify-between sticky top-16 bg-white/80 backdrop-blur-md z-10">
         <button
           onClick={handleBack}
           className="flex items-center text-gray-600 hover:text-blue-600 font-medium transition"
@@ -87,7 +101,7 @@ export default function StoryDetail() {
           Back
         </button>
         <div className="text-sm font-semibold text-blue-600 uppercase tracking-wider">
-          {learningLanguage} → {nativeLanguage}
+          Reading in {learningLanguage.toUpperCase()}
         </div>
       </header>
 
@@ -97,32 +111,32 @@ export default function StoryDetail() {
             {title}
           </h1>
 
-          <div className="space-y-12 mb-16">
-            {story.content.map((paragraph) => {
-              const learningText = paragraph.text[learningLanguage];
-              const nativeText = paragraph.text[nativeLanguage];
-              const isVisible = visibleTranslations[paragraph.id];
+          <div className="space-y-16 mb-16">
+            {story.content.map((segment) => {
+              const learningText = segment.text[learningLanguage];
+              const nativeText = segment.text[nativeLanguage];
+              const isVisible = visibleTranslations[segment.id];
 
               return (
-                <div key={paragraph.id} className="group relative">
+                <div key={segment.id} className="group relative">
                   <div className="flex items-start gap-4">
                     <div className="flex-grow">
-                      <p className="text-xl md:text-2xl leading-relaxed text-gray-800">
+                      <div className="text-xl md:text-2xl leading-relaxed text-gray-800 whitespace-pre-wrap">
                         {learningText || <span className="italic text-gray-400">Text not available in this language</span>}
-                      </p>
+                      </div>
 
                       {isVisible && (
-                        <div className="mt-4 p-4 bg-blue-50 rounded-xl border-l-4 border-blue-400 animate-in fade-in slide-in-from-top-1 duration-200">
-                          <p className="text-lg md:text-xl text-blue-800">
+                        <div className="mt-6 p-6 bg-blue-50 rounded-2xl border-l-4 border-blue-400 animate-in fade-in slide-in-from-top-1 duration-200">
+                          <div className="text-lg md:text-xl text-blue-800 whitespace-pre-wrap">
                             {nativeText || <span className="italic text-red-500">Translation not available for this section</span>}
-                          </p>
+                          </div>
                         </div>
                       )}
                     </div>
 
                     <button
-                      onClick={() => toggleTranslation(paragraph.id)}
-                      className={`flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center transition-all ${
+                      onClick={() => toggleTranslation(segment.id)}
+                      className={`flex-shrink-0 w-12 h-12 rounded-full flex items-center justify-center shadow-sm transition-all ${
                         isVisible
                           ? 'bg-blue-600 text-white rotate-45'
                           : 'bg-gray-100 text-gray-400 hover:bg-blue-100 hover:text-blue-600'
@@ -142,7 +156,7 @@ export default function StoryDetail() {
           <div className="mt-20 text-center">
             <button
               onClick={handleBack}
-              className="px-8 py-4 bg-gray-900 text-white font-bold rounded-2xl hover:bg-gray-800 transition shadow-lg active:scale-95"
+              className="px-10 py-4 bg-gray-900 text-white font-bold rounded-2xl hover:bg-gray-800 transition shadow-lg active:scale-95"
             >
               Finish Reading
             </button>
@@ -150,32 +164,38 @@ export default function StoryDetail() {
         </div>
 
         <aside className="hidden lg:block w-64 flex-shrink-0">
-          <div className="sticky top-24 space-y-6">
-            <div className="p-4 bg-gray-50 rounded-xl border border-gray-100">
-              <h3 className="font-bold text-gray-900 mb-2">Instructions</h3>
-              <p className="text-sm text-gray-600">
-                Read the text in your target language. If you get stuck, click the <span className="font-bold">+</span> button to see the translation.
+          <div className="sticky top-40 space-y-6">
+            <div className="p-5 bg-gray-50 rounded-2xl border border-gray-100">
+              <h3 className="font-bold text-gray-900 mb-2 text-lg">Instructions</h3>
+              <p className="text-sm text-gray-600 leading-relaxed">
+                Read the text in your target language. If you need help with a section, click the <span className="font-bold text-blue-600">+</span> button to see the translation.
               </p>
             </div>
-            <div className="w-full h-96 bg-gray-100 border border-dashed border-gray-300 rounded-xl flex items-center justify-center text-center p-4">
-              <div>
-                <p className="text-[10px] text-gray-400 uppercase mb-2">Advertisement</p>
-                <div className="font-bold text-gray-400">Side Ad Banner</div>
-                <p className="text-[10px] text-gray-400 mt-2">ca-pub-3940256099942544/6300978111</p>
-              </div>
+            <div className="w-full h-[600px] bg-gray-50 border border-dashed border-gray-200 rounded-2xl flex flex-col items-center justify-center text-center p-4">
+              <span className="text-[10px] text-gray-400 uppercase mb-4">Advertisement</span>
+              <ins
+                className="adsbygoogle"
+                style={{ display: 'block', width: '100%', height: '100%' }}
+                data-ad-client={ADS_CONFIG.publisherId}
+                data-ad-slot={ADS_CONFIG.slots.sidebar}
+                data-ad-format="vertical"
+              />
             </div>
           </div>
         </aside>
       </main>
 
-      <div className="max-w-4xl mx-auto w-full px-6 pb-8">
+      <div className="max-w-4xl mx-auto w-full px-6 pb-12">
         <AdBanner />
       </div>
 
-      <footer className="bg-gray-50 border-t border-gray-100 py-12">
-        <div className="max-w-4xl mx-auto px-6 text-center">
-          <p className="text-gray-400 text-sm italic">
-            Keep practicing every day to improve your skills!
+      <footer className="bg-gray-50 border-t border-gray-100 py-16 mt-auto">
+        <div className="max-w-4xl mx-auto px-6 flex flex-col items-center gap-4">
+          <Link href="/privacy" className="text-gray-500 hover:text-blue-600 text-sm">
+            Privacy Policy
+          </Link>
+          <p className="text-gray-400 text-xs italic">
+            LinguaStories - Your journey to fluency starts here.
           </p>
         </div>
       </footer>

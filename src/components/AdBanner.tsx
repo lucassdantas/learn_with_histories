@@ -1,13 +1,41 @@
-import React from 'react';
+'use client';
+
+import React, { useEffect } from 'react';
+import { ADS_CONFIG } from '@/config/ads';
+
+declare global {
+  interface Window {
+    adsbygoogle: any[];
+  }
+}
 
 export default function AdBanner() {
+  useEffect(() => {
+    try {
+      (window.adsbygoogle = window.adsbygoogle || []).push({});
+    } catch (e) {
+      console.error('AdSense error:', e);
+    }
+  }, []);
+
   return (
-    <div className="w-full h-24 bg-gray-200 flex items-center justify-center border border-dashed border-gray-400 my-4">
-      <div className="text-center">
-        <p className="text-xs text-gray-500 uppercase">Advertisement</p>
-        <div className="font-bold text-gray-700">Test Ad Banner</div>
-        <p className="text-[10px] text-gray-400">ID: ca-pub-3940256099942544/6300978111</p>
+    <div className="w-full bg-gray-50 flex flex-col items-center justify-center my-4 p-2 overflow-hidden min-h-[100px]">
+      <span className="text-[10px] text-gray-400 uppercase mb-1">Advertisement</span>
+      <div className="w-full flex justify-center">
+        <ins
+          className="adsbygoogle"
+          style={{ display: 'block' }}
+          data-ad-client={ADS_CONFIG.publisherId}
+          data-ad-slot={ADS_CONFIG.slots.banner}
+          data-ad-format="auto"
+          data-full-width-responsive="true"
+        />
       </div>
+      {ADS_CONFIG.isTest && (
+        <div className="mt-1 text-[8px] text-gray-300">
+          Test ID: {ADS_CONFIG.slots.banner}
+        </div>
+      )}
     </div>
   );
 }

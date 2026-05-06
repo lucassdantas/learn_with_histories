@@ -2,6 +2,9 @@
 
 import { useLanguage } from '@/context/LanguageContext';
 import { useRouter } from 'next/navigation';
+import Header from '@/components/Header';
+import AdBanner from '@/components/AdBanner';
+import Link from 'next/link';
 
 export default function Home() {
   const { nativeLanguage, setNativeLanguage, learningLanguage, setLearningLanguage } = useLanguage();
@@ -18,58 +21,111 @@ export default function Home() {
   };
 
   return (
-    <main className="flex min-h-screen flex-col items-center justify-center p-8 bg-gradient-to-b from-blue-50 to-white text-gray-900">
-      <div className="max-w-md w-full text-center space-y-8">
-        <h1 className="text-4xl font-extrabold tracking-tight sm:text-5xl text-blue-600">
-          LinguaStories
-        </h1>
-        <p className="text-lg text-gray-600">
-          Learn a new language through immersive stories with interactive translations.
-        </p>
+    <div className="min-h-screen flex flex-col bg-white text-gray-900">
+      <Header />
 
-        <div className="space-y-6 bg-white p-8 rounded-2xl shadow-sm border border-gray-100">
-          <div className="space-y-2 text-left">
-            <label className="block text-sm font-medium text-gray-700">I speak:</label>
-            <select
-              value={nativeLanguage}
-              onChange={(e) => setNativeLanguage(e.target.value)}
-              className="w-full p-3 bg-gray-50 border border-gray-200 rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none transition"
-            >
-              {languages.map((lang) => (
-                <option key={lang.code} value={lang.code}>
-                  {lang.name}
-                </option>
-              ))}
-            </select>
+      <main className="flex-grow">
+        {/* Hero Section */}
+        <section className="py-20 px-8 bg-gradient-to-b from-blue-50 to-white">
+          <div className="max-w-4xl mx-auto text-center space-y-8">
+            <h1 className="text-5xl font-black tracking-tight sm:text-7xl text-blue-600 animate-in fade-in slide-in-from-bottom-4 duration-700">
+              Master Languages Through Stories
+            </h1>
+            <p className="text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed animate-in fade-in slide-in-from-bottom-6 duration-700 delay-100">
+              Experience natural language acquisition with our immersive reading platform. Toggle translations on-demand and build your vocabulary effortlessly.
+            </p>
+            <div className="pt-4 animate-in fade-in slide-in-from-bottom-8 duration-700 delay-200">
+              <a
+                href="#get-started"
+                className="bg-blue-600 text-white px-10 py-5 rounded-2xl font-bold text-lg hover:bg-blue-700 transition shadow-xl shadow-blue-200 inline-block"
+              >
+                Get Started Now
+              </a>
+            </div>
           </div>
+        </section>
 
-          <div className="space-y-2 text-left">
-            <label className="block text-sm font-medium text-gray-700">I want to learn:</label>
-            <select
-              value={learningLanguage}
-              onChange={(e) => setLearningLanguage(e.target.value)}
-              className="w-full p-3 bg-gray-50 border border-gray-200 rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none transition"
-            >
-              {languages.map((lang) => (
-                <option key={lang.code} value={lang.code}>
-                  {lang.name}
-                </option>
-              ))}
-            </select>
+        <AdBanner />
+
+        {/* Features Section */}
+        <section className="py-20 px-8">
+          <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12">
+            <div className="space-y-4 text-center p-6 rounded-3xl bg-gray-50">
+              <div className="w-12 h-12 bg-blue-100 text-blue-600 rounded-xl flex items-center justify-center mx-auto font-bold text-xl">1</div>
+              <h3 className="text-xl font-bold">Pick Your Languages</h3>
+              <p className="text-gray-600 text-sm">Choose what you speak and what you want to master.</p>
+            </div>
+            <div className="space-y-4 text-center p-6 rounded-3xl bg-gray-50">
+              <div className="w-12 h-12 bg-blue-100 text-blue-600 rounded-xl flex items-center justify-center mx-auto font-bold text-xl">2</div>
+              <h3 className="text-xl font-bold">Immersive Reading</h3>
+              <p className="text-gray-600 text-sm">Read captivating stories written for your level.</p>
+            </div>
+            <div className="space-y-4 text-center p-6 rounded-3xl bg-gray-50">
+              <div className="w-12 h-12 bg-blue-100 text-blue-600 rounded-xl flex items-center justify-center mx-auto font-bold text-xl">3</div>
+              <h3 className="text-xl font-bold">Instant Translation</h3>
+              <p className="text-gray-600 text-sm">Tap any section to reveal the translation in your tongue.</p>
+            </div>
           </div>
+        </section>
 
-          <button
-            onClick={handleStart}
-            className="w-full bg-blue-600 text-white font-bold py-4 px-6 rounded-xl hover:bg-blue-700 active:scale-95 transition transform"
-          >
-            Start Reading
-          </button>
+        {/* Language Selection Section */}
+        <section id="get-started" className="py-24 px-8 border-t border-gray-100">
+          <div className="max-w-md mx-auto text-center space-y-8">
+            <h2 className="text-3xl font-bold">Ready to dive in?</h2>
+            <div className="space-y-6 bg-white p-10 rounded-3xl shadow-2xl border border-gray-50">
+              <div className="space-y-3 text-left">
+                <label className="block text-sm font-bold text-gray-400 uppercase tracking-wider">I speak:</label>
+                <select
+                  value={nativeLanguage}
+                  onChange={(e) => setNativeLanguage(e.target.value)}
+                  className="w-full p-4 bg-gray-50 border border-gray-100 rounded-2xl focus:ring-2 focus:ring-blue-500 focus:outline-none font-semibold transition"
+                >
+                  {languages.map((lang) => (
+                    <option key={lang.code} value={lang.code}>
+                      {lang.name}
+                    </option>
+                  ))}
+                </select>
+              </div>
+
+              <div className="space-y-3 text-left">
+                <label className="block text-sm font-bold text-gray-400 uppercase tracking-wider">I want to learn:</label>
+                <select
+                  value={learningLanguage}
+                  onChange={(e) => setLearningLanguage(e.target.value)}
+                  className="w-full p-4 bg-gray-50 border border-gray-100 rounded-2xl focus:ring-2 focus:ring-blue-500 focus:outline-none font-semibold transition"
+                >
+                  {languages.map((lang) => (
+                    <option key={lang.code} value={lang.code}>
+                      {lang.name}
+                    </option>
+                  ))}
+                </select>
+              </div>
+
+              <button
+                onClick={handleStart}
+                className="w-full bg-blue-600 text-white font-bold py-5 px-6 rounded-2xl hover:bg-blue-700 active:scale-95 transition transform shadow-lg shadow-blue-100"
+              >
+                Start Your First Story
+              </button>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer className="bg-gray-900 text-white py-16 px-8 mt-20">
+        <div className="max-w-5xl mx-auto flex flex-col items-center gap-8 text-center">
+          <div className="text-2xl font-black tracking-tighter">LinguaStories</div>
+          <nav className="flex gap-8 text-sm font-medium text-gray-400">
+            <Link href="/stories" className="hover:text-white transition">Explore Stories</Link>
+            <Link href="/privacy" className="hover:text-white transition">Privacy Policy</Link>
+          </nav>
+          <div className="text-gray-600 text-xs italic">
+            © {new Date().getFullYear()} LinguaStories. All rights reserved.
+          </div>
         </div>
-
-        <p className="text-sm text-gray-400">
-          No sign up required. Just pick your languages and go!
-        </p>
-      </div>
-    </main>
+      </footer>
+    </div>
   );
 }
