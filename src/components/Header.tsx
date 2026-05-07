@@ -97,7 +97,7 @@ export default function Header() {
             <select
               value={nativeLanguage}
               onChange={(e) => setNativeLanguage(e.target.value)}
-              className="bg-white/50 border border-golden-amber/30 rounded-md text-xs font-bold p-1 focus:ring-2 focus:ring-golden-amber outline-none cursor-pointer text-deep-blue"
+              className="bg-background/50 border border-golden-amber/30 rounded-md text-xs font-bold p-1 focus:ring-2 focus:ring-golden-amber outline-none cursor-pointer text-deep-blue"
             >
               {languages.map((lang) => (
                 <option key={lang.code} value={lang.code}>
@@ -114,7 +114,7 @@ export default function Header() {
             <select
               value={learningLanguage}
               onChange={(e) => setLearningLanguage(e.target.value)}
-              className="bg-golden-amber/10 border border-golden-amber/30 rounded-md text-xs font-bold p-1 text-deep-blue focus:ring-2 focus:ring-golden-amber outline-none cursor-pointer"
+              className="bg-background/50 border border-golden-amber/30 rounded-md text-xs font-bold p-1 text-deep-blue focus:ring-2 focus:ring-golden-amber outline-none cursor-pointer"
             >
               {languages.map((lang) => (
                 <option key={lang.code} value={lang.code}>
@@ -157,7 +157,7 @@ export default function Header() {
             ))}
 
             <div className="mt-2 pt-2 border-t border-golden-amber/10 grid grid-cols-2 gap-2">
-              <div className="p-3 bg-white/50 rounded-xl space-y-2">
+              <div className="p-3 bg-background/50 rounded-xl space-y-2">
                 <span className="text-[10px] font-black text-deep-blue/40 uppercase tracking-widest block">
                   {getTranslation(nativeLanguage, 'header.speak')}
                 </span>
@@ -178,7 +178,7 @@ export default function Header() {
                 </div>
               </div>
 
-              <div className="p-3 bg-golden-amber/5 rounded-xl space-y-2">
+              <div className="p-3 bg-background/50 rounded-xl space-y-2">
                 <span className="text-[10px] font-black text-deep-blue/40 uppercase tracking-widest block">
                   {getTranslation(nativeLanguage, 'header.learn')}
                 </span>

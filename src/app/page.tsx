@@ -52,7 +52,7 @@ export default function Home() {
         <section className="py-12 sm:py-20 px-6 sm:px-8">
           <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-12">
             {[1, 2, 3].map((num) => (
-              <div key={num} className="space-y-4 text-center p-6 sm:p-8 rounded-3xl bg-white/50 border border-golden-amber/10 transition-all hover:shadow-lg hover:shadow-golden-amber/5">
+              <div key={num} className="space-y-4 text-center p-6 sm:p-8 rounded-3xl bg-background/50 border border-golden-amber/10 transition-all hover:shadow-lg hover:shadow-golden-amber/5">
                 <div className="w-12 h-12 bg-golden-amber/10 text-golden-amber rounded-xl flex items-center justify-center mx-auto font-black text-xl">{num}</div>
                 <h3 className="text-xl font-black text-deep-blue">{getTranslation(nativeLanguage, `home.feature${num}Title`)}</h3>
                 <p className="text-deep-blue/60 text-sm font-bold leading-relaxed">{getTranslation(nativeLanguage, `home.feature${num}Desc`)}</p>
@@ -65,7 +65,7 @@ export default function Home() {
         <section id="get-started" className="py-16 sm:py-24 px-6 sm:px-8 border-t border-golden-amber/10 transition-colors">
           <div className="max-w-md mx-auto text-center space-y-8">
             <h2 className="text-3xl font-black text-deep-blue">{getTranslation(nativeLanguage, 'home.readyToDive')}</h2>
-            <div className="space-y-6 bg-white p-6 sm:p-10 rounded-3xl shadow-2xl shadow-golden-amber/5 border border-golden-amber/10 transition-colors">
+            <div className="space-y-6 bg-background/80 p-6 sm:p-10 rounded-3xl shadow-2xl shadow-golden-amber/5 border border-golden-amber/10 transition-colors">
               <div className="space-y-3 text-left">
                 <label className="block text-[10px] font-black text-deep-blue/40 uppercase tracking-widest ml-1">
                   {getTranslation(nativeLanguage, 'home.iSpeak')}

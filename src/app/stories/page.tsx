@@ -69,7 +69,7 @@ export default function StoriesPage() {
               placeholder={getTranslation(nativeLanguage, 'stories.search')}
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
-              className="w-full pl-12 pr-6 py-4 bg-white border border-golden-amber/20 rounded-2xl focus:ring-2 focus:ring-golden-amber focus:outline-none shadow-sm transition-all placeholder:text-deep-blue/30 text-deep-blue font-bold cursor-text"
+              className="w-full pl-12 pr-6 py-4 bg-background border border-golden-amber/20 rounded-2xl focus:ring-2 focus:ring-golden-amber focus:outline-none shadow-sm transition-all placeholder:text-deep-blue/30 text-deep-blue font-bold cursor-text"
             />
             <svg
               className="absolute left-4 top-1/2 -translate-y-1/2 h-5 w-5 text-golden-amber group-focus-within:scale-110 transition-transform"
@@ -95,7 +95,7 @@ export default function StoriesPage() {
               <Link
                 key={story.id}
                 href={`/stories/${story.slug}`}
-                className="group bg-white p-8 rounded-3xl shadow-sm border border-golden-amber/5 hover:shadow-xl hover:shadow-golden-amber/5 hover:border-golden-amber/20 transition-all flex flex-col h-full cursor-pointer relative overflow-hidden"
+                className="group bg-background/50 p-8 rounded-3xl shadow-sm border border-golden-amber/5 hover:shadow-xl hover:shadow-golden-amber/5 hover:border-golden-amber/20 transition-all flex flex-col h-full cursor-pointer relative overflow-hidden"
               >
                 <div className="absolute top-0 right-0 w-24 h-24 bg-golden-amber/5 rounded-bl-full -mr-12 -mt-12 group-hover:scale-150 transition-transform duration-500"></div>
 
@@ -125,7 +125,7 @@ export default function StoriesPage() {
             ))}
           </div>
         ) : (
-          <div className="text-center py-24 bg-white/50 rounded-3xl border-2 border-dashed border-golden-amber/10">
+          <div className="text-center py-24 bg-background/50 rounded-3xl border-2 border-dashed border-golden-amber/10">
             <p className="text-deep-blue/40 font-black text-lg">
               {searchQuery ? getTranslation(nativeLanguage, 'stories.noResults') : getTranslation(nativeLanguage, 'stories.noStoriesYet')}
             </p>

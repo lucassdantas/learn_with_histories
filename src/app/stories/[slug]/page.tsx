@@ -129,7 +129,7 @@ export default function StoryDetail() {
                       </div>
 
                       {isVisible && (
-                        <div className="mt-4 sm:mt-6 p-4 sm:p-6 bg-white/60 rounded-2xl border-l-4 border-burnt-copper animate-in fade-in slide-in-from-top-1 duration-200">
+                        <div className="mt-4 sm:mt-6 p-4 sm:p-6 bg-background/60 rounded-2xl border-l-4 border-burnt-copper animate-in fade-in slide-in-from-top-1 duration-200">
                           <div className="text-lg sm:text-xl text-burnt-copper whitespace-pre-wrap font-serif font-medium">
                             {nativeText || <span className="italic opacity-50">{getTranslation(nativeLanguage, 'stories.translationNotAvailable')}</span>}
                           </div>
@@ -142,7 +142,7 @@ export default function StoryDetail() {
                       className={`flex-shrink-0 w-10 h-10 sm:w-12 sm:h-12 rounded-full flex items-center justify-center shadow-md transition-all cursor-pointer order-1 sm:order-2 self-end sm:self-start ${
                         isVisible
                           ? 'bg-burnt-copper text-white rotate-45'
-                          : 'bg-white border border-golden-amber/20 text-golden-amber hover:bg-golden-amber hover:text-white'
+                          : 'bg-background border border-golden-amber/20 text-golden-amber hover:bg-golden-amber hover:text-white'
                       }`}
                       title={isVisible ? getTranslation(nativeLanguage, 'stories.hideTranslation') : getTranslation(nativeLanguage, 'stories.showTranslation')}
                     >
@@ -170,13 +170,13 @@ export default function StoryDetail() {
         <div className="hidden lg:block">
           <aside className="w-64 flex-shrink-0">
             <div className="sticky top-40 space-y-6">
-              <div className="p-5 bg-white rounded-2xl border border-golden-amber/10 shadow-sm">
+              <div className="p-5 bg-background/50 rounded-2xl border border-golden-amber/10 shadow-sm">
                 <h3 className="font-black text-deep-blue mb-2 text-lg">{getTranslation(nativeLanguage, 'stories.instructionsTitle')}</h3>
                 <p className="text-sm text-deep-blue/60 font-medium leading-relaxed">
                   {getTranslation(nativeLanguage, 'stories.instructionsDesc')}
                 </p>
               </div>
-              <div className="w-full h-[600px] bg-white/50 border border-dashed border-golden-amber/20 rounded-2xl flex flex-col items-center justify-center text-center p-4 overflow-hidden">
+              <div className="w-full h-[600px] bg-background/30 border border-dashed border-golden-amber/20 rounded-2xl flex flex-col items-center justify-center text-center p-4 overflow-hidden">
                 <span className="text-[10px] text-deep-blue/40 font-black uppercase mb-4">{getTranslation(nativeLanguage, 'stories.advertisement')}</span>
                 <ins
                   className="adsbygoogle"
@@ -195,7 +195,7 @@ export default function StoryDetail() {
         <AdBanner />
       </div>
 
-      <footer className="bg-white/50 border-t border-golden-amber/10 py-16 mt-auto transition-colors">
+      <footer className="bg-background/50 border-t border-golden-amber/10 py-16 mt-auto transition-colors">
         <div className="max-w-4xl mx-auto px-6 flex flex-col items-center gap-4">
           <Link href="/privacy" className="text-deep-blue/40 hover:text-golden-amber text-sm font-bold cursor-pointer transition-colors">
             {getTranslation(nativeLanguage, 'stories.privacyPolicy')}

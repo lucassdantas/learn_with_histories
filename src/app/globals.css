@@ -10,33 +10,24 @@
   --color-burnt-copper: #8B3A1F;
   --color-warm-sand: #F4EBDD;
 
-  --color-background: var(--color-warm-sand);
-  --color-foreground: var(--color-deep-blue);
+  --color-background: #F4EBDD;
+  --color-foreground: #1D3D5A;
 }
 
 @custom-variant dark (&:where(.dark, .dark *));
 
-:root {
-  --background: #F4EBDD;
-  --foreground: #1D3D5A;
-  --deep-blue: #1D3D5A;
-  --golden-amber: #C8924A;
-  --burnt-copper: #8B3A1F;
-  --warm-sand: #F4EBDD;
-}
-
 .dark {
-  --background: #0a0a0a;
-  --foreground: #ededed;
-  --deep-blue: #3a7ab3;
-  --golden-amber: #d4a76a;
-  --burnt-copper: #a64d32;
-  --warm-sand: #1a1a1a;
+  --color-background: #0F172A;
+  --color-foreground: #F1F5F9;
+  --color-deep-blue: #93C5FD;
+  --color-golden-amber: #FCD34D;
+  --color-burnt-copper: #FB7185;
+  --color-warm-sand: #1E293B;
 }
 
 body {
-  background-color: var(--background);
-  color: var(--foreground);
+  background-color: var(--color-background);
+  color: var(--color-foreground);
   font-family: var(--font-sans);
 }
 

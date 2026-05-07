@@ -42,7 +42,7 @@ export default function AboutPage() {
         </section>
 
         {/* Why Stories Section */}
-        <section className="py-12 sm:py-16 px-6 sm:px-8 bg-white/50 border-b border-golden-amber/10">
+        <section className="py-12 sm:py-16 px-6 sm:px-8 bg-background/50 border-b border-golden-amber/10">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-2xl sm:text-3xl font-black mb-6 sm:mb-8 text-golden-amber uppercase tracking-widest">
               {getTranslation(nativeLanguage, 'about.why')}
@@ -51,19 +51,19 @@ export default function AboutPage() {
               {getTranslation(nativeLanguage, 'about.whyText')}
             </p>
             <div className="grid grid-cols-1 gap-6 mt-8">
-              <div className="bg-white p-6 sm:p-8 rounded-2xl border border-golden-amber/10 shadow-sm transition-transform hover:scale-[1.01]">
+              <div className="bg-background/50 p-6 sm:p-8 rounded-2xl border border-golden-amber/10 shadow-sm transition-transform hover:scale-[1.01]">
                 <h3 className="text-xl font-black text-deep-blue mb-3">{getTranslation(nativeLanguage, 'about.contextualTitle')}</h3>
                 <p className="text-deep-blue/70 font-medium leading-relaxed">
                   {getTranslation(nativeLanguage, 'about.contextualDesc')}
                 </p>
               </div>
-              <div className="bg-white p-6 sm:p-8 rounded-2xl border border-golden-amber/10 shadow-sm transition-transform hover:scale-[1.01]">
+              <div className="bg-background/50 p-6 sm:p-8 rounded-2xl border border-golden-amber/10 shadow-sm transition-transform hover:scale-[1.01]">
                 <h3 className="text-xl font-black text-deep-blue mb-3">{getTranslation(nativeLanguage, 'about.culturalTitle')}</h3>
                 <p className="text-deep-blue/70 font-medium leading-relaxed">
                   {getTranslation(nativeLanguage, 'about.culturalDesc')}
                 </p>
               </div>
-              <div className="bg-white p-6 sm:p-8 rounded-2xl border border-golden-amber/10 shadow-sm transition-transform hover:scale-[1.01]">
+              <div className="bg-background/50 p-6 sm:p-8 rounded-2xl border border-golden-amber/10 shadow-sm transition-transform hover:scale-[1.01]">
                 <h3 className="text-xl font-black text-deep-blue mb-3">{getTranslation(nativeLanguage, 'about.naturalTitle')}</h3>
                 <p className="text-deep-blue/70 font-medium leading-relaxed">
                   {getTranslation(nativeLanguage, 'about.naturalDesc')}
@@ -80,25 +80,25 @@ export default function AboutPage() {
               {getTranslation(nativeLanguage, 'about.features')}
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
-              <div className="bg-white p-6 rounded-2xl border border-golden-amber/10 shadow-sm">
+              <div className="bg-background/50 p-6 rounded-2xl border border-golden-amber/10 shadow-sm">
                 <h3 className="font-black text-lg mb-3 text-deep-blue">{getTranslation(nativeLanguage, 'home.feature1Title')}</h3>
                 <p className="text-deep-blue/70 font-medium">
                   {getTranslation(nativeLanguage, 'about.featureImmersive')}
                 </p>
               </div>
-              <div className="bg-white p-6 rounded-2xl border border-golden-amber/10 shadow-sm">
+              <div className="bg-background/50 p-6 rounded-2xl border border-golden-amber/10 shadow-sm">
                 <h3 className="font-black text-lg mb-3 text-deep-blue">{getTranslation(nativeLanguage, 'home.feature2Title')}</h3>
                 <p className="text-deep-blue/70 font-medium">
                   {getTranslation(nativeLanguage, 'about.featureFlexible')}
                 </p>
               </div>
-              <div className="bg-white p-6 rounded-2xl border border-golden-amber/10 shadow-sm">
+              <div className="bg-background/50 p-6 rounded-2xl border border-golden-amber/10 shadow-sm">
                 <h3 className="font-black text-lg mb-3 text-deep-blue">{getTranslation(nativeLanguage, 'home.feature3Title')}</h3>
                 <p className="text-deep-blue/70 font-medium">
                   {getTranslation(nativeLanguage, 'about.featureMultilingual')}
                 </p>
               </div>
-              <div className="bg-white p-6 rounded-2xl border border-golden-amber/10 shadow-sm">
+              <div className="bg-background/50 p-6 rounded-2xl border border-golden-amber/10 shadow-sm">
                 <h3 className="font-black text-lg mb-3 text-deep-blue">{getTranslation(nativeLanguage, 'about.progressTitle')}</h3>
                 <p className="text-deep-blue/70 font-medium">
                   {getTranslation(nativeLanguage, 'about.featureProgress')}
@@ -127,7 +127,7 @@ export default function AboutPage() {
         </section>
       </main>
 
-      <footer className="border-t border-golden-amber/10 py-10 px-6 bg-white/50">
+      <footer className="border-t border-golden-amber/10 py-10 px-6 bg-background/50">
         <div className="max-w-4xl mx-auto text-center text-sm text-deep-blue/40 font-bold">
           <p>{getTranslation(nativeLanguage, 'about.footer')}</p>
         </div>
