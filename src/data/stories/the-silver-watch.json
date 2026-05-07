@@ -1,0 +1,96 @@
+{
+  "id": "6",
+  "slug": "the-silver-watch",
+  "title": {
+    "en": "The Silver Watch",
+    "pt": "O Relógio de Prata",
+    "fr": "La Montre d'Argent"
+  },
+  "description": {
+    "en": "A mysterious discovery in an antique shop changes everything.",
+    "pt": "Uma descoberta misteriosa em uma loja de antiguidades muda tudo.",
+    "fr": "Une découverte mystérieuse dans une boutique d'antiquités change tout."
+  },
+  "content": [
+    {
+      "id": "s1",
+      "text": {
+        "en": "In a dusty corner of an old antique shop, Lucas found a silver pocket watch. It was covered in strange engravings of suns and moons.",
+        "pt": "Em um canto empoeirado de uma antiga loja de antiguidades, Lucas encontrou um relógio de bolso de prata. Estava coberto de gravuras estranhas de sóis e luas.",
+        "fr": "Dans un coin poussiéreux d'une vieille boutique d'antiquités, Lucas trouva une montre à gousset en argent. Elle était couverte d'étranges gravures de soleils et de lunes."
+      }
+    },
+    {
+      "id": "s2",
+      "text": {
+        "en": "The shopkeeper, a thin man with very long fingers, told him that the watch didn't belong to any specific era. He sold it for a very low price.",
+        "pt": "O lojista, um homem magro com dedos muito longos, disse-lhe que o relógio não pertencia a nenhuma era específica. Ele o vendeu por um preço muito baixo.",
+        "fr": "Le marchand, un homme mince aux doigts très longs, lui dit que la montre n'appartenait à aucune époque précise. Il la vendit pour un prix très bas."
+      }
+    },
+    {
+      "id": "s3",
+      "text": {
+        "en": "When Lucas arrived home, he cleaned the silver surface until it shined. Curiously, the watch was not ticking, even though it looked perfect.",
+        "pt": "Quando Lucas chegou em casa, limpou a superfície de prata até brilhar. Curiosamente, o relógio não estava batendo, embora parecesse perfeito.",
+        "fr": "Quand Lucas arriva chez lui, il nettoya la surface d'argent jusqu'à ce qu'elle brille. Curieusement, la montre ne faisait pas de tic-tac, bien qu'elle paraisse parfaite."
+      }
+    },
+    {
+      "id": "s4",
+      "text": {
+        "en": "He noticed a small golden button on the side. Without thinking, he pressed it. Suddenly, the birds outside the window stopped flying mid-air.",
+        "pt": "Ele notou um pequeno botão dourado na lateral. Sem pensar, ele o pressionou. De repente, os pássaros do lado de fora da janela pararam de voar no meio do ar.",
+        "fr": "Il remarqua un petit bouton doré sur le côté. Sans réfléchir, il appuya dessus. Soudain, les oiseaux devant la fenêtre s'arrêtèrent de voler en plein air."
+      }
+    },
+    {
+      "id": "s5",
+      "text": {
+        "en": "Everything was frozen. A cup of coffee was tipped over on the table, but the liquid was suspended in the air like a brown sculpture.",
+        "pt": "Tudo estava congelado. Uma xícara de café estava tombada sobre a mesa, mas o líquido estava suspenso no ar como uma escultura marrom.",
+        "fr": "Tout était figé. Une tasse de café était renversée sur la table, mais le liquide était suspendu dans les airs comme une sculpture brune."
+      }
+    },
+    {
+      "id": "s6",
+      "text": {
+        "en": "Lucas walked out into the street. The cars were silent, and people were like statues on the sidewalk. He felt like the only living person in the world.",
+        "pt": "Lucas saiu para a rua. Os carros estavam silenciosos e as pessoas eram como estátuas na calçada. Ele se sentia como a única pessoa viva no mundo.",
+        "fr": "Lucas sortit dans la rue. Les voitures étaient silencieuses et les gens ressemblaient à des statues sur le trottoir. Il se sentait comme la seule personne vivante au monde."
+      }
+    },
+    {
+      "id": "s7",
+      "text": {
+        "en": "He walked through the park, enjoying the absolute silence. He could see individual droplets of water from a fountain hanging like diamonds.",
+        "pt": "Ele caminhou pelo parque, aproveitando o silêncio absoluto. Ele conseguia ver gotas individuais de água de uma fonte penduradas como diamantes.",
+        "fr": "Il se promena dans le parc, profitant du silence absolu. Il pouvait voir des gouttelettes d'eau individuelles d'une fontaine suspendues comme des diamants."
+      }
+    },
+    {
+      "id": "s8",
+      "text": {
+        "en": "However, after an hour, he started to feel lonely. The world was beautiful but cold without the movement of life and the sound of voices.",
+        "pt": "No entanto, depois de uma hora, ele começou a se sentir sozinho. O mundo era bonito, mas frio sem o movimento da vida e o som das vozes.",
+        "fr": "Pourtant, au bout d'une heure, il commença à se sentir seul. Le monde était beau mais froid sans le mouvement de la vie et le son des voix."
+      }
+    },
+    {
+      "id": "s9",
+      "text": {
+        "en": "He pressed the golden button again. Instantly, the world exploded with noise and motion. The birds continued their flight and the coffee hit the floor.",
+        "pt": "Ele pressionou o botão dourado novamente. Instantaneamente, o mundo explodiu em ruído e movimento. Os pássaros continuaram seu voo e o café atingiu o chão.",
+        "fr": "Il appuya de nouveau sur le bouton doré. Instantanément, le monde explosa de bruit et de mouvement. Les oiseaux reprirent leur vol et le café toucha le sol."
+      }
+    },
+    {
+      "id": "s10",
+      "text": {
+        "en": "Lucas put the watch in a drawer and locked it. He realized that time is precious precisely because it never stops for anyone.",
+        "pt": "Lucas colocou o relógio em uma gaveta e a trancou. Ele percebeu que o tempo é precioso precisamente porque nunca para para ninguém.",
+        "fr": "Lucas rangea la montre dans un tiroir et le verrouilla. Il réalisa que le temps est précieux précisément parce qu'il ne s'arrête jamais pour personne."
+      }
+    }
+  ]
+}

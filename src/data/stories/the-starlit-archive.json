@@ -1,0 +1,96 @@
+{
+  "id": "5",
+  "slug": "the-starlit-archive",
+  "title": {
+    "en": "The Starlit Archive",
+    "pt": "O Arquivo Estelar",
+    "fr": "L'Archive Étoilée"
+  },
+  "description": {
+    "en": "A journey to a distant planet to find the galaxy's oldest library.",
+    "pt": "Uma jornada a um planeta distante para encontrar a biblioteca mais antiga da galáxia.",
+    "fr": "Un voyage vers une planète lointaine pour trouver la plus ancienne bibliothèque de la galaxie."
+  },
+  "content": [
+    {
+      "id": "s1",
+      "text": {
+        "en": "The spaceship landed softly on the blue sands of Kepler-186f. After weeks of traveling through the silence of space, the crew was finally ready to explore.",
+        "pt": "A nave espacial pousou suavemente nas areias azuis de Kepler-186f. Após semanas viajando pelo silêncio do espaço, a tripulação estava finalmente pronta para explorar.",
+        "fr": "Le vaisseau spatial se posa doucement sur les sables bleus de Kepler-186f. Après des semaines de voyage dans le silence de l'espace, l'équipage était enfin prêt à explorer."
+      }
+    },
+    {
+      "id": "s2",
+      "text": {
+        "en": "Commander Elena looked at her map. According to the ancient legends, the Great Archive was hidden inside a mountain that touched the purple clouds.",
+        "pt": "A Comandante Elena olhou para seu mapa. De acordo com as lendas antigas, o Grande Arquivo estava escondido dentro de uma montanha que tocava as nuvens roxas.",
+        "fr": "Le commandant Elena regarda sa carte. Selon les anciennes légendes, la Grande Archive était cachée à l'intérieur d'une montagne qui touchait les nuages violets."
+      }
+    },
+    {
+      "id": "s3",
+      "text": {
+        "en": "The air was thin and smelled like ozone. As they climbed the steep path, they noticed strange symbols carved into the rocks that glowed with a soft white light.",
+        "pt": "O ar era rarefeito e cheirava a ozônio. Enquanto subiam o caminho íngreme, notaram símbolos estranhos esculpidos nas rochas que brilhavam com uma luz branca suave.",
+        "fr": "L'air était rare et sentait l'ozone. Tandis qu'ils gravissaient le sentier escarpé, ils remarquèrent d'étranges symboles gravés dans la roche qui brillaient d'une douce lumière blanche."
+      }
+    },
+    {
+      "id": "s4",
+      "text": {
+        "en": "At the summit, they found a massive triangular door. It wasn't made of stone or metal, but of a dark, shimmering liquid that stayed perfectly still.",
+        "pt": "No topo, encontraram uma enorme porta triangular. Não era feita de pedra ou metal, mas de um líquido escuro e cintilante que permanecia perfeitamente imóvel.",
+        "fr": "Au sommet, ils trouvèrent une porte triangulaire massive. Elle n'était pas faite de pierre ou de métal, mais d'un liquide sombre et chatoyant qui restait parfaitement immobile."
+      }
+    },
+    {
+      "id": "s5",
+      "text": {
+        "en": "When Elena touched the surface, the liquid rippled and dissolved into mist. Inside, the library stretched for miles, filled with floating crystals instead of books.",
+        "pt": "Quando Elena tocou a superfície, o líquido ondulou e se dissolveu em névoa. Lá dentro, a biblioteca se estendia por quilômetros, repleta de cristais flutuantes em vez de livros.",
+        "fr": "Lorsque Elena toucha la surface, le liquide ondula et se dissolut en brume. À l'intérieur, la bibliothèque s'étendait sur des kilomètres, remplie de cristaux flottants au lieu de livres."
+      }
+    },
+    {
+      "id": "s6",
+      "text": {
+        "en": "Each crystal contained the memories of a civilization. Some were bright and warm, while others were dim, representing cultures that had long since disappeared.",
+        "pt": "Cada cristal continha as memórias de uma civilização. Alguns eram brilhantes e quentes, enquanto outros eram opacos, representando culturas que haviam desaparecido há muito tempo.",
+        "fr": "Chaque cristal contenait les mémoires d'une civilisation. Certains étaient brillants et chaleureux, tandis que d'autres étaient ternes, représentant des cultures disparues depuis longtemps."
+      }
+    },
+    {
+      "id": "s7",
+      "text": {
+        "en": "Suddenly, a holographic guardian appeared in the center of the hall. It didn't speak with words, but sent images directly into the minds of the explorers.",
+        "pt": "De repente, um guardião holográfico apareceu no centro do salão. Ele não falava com palavras, mas enviava imagens diretamente para as mentes dos exploradores.",
+        "fr": "Soudain, un gardien holographique apparut au centre de la salle. Il ne parlait pas avec des mots, mais envoyait des images directement dans l'esprit des explorateurs."
+      }
+    },
+    {
+      "id": "s8",
+      "text": {
+        "en": "The guardian showed them the history of the universe—the birth of stars, the collision of galaxies, and the first songs ever sung by intelligent beings.",
+        "pt": "O guardião mostrou-lhes a história do universo — o nascimento das estrelas, a colisão de galáxias e as primeiras canções cantadas por seres inteligentes.",
+        "fr": "Le gardien leur montra l'histoire de l'univers : la naissance des étoiles, la collision des galaxies et les premières chansons chantées par des êtres intelligents."
+      }
+    },
+    {
+      "id": "s9",
+      "text": {
+        "en": "The crew spent days recording as much information as possible. They knew that this knowledge could change the future of humanity forever.",
+        "pt": "A tripulação passou dias registrando o máximo de informações possível. Eles sabiam que esse conhecimento poderia mudar o futuro da humanidade para sempre.",
+        "fr": "L'équipage passa des jours à enregistrer autant d'informations que possible. Ils savaient que ces connaissances pourraient changer l'avenir de l'humanité à jamais."
+      }
+    },
+    {
+      "id": "s10",
+      "text": {
+        "en": "As they prepared to leave, Elena looked back one last time. The archive was silent again, waiting for the next travelers to seek its ancient secrets.",
+        "pt": "Enquanto se preparavam para partir, Elena olhou para trás uma última vez. O arquivo estava silencioso novamente, esperando pelos próximos viajantes que buscassem seus segredos antigos.",
+        "fr": "Alors qu'ils s'apprêtaient à partir, Elena regarda en arrière une dernière fois. L'archive était redevenue silencieuse, attendant les prochains voyageurs qui chercheraient ses anciens secrets."
+      }
+    }
+  ]
+}

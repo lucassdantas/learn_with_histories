@@ -1,0 +1,48 @@
+{
+  "id": "3",
+  "slug": "the-hidden-cafe",
+  "title": {
+    "en": "The Hidden Cafe",
+    "pt": "O Café Escondido",
+    "fr": "Le Café Caché"
+  },
+  "description": {
+    "en": "A story about discovering a peaceful place in the middle of a busy city.",
+    "pt": "Uma história sobre descobrir um lugar tranquilo no meio de uma cidade movimentada.",
+    "fr": "Une histoire sur la découverte d'un endroit paisible au milieu d'une ville animée."
+  },
+  "content": [
+    {
+      "id": "s1",
+      "text": {
+        "en": "Every morning, I walk through the same narrow streets to get to my office. The city is always loud and full of people rushing to work.",
+        "pt": "Todas as manhãs, eu caminho pelas mesmas ruas estreitas para chegar ao meu escritório. A cidade está sempre barulhenta e cheia de pessoas correndo para o trabalho.",
+        "fr": "Chaque matin, je marche dans les mêmes rues étroites pour me rendre à mon bureau. La ville est toujours bruyante et pleine de gens qui se précipitent au travail."
+      }
+    },
+    {
+      "id": "s2",
+      "text": {
+        "en": "Yesterday, I decided to take a different path. I found a small wooden door hidden behind some tall green plants.",
+        "pt": "Ontem, decidi pegar um caminho diferente. Encontrei uma pequena porta de madeira escondida atrás de algumas plantas verdes altas.",
+        "fr": "Hier, j'ai décidé de prendre un chemin différent. J'ai trouvé une petite porte en bois cachée derrière de grandes plantes vertes."
+      }
+    },
+    {
+      "id": "s3",
+      "text": {
+        "en": "Behind the door was a beautiful cafe. It was very quiet, and the smell of fresh bread and cinnamon was amazing.",
+        "pt": "Atrás da porta havia um café lindo. Era muito silencioso, e o cheiro de pão fresco e canela era incrível.",
+        "fr": "Derrière la porte se trouvait un magnifique café. C'était très calme, et l'odeur du pain frais et de la cannelle était incroyable."
+      }
+    },
+    {
+      "id": "s4",
+      "text": {
+        "en": "I sat by the window and watched the rain start to fall. For a moment, I forgot about my meetings and just enjoyed the peace.",
+        "pt": "Sentei-me perto da janela e observei a chuva começar a cair. Por um momento, esqueci das minhas reuniões e apenas aproveitei a paz.",
+        "fr": "Je me suis assis près de la fenêtre et j'ai regardé la pluie commencer à tomber. Pendant un instant, j'ai oublié mes réunions et j'ai juste profité de la paix."
+      }
+    }
+  ]
+}

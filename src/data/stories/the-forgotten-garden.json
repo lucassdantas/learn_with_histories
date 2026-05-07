@@ -1,0 +1,48 @@
+{
+  "id": "4",
+  "slug": "the-forgotten-garden",
+  "title": {
+    "en": "The Forgotten Garden",
+    "pt": "O Jardim Esquecido",
+    "fr": "Le Jardin Oublié"
+  },
+  "description": {
+    "en": "An exploration of an old botanical garden and its mysteries.",
+    "pt": "Uma exploração de um antigo jardim botânico e seus mistérios.",
+    "fr": "Une exploration d'un ancien jardin botanique et ses mystères."
+  },
+  "content": [
+    {
+      "id": "s1",
+      "text": {
+        "en": "Deep in the heart of the countryside, there was a place that time seemed to have forgotten. It was an old botanical garden, surrounded by high stone walls covered in ivy. Most people in the village spoke of it only in whispers, telling stories of rare flowers that glowed under the full moon.",
+        "pt": "Nas profundezas do coração do campo, havia um lugar que o tempo parecia ter esquecido. Era um antigo jardim botânico, cercado por altos muros de pedra cobertos de hera. A maioria das pessoas na aldeia falava dele apenas em sussurros, contando histórias de flores raras que brilhavam sob a lua cheia.",
+        "fr": "Au cœur de la campagne, il y avait un endroit que le temps semblait avoir oublié. C'était un ancien jardin botanique, entouré de hauts murs de pierre recouverts de lierre. La plupart des gens du village n'en parlaient qu'à voix basse, racontant des histoires de fleurs rares qui brillaient sous la pleine lune."
+      }
+    },
+    {
+      "id": "s2",
+      "text": {
+        "en": "One Saturday morning, I decided to find the entrance. After walking for nearly an hour through a dense forest, I saw a rusted iron gate. To my surprise, it wasn't locked. As I pushed it open, the hinges made a long, piercing sound that echoed through the silence of the trees.",
+        "pt": "Em uma manhã de sábado, decidi encontrar a entrada. Depois de caminhar por quase uma hora através de uma floresta densa, vi um portão de ferro enferrujado. Para minha surpresa, não estava trancado. Quando o empurrei, as dobradiças fizeram um som longo e agudo que ecoou pelo silêncio das árvores.",
+        "fr": "Un samedi matin, j'ai décidé de trouver l'entrée. Après avoir marché pendant près d'une heure à travers une forêt dense, j'ai vu une grille en fer rouillée. À ma surprise, elle n'était pas verrouillée. En la poussant, les charnières ont émis un son long et perçant qui a résonné dans le silence des arbres."
+      }
+    },
+    {
+      "id": "s3",
+      "text": {
+        "en": "Inside, the air felt different—cool and scented with jasmine. There were statues of ancient figures half-hidden by overgrown ferns, and a stone path that led toward a greenhouse made of glass and bronze. Despite the neglect, the garden felt alive, as if the plants were watching my every move.",
+        "pt": "Lá dentro, o ar parecia diferente — fresco e perfumado com jasmim. Havia estátuas de figuras antigas meio escondidas por samambaias crescidas, e um caminho de pedra que levava a uma estufa feita de vidro e bronze. Apesar do abandono, o jardim parecia vivo, como se as plantas estivessem observando cada movimento meu.",
+        "fr": "À l'intérieur, l'air semblait différent : frais et parfumé au jasmin. Il y avait des statues de figures anciennes à moitié cachées par des fougères envahissantes, et un chemin de pierre qui menait à une serre faite de verre et de bronze. Malgré l'abandon, le jardin semblait vivant, comme si les plantes surveillaient chacun de mes mouvements."
+      }
+    },
+    {
+      "id": "s4",
+      "text": {
+        "en": "I spent the entire afternoon exploring the winding trails. I found a small pond covered in water lilies and sat there to write in my journal. It was the first time in months that I felt truly inspired. I realized then that some things are more beautiful when they are left wild and free from the outside world.",
+        "pt": "Passei a tarde inteira explorando as trilhas sinuosas. Encontrei um pequeno lago coberto de lírios d'água e sentei-me ali para escrever em meu diário. Foi a primeira vez em meses que me senti verdadeiramente inspirado. Percebi então que algumas coisas são mais bonitas quando são deixadas selvagens e livres do mundo exterior.",
+        "fr": "J'ai passé tout l'après-midi à explorer les sentiers sinueux. J'ai trouvé un petit étang couvert de nénuphars et je m'y suis assis pour écrire dans mon journal. C'était la première fois depuis des mois que je me sentais vraiment inspiré. J'ai réalisé alors que certaines choses sont plus belles quand elles sont laissées à l'état sauvage et à l'abri du monde extérieur."
+      }
+    }
+  ]
+}
