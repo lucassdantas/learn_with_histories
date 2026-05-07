@@ -1,19 +1,27 @@
 import type { Metadata, Viewport } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Montserrat, Poppins, Open_Sans } from "next/font/google";
 import "./globals.css";
 import { LanguageProvider } from "@/context/LanguageContext";
 import { ThemeProvider } from "@/context/ThemeContext";
 import AdScript from "@/components/AdScript";
 import StructuredData from "@/components/StructuredData";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const montserrat = Montserrat({
+  variable: "--font-montserrat",
   subsets: ["latin"],
+  weight: ["400", "700", "900"],
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const poppins = Poppins({
+  variable: "--font-poppins",
   subsets: ["latin"],
+  weight: ["400", "600", "700"],
+});
+
+const openSans = Open_Sans({
+  variable: "--font-open-sans",
+  subsets: ["latin"],
+  weight: ["400", "500", "700"],
 });
 
 export const viewport: Viewport = {
@@ -24,48 +32,48 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  title: "LinguaStories - Learn Languages with Stories | Free Language Learning",
+  title: "LearnWithHistories - Learn Languages with Stories | Free Language Learning",
   description: "Master languages through immersive storytelling. Learn Portuguese, English, French and more with instant translations. Free interactive stories for language learners.",
   keywords: ["language learning", "stories", "translations", "Portuguese", "English", "French", "learn languages", "immersive learning"],
-  authors: [{ name: "LinguaStories" }],
-  creator: "LinguaStories",
-  publisher: "LinguaStories",
+  authors: [{ name: "LearnWithHistories" }],
+  creator: "LearnWithHistories",
+  publisher: "LearnWithHistories",
   robots: "index, follow",
   alternates: {
-    canonical: "https://linguastories.com",
+    canonical: "https://learnwithhistories.com",
     languages: {
-      "pt": "https://linguastories.com",
-      "en": "https://linguastories.com",
-      "fr": "https://linguastories.com",
+      "pt": "https://learnwithhistories.com",
+      "en": "https://learnwithhistories.com",
+      "fr": "https://learnwithhistories.com",
     },
   },
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://linguastories.com",
-    siteName: "LinguaStories",
-    title: "LinguaStories - Learn Languages with Stories",
+    url: "https://learnwithhistories.com",
+    siteName: "LearnWithHistories",
+    title: "LearnWithHistories - Learn Languages with Stories",
     description: "Master languages through immersive storytelling with instant translations.",
     images: [
       {
-        url: "https://linguastories.com/og-image.jpg",
+        url: "https://learnwithhistories.com/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "LinguaStories - Language Learning Platform",
+        alt: "LearnWithHistories - Language Learning Platform",
         type: "image/jpeg",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "LinguaStories - Learn Languages with Stories",
+    title: "LearnWithHistories - Learn Languages with Stories",
     description: "Master languages through immersive storytelling with instant translations.",
-    images: ["https://linguastories.com/og-image.jpg"],
+    images: ["https://learnwithhistories.com/og-image.jpg"],
   },
   appleWebApp: {
     capable: true,
     statusBarStyle: "black-translucent",
-    title: "LinguaStories",
+    title: "LearnWithHistories",
   },
 };
 
@@ -77,7 +85,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased transition-colors duration-300`}
+      className={`${montserrat.variable} ${poppins.variable} ${openSans.variable} h-full antialiased transition-colors duration-300`}
       suppressHydrationWarning
     >
       <head>
@@ -87,7 +95,7 @@ export default function RootLayout({
         <link rel="icon" href="/favicon.ico" />
         <link rel="sitemap" href="/sitemap.xml" />
       </head>
-      <body className="min-h-full flex flex-col bg-white dark:bg-gray-950 text-gray-900 dark:text-gray-100 transition-colors duration-300">
+      <body className="min-h-full flex flex-col bg-background text-foreground transition-colors duration-300 font-sans">
         <AdScript />
         <ThemeProvider>
           <LanguageProvider>

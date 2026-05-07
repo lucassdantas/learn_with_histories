@@ -1,0 +1,18 @@
+{
+  "privacy.title": "Privacy Policy",
+  "privacy.subtitle": "Your privacy is important to us. Learn how we handle your data and maintain a safe learning environment.",
+  "privacy.lastUpdated": "Last updated:",
+  "privacy.section1Title": "Information Collection",
+  "privacy.section1Text": "We do not require user authentication. However, we may store your language preferences (native and learning languages) locally on your device using browser technology like LocalStorage to improve your experience. This information is stored only on your device and is never sent to our servers.",
+  "privacy.section2Title": "Cookies and Advertisements",
+  "privacy.section2Text": "We use Google AdSense to display advertisements on our site. Google uses cookies to serve ads based on your previous visits to our website or other websites.\n\nGoogle's use of advertising cookies enables it and its partners to serve ads to you based on your visit to our sites and/or other sites on the Internet.",
+  "privacy.section3Title": "Data Treatment",
+  "privacy.section3Text": "We do not sell or share any personal data with third parties beyond what is necessary for providing our service. Any data processed by our advertising partners is subject to their own privacy policies.",
+  "privacy.section4Title": "Third-Party Links",
+  "privacy.section4Text": "Our site may contain links to other websites. We are not responsible for the privacy practices or content of these third-party sites. We encourage you to review their privacy policies.",
+  "privacy.section5Title": "Changes to This Policy",
+  "privacy.section5Text": "We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page. Your continued use of the service constitutes acceptance of any changes.",
+  "privacy.section6Title": "Your Rights",
+  "privacy.section6Text": "You have the right to access, update, or delete your local preferences. Since we don't store user data on our servers, you can clear your preferences by clearing your browser's LocalStorage for this website.",
+  "privacy.contactText": "If you have any questions about this Privacy Policy, please contact us through our official channels."
+}

@@ -1,0 +1,22 @@
+{
+  "stories.title": "Histórias Disponíveis",
+  "stories.reading": "Lendo em {learningLang} com traduções para {nativeLang}.",
+  "stories.search": "Pesquisar histórias...",
+  "stories.noResults": "Nenhuma história encontrada",
+  "stories.noStoriesYet": "Nenhuma história disponível ainda",
+  "stories.back": "Voltar",
+  "stories.readingIn": "Lendo em {lang}",
+  "stories.finish": "Terminar Leitura",
+  "stories.instructionsTitle": "Instruções",
+  "stories.instructionsDesc": "Leia o texto no idioma que está aprendendo. Se precisar de ajuda com uma seção, clique no botão + para ver a tradução.",
+  "stories.advertisement": "Publicidade",
+  "stories.privacyPolicy": "Política de Privacidade",
+  "stories.footerTagline": "Sua jornada para a fluência começa aqui.",
+  "stories.notFound": "História não encontrada",
+  "stories.goBack": "Voltar para as histórias",
+  "stories.untitled": "Sem título",
+  "stories.textNotAvailable": "Texto não disponível neste idioma",
+  "stories.translationNotAvailable": "Tradução não disponível para esta seção",
+  "stories.hideTranslation": "Ocultar tradução",
+  "stories.showTranslation": "Mostrar tradução"
+}

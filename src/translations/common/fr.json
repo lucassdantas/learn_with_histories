@@ -1,0 +1,14 @@
+{
+  "nav.home": "Accueil",
+  "nav.about": "À Propos",
+  "nav.stories": "Histoires",
+  "nav.privacy": "Confidentialité",
+    "nav.terms": "Conditions",
+  "header.speak": "Parle",
+  "header.learn": "Apprend",
+  "header.toggleTheme": "Changer le thème",
+  "common.or": "ou",
+  "common.and": "et",
+  "common.contact": "Contact",
+  "common.back": "Retour"
+}

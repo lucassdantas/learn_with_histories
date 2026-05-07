@@ -1,0 +1,18 @@
+{
+  "privacy.title": "Politique de Confidentialité",
+  "privacy.subtitle": "Votre vie privée est importante pour nous. Découvrez comment nous traitons vos données et maintenons un environnement d'apprentissage sûr.",
+  "privacy.lastUpdated": "Dernière mise à jour :",
+  "privacy.section1Title": "Collecte d'Informations",
+  "privacy.section1Text": "Nous n'exigeons pas d'authentification de l'utilisateur. Cependant, nous pouvons stocker vos préférences linguistiques (langues maternelle et d'apprentissage) localement sur votre appareil à l'aide d'une technologie de navigateur telle que le LocalStorage pour améliorer votre expérience. Ces informations sont stockées uniquement sur votre appareil et ne sont jamais envoyées à nos serveurs.",
+  "privacy.section2Title": "Cookies et Publicités",
+  "privacy.section2Text": "Nous utilisons Google AdSense pour afficher des publicités sur notre site. Google utilise des cookies pour diffuser des annonces basées sur vos visites précédentes sur notre site Web ou sur d'autres sites Web.\n\nL'utilisation de cookies publicitaires par Google lui permet, ainsi qu'à ses partenaires, de vous proposer des publicités en fonction de votre visite sur nos sites et/ou d'autres sites sur Internet.",
+  "privacy.section3Title": "Traitement des Données",
+  "privacy.section3Text": "Nous ne vendons ni ne partageons aucune donnée personnelle avec des tiers au-delà de ce qui est nécessaire pour fournir notre service. Toutes les données traitées par nos partenaires publicitaires sont soumises à leurs propres politiques de confidentialité.",
+  "privacy.section4Title": "Liens Tiers",
+  "privacy.section4Text": "Notre site peut contenir des liens vers d'autres sites Web. Nous ne sommes pas responsables des pratiques de confidentialité ou du contenu de ces sites tiers. Nous vous encourageons à consulter leurs politiques de confidentialité.",
+  "privacy.section5Title": "Modifications de cette Politique",
+  "privacy.section5Text": "Nous pouvons mettre à jour notre politique de confidentialité de temps à autre. Nous vous informerons de tout changement en publiant la nouvelle politique de confidentialité sur cette page. Votre utilisation continue du service constitue l'acceptation de tout changement.",
+  "privacy.section6Title": "Vos Droits",
+  "privacy.section6Text": "Vous avez le droit d'accéder, de mettre à jour ou de supprimer vos préférences locales. Comme nous ne stockons pas les données des utilisateurs sur nos serveurs, vous pouvez effacer vos préférences en effaçant le LocalStorage de votre navigateur pour ce site Web.",
+  "privacy.contactText": "Si vous avez des questions sur cette politique de confidentialité, veuillez nous contacter via nos canaux officiels."
+}

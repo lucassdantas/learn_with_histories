@@ -10,6 +10,7 @@ import AdBanner from '@/components/AdBanner';
 import AdPopup from '@/components/AdPopup';
 import Header from '@/components/Header';
 import { ADS_CONFIG } from '@/config/ads';
+import { getTranslation } from '@/config/translations';
 
 export default function StoryDetail() {
   const params = useParams();
@@ -68,52 +69,52 @@ export default function StoryDetail() {
 
   if (loading) {
     return (
-      <div className="flex items-center justify-center min-h-screen">
-        <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600"></div>
+      <div className="flex items-center justify-center min-h-screen bg-background">
+        <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-golden-amber"></div>
       </div>
     );
   }
 
   if (!story) {
     return (
-      <div className="min-h-screen flex flex-col items-center justify-center p-4 bg-white dark:bg-gray-950">
-        <h1 className="text-2xl font-bold mb-4">Story not found</h1>
-        <Link href="/stories" className="text-blue-600 hover:underline cursor-pointer">
-          Go back to stories
+      <div className="min-h-screen flex flex-col items-center justify-center p-4 bg-background">
+        <h1 className="text-2xl font-black mb-4 text-deep-blue">{getTranslation(nativeLanguage, 'stories.notFound')}</h1>
+        <Link href="/stories" className="text-golden-amber hover:underline font-bold cursor-pointer">
+          {getTranslation(nativeLanguage, 'stories.goBack')}
         </Link>
       </div>
     );
   }
 
-  const title = story.title[learningLanguage] || story.title['en'] || 'Untitled';
+  const title = story.title[learningLanguage] || story.title['en'] || getTranslation(nativeLanguage, 'stories.untitled');
 
   return (
-    <div className="min-h-screen bg-white dark:bg-gray-950 text-gray-900 dark:text-gray-100 flex flex-col transition-colors duration-300">
+    <div className="min-h-screen bg-background text-foreground flex flex-col transition-colors duration-300">
       <Header />
       <AdPopup isOpen={showExitAd} onClose={closeAdAndGoBack} />
 
-      <header className="border-b border-gray-100 dark:border-gray-800 py-4 px-6 flex items-center justify-between sticky top-16 bg-white/80 dark:bg-gray-950/80 backdrop-blur-md z-10 transition-colors">
+      <header className="border-b border-golden-amber/10 py-4 px-4 sm:px-6 flex items-center justify-between sticky top-14 sm:top-16 bg-background/80 backdrop-blur-md z-10 transition-colors">
         <button
           onClick={handleBack}
-          className="flex items-center text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 font-medium transition cursor-pointer"
+          className="flex items-center text-deep-blue/60 hover:text-golden-amber font-bold transition cursor-pointer"
         >
           <svg className="w-5 h-5 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="15 19l-7-7 7-7" />
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
           </svg>
-          Back
+          <span className="hidden xs:inline">{getTranslation(nativeLanguage, 'stories.back')}</span>
         </button>
-        <div className="text-sm font-semibold text-blue-600 dark:text-blue-400 uppercase tracking-wider">
-          Reading in {learningLanguage.toUpperCase()}
+        <div className="text-[10px] sm:text-sm font-black text-golden-amber uppercase tracking-widest text-right">
+          {getTranslation(nativeLanguage, 'stories.readingIn', { lang: learningLanguage.toUpperCase() })}
         </div>
       </header>
 
-      <main className="flex-grow max-w-4xl mx-auto w-full px-6 py-12 flex flex-col md:flex-row gap-8">
+      <main className="flex-grow max-w-4xl mx-auto w-full px-4 sm:px-6 py-8 sm:py-12 flex flex-col lg:flex-row gap-8">
         <div className="flex-grow">
-          <h1 className="text-4xl font-black mb-12 text-center md:text-left leading-tight">
+          <h1 className="text-3xl sm:text-4xl font-black mb-10 sm:mb-12 text-center sm:text-left leading-tight text-deep-blue">
             {title}
           </h1>
 
-          <div className="space-y-16 mb-16">
+          <div className="space-y-12 sm:space-y-16 mb-16">
             {story.content.map((segment) => {
               const learningText = segment.text[learningLanguage];
               const nativeText = segment.text[nativeLanguage];
@@ -121,16 +122,16 @@ export default function StoryDetail() {
 
               return (
                 <div key={segment.id} className="group relative">
-                  <div className="flex items-start gap-4">
-                    <div className="flex-grow">
-                      <div className="text-xl md:text-2xl leading-relaxed text-gray-800 dark:text-gray-200 whitespace-pre-wrap">
-                        {learningText || <span className="italic text-gray-400">Text not available in this language</span>}
+                  <div className="flex flex-col sm:flex-row items-start gap-4 sm:gap-6">
+                    <div className="flex-grow w-full order-2 sm:order-1">
+                      <div className={`text-xl sm:text-2xl leading-relaxed text-deep-blue whitespace-pre-wrap font-serif transition-colors p-3 sm:p-4 rounded-2xl ${isVisible ? 'bg-golden-amber/10' : ''}`}>
+                        {learningText || <span className="italic opacity-50">{getTranslation(nativeLanguage, 'stories.textNotAvailable')}</span>}
                       </div>
 
                       {isVisible && (
-                        <div className="mt-6 p-6 bg-blue-50 dark:bg-blue-900/20 rounded-2xl border-l-4 border-blue-400 animate-in fade-in slide-in-from-top-1 duration-200">
-                          <div className="text-lg md:text-xl text-blue-800 dark:text-blue-300 whitespace-pre-wrap">
-                            {nativeText || <span className="italic text-red-500">Translation not available for this section</span>}
+                        <div className="mt-4 sm:mt-6 p-4 sm:p-6 bg-white/60 rounded-2xl border-l-4 border-burnt-copper animate-in fade-in slide-in-from-top-1 duration-200">
+                          <div className="text-lg sm:text-xl text-burnt-copper whitespace-pre-wrap font-serif font-medium">
+                            {nativeText || <span className="italic opacity-50">{getTranslation(nativeLanguage, 'stories.translationNotAvailable')}</span>}
                           </div>
                         </div>
                       )}
@@ -138,15 +139,15 @@ export default function StoryDetail() {
 
                     <button
                       onClick={() => toggleTranslation(segment.id)}
-                      className={`flex-shrink-0 w-12 h-12 rounded-full flex items-center justify-center shadow-sm transition-all cursor-pointer ${
+                      className={`flex-shrink-0 w-10 h-10 sm:w-12 sm:h-12 rounded-full flex items-center justify-center shadow-md transition-all cursor-pointer order-1 sm:order-2 self-end sm:self-start ${
                         isVisible
-                          ? 'bg-blue-600 text-white rotate-45'
-                          : 'bg-gray-100 dark:bg-gray-800 text-gray-400 dark:text-gray-500 hover:bg-blue-100 dark:hover:bg-blue-900/40 hover:text-blue-600 dark:hover:text-blue-400'
+                          ? 'bg-burnt-copper text-white rotate-45'
+                          : 'bg-white border border-golden-amber/20 text-golden-amber hover:bg-golden-amber hover:text-white'
                       }`}
-                      title={isVisible ? "Hide translation" : "Show translation"}
+                      title={isVisible ? getTranslation(nativeLanguage, 'stories.hideTranslation') : getTranslation(nativeLanguage, 'stories.showTranslation')}
                     >
                       <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="12 4v16m8-8H4" />
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M12 4v16m8-8H4" />
                       </svg>
                     </button>
                   </div>
@@ -158,9 +159,9 @@ export default function StoryDetail() {
           <div className="mt-20 text-center">
             <button
               onClick={handleBack}
-              className="px-10 py-4 bg-gray-900 dark:bg-blue-600 text-white font-bold rounded-2xl hover:bg-gray-800 dark:hover:bg-blue-700 transition shadow-lg active:scale-95 cursor-pointer"
+              className="px-10 py-4 bg-deep-blue text-white font-black rounded-2xl hover:bg-deep-blue/90 transition shadow-lg active:scale-95 cursor-pointer"
             >
-              Finish Reading
+              {getTranslation(nativeLanguage, 'stories.finish')}
             </button>
           </div>
         </div>
@@ -169,14 +170,14 @@ export default function StoryDetail() {
         <div className="hidden lg:block">
           <aside className="w-64 flex-shrink-0">
             <div className="sticky top-40 space-y-6">
-              <div className="p-5 bg-gray-50 dark:bg-gray-900 rounded-2xl border border-gray-100 dark:border-gray-800">
-                <h3 className="font-bold text-gray-900 dark:text-gray-100 mb-2 text-lg">Instructions</h3>
-                <p className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">
-                  Read the text in your target language. If you need help with a section, click the <span className="font-bold text-blue-600 dark:text-blue-400">+</span> button to see the translation.
+              <div className="p-5 bg-white rounded-2xl border border-golden-amber/10 shadow-sm">
+                <h3 className="font-black text-deep-blue mb-2 text-lg">{getTranslation(nativeLanguage, 'stories.instructionsTitle')}</h3>
+                <p className="text-sm text-deep-blue/60 font-medium leading-relaxed">
+                  {getTranslation(nativeLanguage, 'stories.instructionsDesc')}
                 </p>
               </div>
-              <div className="w-full h-[600px] bg-gray-50 dark:bg-gray-900 border border-dashed border-gray-200 dark:border-gray-800 rounded-2xl flex flex-col items-center justify-center text-center p-4 overflow-hidden">
-                <span className="text-[10px] text-gray-400 uppercase mb-4">Advertisement</span>
+              <div className="w-full h-[600px] bg-white/50 border border-dashed border-golden-amber/20 rounded-2xl flex flex-col items-center justify-center text-center p-4 overflow-hidden">
+                <span className="text-[10px] text-deep-blue/40 font-black uppercase mb-4">{getTranslation(nativeLanguage, 'stories.advertisement')}</span>
                 <ins
                   className="adsbygoogle"
                   style={{ display: 'block', width: '100%', height: '500px' }}
@@ -190,17 +191,17 @@ export default function StoryDetail() {
         </div>
       </main>
 
-      <div className="max-w-4xl mx-auto w-full px-6 pb-12">
+      <div className="max-w-4xl mx-auto w-full px-4 sm:px-6 pb-12">
         <AdBanner />
       </div>
 
-      <footer className="bg-gray-50 dark:bg-gray-900 border-t border-gray-100 dark:border-gray-800 py-16 mt-auto transition-colors">
+      <footer className="bg-white/50 border-t border-golden-amber/10 py-16 mt-auto transition-colors">
         <div className="max-w-4xl mx-auto px-6 flex flex-col items-center gap-4">
-          <Link href="/privacy" className="text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 text-sm cursor-pointer">
-            Privacy Policy
+          <Link href="/privacy" className="text-deep-blue/40 hover:text-golden-amber text-sm font-bold cursor-pointer transition-colors">
+            {getTranslation(nativeLanguage, 'stories.privacyPolicy')}
           </Link>
-          <p className="text-gray-400 dark:text-gray-500 text-xs italic">
-            LinguaStories - Your journey to fluency starts here.
+          <p className="text-deep-blue/30 text-xs italic font-medium">
+            LearnWithHistories - {getTranslation(nativeLanguage, 'stories.footerTagline')}
           </p>
         </div>
       </footer>
