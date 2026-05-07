@@ -1,6 +1,7 @@
 export const ADS_CONFIG = {
   // Use Google's test publisher ID
-  publisherId: 'ca-pub-3940256099942544',
+  //publisherId: 'ca-pub-3940256099942544',
+  publisherId: 'ca-pub-3124364125222536',
   slots: {
     banner: '6300978111',
     popup: '1033173712',
