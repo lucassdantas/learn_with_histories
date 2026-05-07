@@ -1,6 +1,7 @@
 {
   "nav.home": "Início",
   "nav.about": "Sobre",
+  "stories.endOfStory": "Fim da História",
   "nav.stories": "Histórias",
   "nav.privacy": "Privacidade",
     "nav.terms": "Termos de Uso",
@@ -10,5 +11,8 @@
   "common.or": "ou",
   "common.and": "e",
   "common.contact": "Contato",
+  "common.showTranslation": "Ver Tradução",
+  "common.hideTranslation": "Ocultar Tradução",
+  "common.backToStories": "Voltar para Histórias",
   "common.back": "Voltar"
 }

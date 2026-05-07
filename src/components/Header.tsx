@@ -38,7 +38,7 @@ export default function Header() {
   if (!isMounted) return null;
 
   return (
-    <header className="bg-background/80 backdrop-blur-md border-b border-golden-amber/20 flex items-center sticky top-0 z-50 transition-colors">
+    <header className="bg-background/80 backdrop-blur-md border-b border-border-theme flex items-center sticky top-0 z-50 transition-colors">
       <div className="max-w-7xl mx-auto px-4 w-full flex items-center justify-between py-3">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2 cursor-pointer group shrink-0">
@@ -50,7 +50,7 @@ export default function Header() {
               className="object-cover"
             />
           </div>
-          <span className="text-lg sm:text-xl font-black text-deep-blue tracking-tighter hidden xs:block">
+          <span className="text-lg sm:text-xl font-black text-foreground tracking-tighter hidden xs:block">
             LearnWithHistories
           </span>
         </Link>
@@ -64,7 +64,7 @@ export default function Header() {
               className={`px-3 py-2 rounded-lg font-bold text-sm transition ${
                 isActive(link.href)
                   ? 'bg-golden-amber text-white'
-                  : 'text-deep-blue hover:bg-golden-amber/10'
+                  : 'text-foreground hover:bg-golden-amber/10'
               }`}
             >
               {getTranslation(nativeLanguage, link.label)}
@@ -76,7 +76,7 @@ export default function Header() {
         <div className="flex items-center gap-1 sm:gap-3">
           <button
             onClick={toggleTheme}
-            className="p-2 rounded-full hover:bg-golden-amber/10 transition cursor-pointer text-deep-blue"
+            className="p-2 rounded-full hover:bg-golden-amber/10 transition cursor-pointer text-foreground"
             title={getTranslation(nativeLanguage, 'header.toggleTheme')}
           >
             {theme === 'light' ? (
@@ -91,16 +91,16 @@ export default function Header() {
           </button>
 
           <div className="hidden lg:flex items-center gap-2">
-            <span className="text-[10px] font-bold text-deep-blue/60 uppercase">
+            <span className="text-[10px] font-bold text-foreground/60 uppercase">
               {getTranslation(nativeLanguage, 'header.speak')}:
             </span>
             <select
               value={nativeLanguage}
               onChange={(e) => setNativeLanguage(e.target.value)}
-              className="bg-white/50 border border-golden-amber/30 rounded-md text-xs font-bold p-1 focus:ring-2 focus:ring-golden-amber outline-none cursor-pointer text-deep-blue"
+              className="bg-card border border-border-theme rounded-md text-xs font-bold p-1 focus:ring-2 focus:ring-golden-amber outline-none cursor-pointer text-foreground appearance-none min-w-[50px] text-center"
             >
               {languages.map((lang) => (
-                <option key={lang.code} value={lang.code}>
+                <option key={lang.code} value={lang.code} className="bg-background">
                   {lang.name}
                 </option>
               ))}
@@ -108,16 +108,16 @@ export default function Header() {
           </div>
 
           <div className="hidden lg:flex items-center gap-2">
-            <span className="text-[10px] font-bold text-deep-blue/60 uppercase">
+            <span className="text-[10px] font-bold text-foreground/60 uppercase">
               {getTranslation(nativeLanguage, 'header.learn')}:
             </span>
             <select
               value={learningLanguage}
               onChange={(e) => setLearningLanguage(e.target.value)}
-              className="bg-golden-amber/10 border border-golden-amber/30 rounded-md text-xs font-bold p-1 text-deep-blue focus:ring-2 focus:ring-golden-amber outline-none cursor-pointer"
+              className="bg-card border border-border-theme rounded-md text-xs font-bold p-1 text-foreground focus:ring-2 focus:ring-golden-amber outline-none cursor-pointer appearance-none min-w-[50px] text-center"
             >
               {languages.map((lang) => (
-                <option key={lang.code} value={lang.code}>
+                <option key={lang.code} value={lang.code} className="bg-background">
                   {lang.name}
                 </option>
               ))}
@@ -127,7 +127,7 @@ export default function Header() {
           {/* Mobile menu button */}
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="md:hidden p-2 rounded-lg hover:bg-golden-amber/10 transition text-deep-blue"
+            className="md:hidden p-2 rounded-lg hover:bg-golden-amber/10 transition text-foreground"
             aria-label="Menu"
           >
             <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -139,7 +139,7 @@ export default function Header() {
 
       {/* Mobile Navigation */}
       {mobileMenuOpen && (
-        <div className="absolute top-full left-0 right-0 border-b border-golden-amber/20 bg-background shadow-xl md:hidden animate-in fade-in slide-in-from-top-2 duration-200">
+        <div className="absolute top-full left-0 right-0 border-b border-border-theme bg-background shadow-xl md:hidden animate-in fade-in slide-in-from-top-2 duration-200">
           <nav className="flex flex-col p-2">
             {navLinks.map((link) => (
               <Link
@@ -149,16 +149,16 @@ export default function Header() {
                 className={`px-4 py-3 rounded-xl font-bold text-base transition ${
                   isActive(link.href)
                     ? 'bg-golden-amber/10 text-golden-amber'
-                    : 'text-deep-blue hover:bg-golden-amber/5'
+                    : 'text-foreground hover:bg-golden-amber/5'
                 }`}
               >
                 {getTranslation(nativeLanguage, link.label)}
               </Link>
             ))}
 
-            <div className="mt-2 pt-2 border-t border-golden-amber/10 grid grid-cols-2 gap-2">
-              <div className="p-3 bg-white/50 rounded-xl space-y-2">
-                <span className="text-[10px] font-black text-deep-blue/40 uppercase tracking-widest block">
+            <div className="mt-2 pt-2 border-t border-border-theme grid grid-cols-2 gap-2">
+              <div className="p-3 bg-card rounded-xl space-y-2">
+                <span className="text-[10px] font-black text-foreground/40 uppercase tracking-widest block">
                   {getTranslation(nativeLanguage, 'header.speak')}
                 </span>
                 <div className="flex gap-2">
@@ -168,8 +168,8 @@ export default function Header() {
                       onClick={() => setNativeLanguage(lang.code)}
                       className={`flex-1 py-2 rounded-lg text-xs font-black transition-all ${
                         nativeLanguage === lang.code
-                          ? 'bg-deep-blue text-white shadow-md shadow-deep-blue/20'
-                          : 'bg-background text-deep-blue/60 border border-golden-amber/20'
+                          ? 'bg-foreground text-background shadow-md shadow-foreground/20'
+                          : 'bg-background text-foreground/60 border border-border-theme'
                       }`}
                     >
                       {lang.name}
@@ -178,8 +178,8 @@ export default function Header() {
                 </div>
               </div>
 
-              <div className="p-3 bg-golden-amber/5 rounded-xl space-y-2">
-                <span className="text-[10px] font-black text-deep-blue/40 uppercase tracking-widest block">
+              <div className="p-3 bg-card rounded-xl space-y-2">
+                <span className="text-[10px] font-black text-foreground/40 uppercase tracking-widest block">
                   {getTranslation(nativeLanguage, 'header.learn')}
                 </span>
                 <div className="flex gap-2">
@@ -190,7 +190,7 @@ export default function Header() {
                       className={`flex-1 py-2 rounded-lg text-xs font-black transition-all ${
                         learningLanguage === lang.code
                           ? 'bg-golden-amber text-white shadow-md shadow-golden-amber/20'
-                          : 'bg-background text-deep-blue/60 border border-golden-amber/20'
+                          : 'bg-background text-foreground/60 border border-border-theme'
                       }`}
                     >
                       {lang.name}

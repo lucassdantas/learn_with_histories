@@ -49,13 +49,13 @@ export default function StoriesPage() {
     <div className="min-h-screen bg-background flex flex-col transition-colors duration-300 overflow-x-hidden">
       <Header />
 
-      <main className="flex-grow max-w-5xl mx-auto px-6 py-12 w-full">
+      <main className="flex-grow max-w-5xl mx-auto px-6 py-12 w-full text-foreground">
         <div className="flex flex-col md:flex-row items-center justify-between mb-12 gap-8">
           <div className="text-center md:text-left">
-            <h1 className="text-4xl font-black text-deep-blue mb-3">
+            <h1 className="text-4xl font-black text-foreground mb-3">
               {getTranslation(nativeLanguage, 'stories.title')}
             </h1>
-            <p className="text-deep-blue/60 font-medium max-w-md">
+            <p className="text-foreground/60 font-medium max-w-md">
               {getTranslation(nativeLanguage, 'stories.reading', {
                 learningLang: learningLangName,
                 nativeLang: nativeLangName,
@@ -69,7 +69,7 @@ export default function StoriesPage() {
               placeholder={getTranslation(nativeLanguage, 'stories.search')}
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
-              className="w-full pl-12 pr-6 py-4 bg-white border border-golden-amber/20 rounded-2xl focus:ring-2 focus:ring-golden-amber focus:outline-none shadow-sm transition-all placeholder:text-deep-blue/30 text-deep-blue font-bold cursor-text"
+              className="w-full pl-12 pr-6 py-4 bg-card border border-border-theme rounded-2xl focus:ring-2 focus:ring-golden-amber focus:outline-none shadow-sm transition-all placeholder:text-foreground/30 text-foreground font-bold cursor-text"
             />
             <svg
               className="absolute left-4 top-1/2 -translate-y-1/2 h-5 w-5 text-golden-amber group-focus-within:scale-110 transition-transform"
@@ -95,14 +95,14 @@ export default function StoriesPage() {
               <Link
                 key={story.id}
                 href={`/stories/${story.slug}`}
-                className="group bg-white p-8 rounded-3xl shadow-sm border border-golden-amber/5 hover:shadow-xl hover:shadow-golden-amber/5 hover:border-golden-amber/20 transition-all flex flex-col h-full cursor-pointer relative overflow-hidden"
+                className="group bg-card p-8 rounded-3xl shadow-sm border border-border-theme hover:shadow-xl hover:shadow-golden-amber/5 hover:border-golden-amber/20 transition-all flex flex-col h-full cursor-pointer relative overflow-hidden"
               >
                 <div className="absolute top-0 right-0 w-24 h-24 bg-golden-amber/5 rounded-bl-full -mr-12 -mt-12 group-hover:scale-150 transition-transform duration-500"></div>
 
-                <h2 className="text-2xl font-black text-deep-blue group-hover:text-golden-amber transition mb-3 leading-tight relative">
+                <h2 className="text-2xl font-black text-foreground group-hover:text-golden-amber transition mb-3 leading-tight relative">
                   {story.title[learningLanguage] || story.title['en']}
                 </h2>
-                <p className="text-deep-blue/60 text-sm flex-grow line-clamp-3 leading-relaxed font-bold relative">
+                <p className="text-foreground/60 text-sm flex-grow line-clamp-3 leading-relaxed font-bold relative">
                   {story.description[learningLanguage] || story.description['en']}
                 </p>
                 <div className="mt-6 flex items-center text-golden-amber font-black text-sm group-hover:translate-x-2 transition-transform relative">
@@ -125,18 +125,18 @@ export default function StoriesPage() {
             ))}
           </div>
         ) : (
-          <div className="text-center py-24 bg-white/50 rounded-3xl border-2 border-dashed border-golden-amber/10">
-            <p className="text-deep-blue/40 font-black text-lg">
+          <div className="text-center py-24 bg-card rounded-3xl border-2 border-dashed border-border-theme">
+            <p className="text-foreground/40 font-black text-lg">
               {searchQuery ? getTranslation(nativeLanguage, 'stories.noResults') : getTranslation(nativeLanguage, 'stories.noStoriesYet')}
             </p>
           </div>
         )}
       </main>
 
-      <footer className="bg-deep-blue text-white py-12 sm:py-16 px-6 sm:px-8 mt-12 transition-colors">
+      <footer className="bg-foreground text-background py-12 sm:py-16 px-6 sm:px-8 mt-12 transition-colors">
         <div className="max-w-5xl mx-auto flex flex-col items-center gap-8 text-center">
           <Link href="/" className="text-2xl font-black tracking-tighter hover:text-golden-amber transition">LearnWithHistories</Link>
-          <nav className="flex flex-wrap justify-center gap-x-8 gap-y-4 text-sm font-bold text-white/60">
+          <nav className="flex flex-wrap justify-center gap-x-8 gap-y-4 text-sm font-bold opacity-60">
             <Link href="/about" className="hover:text-golden-amber transition cursor-pointer">
               {getTranslation(nativeLanguage, 'nav.about')}
             </Link>
@@ -147,7 +147,7 @@ export default function StoriesPage() {
               {getTranslation(nativeLanguage, 'nav.privacy')}
             </Link>
           </nav>
-          <div className="text-white/40 text-[10px] italic font-bold tracking-widest uppercase">
+          <div className="opacity-40 text-[10px] italic font-bold tracking-widest uppercase">
             © {new Date().getFullYear()} LearnWithHistories. All rights reserved.
           </div>
         </div>

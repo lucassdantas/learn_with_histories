@@ -1,6 +1,7 @@
 {
   "nav.home": "Home",
   "nav.about": "About",
+  "stories.endOfStory": "End of Story",
   "nav.stories": "Stories",
   "nav.privacy": "Privacy",
     "nav.terms": "Terms",
@@ -10,5 +11,8 @@
   "common.or": "or",
   "common.and": "and",
   "common.contact": "Contact",
+  "common.showTranslation": "Show Translation",
+  "common.hideTranslation": "Hide Translation",
+  "common.backToStories": "Back to Stories",
   "common.back": "Back"
 }

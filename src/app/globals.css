@@ -10,8 +10,10 @@
   --color-burnt-copper: #8B3A1F;
   --color-warm-sand: #F4EBDD;
 
-  --color-background: var(--color-warm-sand);
-  --color-foreground: var(--color-deep-blue);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card-bg);
+  --color-border-theme: var(--border-theme);
 }
 
 @custom-variant dark (&:where(.dark, .dark *));
@@ -19,19 +21,15 @@
 :root {
   --background: #F4EBDD;
   --foreground: #1D3D5A;
-  --deep-blue: #1D3D5A;
-  --golden-amber: #C8924A;
-  --burnt-copper: #8B3A1F;
-  --warm-sand: #F4EBDD;
+  --card-bg: rgba(255, 255, 255, 0.5);
+  --border-theme: rgba(200, 146, 74, 0.2);
 }
 
 .dark {
-  --background: #0a0a0a;
-  --foreground: #ededed;
-  --deep-blue: #3a7ab3;
-  --golden-amber: #d4a76a;
-  --burnt-copper: #a64d32;
-  --warm-sand: #1a1a1a;
+  --background: #0D1B2A;
+  --foreground: #F4EBDD;
+  --card-bg: rgba(29, 61, 90, 0.3);
+  --border-theme: rgba(200, 146, 74, 0.3);
 }
 
 body {
@@ -46,4 +44,11 @@ h1, h2, h3, h4, .font-display {
 
 .font-accent {
   font-family: var(--font-accent);
+}
+
+/* Base link and button transitions */
+a, button {
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
 }
