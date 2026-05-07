@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { useLanguage } from '@/context/LanguageContext';
 import { Story } from '@/lib/stories';
 import { getStoriesApi } from '@/lib/api';
+import { getTranslation, languageNames } from '@/config/translations';
 import AdBanner from '@/components/AdBanner';
 import Header from '@/components/Header';
 
@@ -33,6 +34,9 @@ export default function StoriesPage() {
     return title.toLowerCase().includes(searchQuery.toLowerCase());
   });
 
+  const learningLangName = languageNames[nativeLanguage]?.[learningLanguage] || learningLanguage.toUpperCase();
+  const nativeLangName = languageNames[nativeLanguage]?.[nativeLanguage] || nativeLanguage.toUpperCase();
+
   if (loading) {
     return (
       <div className="flex items-center justify-center min-h-screen bg-white dark:bg-gray-950">
@@ -48,16 +52,21 @@ export default function StoriesPage() {
       <main className="flex-grow max-w-5xl mx-auto px-4 py-8 w-full">
         <div className="flex flex-col sm:flex-row items-center justify-between mb-8 gap-4">
           <div>
-            <h1 className="text-3xl font-bold text-gray-900 dark:text-gray-100 mb-2">Available Stories</h1>
+            <h1 className="text-3xl font-bold text-gray-900 dark:text-gray-100 mb-2">
+              {getTranslation(nativeLanguage, 'stories.title')}
+            </h1>
             <p className="text-gray-600 dark:text-gray-400">
-              Reading in {learningLanguage.toUpperCase()} with {nativeLanguage.toUpperCase()} translations.
+              {getTranslation(nativeLanguage, 'stories.reading', {
+                learningLang: learningLangName,
+                nativeLang: nativeLangName,
+              })}
             </p>
           </div>
 
           <div className="relative w-full sm:w-64">
             <input
               type="text"
-              placeholder="Search stories..."
+              placeholder={getTranslation(nativeLanguage, 'stories.search')}
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
               className="w-full pl-10 pr-4 py-2 bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 rounded-full focus:ring-2 focus:ring-blue-500 focus:outline-none shadow-sm transition-all placeholder:text-gray-400 dark:placeholder:text-gray-500 text-gray-900 dark:text-gray-100 cursor-text"
@@ -95,7 +104,7 @@ export default function StoriesPage() {
                   {story.description[learningLanguage] || story.description['en']}
                 </p>
                 <div className="mt-4 flex items-center text-blue-600 dark:text-blue-400 font-semibold text-sm group-hover:translate-x-1 transition-transform">
-                  Read Story
+                  {getTranslation(nativeLanguage, 'home.startReading')}
                   <svg
                     className="ml-2 w-4 h-4"
                     fill="none"
@@ -115,15 +124,17 @@ export default function StoriesPage() {
           </div>
         ) : (
           <div className="text-center py-20 bg-white dark:bg-gray-900 rounded-3xl border border-dashed border-gray-200 dark:border-gray-800 shadow-inner">
-            <p className="text-gray-500 dark:text-gray-500 font-medium">No stories found matching your search.</p>
+            <p className="text-gray-500 dark:text-gray-500 font-medium">
+              {searchQuery ? getTranslation(nativeLanguage, 'stories.noResults') : getTranslation(nativeLanguage, 'stories.noStoriesYet')}
+            </p>
           </div>
-        ) }
+        )}
       </main>
 
       <footer className="bg-white dark:bg-gray-900 border-t border-gray-100 dark:border-gray-800 py-12 mt-auto transition-colors">
         <div className="max-w-5xl mx-auto px-4 flex flex-col items-center gap-4">
-          <Link href="/privacy" className="text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 text-sm cursor-pointer">
-            Privacy Policy
+          <Link href="/terms" className="text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 text-sm cursor-pointer">
+            {getTranslation(nativeLanguage, 'nav.terms')}
           </Link>
           <div className="text-gray-400 dark:text-gray-500 text-xs italic">
             © {new Date().getFullYear()} LinguaStories. Practice makes perfect.
