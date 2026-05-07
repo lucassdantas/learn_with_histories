@@ -5,6 +5,7 @@ import { LanguageProvider } from "@/context/LanguageContext";
 import { ThemeProvider } from "@/context/ThemeContext";
 import AdScript from "@/components/AdScript";
 import StructuredData from "@/components/StructuredData";
+import Footer from "@/components/Footer";
 
 const montserrat = Montserrat({
   variable: "--font-montserrat",
@@ -100,6 +101,7 @@ export default function RootLayout({
         <ThemeProvider>
           <LanguageProvider>
             {children}
+            <Footer />
           </LanguageProvider>
         </ThemeProvider>
       </body>

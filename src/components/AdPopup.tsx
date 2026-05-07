@@ -27,7 +27,7 @@ export default function AdPopup({ isOpen, onClose }: AdPopupProps) {
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 backdrop-blur-sm">
-      <div className="bg-background p-6 rounded-3xl shadow-xl max-w-md w-full relative border border-golden-amber/10">
+      <div className="bg-surface p-6 rounded-3xl shadow-xl max-w-md w-full relative border border-golden-amber/10">
         <button
           onClick={onClose}
           className="absolute top-2 right-2 text-deep-blue/40 hover:text-golden-amber font-bold p-2 z-10 cursor-pointer"

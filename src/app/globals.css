@@ -12,6 +12,7 @@
 
   --color-background: #F4EBDD;
   --color-foreground: #1D3D5A;
+  --color-surface: #FFFFFF;
 }
 
 @custom-variant dark (&:where(.dark, .dark *));
@@ -19,6 +20,7 @@
 .dark {
   --color-background: #0F172A;
   --color-foreground: #F1F5F9;
+  --color-surface: #1E293B;
   --color-deep-blue: #93C5FD;
   --color-golden-amber: #FCD34D;
   --color-burnt-copper: #FB7185;

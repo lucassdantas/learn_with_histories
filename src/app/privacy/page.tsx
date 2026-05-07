@@ -78,15 +78,6 @@ export default function PrivacyPolicy() {
           </Link>
         </div>
       </main>
-
-      <footer className="bg-deep-blue text-white py-12 sm:py-16 px-6 sm:px-8 transition-colors">
-        <div className="max-w-5xl mx-auto flex flex-col items-center gap-8 text-center">
-          <Link href="/" className="text-2xl font-black tracking-tighter hover:text-golden-amber transition">LearnWithHistories</Link>
-          <div className="text-white/40 text-[10px] italic font-bold tracking-widest uppercase">
-            © {new Date().getFullYear()} LearnWithHistories. All rights reserved.
-          </div>
-        </div>
-      </footer>
     </div>
   );
 }

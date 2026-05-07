@@ -97,10 +97,10 @@ export default function Header() {
             <select
               value={nativeLanguage}
               onChange={(e) => setNativeLanguage(e.target.value)}
-              className="bg-background/50 border border-golden-amber/30 rounded-md text-xs font-bold p-1 focus:ring-2 focus:ring-golden-amber outline-none cursor-pointer text-deep-blue"
+              className="bg-surface border border-golden-amber/30 rounded-md text-xs font-bold p-1 focus:ring-2 focus:ring-golden-amber outline-none cursor-pointer text-deep-blue"
             >
               {languages.map((lang) => (
-                <option key={lang.code} value={lang.code}>
+                <option key={lang.code} value={lang.code} className="bg-surface">
                   {lang.name}
                 </option>
               ))}
@@ -114,10 +114,10 @@ export default function Header() {
             <select
               value={learningLanguage}
               onChange={(e) => setLearningLanguage(e.target.value)}
-              className="bg-background/50 border border-golden-amber/30 rounded-md text-xs font-bold p-1 text-deep-blue focus:ring-2 focus:ring-golden-amber outline-none cursor-pointer"
+              className="bg-surface border border-golden-amber/30 rounded-md text-xs font-bold p-1 text-deep-blue focus:ring-2 focus:ring-golden-amber outline-none cursor-pointer"
             >
               {languages.map((lang) => (
-                <option key={lang.code} value={lang.code}>
+                <option key={lang.code} value={lang.code} className="bg-surface">
                   {lang.name}
                 </option>
               ))}
@@ -157,7 +157,7 @@ export default function Header() {
             ))}
 
             <div className="mt-2 pt-2 border-t border-golden-amber/10 grid grid-cols-2 gap-2">
-              <div className="p-3 bg-background/50 rounded-xl space-y-2">
+              <div className="p-3 bg-surface rounded-xl space-y-2">
                 <span className="text-[10px] font-black text-deep-blue/40 uppercase tracking-widest block">
                   {getTranslation(nativeLanguage, 'header.speak')}
                 </span>
@@ -169,7 +169,7 @@ export default function Header() {
                       className={`flex-1 py-2 rounded-lg text-xs font-black transition-all ${
                         nativeLanguage === lang.code
                           ? 'bg-deep-blue text-white shadow-md shadow-deep-blue/20'
-                          : 'bg-background text-deep-blue/60 border border-golden-amber/20'
+                          : 'bg-surface text-deep-blue/60 border border-golden-amber/20'
                       }`}
                     >
                       {lang.name}
@@ -178,7 +178,7 @@ export default function Header() {
                 </div>
               </div>
 
-              <div className="p-3 bg-background/50 rounded-xl space-y-2">
+              <div className="p-3 bg-surface rounded-xl space-y-2">
                 <span className="text-[10px] font-black text-deep-blue/40 uppercase tracking-widest block">
                   {getTranslation(nativeLanguage, 'header.learn')}
                 </span>
@@ -190,7 +190,7 @@ export default function Header() {
                       className={`flex-1 py-2 rounded-lg text-xs font-black transition-all ${
                         learningLanguage === lang.code
                           ? 'bg-golden-amber text-white shadow-md shadow-golden-amber/20'
-                          : 'bg-background text-deep-blue/60 border border-golden-amber/20'
+                          : 'bg-surface text-deep-blue/60 border border-golden-amber/20'
                       }`}
                     >
                       {lang.name}

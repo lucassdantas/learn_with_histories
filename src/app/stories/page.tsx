@@ -69,7 +69,7 @@ export default function StoriesPage() {
               placeholder={getTranslation(nativeLanguage, 'stories.search')}
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
-              className="w-full pl-12 pr-6 py-4 bg-background border border-golden-amber/20 rounded-2xl focus:ring-2 focus:ring-golden-amber focus:outline-none shadow-sm transition-all placeholder:text-deep-blue/30 text-deep-blue font-bold cursor-text"
+              className="w-full pl-12 pr-6 py-4 bg-surface border border-golden-amber/20 rounded-2xl focus:ring-2 focus:ring-golden-amber focus:outline-none shadow-sm transition-all placeholder:text-deep-blue/30 text-deep-blue font-bold cursor-text"
             />
             <svg
               className="absolute left-4 top-1/2 -translate-y-1/2 h-5 w-5 text-golden-amber group-focus-within:scale-110 transition-transform"
@@ -95,7 +95,7 @@ export default function StoriesPage() {
               <Link
                 key={story.id}
                 href={`/stories/${story.slug}`}
-                className="group bg-background/50 p-8 rounded-3xl shadow-sm border border-golden-amber/5 hover:shadow-xl hover:shadow-golden-amber/5 hover:border-golden-amber/20 transition-all flex flex-col h-full cursor-pointer relative overflow-hidden"
+                className="group bg-surface p-8 rounded-3xl shadow-sm border border-golden-amber/5 hover:shadow-xl hover:shadow-golden-amber/5 hover:border-golden-amber/20 transition-all flex flex-col h-full cursor-pointer relative overflow-hidden"
               >
                 <div className="absolute top-0 right-0 w-24 h-24 bg-golden-amber/5 rounded-bl-full -mr-12 -mt-12 group-hover:scale-150 transition-transform duration-500"></div>
 
@@ -132,26 +132,6 @@ export default function StoriesPage() {
           </div>
         )}
       </main>
-
-      <footer className="bg-deep-blue text-white py-12 sm:py-16 px-6 sm:px-8 mt-12 transition-colors">
-        <div className="max-w-5xl mx-auto flex flex-col items-center gap-8 text-center">
-          <Link href="/" className="text-2xl font-black tracking-tighter hover:text-golden-amber transition">LearnWithHistories</Link>
-          <nav className="flex flex-wrap justify-center gap-x-8 gap-y-4 text-sm font-bold text-white/60">
-            <Link href="/about" className="hover:text-golden-amber transition cursor-pointer">
-              {getTranslation(nativeLanguage, 'nav.about')}
-            </Link>
-            <Link href="/terms" className="hover:text-golden-amber transition cursor-pointer">
-              {getTranslation(nativeLanguage, 'nav.terms')}
-            </Link>
-            <Link href="/privacy" className="hover:text-golden-amber transition cursor-pointer">
-              {getTranslation(nativeLanguage, 'nav.privacy')}
-            </Link>
-          </nav>
-          <div className="text-white/40 text-[10px] italic font-bold tracking-widest uppercase">
-            © {new Date().getFullYear()} LearnWithHistories. All rights reserved.
-          </div>
-        </div>
-      </footer>
     </div>
   );
 }

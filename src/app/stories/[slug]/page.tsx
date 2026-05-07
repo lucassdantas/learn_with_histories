@@ -129,7 +129,7 @@ export default function StoryDetail() {
                       </div>
 
                       {isVisible && (
-                        <div className="mt-4 sm:mt-6 p-4 sm:p-6 bg-background/60 rounded-2xl border-l-4 border-burnt-copper animate-in fade-in slide-in-from-top-1 duration-200">
+                        <div className="mt-4 sm:mt-6 p-4 sm:p-6 bg-surface/60 rounded-2xl border-l-4 border-burnt-copper animate-in fade-in slide-in-from-top-1 duration-200">
                           <div className="text-lg sm:text-xl text-burnt-copper whitespace-pre-wrap font-serif font-medium">
                             {nativeText || <span className="italic opacity-50">{getTranslation(nativeLanguage, 'stories.translationNotAvailable')}</span>}
                           </div>
@@ -170,7 +170,7 @@ export default function StoryDetail() {
         <div className="hidden lg:block">
           <aside className="w-64 flex-shrink-0">
             <div className="sticky top-40 space-y-6">
-              <div className="p-5 bg-background/50 rounded-2xl border border-golden-amber/10 shadow-sm">
+              <div className="p-5 bg-surface rounded-2xl border border-golden-amber/10 shadow-sm">
                 <h3 className="font-black text-deep-blue mb-2 text-lg">{getTranslation(nativeLanguage, 'stories.instructionsTitle')}</h3>
                 <p className="text-sm text-deep-blue/60 font-medium leading-relaxed">
                   {getTranslation(nativeLanguage, 'stories.instructionsDesc')}
@@ -194,17 +194,6 @@ export default function StoryDetail() {
       <div className="max-w-4xl mx-auto w-full px-4 sm:px-6 pb-12">
         <AdBanner />
       </div>
-
-      <footer className="bg-background/50 border-t border-golden-amber/10 py-16 mt-auto transition-colors">
-        <div className="max-w-4xl mx-auto px-6 flex flex-col items-center gap-4">
-          <Link href="/privacy" className="text-deep-blue/40 hover:text-golden-amber text-sm font-bold cursor-pointer transition-colors">
-            {getTranslation(nativeLanguage, 'stories.privacyPolicy')}
-          </Link>
-          <p className="text-deep-blue/30 text-xs italic font-medium">
-            LearnWithHistories - {getTranslation(nativeLanguage, 'stories.footerTagline')}
-          </p>
-        </div>
-      </footer>
     </div>
   );
 }
