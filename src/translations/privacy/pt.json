@@ -1,0 +1,18 @@
+{
+  "privacy.title": "Política de Privacidade",
+  "privacy.subtitle": "Sua privacidade é importante para nós. Saiba como lidamos com seus dados e mantemos um ambiente de aprendizado seguro.",
+  "privacy.lastUpdated": "Última atualização:",
+  "privacy.section1Title": "Coleta de Informações",
+  "privacy.section1Text": "Não exigimos autenticação de usuário. No entanto, podemos armazenar suas preferências de idioma (idiomas nativo e de aprendizado) localmente no seu dispositivo usando tecnologia de navegador como LocalStorage para melhorar sua experiência. Essas informações são armazenadas apenas no seu dispositivo e nunca são enviadas aos nossos servidores.",
+  "privacy.section2Title": "Cookies e Anúncios",
+  "privacy.section2Text": "Usamos o Google AdSense para exibir anúncios em nosso site. O Google usa cookies para veicular anúncios com base em suas visitas anteriores ao nosso site ou a outros sites.\n\nO uso de cookies de publicidade pelo Google permite que ele e seus parceiros veiculem anúncios para você com base em sua visita aos nossos sites e/ou outros sites na Internet.",
+  "privacy.section3Title": "Tratamento de Dados",
+  "privacy.section3Text": "Não vendemos nem compartilhamos dados pessoais com terceiros além do necessário para fornecer nosso serviço. Quaisquer dados processados por nossos parceiros de publicidade estão sujeitos às suas próprias políticas de privacidade.",
+  "privacy.section4Title": "Links de Terceiros",
+  "privacy.section4Text": "Nosso site pode conter links para outros sites. Não somos responsáveis pelas práticas de privacidade ou pelo conteúdo desses sites de terceiros. Recomendamos que você revise as políticas de privacidade deles.",
+  "privacy.section5Title": "Alterações nesta Política",
+  "privacy.section5Text": "Podemos atualizar nossa Política de Privacidade de tempos em tempos. Notificaremos você sobre quaisquer alterações postando a nova Política de Privacidade nesta página. O uso continuado do serviço constitui aceitação de quaisquer alterações.",
+  "privacy.section6Title": "Seus Direitos",
+  "privacy.section6Text": "Você tem o direito de acessar, atualizar ou excluir suas preferências locais. Como não armazenamos dados de usuário em nossos servidores, você pode limpar suas preferências limpando o LocalStorage do seu navegador para este site.",
+  "privacy.contactText": "Se você tiver alguma dúvida sobre esta Política de Privacidade, entre em contato conosco através de nossos canais oficiais."
+}

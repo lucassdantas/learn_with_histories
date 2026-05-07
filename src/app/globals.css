@@ -1,26 +1,49 @@
 @import "tailwindcss";
 
+@theme {
+  --font-sans: "Open Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Montserrat", sans-serif;
+  --font-accent: "Poppins", sans-serif;
+
+  --color-deep-blue: #1D3D5A;
+  --color-golden-amber: #C8924A;
+  --color-burnt-copper: #8B3A1F;
+  --color-warm-sand: #F4EBDD;
+
+  --color-background: var(--color-warm-sand);
+  --color-foreground: var(--color-deep-blue);
+}
+
 @custom-variant dark (&:where(.dark, .dark *));
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #F4EBDD;
+  --foreground: #1D3D5A;
+  --deep-blue: #1D3D5A;
+  --golden-amber: #C8924A;
+  --burnt-copper: #8B3A1F;
+  --warm-sand: #F4EBDD;
 }
 
 .dark {
   --background: #0a0a0a;
   --foreground: #ededed;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --deep-blue: #3a7ab3;
+  --golden-amber: #d4a76a;
+  --burnt-copper: #a64d32;
+  --warm-sand: #1a1a1a;
 }
 
 body {
-  background: var(--background);
+  background-color: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans);
+}
+
+h1, h2, h3, h4, .font-display {
+  font-family: var(--font-display);
+}
+
+.font-accent {
+  font-family: var(--font-accent);
 }

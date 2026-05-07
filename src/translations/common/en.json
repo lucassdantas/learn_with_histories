@@ -1,0 +1,14 @@
+{
+  "nav.home": "Home",
+  "nav.about": "About",
+  "nav.stories": "Stories",
+  "nav.privacy": "Privacy",
+    "nav.terms": "Terms",
+  "header.speak": "Speak",
+  "header.learn": "Learn",
+  "header.toggleTheme": "Toggle theme",
+  "common.or": "or",
+  "common.and": "and",
+  "common.contact": "Contact",
+  "common.back": "Back"
+}

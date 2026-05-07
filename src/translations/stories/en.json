@@ -1,0 +1,22 @@
+{
+  "stories.title": "Available Stories",
+  "stories.reading": "Reading in {learningLang} with translations in {nativeLang}.",
+  "stories.search": "Search stories...",
+  "stories.noResults": "No stories found",
+  "stories.noStoriesYet": "No stories available yet",
+  "stories.back": "Back",
+  "stories.readingIn": "Reading in {lang}",
+  "stories.finish": "Finish Reading",
+  "stories.instructionsTitle": "Instructions",
+  "stories.instructionsDesc": "Read the text in your target language. If you need help with a section, click the + button to see the translation.",
+  "stories.advertisement": "Advertisement",
+  "stories.privacyPolicy": "Privacy Policy",
+  "stories.footerTagline": "Your journey to fluency starts here.",
+  "stories.notFound": "Story not found",
+  "stories.goBack": "Go back to stories",
+  "stories.untitled": "Untitled",
+  "stories.textNotAvailable": "Text not available in this language",
+  "stories.translationNotAvailable": "Translation not available for this section",
+  "stories.hideTranslation": "Hide translation",
+  "stories.showTranslation": "Show translation"
+}

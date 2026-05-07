@@ -39,23 +39,23 @@ export default function StoriesPage() {
 
   if (loading) {
     return (
-      <div className="flex items-center justify-center min-h-screen bg-white dark:bg-gray-950">
-        <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600"></div>
+      <div className="flex items-center justify-center min-h-screen bg-background">
+        <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-golden-amber"></div>
       </div>
     );
   }
 
   return (
-    <div className="min-h-screen bg-gray-50 dark:bg-gray-950 flex flex-col transition-colors duration-300">
+    <div className="min-h-screen bg-background flex flex-col transition-colors duration-300 overflow-x-hidden">
       <Header />
 
-      <main className="flex-grow max-w-5xl mx-auto px-4 py-8 w-full">
-        <div className="flex flex-col sm:flex-row items-center justify-between mb-8 gap-4">
-          <div>
-            <h1 className="text-3xl font-bold text-gray-900 dark:text-gray-100 mb-2">
+      <main className="flex-grow max-w-5xl mx-auto px-6 py-12 w-full">
+        <div className="flex flex-col md:flex-row items-center justify-between mb-12 gap-8">
+          <div className="text-center md:text-left">
+            <h1 className="text-4xl font-black text-deep-blue mb-3">
               {getTranslation(nativeLanguage, 'stories.title')}
             </h1>
-            <p className="text-gray-600 dark:text-gray-400">
+            <p className="text-deep-blue/60 font-medium max-w-md">
               {getTranslation(nativeLanguage, 'stories.reading', {
                 learningLang: learningLangName,
                 nativeLang: nativeLangName,
@@ -63,16 +63,16 @@ export default function StoriesPage() {
             </p>
           </div>
 
-          <div className="relative w-full sm:w-64">
+          <div className="relative w-full md:w-80 group">
             <input
               type="text"
               placeholder={getTranslation(nativeLanguage, 'stories.search')}
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
-              className="w-full pl-10 pr-4 py-2 bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 rounded-full focus:ring-2 focus:ring-blue-500 focus:outline-none shadow-sm transition-all placeholder:text-gray-400 dark:placeholder:text-gray-500 text-gray-900 dark:text-gray-100 cursor-text"
+              className="w-full pl-12 pr-6 py-4 bg-white border border-golden-amber/20 rounded-2xl focus:ring-2 focus:ring-golden-amber focus:outline-none shadow-sm transition-all placeholder:text-deep-blue/30 text-deep-blue font-bold cursor-text"
             />
             <svg
-              className="absolute left-3 top-2.5 h-5 w-5 text-gray-400 dark:text-gray-500"
+              className="absolute left-4 top-1/2 -translate-y-1/2 h-5 w-5 text-golden-amber group-focus-within:scale-110 transition-transform"
               fill="none"
               stroke="currentColor"
               viewBox="0 0 24 24"
@@ -80,7 +80,7 @@ export default function StoriesPage() {
               <path
                 strokeLinecap="round"
                 strokeLinejoin="round"
-                strokeWidth={2}
+                strokeWidth={3}
                 d="21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
               />
             </svg>
@@ -90,20 +90,22 @@ export default function StoriesPage() {
         <AdBanner />
 
         {filteredStories.length > 0 ? (
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
             {filteredStories.map((story) => (
               <Link
                 key={story.id}
                 href={`/stories/${story.slug}`}
-                className="group bg-white dark:bg-gray-900 p-6 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-800 hover:shadow-md dark:hover:border-blue-900 transition flex flex-col h-full cursor-pointer"
+                className="group bg-white p-8 rounded-3xl shadow-sm border border-golden-amber/5 hover:shadow-xl hover:shadow-golden-amber/5 hover:border-golden-amber/20 transition-all flex flex-col h-full cursor-pointer relative overflow-hidden"
               >
-                <h2 className="text-xl font-bold text-gray-900 dark:text-gray-100 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition mb-2">
+                <div className="absolute top-0 right-0 w-24 h-24 bg-golden-amber/5 rounded-bl-full -mr-12 -mt-12 group-hover:scale-150 transition-transform duration-500"></div>
+
+                <h2 className="text-2xl font-black text-deep-blue group-hover:text-golden-amber transition mb-3 leading-tight relative">
                   {story.title[learningLanguage] || story.title['en']}
                 </h2>
-                <p className="text-gray-600 dark:text-gray-400 text-sm flex-grow line-clamp-3 leading-relaxed">
+                <p className="text-deep-blue/60 text-sm flex-grow line-clamp-3 leading-relaxed font-bold relative">
                   {story.description[learningLanguage] || story.description['en']}
                 </p>
-                <div className="mt-4 flex items-center text-blue-600 dark:text-blue-400 font-semibold text-sm group-hover:translate-x-1 transition-transform">
+                <div className="mt-6 flex items-center text-golden-amber font-black text-sm group-hover:translate-x-2 transition-transform relative">
                   {getTranslation(nativeLanguage, 'home.startReading')}
                   <svg
                     className="ml-2 w-4 h-4"
@@ -114,7 +116,7 @@ export default function StoriesPage() {
                     <path
                       strokeLinecap="round"
                       strokeLinejoin="round"
-                      strokeWidth={2}
+                      strokeWidth={3}
                       d="9 5l7 7-7 7"
                     />
                   </svg>
@@ -123,21 +125,30 @@ export default function StoriesPage() {
             ))}
           </div>
         ) : (
-          <div className="text-center py-20 bg-white dark:bg-gray-900 rounded-3xl border border-dashed border-gray-200 dark:border-gray-800 shadow-inner">
-            <p className="text-gray-500 dark:text-gray-500 font-medium">
+          <div className="text-center py-24 bg-white/50 rounded-3xl border-2 border-dashed border-golden-amber/10">
+            <p className="text-deep-blue/40 font-black text-lg">
               {searchQuery ? getTranslation(nativeLanguage, 'stories.noResults') : getTranslation(nativeLanguage, 'stories.noStoriesYet')}
             </p>
           </div>
         )}
       </main>
 
-      <footer className="bg-white dark:bg-gray-900 border-t border-gray-100 dark:border-gray-800 py-12 mt-auto transition-colors">
-        <div className="max-w-5xl mx-auto px-4 flex flex-col items-center gap-4">
-          <Link href="/terms" className="text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 text-sm cursor-pointer">
-            {getTranslation(nativeLanguage, 'nav.terms')}
-          </Link>
-          <div className="text-gray-400 dark:text-gray-500 text-xs italic">
-            © {new Date().getFullYear()} LinguaStories. Practice makes perfect.
+      <footer className="bg-deep-blue text-white py-12 sm:py-16 px-6 sm:px-8 mt-12 transition-colors">
+        <div className="max-w-5xl mx-auto flex flex-col items-center gap-8 text-center">
+          <Link href="/" className="text-2xl font-black tracking-tighter hover:text-golden-amber transition">LearnWithHistories</Link>
+          <nav className="flex flex-wrap justify-center gap-x-8 gap-y-4 text-sm font-bold text-white/60">
+            <Link href="/about" className="hover:text-golden-amber transition cursor-pointer">
+              {getTranslation(nativeLanguage, 'nav.about')}
+            </Link>
+            <Link href="/terms" className="hover:text-golden-amber transition cursor-pointer">
+              {getTranslation(nativeLanguage, 'nav.terms')}
+            </Link>
+            <Link href="/privacy" className="hover:text-golden-amber transition cursor-pointer">
+              {getTranslation(nativeLanguage, 'nav.privacy')}
+            </Link>
+          </nav>
+          <div className="text-white/40 text-[10px] italic font-bold tracking-widest uppercase">
+            © {new Date().getFullYear()} LearnWithHistories. All rights reserved.
           </div>
         </div>
       </footer>

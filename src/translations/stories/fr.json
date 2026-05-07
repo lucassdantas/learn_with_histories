@@ -1,0 +1,22 @@
+{
+  "stories.title": "Histoires Disponibles",
+  "stories.reading": "Lecture en {learningLang} avec traductions en {nativeLang}.",
+  "stories.search": "Rechercher des histoires...",
+  "stories.noResults": "Aucune histoire trouvée",
+  "stories.noStoriesYet": "Aucune histoire disponible pour le moment",
+  "stories.back": "Retour",
+  "stories.readingIn": "Lecture en {lang}",
+  "stories.finish": "Terminer la lecture",
+  "stories.instructionsTitle": "Instructions",
+  "stories.instructionsDesc": "Lisez le texte dans la langue que vous apprenez. Si vous avez besoin d'aide pour une section, cliquez sur le bouton + pour voir la traduction.",
+  "stories.advertisement": "Publicité",
+  "stories.privacyPolicy": "Politique de confidentialité",
+  "stories.footerTagline": "Votre voyage vers la maîtrise commence ici.",
+  "stories.notFound": "Histoire non trouvée",
+  "stories.goBack": "Retour aux histoires",
+  "stories.untitled": "Sans titre",
+  "stories.textNotAvailable": "Texte non disponible dans cette langue",
+  "stories.translationNotAvailable": "Traduction non disponible pour cette section",
+  "stories.hideTranslation": "Masquer la traduction",
+  "stories.showTranslation": "Afficher la traduction"
+}
