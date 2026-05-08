@@ -1,11 +1,17 @@
 import type { Metadata, Viewport } from "next";
-import { Montserrat, Poppins, Open_Sans } from "next/font/google";
+
+import { Montserrat, Open_Sans, Poppins } from "next/font/google";
+
 import "./globals.css";
+
 import { LanguageProvider } from "@/context/LanguageContext";
 import { ThemeProvider } from "@/context/ThemeContext";
+
 import AdScript from "@/components/AdScript";
 import StructuredData from "@/components/StructuredData";
 import Footer from "@/components/Footer";
+
+import { generateSEO } from "@/lib/seo";
 
 const montserrat = Montserrat({
   variable: "--font-montserrat",
@@ -30,53 +36,17 @@ export const viewport: Viewport = {
   initialScale: 1,
   maximumScale: 5,
   colorScheme: "light dark",
+  themeColor: "#0f172a",
 };
 
-export const metadata: Metadata = {
-  title: "LearnWithHistories - Learn Languages with Stories | Free Language Learning",
-  description: "Master languages through immersive storytelling. Learn Portuguese, English, French and more with instant translations. Free interactive stories for language learners.",
-  keywords: ["language learning", "stories", "translations", "Portuguese", "English", "French", "learn languages", "immersive learning"],
-  authors: [{ name: "LearnWithHistories" }],
-  creator: "LearnWithHistories",
-  publisher: "LearnWithHistories",
-  robots: "index, follow",
-  alternates: {
-    canonical: "https://learn-with-histories.devdantas.com.br/",
-    languages: {
-      "pt": "https://learn-with-histories.devdantas.com.br/",
-      "en": "https://learn-with-histories.devdantas.com.br/",
-      "fr": "https://learn-with-histories.devdantas.com.br/",
-    },
-  },
-  openGraph: {
-    type: "website",
-    locale: "en_US",
-    url: "https://learn-with-histories.devdantas.com.br/",
-    siteName: "LearnWithHistories",
-    title: "LearnWithHistories - Learn Languages with Stories",
-    description: "Master languages through immersive storytelling with instant translations.",
-    images: [
-      {
-        url: "https://learn-with-histories.devdantas.com.br/og-images/learn-with-histories-opengraph-image.jpg",
-        width: 1200,
-        height: 630,
-        alt: "LearnWithHistories - Language Learning Platform",
-        type: "image/jpeg",
-      },
-    ],
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "LearnWithHistories - Learn Languages with Stories",
-    description: "Master languages through immersive storytelling with instant translations.",
-    images: ["https://learn-with-histories.devdantas.com.br/og-images/learn-with-histories-opengraph-image.jpg"],
-  },
-  appleWebApp: {
-    capable: true,
-    statusBarStyle: "black-translucent",
-    title: "LearnWithHistories",
-  },
-};
+export const metadata: Metadata = generateSEO({
+  title: "LearnWithHistories | Learn Languages Through Stories",
+
+  description:
+    "Learn English, Portuguese, French and other languages by reading interactive stories with instant translations. Improve vocabulary, reading and comprehension for free.",
+
+  path: "/",
+});
 
 export default function RootLayout({
   children,
@@ -86,21 +56,26 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${montserrat.variable} ${poppins.variable} ${openSans.variable} h-full antialiased transition-colors duration-300`}
       suppressHydrationWarning
+      className={`
+        ${montserrat.variable}
+        ${poppins.variable}
+        ${openSans.variable}
+        h-full
+        antialiased
+        transition-colors
+        duration-300
+      `}
     >
-      <head>
+      <body className="min-h-full flex flex-col bg-background text-foreground font-sans transition-colors duration-300">
         <StructuredData />
-        <meta name="apple-mobile-web-app-capable" content="yes" />
-        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-        <link rel="icon" href="/favicon.ico" />
-        <link rel="sitemap" href="/sitemap.xml" />
-      </head>
-      <body className="min-h-full flex flex-col bg-background text-foreground transition-colors duration-300 font-sans">
+
         <AdScript />
+
         <ThemeProvider>
           <LanguageProvider>
             {children}
+
             <Footer />
           </LanguageProvider>
         </ThemeProvider>
