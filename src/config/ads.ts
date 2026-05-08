@@ -7,7 +7,7 @@ export const ADS_CONFIG = {
   //   sidebar: '6300978111', // Reusing banner for side if needed
   // },
 
-  publisherId: 'ca-pub-3124364125222536',
+  publisherId: 'ca-pub-2495329310301889',
   slots: {
     banner: '1744357937',
     popup: '3057439605',
