@@ -10,8 +10,8 @@ import { ThemeProvider } from "@/context/ThemeContext";
 import AdScript from "@/components/AdScript";
 import StructuredData from "@/components/StructuredData";
 import Footer from "@/components/Footer";
+import { generateSEO } from "@/app/lib/seo";
 
-import { generateSEO } from "@/lib/seo";
 
 const montserrat = Montserrat({
   variable: "--font-montserrat",
