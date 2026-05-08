@@ -41,23 +41,23 @@ export const metadata: Metadata = {
   publisher: "LearnWithHistories",
   robots: "index, follow",
   alternates: {
-    canonical: "https://learnwithhistories.com",
+    canonical: "https://learn-with-histories.devdantas.com.br/",
     languages: {
-      "pt": "https://learnwithhistories.com",
-      "en": "https://learnwithhistories.com",
-      "fr": "https://learnwithhistories.com",
+      "pt": "https://learn-with-histories.devdantas.com.br/",
+      "en": "https://learn-with-histories.devdantas.com.br/",
+      "fr": "https://learn-with-histories.devdantas.com.br/",
     },
   },
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://learnwithhistories.com",
+    url: "https://learn-with-histories.devdantas.com.br/",
     siteName: "LearnWithHistories",
     title: "LearnWithHistories - Learn Languages with Stories",
     description: "Master languages through immersive storytelling with instant translations.",
     images: [
       {
-        url: "https://learnwithhistories.com/og-image.jpg",
+        url: "https://learn-with-histories.devdantas.com.br/og-images/learn-with-histories-opengraph-image.jpg",
         width: 1200,
         height: 630,
         alt: "LearnWithHistories - Language Learning Platform",
@@ -69,7 +69,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "LearnWithHistories - Learn Languages with Stories",
     description: "Master languages through immersive storytelling with instant translations.",
-    images: ["https://learnwithhistories.com/og-image.jpg"],
+    images: ["https://learn-with-histories.devdantas.com.br/og-images/learn-with-histories-opengraph-image.jpg"],
   },
   appleWebApp: {
     capable: true,
