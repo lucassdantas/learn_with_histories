@@ -4,12 +4,14 @@
   "title": {
     "en": "The Night Train",
     "pt": "O Trem Noturno",
-    "fr": "Le Train de Nuit"
+    "fr": "Le Train de Nuit",
+    "es": "El Tren Nocturno"
   },
   "description": {
     "en": "A night journey to the mountains and a stranger with a story to tell.",
     "pt": "Uma viagem noturna até as montanhas e uma desconhecida com uma história para contar.",
-    "fr": "Un voyage de nuit vers les montagnes et une inconnue qui a une histoire à raconter."
+    "fr": "Un voyage de nuit vers les montagnes et une inconnue qui a une histoire à raconter.",
+    "es": "Un viaje nocturno a las montañas y una desconocida con una historia que contar."
   },
   "content": [
     {
@@ -17,7 +19,8 @@
       "text": {
         "en": "Hugo bought his ticket at the last minute. The night train to the mountains left at eleven o'clock, and he arrived on the platform just in time.",
         "pt": "Hugo comprou a passagem no último minuto. O trem noturno para as montanhas saía às onze horas, e ele chegou à plataforma bem a tempo.",
-        "fr": "Hugo a acheté son billet à la dernière minute. Le train de nuit pour les montagnes partait à vingt-trois heures, et il est arrivé sur le quai juste à temps."
+        "fr": "Hugo a acheté son billet à la dernière minute. Le train de nuit pour les montagnes partait à vingt-trois heures, et il est arrivé sur le quai juste à temps.",
+        "es": "Hugo compró su boleto a último momento. El tren nocturno a las montañas salía a las once, y él llegó al andén justo a tiempo."
       }
     },
     {
@@ -25,7 +28,8 @@
       "text": {
         "en": "His compartment was small, with two narrow beds and a window. An old woman was already sitting there, knitting a long red scarf.",
         "pt": "A cabine dele era pequena, com duas camas estreitas e uma janela. Uma senhora já estava sentada lá, tricotando um longo cachecol vermelho.",
-        "fr": "Son compartiment était petit, avec deux couchettes étroites et une fenêtre. Une vieille dame y était déjà assise et tricotait une longue écharpe rouge."
+        "fr": "Son compartiment était petit, avec deux couchettes étroites et une fenêtre. Une vieille dame y était déjà assise et tricotait une longue écharpe rouge.",
+        "es": "Su compartimento era pequeño, con dos camas estrechas y una ventana. Una señora mayor ya estaba sentada allí, tejiendo una larga bufanda roja."
       }
     },
     {
@@ -33,7 +37,8 @@
       "text": {
         "en": "“Are you going to the village of Valbrume?” she asked. Hugo said yes. He was going to visit the house where his father was born.",
         "pt": "“Você vai para a vila de Valbrume?”, ela perguntou. Hugo disse que sim. Ele ia visitar a casa onde seu pai tinha nascido.",
-        "fr": "« Vous allez au village de Valbrume ? » a-t-elle demandé. Hugo a répondu que oui. Il allait visiter la maison où son père était né."
+        "fr": "« Vous allez au village de Valbrume ? » a-t-elle demandé. Hugo a répondu que oui. Il allait visiter la maison où son père était né.",
+        "es": "“¿Va usted al pueblo de Valbrume?”, preguntó ella. Hugo dijo que sí. Iba a visitar la casa donde había nacido su padre."
       }
     },
     {
@@ -41,7 +46,8 @@
       "text": {
         "en": "The woman stopped knitting and looked at him carefully. “Your father… was his name Antoine? He had the same eyes as you.”",
         "pt": "A senhora parou de tricotar e olhou para ele com atenção. “Seu pai… o nome dele era Antoine? Ele tinha os mesmos olhos que você.”",
-        "fr": "La dame a arrêté de tricoter et l'a regardé attentivement. « Votre père… il s'appelait Antoine ? Il avait les mêmes yeux que vous. »"
+        "fr": "La dame a arrêté de tricoter et l'a regardé attentivement. « Votre père… il s'appelait Antoine ? Il avait les mêmes yeux que vous. »",
+        "es": "La señora dejó de tejer y lo miró con atención. “Su padre… ¿se llamaba Antoine? Tenía los mismos ojos que usted.”"
       }
     },
     {
@@ -49,7 +55,8 @@
       "text": {
         "en": "Hugo was surprised. The woman explained that she had been his father's teacher at the village school, more than fifty years ago.",
         "pt": "Hugo ficou surpreso. A senhora explicou que tinha sido professora do pai dele na escola da vila, mais de cinquenta anos atrás.",
-        "fr": "Hugo était surpris. La dame lui a expliqué qu'elle avait été l'institutrice de son père à l'école du village, il y a plus de cinquante ans."
+        "fr": "Hugo était surpris. La dame lui a expliqué qu'elle avait été l'institutrice de son père à l'école du village, il y a plus de cinquante ans.",
+        "es": "Hugo se sorprendió. La señora le explicó que había sido la maestra de su padre en la escuela del pueblo, hacía más de cincuenta años."
       }
     },
     {
@@ -57,7 +64,8 @@
       "text": {
         "en": "All night, while the train climbed through the dark forests, she told him stories: how his father loved to climb trees, and how he once saved a goat from the river.",
         "pt": "Durante toda a noite, enquanto o trem subia pelas florestas escuras, ela lhe contou histórias: como o pai dele adorava subir em árvores e como, uma vez, salvou uma cabra do rio.",
-        "fr": "Toute la nuit, pendant que le train montait à travers les forêts sombres, elle lui a raconté des histoires : son père adorait grimper aux arbres, et un jour, il avait sauvé une chèvre de la rivière."
+        "fr": "Toute la nuit, pendant que le train montait à travers les forêts sombres, elle lui a raconté des histoires : son père adorait grimper aux arbres, et un jour, il avait sauvé une chèvre de la rivière.",
+        "es": "Toda la noche, mientras el tren subía entre los bosques oscuros, ella le contó historias: cuánto le gustaba a su padre trepar a los árboles y cómo una vez salvó a una cabra del río."
       }
     },
     {
@@ -65,7 +73,8 @@
       "text": {
         "en": "At dawn, the mountains appeared in the window, white and pink in the first light. The train slowed down and stopped at a tiny station.",
         "pt": "Ao amanhecer, as montanhas apareceram na janela, brancas e rosadas sob a primeira luz do dia. O trem diminuiu a velocidade e parou em uma estação minúscula.",
-        "fr": "À l'aube, les montagnes sont apparues à la fenêtre, blanches et roses dans la première lumière du jour. Le train a ralenti et s'est arrêté dans une toute petite gare."
+        "fr": "À l'aube, les montagnes sont apparues à la fenêtre, blanches et roses dans la première lumière du jour. Le train a ralenti et s'est arrêté dans une toute petite gare.",
+        "es": "Al amanecer, las montañas aparecieron en la ventana, blancas y rosadas con la primera luz del día. El tren fue más despacio y se detuvo en una estación diminuta."
       }
     },
     {
@@ -73,7 +82,8 @@
       "text": {
         "en": "Before getting off, the woman gave Hugo the red scarf. “It's cold up here,” she said with a smile. “Welcome home.”",
         "pt": "Antes de descer, a senhora deu o cachecol vermelho a Hugo. “Faz frio aqui em cima”, ela disse sorrindo. “Bem-vindo de volta para casa.”",
-        "fr": "Avant de descendre, la dame a donné l'écharpe rouge à Hugo. « Il fait froid ici, en haut », a-t-elle dit avec un sourire. « Bienvenue chez vous. »"
+        "fr": "Avant de descendre, la dame a donné l'écharpe rouge à Hugo. « Il fait froid ici, en haut », a-t-elle dit avec un sourire. « Bienvenue chez vous. »",
+        "es": "Antes de bajar, la señora le dio a Hugo la bufanda roja. “Aquí arriba hace frío”, dijo con una sonrisa. “Bienvenido a casa.”"
       }
     }
   ]

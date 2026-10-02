@@ -14,8 +14,8 @@ automaticamente — não precisa registrar em lugar nenhum. A home, a lista, o s
 2. **Escolha o `slug`**: em inglês, minúsculas e hífens, igual ao título em inglês
    (`"The Old Bookshop"` → `the-old-bookshop`). Precisa ser único.
 3. **Crie `src/data/stories/<slug>.json`** copiando o modelo abaixo.
-4. **Escreva em todos os idiomas existentes** — hoje `en`, `pt`, `fr`. Todo `title`, `description` e
-   todo segmento de `content` precisa ter os três. (Se um idioma novo for adicionado ao site, ver
+4. **Escreva em todos os idiomas existentes** — hoje `en`, `pt`, `fr`, `es`. Todo `title`, `description` e
+   todo segmento de `content` precisa ter os quatro. (Se um idioma novo for adicionado ao site, ver
    [i18n.md](i18n.md), toda história precisa recebê-lo.)
 5. **Rode a validação** (script abaixo) — deve mostrar `faltando: nenhum` e nenhum `DUP`.
 6. **Confira no navegador**: `npm run dev` → `/stories/<slug>`, troque os idiomas no Header.
@@ -31,12 +31,14 @@ automaticamente — não precisa registrar em lugar nenhum. A home, a lista, o s
   "title": {
     "en": "The Old Bookshop",
     "pt": "A Velha Livraria",
-    "fr": "La Vieille Librairie"
+    "fr": "La Vieille Librairie",
+    "es": "La Vieja Librería"
   },
   "description": {
     "en": "One sentence that makes people want to read it.",
     "pt": "Uma frase que dá vontade de ler.",
-    "fr": "Une phrase qui donne envie de lire."
+    "fr": "Une phrase qui donne envie de lire.",
+    "es": "Una frase que dé ganas de leerla."
   },
   "content": [
     {
@@ -44,12 +46,13 @@ automaticamente — não precisa registrar em lugar nenhum. A home, a lista, o s
       "text": {
         "en": "Two or three sentences.",
         "pt": "Duas ou três frases.",
-        "fr": "Deux ou trois phrases."
+        "fr": "Deux ou trois phrases.",
+        "es": "Dos o tres frases."
       }
     },
     {
       "id": "s2",
-      "text": { "en": "...", "pt": "...", "fr": "..." }
+      "text": { "en": "...", "pt": "...", "fr": "...", "es": "..." }
     }
   ]
 }
@@ -64,9 +67,12 @@ automaticamente — não precisa registrar em lugar nenhum. A home, a lista, o s
 - **Segmentos alinhados**: `s3` em `pt` é a tradução de `s3` em `en`, frase por frase. Traduza o
   sentido de forma natural, não palavra por palavra.
 - **Português do Brasil** (`ônibus`, `café da manhã`, `celular`). **Francês da França.**
+  **Espanhol neutro latino-americano** (`computadora`, `celular`, `boleto`, `autobús`; sem `vosotros`).
 - **Nível**: histórias simples usam presente e vocabulário do dia a dia (mercado, trabalho, rotina);
-  histórias mais avançadas usam passado (en: past simple; pt: pretérito; fr: passé composé + imparfait).
-- **Diálogos** com aspas tipográficas: `“...”` em `en`/`pt`, `« ... »` com espaços em `fr`. Em `fr`,
+  histórias mais avançadas usam passado (en: past simple; pt: pretérito; fr: passé composé + imparfait;
+  es: pretérito indefinido + imperfecto).
+- **Diálogos** com aspas tipográficas: `“...”` em `en`/`pt`/`es`, `« ... »` com espaços em `fr`.
+  Em `es`, use `¿...?` e `¡...!`. Em `fr`,
   espaço antes de `: ; ! ?` (`Bonjour !`).
 - `\n\n` dentro do texto cria quebra de parágrafo (é respeitado na tela). Use pouco.
 - `description` em uma frase; ela aparece na lista e vira a meta description da página (SEO).
@@ -79,7 +85,7 @@ Da raiz do projeto:
 
 ```bash
 cd src/data/stories && node -e "
-const fs=require('fs');const L=['pt','en','fr'];const ids=new Set(),slugs=new Set();
+const fs=require('fs');const L=['pt','en','fr','es'];const ids=new Set(),slugs=new Set();
 for(const f of fs.readdirSync('.')){const s=JSON.parse(fs.readFileSync(f,'utf8'));
 if(ids.has(s.id)||slugs.has(s.slug))console.log('DUP',f);ids.add(s.id);slugs.add(s.slug);
 const miss=[...L.filter(l=>!s.title[l]||!s.description[l]),...s.content.filter(p=>L.some(l=>!p.text[l])).map(p=>p.id)];
@@ -122,4 +128,4 @@ mas mantenha nome = slug.
 | 3 | the-hidden-cafe | 4 | — |
 | 2 | daily-routine | 4 | rotina |
 
-Todas com `pt`, `en` e `fr` completos. As de 4 segmentos são boas candidatas a serem expandidas.
+Todas com `pt`, `en`, `fr` e `es` completos. As de 4 segmentos são boas candidatas a serem expandidas.

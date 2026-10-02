@@ -4,12 +4,14 @@
   "title": {
     "en": "Grandma's Recipe",
     "pt": "A Receita da Vovó",
-    "fr": "La Recette de Grand-Mère"
+    "fr": "La Recette de Grand-Mère",
+    "es": "La Receta de la Abuela"
   },
   "description": {
     "en": "An old notebook, a missing ingredient and the taste of childhood.",
     "pt": "Um caderno antigo, um ingrediente que falta e o sabor da infância.",
-    "fr": "Un vieux carnet, un ingrédient manquant et le goût de l'enfance."
+    "fr": "Un vieux carnet, un ingrédient manquant et le goût de l'enfance.",
+    "es": "Un cuaderno antiguo, un ingrediente que falta y el sabor de la infancia."
   },
   "content": [
     {
@@ -17,7 +19,8 @@
       "text": {
         "en": "When Marie moved to a new apartment, she found an old notebook in a box. On the cover, in blue ink, it said: “Recipes — Grandma Rose.”",
         "pt": "Quando Marie se mudou para um apartamento novo, encontrou um caderno antigo em uma caixa. Na capa, em tinta azul, estava escrito: “Receitas — Vovó Rose.”",
-        "fr": "Quand Marie a emménagé dans un nouvel appartement, elle a trouvé un vieux carnet dans un carton. Sur la couverture, à l'encre bleue, on pouvait lire : « Recettes — Mamie Rose. »"
+        "fr": "Quand Marie a emménagé dans un nouvel appartement, elle a trouvé un vieux carnet dans un carton. Sur la couverture, à l'encre bleue, on pouvait lire : « Recettes — Mamie Rose. »",
+        "es": "Cuando Marie se mudó a un apartamento nuevo, encontró un cuaderno antiguo en una caja. En la tapa, con tinta azul, decía: “Recetas — Abuela Rose.”"
       }
     },
     {
@@ -25,7 +28,8 @@
       "text": {
         "en": "She opened it carefully. The pages smelled of cinnamon. On the first page was the recipe for the apple cake her grandmother made every Sunday.",
         "pt": "Ela o abriu com cuidado. As páginas tinham cheiro de canela. Na primeira página estava a receita do bolo de maçã que sua avó fazia todo domingo.",
-        "fr": "Elle l'a ouvert avec précaution. Les pages sentaient la cannelle. Sur la première page, il y avait la recette du gâteau aux pommes que sa grand-mère faisait tous les dimanches."
+        "fr": "Elle l'a ouvert avec précaution. Les pages sentaient la cannelle. Sur la première page, il y avait la recette du gâteau aux pommes que sa grand-mère faisait tous les dimanches.",
+        "es": "Lo abrió con cuidado. Las páginas olían a canela. En la primera página estaba la receta del pastel de manzana que su abuela hacía todos los domingos."
       }
     },
     {
@@ -33,7 +37,8 @@
       "text": {
         "en": "Marie decided to bake it that same evening. She needed four apples, three eggs, two hundred grams of flour, one hundred grams of sugar and a little butter.",
         "pt": "Marie decidiu fazer o bolo naquela mesma noite. Ela precisava de quatro maçãs, três ovos, duzentos gramas de farinha, cem gramas de açúcar e um pouco de manteiga.",
-        "fr": "Marie a décidé de le préparer le soir même. Il lui fallait quatre pommes, trois œufs, deux cents grammes de farine, cent grammes de sucre et un peu de beurre."
+        "fr": "Marie a décidé de le préparer le soir même. Il lui fallait quatre pommes, trois œufs, deux cents grammes de farine, cent grammes de sucre et un peu de beurre.",
+        "es": "Marie decidió prepararlo esa misma noche. Necesitaba cuatro manzanas, tres huevos, doscientos gramos de harina, cien gramos de azúcar y un poco de mantequilla."
       }
     },
     {
@@ -41,7 +46,8 @@
       "text": {
         "en": "She mixed the eggs and the sugar, added the flour and the melted butter, and cut the apples into thin slices. Soon the kitchen smelled like her childhood.",
         "pt": "Ela misturou os ovos e o açúcar, acrescentou a farinha e a manteiga derretida e cortou as maçãs em fatias finas. Logo a cozinha ficou com o cheiro da sua infância.",
-        "fr": "Elle a mélangé les œufs et le sucre, ajouté la farine et le beurre fondu, puis coupé les pommes en fines tranches. Bientôt, la cuisine a senti son enfance."
+        "fr": "Elle a mélangé les œufs et le sucre, ajouté la farine et le beurre fondu, puis coupé les pommes en fines tranches. Bientôt, la cuisine a senti son enfance.",
+        "es": "Mezcló los huevos con el azúcar, añadió la harina y la mantequilla derretida, y cortó las manzanas en rodajas finas. Pronto, la cocina olía a su infancia."
       }
     },
     {
@@ -49,7 +55,8 @@
       "text": {
         "en": "But when the cake came out of the oven, something was wrong. It was good, but it was not Grandma's cake. Something was missing.",
         "pt": "Mas, quando o bolo saiu do forno, alguma coisa estava errada. Estava bom, mas não era o bolo da vovó. Faltava alguma coisa.",
-        "fr": "Mais quand le gâteau est sorti du four, quelque chose n'allait pas. Il était bon, mais ce n'était pas le gâteau de Mamie. Il manquait quelque chose."
+        "fr": "Mais quand le gâteau est sorti du four, quelque chose n'allait pas. Il était bon, mais ce n'était pas le gâteau de Mamie. Il manquait quelque chose.",
+        "es": "Pero cuando el pastel salió del horno, algo no estaba bien. Estaba rico, pero no era el pastel de la abuela. Faltaba algo."
       }
     },
     {
@@ -57,7 +64,8 @@
       "text": {
         "en": "Marie read the recipe again and again. Then she noticed a tiny note at the bottom of the page, almost invisible: “Don't forget the secret — page 32.”",
         "pt": "Marie leu a receita várias vezes. Então percebeu uma anotação minúscula no pé da página, quase invisível: “Não esqueça o segredo — página 32.”",
-        "fr": "Marie a relu la recette encore et encore. Puis elle a remarqué une toute petite note en bas de la page, presque invisible : « N'oublie pas le secret — page 32. »"
+        "fr": "Marie a relu la recette encore et encore. Puis elle a remarqué une toute petite note en bas de la page, presque invisible : « N'oublie pas le secret — page 32. »",
+        "es": "Marie leyó la receta una y otra vez. Entonces notó una nota diminuta al pie de la página, casi invisible: “No olvides el secreto — página 32.”"
       }
     },
     {
@@ -65,7 +73,8 @@
       "text": {
         "en": "On page 32 there was only one line: “A spoonful of honey and a pinch of love. And always share the cake with someone.”",
         "pt": "Na página 32 havia só uma linha: “Uma colher de mel e uma pitada de amor. E sempre divida o bolo com alguém.”",
-        "fr": "À la page 32, il n'y avait qu'une seule ligne : « Une cuillère de miel et une pincée d'amour. Et partage toujours le gâteau avec quelqu'un. »"
+        "fr": "À la page 32, il n'y avait qu'une seule ligne : « Une cuillère de miel et une pincée d'amour. Et partage toujours le gâteau avec quelqu'un. »",
+        "es": "En la página 32 había una sola línea: “Una cucharada de miel y una pizca de amor. Y comparte siempre el pastel con alguien.”"
       }
     },
     {
@@ -73,7 +82,8 @@
       "text": {
         "en": "The next Sunday, Marie baked the cake again, this time with honey. Then she knocked on her new neighbor's door, holding the warm cake in her hands.",
         "pt": "No domingo seguinte, Marie fez o bolo de novo, desta vez com mel. Depois, bateu na porta da nova vizinha, segurando o bolo quentinho nas mãos.",
-        "fr": "Le dimanche suivant, Marie a refait le gâteau, cette fois avec du miel. Puis elle a frappé à la porte de sa nouvelle voisine, le gâteau encore chaud dans les mains."
+        "fr": "Le dimanche suivant, Marie a refait le gâteau, cette fois avec du miel. Puis elle a frappé à la porte de sa nouvelle voisine, le gâteau encore chaud dans les mains.",
+        "es": "El domingo siguiente, Marie volvió a hacer el pastel, esta vez con miel. Después tocó a la puerta de su nueva vecina, con el pastel todavía caliente en las manos."
       }
     }
   ]

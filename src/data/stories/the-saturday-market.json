@@ -4,12 +4,14 @@
   "title": {
     "en": "The Saturday Market",
     "pt": "A Feira de Sábado",
-    "fr": "Le Marché du Samedi"
+    "fr": "Le Marché du Samedi",
+    "es": "El Mercado del Sábado"
   },
   "description": {
     "en": "Learn the names of fruits, vegetables, numbers and prices with Tom at the market.",
     "pt": "Aprenda nomes de frutas, legumes, números e preços com Tom na feira.",
-    "fr": "Apprenez les noms des fruits, des légumes, les nombres et les prix avec Tom au marché."
+    "fr": "Apprenez les noms des fruits, des légumes, les nombres et les prix avec Tom au marché.",
+    "es": "Aprende los nombres de frutas, verduras, números y precios con Tom en el mercado."
   },
   "content": [
     {
@@ -17,7 +19,8 @@
       "text": {
         "en": "Every Saturday, Tom goes to the market in the main square. He takes a big bag and a short list: tomatoes, onions, bananas and cheese.",
         "pt": "Todo sábado, Tom vai à feira na praça principal. Ele leva uma sacola grande e uma lista curta: tomates, cebolas, bananas e queijo.",
-        "fr": "Chaque samedi, Tom va au marché sur la place principale. Il prend un grand sac et une petite liste : des tomates, des oignons, des bananes et du fromage."
+        "fr": "Chaque samedi, Tom va au marché sur la place principale. Il prend un grand sac et une petite liste : des tomates, des oignons, des bananes et du fromage.",
+        "es": "Todos los sábados, Tom va al mercado de la plaza principal. Lleva una bolsa grande y una lista corta: tomates, cebollas, plátanos y queso."
       }
     },
     {
@@ -25,7 +28,8 @@
       "text": {
         "en": "The market is noisy and colorful. The sellers shout the prices, and the air smells of fresh bread and strawberries.",
         "pt": "A feira é barulhenta e colorida. Os vendedores gritam os preços, e o ar tem cheiro de pão fresco e morangos.",
-        "fr": "Le marché est bruyant et coloré. Les vendeurs crient les prix, et l'air sent le pain frais et les fraises."
+        "fr": "Le marché est bruyant et coloré. Les vendeurs crient les prix, et l'air sent le pain frais et les fraises.",
+        "es": "El mercado es ruidoso y colorido. Los vendedores gritan los precios, y el aire huele a pan fresco y a fresas."
       }
     },
     {
@@ -33,7 +37,8 @@
       "text": {
         "en": "First, Tom stops at the vegetable stall. “Good morning! How much are the tomatoes?” “Three euros a kilo,” says the woman. “Two kilos, please.”",
         "pt": "Primeiro, Tom para na banca de legumes. “Bom dia! Quanto custam os tomates?” “Três euros o quilo”, diz a mulher. “Dois quilos, por favor.”",
-        "fr": "D'abord, Tom s'arrête au stand de légumes. « Bonjour ! Combien coûtent les tomates ? » « Trois euros le kilo », dit la femme. « Deux kilos, s'il vous plaît. »"
+        "fr": "D'abord, Tom s'arrête au stand de légumes. « Bonjour ! Combien coûtent les tomates ? » « Trois euros le kilo », dit la femme. « Deux kilos, s'il vous plaît. »",
+        "es": "Primero, Tom se detiene en el puesto de verduras. “¡Buenos días! ¿Cuánto cuestan los tomates?” “Tres euros el kilo”, dice la mujer. “Dos kilos, por favor.”"
       }
     },
     {
@@ -41,7 +46,8 @@
       "text": {
         "en": "He also buys one kilo of onions for two euros. In total, he pays eight euros. He gives the woman a ten-euro note, and she gives him two euros back.",
         "pt": "Ele também compra um quilo de cebolas por dois euros. No total, ele paga oito euros. Ele dá à mulher uma nota de dez euros, e ela lhe devolve dois euros.",
-        "fr": "Il achète aussi un kilo d'oignons pour deux euros. Au total, il paie huit euros. Il donne à la femme un billet de dix euros, et elle lui rend deux euros."
+        "fr": "Il achète aussi un kilo d'oignons pour deux euros. Au total, il paie huit euros. Il donne à la femme un billet de dix euros, et elle lui rend deux euros.",
+        "es": "También compra un kilo de cebollas por dos euros. En total, paga ocho euros. Le da a la mujer un billete de diez euros, y ella le devuelve dos euros."
       }
     },
     {
@@ -49,7 +55,8 @@
       "text": {
         "en": "At the fruit stall, the bananas are very ripe. The seller says: “Take six bananas for one euro fifty. They are perfect for a cake!”",
         "pt": "Na banca de frutas, as bananas estão bem maduras. O vendedor diz: “Leve seis bananas por um euro e cinquenta. Elas são perfeitas para um bolo!”",
-        "fr": "Au stand de fruits, les bananes sont très mûres. Le vendeur dit : « Prenez six bananes pour un euro cinquante. Elles sont parfaites pour un gâteau ! »"
+        "fr": "Au stand de fruits, les bananes sont très mûres. Le vendeur dit : « Prenez six bananes pour un euro cinquante. Elles sont parfaites pour un gâteau ! »",
+        "es": "En el puesto de frutas, los plátanos están muy maduros. El vendedor dice: “Lleve seis plátanos por un euro con cincuenta. ¡Son perfectos para un pastel!”"
       }
     },
     {
@@ -57,7 +64,8 @@
       "text": {
         "en": "Tom smiles and buys the bananas. Then he sees some red strawberries. They are not on his list, but they look delicious, so he buys a small box.",
         "pt": "Tom sorri e compra as bananas. Depois, ele vê uns morangos vermelhos. Eles não estão na lista, mas parecem deliciosos, então ele compra uma caixinha.",
-        "fr": "Tom sourit et achète les bananes. Ensuite, il voit des fraises rouges. Elles ne sont pas sur sa liste, mais elles ont l'air délicieuses, alors il achète une petite barquette."
+        "fr": "Tom sourit et achète les bananes. Ensuite, il voit des fraises rouges. Elles ne sont pas sur sa liste, mais elles ont l'air délicieuses, alors il achète une petite barquette.",
+        "es": "Tom sonríe y compra los plátanos. Luego ve unas fresas rojas. No están en su lista, pero se ven deliciosas, así que compra una cajita."
       }
     },
     {
@@ -65,7 +73,8 @@
       "text": {
         "en": "The last stop is the cheese stall. The cheese seller lets him taste three different cheeses. Tom chooses a soft goat cheese.",
         "pt": "A última parada é a banca de queijos. O vendedor de queijos o deixa provar três queijos diferentes. Tom escolhe um queijo de cabra macio.",
-        "fr": "Le dernier arrêt est le stand de fromages. Le fromager lui fait goûter trois fromages différents. Tom choisit un fromage de chèvre doux."
+        "fr": "Le dernier arrêt est le stand de fromages. Le fromager lui fait goûter trois fromages différents. Tom choisit un fromage de chèvre doux.",
+        "es": "La última parada es el puesto de quesos. El quesero le deja probar tres quesos diferentes. Tom elige un queso de cabra suave."
       }
     },
     {
@@ -73,7 +82,8 @@
       "text": {
         "en": "At home, Tom puts everything on the table. His bag is heavy, but his list is complete, plus one little extra: the strawberries for dessert.",
         "pt": "Em casa, Tom coloca tudo na mesa. A sacola está pesada, mas a lista está completa, com um pequeno extra: os morangos para a sobremesa.",
-        "fr": "À la maison, Tom pose tout sur la table. Son sac est lourd, mais sa liste est complète, avec un petit extra : les fraises pour le dessert."
+        "fr": "À la maison, Tom pose tout sur la table. Son sac est lourd, mais sa liste est complète, avec un petit extra : les fraises pour le dessert.",
+        "es": "En casa, Tom pone todo sobre la mesa. Su bolsa pesa, pero su lista está completa, con un pequeño extra: las fresas para el postre."
       }
     }
   ]

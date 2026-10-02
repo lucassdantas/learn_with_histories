@@ -23,8 +23,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!story) return {};
 
   return generateSEO({
-    title: `${story.title.en} – Read in English, Portuguese & French`,
-    description: `${story.description.en} Read it in English, Portuguese or French and reveal the translation paragraph by paragraph.`,
+    title: `${story.title.en} – Read in English, Spanish, Portuguese & French`,
+    description: `${story.description.en} Read it in English, Spanish, Portuguese or French and reveal the translation paragraph by paragraph.`,
     path: `/stories/${story.slug}`,
     type: 'article',
   });

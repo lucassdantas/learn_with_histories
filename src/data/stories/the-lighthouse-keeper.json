@@ -4,12 +4,14 @@
   "title": {
     "en": "The Lighthouse Keeper",
     "pt": "O Faroleiro",
-    "fr": "Le Gardien du Phare"
+    "fr": "Le Gardien du Phare",
+    "es": "El Farero"
   },
   "description": {
     "en": "On a stormy night, an old lighthouse keeper must keep the light burning.",
     "pt": "Em uma noite de tempestade, um velho faroleiro precisa manter a luz acesa.",
-    "fr": "Par une nuit de tempête, un vieux gardien de phare doit garder la lumière allumée."
+    "fr": "Par une nuit de tempête, un vieux gardien de phare doit garder la lumière allumée.",
+    "es": "En una noche de tormenta, un viejo farero debe mantener la luz encendida."
   },
   "content": [
     {
@@ -17,7 +19,8 @@
       "text": {
         "en": "For forty years, Mr. Bernard lived alone in the lighthouse at the end of the island. Every evening he climbed the one hundred and twelve steps to turn on the light.",
         "pt": "Durante quarenta anos, o senhor Bernard morou sozinho no farol no fim da ilha. Toda noite, ele subia os cento e doze degraus para acender a luz.",
-        "fr": "Pendant quarante ans, monsieur Bernard a vécu seul dans le phare, au bout de l'île. Chaque soir, il montait les cent douze marches pour allumer la lumière."
+        "fr": "Pendant quarante ans, monsieur Bernard a vécu seul dans le phare, au bout de l'île. Chaque soir, il montait les cent douze marches pour allumer la lumière.",
+        "es": "Durante cuarenta años, el señor Bernard vivió solo en el faro, al final de la isla. Cada noche subía los ciento doce escalones para encender la luz."
       }
     },
     {
@@ -25,7 +28,8 @@
       "text": {
         "en": "The lighthouse was automatic now, and the town wanted to close it. “Machines don't need a keeper,” they told him. Tomorrow would be his last day.",
         "pt": "O farol agora era automático, e a cidade queria fechá-lo. “Máquinas não precisam de faroleiro”, disseram a ele. O dia seguinte seria o seu último.",
-        "fr": "Le phare était désormais automatique, et la ville voulait le fermer. « Les machines n'ont pas besoin de gardien », lui avait-on dit. Le lendemain serait son dernier jour."
+        "fr": "Le phare était désormais automatique, et la ville voulait le fermer. « Les machines n'ont pas besoin de gardien », lui avait-on dit. Le lendemain serait son dernier jour.",
+        "es": "Ahora el faro era automático y el pueblo quería cerrarlo. “Las máquinas no necesitan un farero”, le dijeron. El día siguiente sería el último."
       }
     },
     {
@@ -33,7 +37,8 @@
       "text": {
         "en": "That night, a terrible storm came in from the sea. The wind screamed against the windows, and the waves were taller than houses.",
         "pt": "Naquela noite, uma tempestade terrível chegou do mar. O vento gritava contra as janelas, e as ondas eram mais altas que casas.",
-        "fr": "Cette nuit-là, une terrible tempête est arrivée de la mer. Le vent hurlait contre les fenêtres, et les vagues étaient plus hautes que des maisons."
+        "fr": "Cette nuit-là, une terrible tempête est arrivée de la mer. Le vent hurlait contre les fenêtres, et les vagues étaient plus hautes que des maisons.",
+        "es": "Esa noche, una tormenta terrible llegó desde el mar. El viento gritaba contra las ventanas y las olas eran más altas que las casas."
       }
     },
     {
@@ -41,7 +46,8 @@
       "text": {
         "en": "Suddenly, all the lights on the island went out. The electricity was cut, and the automatic lamp at the top of the lighthouse went dark too.",
         "pt": "De repente, todas as luzes da ilha se apagaram. Faltou energia, e a lâmpada automática no alto do farol se apagou também.",
-        "fr": "Soudain, toutes les lumières de l'île se sont éteintes. L'électricité était coupée, et la lampe automatique au sommet du phare s'est éteinte elle aussi."
+        "fr": "Soudain, toutes les lumières de l'île se sont éteintes. L'électricité était coupée, et la lampe automatique au sommet du phare s'est éteinte elle aussi.",
+        "es": "De repente, todas las luces de la isla se apagaron. Se cortó la electricidad, y la lámpara automática en lo alto del faro también se apagó."
       }
     },
     {
@@ -49,7 +55,8 @@
       "text": {
         "en": "Through the rain, Mr. Bernard saw the lights of a small fishing boat. It was heading straight for the rocks.",
         "pt": "Através da chuva, o senhor Bernard viu as luzes de um pequeno barco de pesca. Ele ia direto para as rochas.",
-        "fr": "À travers la pluie, monsieur Bernard a vu les lumières d'un petit bateau de pêche. Il se dirigeait tout droit vers les rochers."
+        "fr": "À travers la pluie, monsieur Bernard a vu les lumières d'un petit bateau de pêche. Il se dirigeait tout droit vers les rochers.",
+        "es": "A través de la lluvia, el señor Bernard vio las luces de un pequeño barco pesquero. Iba directo hacia las rocas."
       }
     },
     {
@@ -57,7 +64,8 @@
       "text": {
         "en": "He ran to the old cupboard and took out the oil lamp he had kept for forty years. With shaking hands, he climbed the stairs one more time and lit it.",
         "pt": "Ele correu até o armário velho e pegou a lamparina a óleo que guardava havia quarenta anos. Com as mãos trêmulas, subiu a escada mais uma vez e a acendeu.",
-        "fr": "Il a couru jusqu'au vieux placard et a sorti la lampe à huile qu'il gardait depuis quarante ans. Les mains tremblantes, il a monté l'escalier une fois de plus et l'a allumée."
+        "fr": "Il a couru jusqu'au vieux placard et a sorti la lampe à huile qu'il gardait depuis quarante ans. Les mains tremblantes, il a monté l'escalier une fois de plus et l'a allumée.",
+        "es": "Corrió hasta el viejo armario y sacó la lámpara de aceite que guardaba desde hacía cuarenta años. Con las manos temblorosas, subió la escalera una vez más y la encendió."
       }
     },
     {
@@ -65,7 +73,8 @@
       "text": {
         "en": "The great lens turned around the small flame, and a beam of light crossed the storm. The boat changed direction and found its way to the port.",
         "pt": "A grande lente girou em volta da pequena chama, e um feixe de luz atravessou a tempestade. O barco mudou de direção e encontrou o caminho até o porto.",
-        "fr": "La grande lentille a tourné autour de la petite flamme, et un faisceau de lumière a traversé la tempête. Le bateau a changé de direction et a trouvé le chemin du port."
+        "fr": "La grande lentille a tourné autour de la petite flamme, et un faisceau de lumière a traversé la tempête. Le bateau a changé de direction et a trouvé le chemin du port.",
+        "es": "La gran lente giró alrededor de la pequeña llama, y un haz de luz atravesó la tormenta. El barco cambió de rumbo y encontró el camino al puerto."
       }
     },
     {
@@ -73,7 +82,8 @@
       "text": {
         "en": "In the morning, the fishermen came to thank him, and the mayor came too. The lighthouse was not closed. And Mr. Bernard still climbs the stairs every evening.",
         "pt": "De manhã, os pescadores vieram agradecer a ele, e o prefeito também veio. O farol não foi fechado. E o senhor Bernard ainda sobe a escada todas as noites.",
-        "fr": "Le matin, les pêcheurs sont venus le remercier, et le maire est venu aussi. Le phare n'a pas été fermé. Et monsieur Bernard monte toujours l'escalier chaque soir."
+        "fr": "Le matin, les pêcheurs sont venus le remercier, et le maire est venu aussi. Le phare n'a pas été fermé. Et monsieur Bernard monte toujours l'escalier chaque soir.",
+        "es": "Por la mañana, los pescadores vinieron a darle las gracias, y el alcalde también vino. El faro no se cerró. Y el señor Bernard todavía sube la escalera todas las noches."
       }
     }
   ]

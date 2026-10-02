@@ -4,12 +4,14 @@
   "title": {
     "en": "The First Day at Work",
     "pt": "O Primeiro Dia de Trabalho",
-    "fr": "Le Premier Jour de Travail"
+    "fr": "Le Premier Jour de Travail",
+    "es": "El Primer Día de Trabajo"
   },
   "description": {
     "en": "Clara starts a new job. Learn useful words and phrases for the office.",
     "pt": "Clara começa em um novo emprego. Aprenda palavras e frases úteis para o escritório.",
-    "fr": "Clara commence un nouveau travail. Apprenez des mots et des phrases utiles pour le bureau."
+    "fr": "Clara commence un nouveau travail. Apprenez des mots et des phrases utiles pour le bureau.",
+    "es": "Clara empieza un nuevo trabajo. Aprende palabras y frases útiles para la oficina."
   },
   "content": [
     {
@@ -17,7 +19,8 @@
       "text": {
         "en": "Clara wakes up very early today. It is her first day at a new job, and she is a little nervous. She chooses a white shirt and black trousers.",
         "pt": "Clara acorda muito cedo hoje. É o seu primeiro dia em um novo emprego, e ela está um pouco nervosa. Ela escolhe uma camisa branca e uma calça preta.",
-        "fr": "Clara se réveille très tôt aujourd'hui. C'est son premier jour dans un nouveau travail, et elle est un peu nerveuse. Elle choisit une chemise blanche et un pantalon noir."
+        "fr": "Clara se réveille très tôt aujourd'hui. C'est son premier jour dans un nouveau travail, et elle est un peu nerveuse. Elle choisit une chemise blanche et un pantalon noir.",
+        "es": "Clara se despierta muy temprano hoy. Es su primer día en un nuevo trabajo y está un poco nerviosa. Elige una camisa blanca y un pantalón negro."
       }
     },
     {
@@ -25,7 +28,8 @@
       "text": {
         "en": "The office is on the fifth floor of a tall building. At the reception, a young man says: “Welcome! You must be Clara. I'm Pedro, your manager.”",
         "pt": "O escritório fica no quinto andar de um prédio alto. Na recepção, um rapaz diz: “Bem-vinda! Você deve ser a Clara. Eu sou o Pedro, seu gerente.”",
-        "fr": "Le bureau est au cinquième étage d'un grand immeuble. À l'accueil, un jeune homme dit : « Bienvenue ! Vous devez être Clara. Je suis Pedro, votre responsable. »"
+        "fr": "Le bureau est au cinquième étage d'un grand immeuble. À l'accueil, un jeune homme dit : « Bienvenue ! Vous devez être Clara. Je suis Pedro, votre responsable. »",
+        "es": "La oficina está en el quinto piso de un edificio alto. En la recepción, un joven dice: “¡Bienvenida! Usted debe de ser Clara. Soy Pedro, su gerente.”"
       }
     },
     {
@@ -33,7 +37,8 @@
       "text": {
         "en": "Pedro shows her around the office. “This is the kitchen, the meeting room is over there, and this is your desk, next to the window.”",
         "pt": "Pedro mostra o escritório para ela. “Esta é a cozinha, a sala de reunião fica ali, e esta é a sua mesa, ao lado da janela.”",
-        "fr": "Pedro lui fait visiter les locaux. « Voici la cuisine, la salle de réunion est là-bas, et voici votre bureau, à côté de la fenêtre. »"
+        "fr": "Pedro lui fait visiter les locaux. « Voici la cuisine, la salle de réunion est là-bas, et voici votre bureau, à côté de la fenêtre. »",
+        "es": "Pedro le muestra la oficina. “Esta es la cocina, la sala de reuniones está allá y este es su escritorio, al lado de la ventana.”"
       }
     },
     {
@@ -41,7 +46,8 @@
       "text": {
         "en": "On her desk there is a new computer, a notebook and a plant. A colleague, Sofia, comes to say hello. “If you need help, just ask me,” she says.",
         "pt": "Na sua mesa há um computador novo, um caderno e uma planta. Uma colega, Sofia, vem dizer oi. “Se precisar de ajuda, é só me perguntar”, ela diz.",
-        "fr": "Sur son bureau, il y a un ordinateur neuf, un carnet et une plante. Une collègue, Sofia, vient lui dire bonjour. « Si tu as besoin d'aide, demande-moi », dit-elle."
+        "fr": "Sur son bureau, il y a un ordinateur neuf, un carnet et une plante. Une collègue, Sofia, vient lui dire bonjour. « Si tu as besoin d'aide, demande-moi », dit-elle.",
+        "es": "En su escritorio hay una computadora nueva, un cuaderno y una planta. Una compañera, Sofia, viene a saludarla. “Si necesitas ayuda, pregúntame”, le dice."
       }
     },
     {
@@ -49,7 +55,8 @@
       "text": {
         "en": "At ten o'clock there is a team meeting. Clara introduces herself: “Hello, everyone. My name is Clara and I'm the new designer. I'm happy to be here.”",
         "pt": "Às dez horas há uma reunião da equipe. Clara se apresenta: “Olá a todos. Meu nome é Clara e sou a nova designer. Estou feliz de estar aqui.”",
-        "fr": "À dix heures, il y a une réunion d'équipe. Clara se présente : « Bonjour à tous. Je m'appelle Clara et je suis la nouvelle designer. Je suis contente d'être ici. »"
+        "fr": "À dix heures, il y a une réunion d'équipe. Clara se présente : « Bonjour à tous. Je m'appelle Clara et je suis la nouvelle designer. Je suis contente d'être ici. »",
+        "es": "A las diez hay una reunión del equipo. Clara se presenta: “Hola a todos. Me llamo Clara y soy la nueva diseñadora. Estoy feliz de estar aquí.”"
       }
     },
     {
@@ -57,7 +64,8 @@
       "text": {
         "en": "At lunchtime, Sofia and two other colleagues invite Clara to a small restaurant on the corner. They eat pasta and talk about their weekends.",
         "pt": "Na hora do almoço, Sofia e dois outros colegas convidam Clara para um pequeno restaurante na esquina. Eles comem macarrão e conversam sobre o fim de semana.",
-        "fr": "À l'heure du déjeuner, Sofia et deux autres collègues invitent Clara dans un petit restaurant au coin de la rue. Ils mangent des pâtes et parlent de leur week-end."
+        "fr": "À l'heure du déjeuner, Sofia et deux autres collègues invitent Clara dans un petit restaurant au coin de la rue. Ils mangent des pâtes et parlent de leur week-end.",
+        "es": "A la hora del almuerzo, Sofia y otros dos compañeros invitan a Clara a un pequeño restaurante en la esquina. Comen pasta y hablan de su fin de semana."
       }
     },
     {
@@ -65,7 +73,8 @@
       "text": {
         "en": "In the afternoon, Clara gets her first task: to draw a new logo for a bakery. She works hard and forgets to be nervous.",
         "pt": "À tarde, Clara recebe sua primeira tarefa: desenhar um novo logotipo para uma padaria. Ela trabalha bastante e esquece de ficar nervosa.",
-        "fr": "L'après-midi, Clara reçoit sa première mission : dessiner un nouveau logo pour une boulangerie. Elle travaille dur et oublie d'être nerveuse."
+        "fr": "L'après-midi, Clara reçoit sa première mission : dessiner un nouveau logo pour une boulangerie. Elle travaille dur et oublie d'être nerveuse.",
+        "es": "Por la tarde, Clara recibe su primera tarea: dibujar un nuevo logotipo para una panadería. Trabaja mucho y se olvida de estar nerviosa."
       }
     },
     {
@@ -73,7 +82,8 @@
       "text": {
         "en": "At six o'clock, Pedro looks at her drawings. “Great work for a first day!” he says. Clara goes home tired, but very happy.",
         "pt": "Às seis horas, Pedro olha os desenhos dela. “Ótimo trabalho para um primeiro dia!”, ele diz. Clara volta para casa cansada, mas muito feliz.",
-        "fr": "À dix-huit heures, Pedro regarde ses dessins. « Excellent travail pour un premier jour ! » dit-il. Clara rentre chez elle fatiguée, mais très heureuse."
+        "fr": "À dix-huit heures, Pedro regarde ses dessins. « Excellent travail pour un premier jour ! » dit-il. Clara rentre chez elle fatiguée, mais très heureuse.",
+        "es": "A las seis, Pedro mira sus dibujos. “¡Excelente trabajo para un primer día!”, dice. Clara vuelve a casa cansada, pero muy feliz."
       }
     }
   ]

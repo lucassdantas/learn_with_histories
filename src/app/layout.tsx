@@ -51,7 +51,7 @@ export const metadata: Metadata = generateSEO({
   title: "LearnWithHistories | Learn Languages Through Stories",
 
   description:
-    "Learn English, Portuguese and French by reading short stories with paragraph-by-paragraph translations. Free, no sign-up.",
+    "Learn English, Spanish, Portuguese and French by reading short stories with paragraph-by-paragraph translations. Free, no sign-up.",
 
   path: "/",
 });

@@ -1,0 +1,23 @@
+{
+  "nav.home": "Inicio",
+  "nav.stories": "Historias",
+  "nav.about": "Acerca de",
+  "nav.terms": "Términos de uso",
+  "nav.privacy": "Privacidad",
+  "header.speak": "Hablo",
+  "header.learn": "Aprendo",
+  "header.languages": "Idiomas",
+  "header.toLight": "Activar tema claro",
+  "header.toDark": "Activar tema oscuro",
+  "header.openMenu": "Abrir menú",
+  "header.closeMenu": "Cerrar menú",
+  "common.ad": "Publicidad",
+  "common.cookieSettings": "Configuración de privacidad y cookies",
+  "common.contact": "Contacto",
+  "footer.tagline": "Aprende idiomas leyendo historias cortas.",
+  "footer.rights": "Todos los derechos reservados.",
+  "nf.title": "Esta página se salió de la historia",
+  "nf.desc": "Es posible que la dirección haya cambiado o que nunca haya existido. ¿Qué tal volver a una página conocida?",
+  "nf.stories": "Ver historias",
+  "nf.home": "Ir al inicio"
+}

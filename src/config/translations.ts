@@ -16,6 +16,12 @@ import termsFr from '../translations/terms/fr.json';
 import privacyEn from '../translations/privacy/en.json';
 import privacyPt from '../translations/privacy/pt.json';
 import privacyFr from '../translations/privacy/fr.json';
+import homeEs from '../translations/home/es.json';
+import commonEs from '../translations/common/es.json';
+import aboutEs from '../translations/about/es.json';
+import storiesEs from '../translations/stories/es.json';
+import termsEs from '../translations/terms/es.json';
+import privacyEs from '../translations/privacy/es.json';
 
 type Translations = {
   [key: string]: {
@@ -48,6 +54,14 @@ export const translations: Translations = {
     ...termsFr,
     ...privacyFr,
   },
+  es: {
+    ...commonEs,
+    ...homeEs,
+    ...aboutEs,
+    ...storiesEs,
+    ...termsEs,
+    ...privacyEs,
+  },
 };
 
 export function getTranslation(lang: string, key: string, params?: Record<string, string>): string {
@@ -65,9 +79,10 @@ export function getTranslation(lang: string, key: string, params?: Record<string
 
 // Language names as used inside a sentence, written in the UI language ("Lendo em inglês…").
 export const languageNames: Record<string, Record<string, string>> = {
-  pt: { pt: 'português', en: 'inglês', fr: 'francês' },
-  en: { pt: 'Portuguese', en: 'English', fr: 'French' },
-  fr: { pt: 'portugais', en: 'anglais', fr: 'français' },
+  pt: { pt: 'português', en: 'inglês', fr: 'francês', es: 'espanhol' },
+  en: { pt: 'Portuguese', en: 'English', fr: 'French', es: 'Spanish' },
+  fr: { pt: 'portugais', en: 'anglais', fr: 'français', es: 'espagnol' },
+  es: { pt: 'portugués', en: 'inglés', fr: 'francés', es: 'español' },
 };
 
 // Endonyms for the language selects (never translated) and short codes.
@@ -75,4 +90,5 @@ export const languageOptions = [
   { code: 'pt', name: 'Português', short: 'PT' },
   { code: 'en', name: 'English', short: 'EN' },
   { code: 'fr', name: 'Français', short: 'FR' },
+  { code: 'es', name: 'Español', short: 'ES' },
 ];

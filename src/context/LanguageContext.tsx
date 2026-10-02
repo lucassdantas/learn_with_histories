@@ -2,7 +2,7 @@
 
 import React, { createContext, useContext, useEffect, useMemo, useSyncExternalStore } from 'react';
 
-export const LANGUAGES = ['pt', 'en', 'fr'] as const;
+export const LANGUAGES = ['pt', 'en', 'fr', 'es'] as const;
 
 const NATIVE_KEY = 'nativeLanguage';
 const LEARNING_KEY = 'learningLanguage';

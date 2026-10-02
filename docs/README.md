@@ -1,7 +1,7 @@
 # LearnWithHistories — Documentação
 
 Site para aprender idiomas lendo histórias. Cada história é escrita em vários idiomas
-(hoje: `pt`, `en`, `fr`). O usuário escolhe **o idioma que fala** (nativo) e **o idioma que quer
+(hoje: `pt`, `en`, `fr`, `es`). O usuário escolhe **o idioma que fala** (nativo) e **o idioma que quer
 aprender**; a história é exibida no idioma que ele está aprendendo e, parágrafo a parágrafo, ele pode
 abrir a tradução no idioma nativo.
 

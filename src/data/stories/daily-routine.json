@@ -4,12 +4,14 @@
   "title": {
     "en": "Daily Routine",
     "pt": "Rotina Diária",
-    "fr": "Routine Quotidienne"
+    "fr": "Routine Quotidienne",
+    "es": "Rutina Diaria"
   },
   "description": {
     "en": "Learn common vocabulary about everyday activities.",
     "pt": "Aprenda vocabulário comum sobre atividades cotidianas.",
-    "fr": "Apprenez le vocabulaire courant sur les activités quotidiennes."
+    "fr": "Apprenez le vocabulaire courant sur les activités quotidiennes.",
+    "es": "Aprende vocabulario común sobre las actividades cotidianas."
   },
   "content": [
     {
@@ -17,7 +19,8 @@
       "text": {
         "en": "I wake up at seven o'clock every morning. Then I go to the kitchen to drink some coffee.\n\nAfter breakfast, I start working. I usually work from home on my computer.",
         "pt": "Eu acordo às sete horas todas as manhãs. Depois vou à cozinha para beber um café.\n\nDepois do café da manhã, começo a trabalhar. Eu costumo trabalhar em casa no meu computador.",
-        "fr": "Je me réveille à sept heures tous les matins. Ensuite, je vais à la cuisine pour boire du café.\n\nAprès le petit déjeuner, je commence à travailler. Je travaille généralement à domicile sur mon ordinateur."
+        "fr": "Je me réveille à sept heures tous les matins. Ensuite, je vais à la cuisine pour boire du café.\n\nAprès le petit déjeuner, je commence à travailler. Je travaille généralement à domicile sur mon ordinateur.",
+        "es": "Me despierto a las siete todas las mañanas. Luego voy a la cocina a tomar un café.\n\nDespués del desayuno, empiezo a trabajar. Normalmente trabajo desde casa en mi computadora."
       }
     },
     {
@@ -25,7 +28,8 @@
       "text": {
         "en": "In the afternoon, I like to go for a walk in the park. It helps me clear my mind.\n\nIn the evening, I cook dinner and watch some movies before going to bed.",
         "pt": "À tarde, gosto de passear no parque. Isso me ajuda a clarear a mente.\n\nÀ noite, preparo o jantar e assisto a alguns filmes antes de ir para a cama.",
-        "fr": "L'après-midi, j'aime aller me promener dans le parc. Cela m'aide à me vider l'esprit.\n\nLe soir, je prépare le dîner et je regarde des films avant d'aller me coucher."
+        "fr": "L'après-midi, j'aime aller me promener dans le parc. Cela m'aide à me vider l'esprit.\n\nLe soir, je prépare le dîner et je regarde des films avant d'aller me coucher.",
+        "es": "Por la tarde, me gusta dar un paseo por el parque. Me ayuda a despejar la mente.\n\nPor la noche, preparo la cena y veo algunas películas antes de irme a la cama."
       }
     },
     {
@@ -33,7 +37,8 @@
       "text": {
         "en": "Before sleeping, I like to read a few pages of a book. Reading helps me relax after a busy day.\n\nSometimes, I also listen to soft music while preparing for the next day.",
         "pt": "Antes de dormir, gosto de ler algumas páginas de um livro. Ler me ajuda a relaxar depois de um dia agitado.\n\nÀs vezes, também escuto músicas calmas enquanto me preparo para o próximo dia.",
-        "fr": "Avant de dormir, j'aime lire quelques pages d'un livre. La lecture m'aide à me détendre après une journée chargée.\n\nParfois, j'écoute aussi de la musique douce pendant que je me prépare pour le lendemain."
+        "fr": "Avant de dormir, j'aime lire quelques pages d'un livre. La lecture m'aide à me détendre après une journée chargée.\n\nParfois, j'écoute aussi de la musique douce pendant que je me prépare pour le lendemain.",
+        "es": "Antes de dormir, me gusta leer algunas páginas de un libro. Leer me ayuda a relajarme después de un día ajetreado.\n\nA veces, también escucho música suave mientras me preparo para el día siguiente."
       }
     },
     {
@@ -41,7 +46,8 @@
       "text": {
         "en": "On weekends, my routine changes a little. I wake up later and spend more time with my family and friends.\n\nWe often go to restaurants, visit new places, or simply stay home and talk for hours.",
         "pt": "Nos fins de semana, minha rotina muda um pouco. Eu acordo mais tarde e passo mais tempo com minha família e amigos.\n\nNós frequentemente vamos a restaurantes, visitamos novos lugares ou simplesmente ficamos em casa conversando por horas.",
-        "fr": "Le week-end, ma routine change un peu. Je me réveille plus tard et je passe plus de temps avec ma famille et mes amis.\n\nNous allons souvent au restaurant, visitons de nouveaux endroits ou restons simplement à la maison à discuter pendant des heures."
+        "fr": "Le week-end, ma routine change un peu. Je me réveille plus tard et je passe plus de temps avec ma famille et mes amis.\n\nNous allons souvent au restaurant, visitons de nouveaux endroits ou restons simplement à la maison à discuter pendant des heures.",
+        "es": "Los fines de semana, mi rutina cambia un poco. Me despierto más tarde y paso más tiempo con mi familia y mis amigos.\n\nA menudo vamos a restaurantes, visitamos lugares nuevos o simplemente nos quedamos en casa conversando durante horas."
       }
     }
   ]

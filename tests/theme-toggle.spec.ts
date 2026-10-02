@@ -51,3 +51,14 @@ test('native and learning languages never end up equal', async ({ page }) => {
   await expect(native).toHaveValue('en');
   await expect(learning).toHaveValue('pt');
 });
+
+test('Spanish works as UI language and as learning language', async ({ page }) => {
+  await page.addInitScript(() => {
+    localStorage.setItem('nativeLanguage', 'es');
+    localStorage.setItem('learningLanguage', 'pt');
+  });
+  await page.goto(`${BASE}/stories/the-lighthouse-keeper`);
+  await expect(page.locator('h1')).toHaveText('O Faroleiro'); // story in Portuguese
+  await page.getByRole('button', { name: 'Mostrar traducción' }).first().click(); // UI in Spanish
+  await expect(page.getByText('Durante cuarenta años, el señor Bernard', { exact: false })).toBeVisible();
+});

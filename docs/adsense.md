@@ -59,7 +59,7 @@ No código fica só:
    Sites; o mais comum é "conteúdo de baixo valor" → adicionar mais histórias e pedir de novo.
 5. **Aviso GDPR** — **Privacidade e mensagens** → **Regulamentações europeias** → **Criar mensagem**:
    - Site: `devdantas.com.br`
-   - Idiomas: adicionar Português, English e Français (o padrão do usuário é detectado pelo navegador)
+   - Idiomas: adicionar Português, English, Français e Español (o padrão do usuário é detectado pelo navegador)
    - URL da política de privacidade: `https://learn-with-histories.devdantas.com.br/privacy`
    - Opções de consentimento: manter "Consentir" e "Gerenciar opções" (pode ativar "Não consentir")
    - **Publicar**. Não precisa mexer no código.

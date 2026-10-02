@@ -9,7 +9,7 @@ export default function StructuredData() {
     name: SITE_NAME,
     url: SITE_URL,
     description: "Learn languages by reading short stories with paragraph-by-paragraph translations.",
-    inLanguage: ["en", "pt", "fr"],
+    inLanguage: ["en", "pt", "fr", "es"],
     publisher: {
       "@type": "Organization",
       name: SITE_NAME,

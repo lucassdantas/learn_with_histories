@@ -1,0 +1,23 @@
+{
+  "stories.title": "Historias",
+  "stories.readingLine": "Leyendo en {l} con traducciones en {n}",
+  "stories.search": "Buscar historias",
+  "stories.start": "Empezar a leer",
+  "stories.emptyTitle": "Sin resultados",
+  "stories.emptyDesc": "No encontramos historias para “{q}”. Prueba con otra palabra.",
+  "stories.clear": "Borrar búsqueda",
+  "reader.back": "Volver",
+  "reader.readingIn": "Leyendo en",
+  "reader.show": "Mostrar traducción",
+  "reader.hide": "Ocultar traducción",
+  "reader.finish": "Terminar",
+  "reader.doneTitle": "Fin de la historia",
+  "reader.doneDesc": "Buen trabajo. ¿Vamos con la siguiente?",
+  "reader.howTitle": "Cómo usar",
+  "reader.how1": "Lee cada fragmento con calma, en el idioma que estás aprendiendo.",
+  "reader.how2": "Intenta entender por el contexto antes de abrir la traducción.",
+  "reader.how3": "Toca + para ver la traducción de ese fragmento.",
+  "reader.more": "Sigue leyendo",
+  "reader.textNotAvailable": "Texto no disponible en este idioma.",
+  "reader.translationNotAvailable": "Traducción no disponible en este idioma."
+}
