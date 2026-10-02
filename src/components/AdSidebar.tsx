@@ -26,11 +26,13 @@ export default function AdSidebar() {
   const adRef = useRef<boolean>(false);
   const label = getTranslation(nativeLanguage, 'common.ad');
 
-  useEffect(() => {
-    if (isDesktop && !adRef.current) adRef.current = pushAd();
-  }, [isDesktop]);
+  const enabled = isDesktop && Boolean(ADS_CONFIG.slots.sidebar);
 
-  if (!isDesktop) return null;
+  useEffect(() => {
+    if (enabled && !adRef.current) adRef.current = pushAd();
+  }, [enabled]);
+
+  if (!enabled) return null;
 
   return (
     <aside aria-label={label} className="flex flex-col items-center gap-2">

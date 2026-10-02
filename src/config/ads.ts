@@ -6,10 +6,13 @@ export const ADS_CONFIG = {
   //   sidebar: '6300978111', // Reusing banner for side if needed
   // },
 
-  publisherId: 'ca-pub-4081616122157678',
+  // Lucas's own account (upgraded from AdMob, same number). Must match public/ads.txt and
+  // the ads.txt on the root domain (devdantas.com.br/ads.txt).
+  publisherId: 'ca-pub-2495329310301889',
+  // Ad unit IDs (data-ad-slot) from AdSense → Ads → By ad unit. Empty = that ad isn't rendered.
   slots: {
-    banner: '4915717699',
-    sidebar: '8503608919',
+    banner: '', // Display ad, horizontal
+    sidebar: '', // Display ad, vertical (300×600)
   },
   isTest: false,
 };

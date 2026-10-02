@@ -22,6 +22,8 @@ Produção: https://learn-with-histories.devdantas.com.br
 
 ## Rodando
 
+Requer **Node 24** (`engines` no `package.json` e `.nvmrc`; a Vercel usa o `engines` para escolher a versão).
+
 ```bash
 npm install
 npm run dev      # http://localhost:3000

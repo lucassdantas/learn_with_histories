@@ -4,14 +4,14 @@
 
 | Peça | Arquivo | O que faz |
 |---|---|---|
-| Config | `src/config/ads.ts` | `publisherId` (`ca-pub-4081616122157678`), slots `banner` e `sidebar`, flag `isTest` |
+| Config | `src/config/ads.ts` | `publisherId` (`ca-pub-2495329310301889`), slots `banner` e `sidebar` (vazio = anúncio não aparece), flag `isTest` |
 | Script | `src/components/AdScript.tsx` | Carrega `adsbygoogle.js` com `next/script` (`afterInteractive`) no `layout.tsx` — vale para o site todo |
 | Verificação | `src/app/lib/seo.ts` | Meta tag `google-adsense-account` em todas as páginas |
 | Banner | `src/components/AdBanner.tsx` | Faixa com rótulo; formato `horizontal`, `full-width-responsive=false`, altura reservada 100px (mobile) / 120px (≥1000px) |
 | Sidebar | `src/components/AdSidebar.tsx` | 300×600 na lateral da leitura; só é renderizado em telas ≥ 1000px |
 | Push | `src/lib/ads.ts` | `pushAd()` — pede ao AdSense para preencher o próximo `<ins>`; uma vez por slot |
 | Consentimento | `src/components/ConsentSettingsButton.tsx` | Botão "Configurações de privacidade e cookies" (Footer e `/privacy#consent`) que reabre o aviso do Google |
-| ads.txt | `public/ads.txt` | `google.com, pub-4081616122157678, DIRECT, f08c47fec0942fa0` |
+| ads.txt | `public/ads.txt` | `google.com, pub-2495329310301889, DIRECT, f08c47fec0942fa0` — **o do domínio raiz `devdantas.com.br/ads.txt` (outro projeto) precisa ter a mesma linha** |
 
 Onde aparecem (definido pelo design): Home (faixa logo após o hero), `/stories` (entre o cabeçalho e
 a grade), leitura (sidebar 300×600 no desktop + faixa depois de "Continue lendo"). **Nenhum anúncio**
@@ -65,10 +65,10 @@ No código fica só:
    - **Publicar**. Não precisa mexer no código.
 6. **(Opcional) Estados dos EUA** — em Privacidade e mensagens também há a mensagem de "Regulamentações
    estaduais dos EUA". Recomendável se houver tráfego dos EUA.
-7. **Blocos de anúncio** — **Anúncios** → **Por bloco de anúncios**. Confira que existem
-   `4915717699` (banner) e `8503608919` (sidebar) nesta conta. O antigo `7751588429` (popup) pode ser
-   arquivado. Se criar um bloco novo: **Anúncio de display** → responsivo → copie o `data-ad-slot`
-   para `src/config/ads.ts`.
+7. **Blocos de anúncio** — **Anúncios** → **Por bloco de anúncios** → **Anúncio de display**. Crie dois:
+   um **horizontal** (banner) e um **vertical** (lateral 300×600). Copie cada `data-ad-slot` para
+   `slots.banner` / `slots.sidebar` em `src/config/ads.ts`. Enquanto estiverem vazios, os espaços de
+   anúncio simplesmente não aparecem no site.
 8. **(Opcional) Auto ads** — **Anúncios** → **Por site** → editar → ligar **Anúncios fixos (âncora)** e
    **Vinheta**. Deixe "Anúncios na página" desligado no começo para não lotar a página junto com os
    blocos manuais.
@@ -81,6 +81,12 @@ No código fica só:
 **Nunca:** clicar nos próprios anúncios, pedir para pessoas clicarem, ou recarregar a página para
 gerar impressões — isso leva ao banimento da conta. Para ver os anúncios sem risco, use o modo de teste
 (`ca-pub-3940256099942544` em `ads.ts`, só local).
+
+## Conta
+
+A conta é a do Lucas: `pub-2495329310301889` (era AdMob; o upgrade para AdSense mantém o número).
+Contas antigas que **não** devem ser usadas: `pub-4081616122157678` (tentativa anterior, outro e-mail)
+e `pub-3124364125222536` (AdMob de um cliente).
 
 ## Estado (2026-10-01)
 

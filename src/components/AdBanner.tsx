@@ -13,9 +13,14 @@ export default function AdBanner({ className = '' }: Readonly<{ className?: stri
   const adRef = useRef<boolean>(false);
   const label = getTranslation(nativeLanguage, 'common.ad');
 
+  const enabled = Boolean(ADS_CONFIG.slots.banner);
+
   useEffect(() => {
-    if (!adRef.current) adRef.current = pushAd();
-  }, []);
+    if (enabled && !adRef.current) adRef.current = pushAd();
+  }, [enabled]);
+
+  // No ad unit configured yet: render nothing instead of an empty "Advertisement" band.
+  if (!enabled) return null;
 
   return (
     <div className={`page ${className}`}>
