@@ -85,6 +85,9 @@ gerar impressões — isso leva ao banimento da conta. Para ver os anúncios sem
 ## Conta
 
 A conta é a do Lucas: `pub-2495329310301889` (era AdMob; o upgrade para AdSense mantém o número).
+Blocos: banner `8653188006` ("LWH - Banner horizontal", responsivo) e lateral `5671626430`
+("LWH - Lateral 300x600", fixo). Status em 2026-10-02: site verificado, revisão solicitada, mensagem
+GDPR publicada (3 botões, política = `/privacy` do subdomínio).
 Contas antigas que **não** devem ser usadas: `pub-4081616122157678` (tentativa anterior, outro e-mail)
 e `pub-3124364125222536` (AdMob de um cliente).
 

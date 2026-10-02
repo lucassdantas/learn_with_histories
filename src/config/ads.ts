@@ -11,8 +11,8 @@ export const ADS_CONFIG = {
   publisherId: 'ca-pub-2495329310301889',
   // Ad unit IDs (data-ad-slot) from AdSense → Ads → By ad unit. Empty = that ad isn't rendered.
   slots: {
-    banner: '', // Display ad, horizontal
-    sidebar: '', // Display ad, vertical (300×600)
+    banner: '8653188006', // "LWH - Banner horizontal" (display, responsive)
+    sidebar: '5671626430', // "LWH - Lateral 300x600" (display, fixed)
   },
   isTest: false,
 };
