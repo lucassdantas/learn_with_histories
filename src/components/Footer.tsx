@@ -3,33 +3,46 @@
 import Link from 'next/link';
 import { useLanguage } from '@/context/LanguageContext';
 import { getTranslation } from '@/config/translations';
+import { LogoMark, Wordmark } from '@/components/Logo';
+import ConsentSettingsButton from '@/components/ConsentSettingsButton';
+
+const LINKS = [
+  { href: '/', label: 'nav.home' },
+  { href: '/stories', label: 'nav.stories' },
+  { href: '/about', label: 'nav.about' },
+  { href: '/terms', label: 'nav.terms' },
+  { href: '/privacy', label: 'nav.privacy' },
+];
+
+const linkClass =
+  'inline-flex items-center min-h-touch text-sm text-foreground hover:underline decoration-accent underline-offset-4 cursor-pointer';
 
 export default function Footer() {
   const { nativeLanguage } = useLanguage();
+  const t = (key: string) => getTranslation(nativeLanguage, key);
 
   return (
-    <footer className="bg-deep-blue text-white py-12 sm:py-16 px-6 sm:px-8 transition-colors mt-auto">
-      <div className="max-w-5xl mx-auto flex flex-col items-center gap-8 text-center">
-        <div className="text-2xl font-black tracking-tighter">LearnWithHistories</div>
-        <nav className="flex flex-wrap justify-center gap-x-8 gap-y-4 text-sm font-bold text-white/60">
-          <Link href="/" className="hover:text-golden-amber transition cursor-pointer">
-            {getTranslation(nativeLanguage, 'nav.home') || 'Início'}
-          </Link>
-          <Link href="/stories" className="hover:text-golden-amber transition cursor-pointer">
-            {getTranslation(nativeLanguage, 'nav.stories')}
-          </Link>
-          <Link href="/about" className="hover:text-golden-amber transition cursor-pointer">
-            {getTranslation(nativeLanguage, 'nav.about')}
-          </Link>
-          <Link href="/terms" className="hover:text-golden-amber transition cursor-pointer">
-            {getTranslation(nativeLanguage, 'nav.terms')}
-          </Link>
-          <Link href="/privacy" className="hover:text-golden-amber transition cursor-pointer">
-            {getTranslation(nativeLanguage, 'nav.privacy') || 'Privacidade'}
-          </Link>
-        </nav>
-        <div className="text-white/40 text-[10px] italic font-bold tracking-widest uppercase">
-          © {new Date().getFullYear()} LearnWithHistories. All rights reserved.
+    <footer className="mt-auto border-t border-border bg-surface-2">
+      <div className="page pt-12 pb-7 flex flex-col gap-8">
+        <div className="flex flex-wrap gap-x-12 gap-y-6 justify-between items-start">
+          <div className="flex flex-col gap-2.5 flex-[1_1_240px]">
+            <div className="flex items-center gap-2.5">
+              <LogoMark size={36} />
+              <Wordmark className="text-lg" />
+            </div>
+            <p className="text-sm text-muted max-w-[22em]">{t('footer.tagline')}</p>
+          </div>
+          <nav aria-label="Footer" className="flex-[2_1_420px] flex flex-wrap gap-x-6 justify-end">
+            {LINKS.map((link) => (
+              <Link key={link.href} href={link.href} className={linkClass}>
+                {t(link.label)}
+              </Link>
+            ))}
+            <ConsentSettingsButton className={`${linkClass} text-left`} />
+          </nav>
+        </div>
+        <div className="pt-5 border-t border-border text-eyebrow text-muted">
+          © {new Date().getFullYear()} LearnWithHistories. {t('footer.rights')}
         </div>
       </div>
     </footer>

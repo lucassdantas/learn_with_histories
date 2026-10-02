@@ -63,8 +63,16 @@ export function getTranslation(lang: string, key: string, params?: Record<string
   return text;
 }
 
+// Language names as used inside a sentence, written in the UI language ("Lendo em inglês…").
 export const languageNames: Record<string, Record<string, string>> = {
-  pt: { pt: 'Português', en: 'English', fr: 'Français' },
+  pt: { pt: 'português', en: 'inglês', fr: 'francês' },
   en: { pt: 'Portuguese', en: 'English', fr: 'French' },
-  fr: { pt: 'Portugais', en: 'Anglais', fr: 'Français' },
+  fr: { pt: 'portugais', en: 'anglais', fr: 'français' },
 };
+
+// Endonyms for the language selects (never translated) and short codes.
+export const languageOptions = [
+  { code: 'pt', name: 'Português', short: 'PT' },
+  { code: 'en', name: 'English', short: 'EN' },
+  { code: 'fr', name: 'Français', short: 'FR' },
+];

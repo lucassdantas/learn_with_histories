@@ -1,32 +1,53 @@
 import { test, expect } from '@playwright/test';
 
-test('theme toggle works', async ({ page }) => {
-  await page.goto('http://localhost:3000');
+// Run against a running server: `npm run dev` (or BASE_URL=http://localhost:3123 for `next start`).
+const BASE = process.env.BASE_URL ?? 'http://localhost:3000';
 
-  // Wait for hydration
-  await page.waitForTimeout(1000);
+const bg = (page: import('@playwright/test').Page) =>
+  page.locator('body').evaluate((el) => getComputedStyle(el).backgroundColor);
 
-  // Check initial state (default light)
-  const body = page.locator('body');
+test('theme toggle switches and persists without a light flash', async ({ page }) => {
+  await page.emulateMedia({ colorScheme: 'light' });
+  await page.goto(BASE);
   const html = page.locator('html');
+  const toggle = page.getByRole('button', { name: /tema escuro|dark theme|thème sombre/i });
 
-  // Find theme toggle button (it has sun/moon icon)
-  const themeToggle = page.locator('button').filter({ has: page.locator('svg') }).first();
+  await toggle.click();
+  await expect(html).toHaveClass(/dark/);
+  expect(await bg(page)).toBe('rgb(15, 23, 42)'); // #0F172A
 
-  // Click to toggle to dark
-  await themeToggle.click();
+  // Reload: the inline theme script applies .dark before hydration.
+  await page.reload();
   await expect(html).toHaveClass(/dark/);
 
-  // Check background color (should be dark)
-  const darkBg = await body.evaluate((el) => window.getComputedStyle(el).backgroundColor);
-  console.log('Dark Mode Background:', darkBg);
-
-  // Click to toggle back to light
-  await themeToggle.click();
+  await page.getByRole('button', { name: /tema claro|light theme|thème clair/i }).click();
   await expect(html).not.toHaveClass(/dark/);
+  expect(await bg(page)).toBe('rgb(244, 235, 221)'); // #F4EBDD
+});
 
-  const lightBg = await body.evaluate((el) => window.getComputedStyle(el).backgroundColor);
-  console.log('Light Mode Background:', lightBg);
+test('a segment reveals and hides its translation', async ({ page }) => {
+  await page.goto(`${BASE}/stories/the-night-train`);
+  const first = page.getByRole('button', { name: /mostrar tradução|show translation/i }).first();
 
-  await page.screenshot({ path: 'theme_test.png' });
+  await first.click();
+  await expect(page.getByText('Hugo comprou a passagem no último minuto.', { exact: false })).toBeVisible();
+
+  await page.getByRole('button', { name: /ocultar tradução|hide translation/i }).first().click();
+  await expect(page.getByText('Hugo comprou a passagem no último minuto.', { exact: false })).toBeHidden();
+});
+
+test('native and learning languages never end up equal', async ({ page }) => {
+  await page.setViewportSize({ width: 1280, height: 900 });
+  await page.goto(BASE);
+  const header = page.locator('header');
+  const native = header.getByLabel(/falo|i speak|je parle/i);
+  const learning = header.getByLabel(/aprendo|learning|j’apprends/i);
+
+  await expect(native).toHaveValue('pt');
+  await expect(learning).toHaveValue('en');
+
+  // Picking the learning language as native swaps the two.
+  await native.selectOption('en');
+  await expect(native).toHaveValue('en');
+  await expect(learning).toHaveValue('pt');
 });

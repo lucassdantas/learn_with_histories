@@ -1,205 +1,130 @@
 'use client';
 
-import React, { useState, useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
-import Image from 'next/image';
+import { usePathname } from 'next/navigation';
 import { useLanguage } from '@/context/LanguageContext';
 import { useTheme } from '@/context/ThemeContext';
 import { getTranslation } from '@/config/translations';
-import { usePathname } from 'next/navigation';
-import logoImg from '@/assets/logo-learn-with-histories.png';
+import { LogoMark, Wordmark } from '@/components/Logo';
+import LanguageSelect from '@/components/LanguageSelect';
 
+const NAV_LINKS = [
+  { href: '/', label: 'nav.home' },
+  { href: '/stories', label: 'nav.stories' },
+  { href: '/about', label: 'nav.about' },
+];
+
+// Sticky 68px header. ≥1000px (`nav:`): links + language selects. Below: theme + hamburger panel.
 export default function Header() {
-  const { nativeLanguage, setNativeLanguage, learningLanguage, setLearningLanguage } = useLanguage();
+  const { nativeLanguage } = useLanguage();
   const { theme, toggleTheme } = useTheme();
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const [isMounted, setIsMounted] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
   const pathname = usePathname();
+  const t = (key: string) => getTranslation(nativeLanguage, key);
+
+  const isActive = (href: string) => (href === '/' ? pathname === '/' : pathname.startsWith(href));
+  const closeMenu = () => setMenuOpen(false);
 
   useEffect(() => {
-    setIsMounted(true);
-  }, []);
-
-  const languages = [
-    { code: 'pt', name: 'PT' },
-    { code: 'en', name: 'EN' },
-    { code: 'fr', name: 'FR' },
-  ];
-
-  const navLinks = [
-    { href: '/', label: 'nav.home' },
-    { href: '/stories', label: 'nav.stories' },
-    { href: '/about', label: 'nav.about' },
-  ];
-
-  const isActive = (href: string) => pathname === href;
-
-  // Prevent hydration mismatch
-  if (!isMounted) return null;
+    if (!menuOpen) return;
+    const onKey = (e: KeyboardEvent) => e.key === 'Escape' && setMenuOpen(false);
+    window.addEventListener('keydown', onKey);
+    return () => window.removeEventListener('keydown', onKey);
+  }, [menuOpen]);
 
   return (
-    <header className="bg-background/80 backdrop-blur-md border-b border-golden-amber/20 flex items-center sticky top-0 z-50 transition-colors">
-      <div className="max-w-7xl mx-auto px-4 w-full flex items-center justify-between py-3">
-        {/* Logo */}
-        <Link href="/" className="flex items-center gap-2 cursor-pointer group shrink-0">
-          <div className="relative w-8 h-8 sm:w-10 sm:h-10 overflow-hidden rounded-full border-2 border-golden-amber group-hover:scale-105 transition-transform">
-            <Image
-              src={logoImg}
-              alt="LearnWithHistories Logo"
-              fill
-              className="object-cover"
-            />
-          </div>
-          <span className="text-lg sm:text-xl font-black text-deep-blue tracking-tighter hidden xs:block">
-            LearnWithHistories
-          </span>
+    <header className="sticky top-0 z-40 bg-background border-b border-border">
+      <div className="page h-17 flex items-center gap-5">
+        <Link href="/" onClick={closeMenu} className="mr-auto flex items-center gap-2.5 min-h-touch min-w-0 text-foreground no-underline">
+          <LogoMark size={40} />
+          <Wordmark className="text-[19px]" />
         </Link>
 
-        {/* Desktop Navigation */}
-        <nav className="hidden md:flex items-center gap-1">
-          {navLinks.map((link) => (
-            <Link
-              key={link.href}
-              href={link.href}
-              className={`px-3 py-2 rounded-lg font-bold text-sm transition ${
-                isActive(link.href)
-                  ? 'bg-golden-amber text-white'
-                  : 'text-deep-blue hover:bg-golden-amber/10'
-              }`}
-            >
-              {getTranslation(nativeLanguage, link.label)}
-            </Link>
-          ))}
-        </nav>
-
-        {/* Right side controls */}
-        <div className="flex items-center gap-1 sm:gap-3">
-          <button
-            onClick={toggleTheme}
-            className="p-2 rounded-full hover:bg-golden-amber/10 transition cursor-pointer text-deep-blue"
-            title={getTranslation(nativeLanguage, 'header.toggleTheme')}
-          >
-            {theme === 'light' ? (
-              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
-              </svg>
-            ) : (
-              <svg className="w-5 h-5 text-golden-amber" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364-6.364l-.707.707M6.343 17.657l-.707.707M17.657 17.657l-.707-.707M6.343 6.343l-.707-.707M12 8a4 4 0 100 8 4 4 0 000-8z" />
-              </svg>
-            )}
-          </button>
-
-          <div className="hidden lg:flex items-center gap-2">
-            <span className="text-[10px] font-bold text-deep-blue/60 uppercase">
-              {getTranslation(nativeLanguage, 'header.speak')}:
-            </span>
-            <select
-              value={nativeLanguage}
-              onChange={(e) => setNativeLanguage(e.target.value)}
-              className="bg-surface border border-golden-amber/30 rounded-md text-xs font-bold p-1 focus:ring-2 focus:ring-golden-amber outline-none cursor-pointer text-deep-blue"
-            >
-              {languages.map((lang) => (
-                <option key={lang.code} value={lang.code} className="bg-surface">
-                  {lang.name}
-                </option>
-              ))}
-            </select>
-          </div>
-
-          <div className="hidden lg:flex items-center gap-2">
-            <span className="text-[10px] font-bold text-deep-blue/60 uppercase">
-              {getTranslation(nativeLanguage, 'header.learn')}:
-            </span>
-            <select
-              value={learningLanguage}
-              onChange={(e) => setLearningLanguage(e.target.value)}
-              className="bg-surface border border-golden-amber/30 rounded-md text-xs font-bold p-1 text-deep-blue focus:ring-2 focus:ring-golden-amber outline-none cursor-pointer"
-            >
-              {languages.map((lang) => (
-                <option key={lang.code} value={lang.code} className="bg-surface">
-                  {lang.name}
-                </option>
-              ))}
-            </select>
-          </div>
-
-          {/* Mobile menu button */}
-          <button
-            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="md:hidden p-2 rounded-lg hover:bg-golden-amber/10 transition text-deep-blue"
-            aria-label="Menu"
-          >
-            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d={mobileMenuOpen ? "M6 18L18 6M6 6l12 12" : "M4 6h16M4 12h16M4 18h16"} />
-            </svg>
-          </button>
-        </div>
-      </div>
-
-      {/* Mobile Navigation */}
-      {mobileMenuOpen && (
-        <div className="absolute top-full left-0 right-0 border-b border-golden-amber/20 bg-background shadow-xl md:hidden animate-in fade-in slide-in-from-top-2 duration-200">
-          <nav className="flex flex-col p-2">
-            {navLinks.map((link) => (
+        <nav aria-label="Main" className="hidden nav:flex gap-1">
+          {NAV_LINKS.map((link) => {
+            const active = isActive(link.href);
+            return (
               <Link
                 key={link.href}
                 href={link.href}
-                onClick={() => setMobileMenuOpen(false)}
-                className={`px-4 py-3 rounded-xl font-bold text-base transition ${
-                  isActive(link.href)
-                    ? 'bg-golden-amber/10 text-golden-amber'
-                    : 'text-deep-blue hover:bg-golden-amber/5'
+                aria-current={active ? 'page' : undefined}
+                className={`flex items-center min-h-touch px-3 text-[15px] border-b-2 hover:text-accent-ink ${
+                  active ? 'font-bold border-accent' : 'font-medium border-transparent'
                 }`}
               >
-                {getTranslation(nativeLanguage, link.label)}
+                {t(link.label)}
               </Link>
-            ))}
+            );
+          })}
+        </nav>
 
-            <div className="mt-2 pt-2 border-t border-golden-amber/10 grid grid-cols-2 gap-2">
-              <div className="p-3 bg-surface rounded-xl space-y-2">
-                <span className="text-[10px] font-black text-deep-blue/40 uppercase tracking-widest block">
-                  {getTranslation(nativeLanguage, 'header.speak')}
-                </span>
-                <div className="flex gap-2">
-                  {languages.map((lang) => (
-                    <button
-                      key={lang.code}
-                      onClick={() => setNativeLanguage(lang.code)}
-                      className={`flex-1 py-2 rounded-lg text-xs font-black transition-all ${
-                        nativeLanguage === lang.code
-                          ? 'bg-deep-blue text-white shadow-md shadow-deep-blue/20'
-                          : 'bg-surface text-deep-blue/60 border border-golden-amber/20'
-                      }`}
-                    >
-                      {lang.name}
-                    </button>
-                  ))}
-                </div>
-              </div>
+        <div aria-hidden="true" className="hidden nav:block w-px h-7 bg-border" />
 
-              <div className="p-3 bg-surface rounded-xl space-y-2">
-                <span className="text-[10px] font-black text-deep-blue/40 uppercase tracking-widest block">
-                  {getTranslation(nativeLanguage, 'header.learn')}
-                </span>
-                <div className="flex gap-2">
-                  {languages.map((lang) => (
-                    <button
-                      key={lang.code}
-                      onClick={() => setLearningLanguage(lang.code)}
-                      className={`flex-1 py-2 rounded-lg text-xs font-black transition-all ${
-                        learningLanguage === lang.code
-                          ? 'bg-golden-amber text-white shadow-md shadow-golden-amber/20'
-                          : 'bg-surface text-deep-blue/60 border border-golden-amber/20'
-                      }`}
-                    >
-                      {lang.name}
-                    </button>
-                  ))}
-                </div>
-              </div>
-            </div>
+        <div className="hidden nav:flex items-center gap-3">
+          <LanguageSelect kind="native" label={t('header.speak')} variant="compact" />
+          <LanguageSelect kind="learning" label={t('header.learn')} variant="compact" />
+        </div>
+
+        <button
+          type="button"
+          onClick={toggleTheme}
+          aria-label={theme === 'dark' ? t('header.toLight') : t('header.toDark')}
+          title={theme === 'dark' ? t('header.toLight') : t('header.toDark')}
+          className="flex-none size-touch rounded-full border border-border-strong bg-surface text-foreground flex items-center justify-center cursor-pointer hover:border-accent"
+        >
+          <span aria-hidden="true" className="size-4.5 rounded-full border-2 border-current bg-[linear-gradient(90deg,currentColor_50%,transparent_50%)]" />
+        </button>
+
+        <button
+          type="button"
+          onClick={() => setMenuOpen(!menuOpen)}
+          aria-expanded={menuOpen}
+          aria-controls="mobile-menu"
+          aria-label={menuOpen ? t('header.closeMenu') : t('header.openMenu')}
+          className="nav:hidden flex-none size-touch rounded-control border border-border-strong bg-surface text-foreground flex flex-col items-center justify-center gap-1 cursor-pointer"
+        >
+          {menuOpen ? (
+            <span aria-hidden="true" className="relative size-4.5">
+              <span className="absolute left-0 top-2 w-4.5 h-0.5 rounded bg-current rotate-45" />
+              <span className="absolute left-0 top-2 w-4.5 h-0.5 rounded bg-current -rotate-45" />
+            </span>
+          ) : (
+            <>
+              <span aria-hidden="true" className="w-4.5 h-0.5 rounded bg-current" />
+              <span aria-hidden="true" className="w-4.5 h-0.5 rounded bg-current" />
+              <span aria-hidden="true" className="w-4.5 h-0.5 rounded bg-current" />
+            </>
+          )}
+        </button>
+      </div>
+
+      {menuOpen && (
+        <div id="mobile-menu" className="nav:hidden absolute inset-x-0 top-full bg-surface border-b border-border shadow-raised px-5 pt-2 pb-6">
+          <nav aria-label="Main" className="flex flex-col">
+            {NAV_LINKS.map((link) => {
+              const active = isActive(link.href);
+              return (
+                <Link
+                  key={link.href}
+                  href={link.href}
+                  onClick={closeMenu}
+                  aria-current={active ? 'page' : undefined}
+                  className={`flex items-center justify-between min-h-14 border-b border-border font-story text-xl ${
+                    active ? 'font-bold' : 'font-medium'
+                  }`}
+                >
+                  {t(link.label)}
+                  <span aria-hidden="true" className={`size-2 rounded-full ${active ? 'bg-accent' : 'bg-transparent'}`} />
+                </Link>
+              );
+            })}
           </nav>
+          <div className="mt-5 eyebrow text-xs text-muted">{t('header.languages')}</div>
+          <div className="mt-2.5 grid grid-cols-[repeat(auto-fit,minmax(140px,1fr))] gap-3">
+            <LanguageSelect kind="native" label={t('header.speak')} variant="full" selectClassName="bg-background" />
+            <LanguageSelect kind="learning" label={t('header.learn')} variant="full" selectClassName="bg-background" />
+          </div>
         </div>
       )}
     </header>

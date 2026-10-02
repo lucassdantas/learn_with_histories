@@ -11,6 +11,13 @@ export interface Story {
   content: StoryParagraph[];
 }
 
+// What lists and links need — keeps the full text out of the client payload.
+export type StorySummary = Pick<Story, 'id' | 'slug' | 'title' | 'description'>;
+
+export function toSummary({ id, slug, title, description }: Story): StorySummary {
+  return { id, slug, title, description };
+}
+
 import fs from 'fs';
 import path from 'path';
 
@@ -28,7 +35,8 @@ export async function getAllStories(): Promise<Story[]> {
       const fileContents = fs.readFileSync(filePath, 'utf8');
       return JSON.parse(fileContents) as Story;
     });
-  return allStoriesData;
+  // Newest first (highest id).
+  return allStoriesData.sort((a, b) => Number(b.id) - Number(a.id));
 }
 
 export async function getStoryBySlug(slug: string): Promise<Story | null> {

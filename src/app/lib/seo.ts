@@ -1,18 +1,20 @@
 import type { Metadata } from "next";
+import { ADS_CONFIG } from "@/config/ads";
 
-const SITE_NAME = "LearnWithHistories";
+export const SITE_NAME = "LearnWithHistories";
 
-const SITE_URL =
+export const SITE_URL =
   "https://learn-with-histories.devdantas.com.br";
 
 const DEFAULT_OG =
-  "/og-images/learn-with-histories-opengraph-image.jpg";
+  "/og-images/learn-with-histories-og.png";
 
 type SEOProps = {
   title?: string;
   description?: string;
   path?: string;
   image?: string;
+  type?: "website" | "article";
 };
 
 export function generateSEO({
@@ -20,6 +22,7 @@ export function generateSEO({
   description,
   path = "",
   image = DEFAULT_OG,
+  type = "website",
 }: SEOProps = {}): Metadata {
   const seoTitle =
     title || "Learn Languages Through Stories";
@@ -42,7 +45,7 @@ export function generateSEO({
     },
 
     openGraph: {
-      type: "website",
+      type,
       url,
       siteName: SITE_NAME,
 
@@ -73,6 +76,10 @@ export function generateSEO({
     robots: {
       index: true,
       follow: true,
+    },
+
+    other: {
+      "google-adsense-account": ADS_CONFIG.publisherId,
     },
   };
 }

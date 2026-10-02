@@ -1,0 +1,80 @@
+{
+  "id": "7",
+  "slug": "the-lost-umbrella",
+  "title": {
+    "en": "The Lost Umbrella",
+    "pt": "O Guarda-Chuva Perdido",
+    "fr": "Le Parapluie Perdu"
+  },
+  "description": {
+    "en": "A rainy day, a forgotten umbrella and an unexpected friendship.",
+    "pt": "Um dia de chuva, um guarda-chuva esquecido e uma amizade inesperada.",
+    "fr": "Un jour de pluie, un parapluie oublié et une amitié inattendue."
+  },
+  "content": [
+    {
+      "id": "s1",
+      "text": {
+        "en": "It is Monday morning and it is raining a lot. Ana takes her blue umbrella and walks to the bus stop near her house.",
+        "pt": "É segunda-feira de manhã e está chovendo muito. Ana pega seu guarda-chuva azul e caminha até o ponto de ônibus perto de casa.",
+        "fr": "C'est lundi matin et il pleut beaucoup. Ana prend son parapluie bleu et marche jusqu'à l'arrêt de bus près de chez elle."
+      }
+    },
+    {
+      "id": "s2",
+      "text": {
+        "en": "The bus is full of people. Ana sits next to an old man with a newspaper. She puts her wet umbrella on the floor, between her feet.",
+        "pt": "O ônibus está cheio de gente. Ana se senta ao lado de um senhor com um jornal. Ela coloca o guarda-chuva molhado no chão, entre os pés.",
+        "fr": "Le bus est plein de monde. Ana s'assoit à côté d'un vieil homme qui lit le journal. Elle pose son parapluie mouillé par terre, entre ses pieds."
+      }
+    },
+    {
+      "id": "s3",
+      "text": {
+        "en": "Ana is reading messages on her phone. Suddenly, she sees her stop. She gets up quickly and runs out of the bus.",
+        "pt": "Ana está lendo mensagens no celular. De repente, ela vê o seu ponto. Ela se levanta rápido e sai correndo do ônibus.",
+        "fr": "Ana lit des messages sur son téléphone. Soudain, elle voit son arrêt. Elle se lève vite et sort du bus en courant."
+      }
+    },
+    {
+      "id": "s4",
+      "text": {
+        "en": "On the street, the rain falls on her head. “Oh no! My umbrella!” she says. But the bus is already far away.",
+        "pt": "Na rua, a chuva cai na sua cabeça. “Ah, não! Meu guarda-chuva!”, ela diz. Mas o ônibus já está longe.",
+        "fr": "Dans la rue, la pluie tombe sur sa tête. « Oh non ! Mon parapluie ! » dit-elle. Mais le bus est déjà loin."
+      }
+    },
+    {
+      "id": "s5",
+      "text": {
+        "en": "All day at work, Ana thinks about her umbrella. It was a gift from her sister, and she likes it very much.",
+        "pt": "O dia todo no trabalho, Ana pensa no seu guarda-chuva. Foi um presente da sua irmã, e ela gosta muito dele.",
+        "fr": "Toute la journée au travail, Ana pense à son parapluie. C'était un cadeau de sa sœur, et elle l'aime beaucoup."
+      }
+    },
+    {
+      "id": "s6",
+      "text": {
+        "en": "In the evening, she takes the same bus home. The driver looks at her and smiles. “Is this yours?” he asks, and he shows her a blue umbrella.",
+        "pt": "À noite, ela pega o mesmo ônibus para voltar para casa. O motorista olha para ela e sorri. “Isto é seu?”, ele pergunta, e mostra um guarda-chuva azul.",
+        "fr": "Le soir, elle prend le même bus pour rentrer. Le chauffeur la regarde et sourit. « C'est à vous ? » demande-t-il, et il lui montre un parapluie bleu."
+      }
+    },
+    {
+      "id": "s7",
+      "text": {
+        "en": "“Yes! Thank you so much!” says Ana. The driver explains that the old man with the newspaper found it and gave it to him.",
+        "pt": "“Sim! Muito obrigada!”, diz Ana. O motorista explica que o senhor do jornal o encontrou e o entregou a ele.",
+        "fr": "« Oui ! Merci beaucoup ! » dit Ana. Le chauffeur explique que le vieil homme au journal l'a trouvé et le lui a donné."
+      }
+    },
+    {
+      "id": "s8",
+      "text": {
+        "en": "The next morning, Ana sees the old man at the bus stop. She buys him a coffee and thanks him. Now, every Monday, they talk on the bus.",
+        "pt": "Na manhã seguinte, Ana vê o senhor no ponto de ônibus. Ela lhe paga um café e agradece. Agora, toda segunda-feira, eles conversam no ônibus.",
+        "fr": "Le lendemain matin, Ana voit le vieil homme à l'arrêt de bus. Elle lui offre un café et le remercie. Maintenant, chaque lundi, ils discutent dans le bus."
+      }
+    }
+  ]
+}

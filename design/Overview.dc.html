@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<meta name="design_doc_mode" content="canvas">
+<link href="https://fonts.googleapis.com/css2?family=Literata:opsz,wght@7..72,500;7..72,600&amp;family=Open+Sans:wght@400;600;700&amp;display=swap" rel="stylesheet">
+<style>body{margin:0;background:#DCD3C4}a{color:#1D3D5A}a:hover{color:#8A5A1C}</style>
+</helmet>
+<div style="padding:64px;font-family:'Open Sans',sans-serif;color:#1D3D5A;display:flex;flex-direction:column;gap:80px;width:max-content">
+  <div style="display:flex;flex-direction:column;gap:8px">
+    <h1 style="margin:0;font-family:'Literata',serif;font-size:48px;font-weight:600">LearnWithHistories · redesign</h1>
+    <p style="margin:0;font-size:18px">Protótipo navegável: <a href="LearnWithHistories.dc.html">LearnWithHistories.dc.html</a> · Tokens e componentes: <a href="Design System.dc.html">Design System.dc.html</a></p>
+  </div>
+  <sc-for list="{{ rows }}" as="r" hint-placeholder-count="4">
+    <section style="display:flex;flex-direction:column;gap:24px">
+      <h2 style="margin:0;font-family:'Literata',serif;font-size:32px;font-weight:600">{{ r.title }}</h2>
+      <div style="display:flex;gap:48px;align-items:flex-start">
+        <sc-for list="{{ r.frames }}" as="f" hint-placeholder-count="7">
+          <div style="display:flex;flex-direction:column;gap:12px">
+            <span style="font-size:16px;font-weight:700;letter-spacing:.04em">{{ f.label }}</span>
+            <div style="width:{{ r.w }}px;zoom:{{ r.zoom }};box-shadow:0 20px 60px -20px rgba(29,61,90,.4);border-radius:12px;overflow:hidden">
+              <dc-import name="LearnWithHistories" page="{{ f.page }}" theme="{{ r.theme }}" viewport="{{ r.vp }}" native="{{ f.native }}" learn="{{ f.learn }}" menu-open="{{ f.menu }}" open-segments="{{ f.seg }}" query="{{ f.q }}" embedded="{{ true }}" hint-size="100%,1600px"></dc-import>
+            </div>
+          </div>
+        </sc-for>
+      </div>
+    </section>
+  </sc-for>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  renderVals() {
+    const pages = [['home', 'Home /'], ['stories', 'Histórias /stories'], ['reader', 'Leitura /stories/[slug]'], ['about', 'Sobre /about'], ['terms', 'Termos /terms'], ['privacy', 'Privacidade /privacy'], ['404', '404']];
+    const base = (seg) => pages.map(([page, label]) => ({ page, label, native: 'pt', learn: 'en', menu: false, seg: page === 'reader' && seg, q: '' }));
+    const states = [
+      { page: 'reader', label: 'Segmentos fechados', native: 'pt', learn: 'en', menu: false, seg: false, q: '' },
+      { page: 'reader', label: 'Segmentos abertos', native: 'pt', learn: 'en', menu: false, seg: true, q: '' },
+      { page: 'stories', label: 'Busca sem resultado', native: 'pt', learn: 'en', menu: false, seg: false, q: 'dragão' },
+      { page: 'home', label: 'Interface em francês (texto mais longo)', native: 'fr', learn: 'pt', menu: false, seg: false, q: '' }
+    ];
+    const mStates = [
+      { page: 'home', label: 'Menu aberto', native: 'pt', learn: 'en', menu: true, seg: false, q: '' },
+      { page: 'home', label: 'Menu aberto · FR', native: 'fr', learn: 'en', menu: true, seg: false, q: '' },
+      { page: 'reader', label: 'Segmentos abertos', native: 'pt', learn: 'en', menu: false, seg: true, q: '' },
+      { page: 'stories', label: 'Busca sem resultado', native: 'pt', learn: 'en', menu: false, seg: false, q: 'dragão' }
+    ];
+    const D = { w: 1280, zoom: 0.42, vp: 'desktop' }, M = { w: 390, zoom: 0.75, vp: 'mobile' };
+    return { rows: [
+      { title: 'Desktop · claro', theme: 'light', ...D, frames: base(true) },
+      { title: 'Desktop · escuro', theme: 'dark', ...D, frames: base(true) },
+      { title: 'Mobile · claro', theme: 'light', ...M, frames: base(true) },
+      { title: 'Mobile · escuro', theme: 'dark', ...M, frames: base(true) },
+      { title: 'Estados · desktop', theme: 'light', ...D, frames: states },
+      { title: 'Estados · mobile', theme: 'dark', ...M, frames: mStates }
+    ] };
+  }
+}
+</script>
+</body>
+</html>

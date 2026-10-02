@@ -1,8 +1,0 @@
-User-agent: *
-Allow: /
-Disallow: /api/
-
-Sitemap: https://linguastories.com/sitemap.xml
-
-# Crawl delay
-Crawl-delay: 1

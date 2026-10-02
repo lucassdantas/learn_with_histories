@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Literata:opsz,wght@7..72,400;7..72,500;7..72,600&amp;family=Open+Sans:wght@400;600;700&amp;display=swap" rel="stylesheet">
+<style>body{margin:0;background:#F4EBDD}a{color:#1D3D5A;text-decoration-color:#C8924A;text-underline-offset:4px}a:hover{color:#8A5A1C}</style>
+</helmet>
+<div style="container-type:inline-size;background:#F4EBDD;color:#1D3D5A;font-family:'Open Sans',sans-serif;line-height:1.55">
+<div style="max-width:1080px;margin:0 auto;padding:72px clamp(20px,5cqi,48px) 120px;display:flex;flex-direction:column;gap:72px">
+
+  <header style="display:flex;flex-direction:column;gap:14px">
+    <span style="font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#8A5A1C">LearnWithHistories · v2</span>
+    <h1 style="margin:0;font-family:'Literata',serif;font-weight:600;font-size:clamp(36px,5cqi,56px);line-height:1.1">Design system</h1>
+    <p style="margin:0;max-width:44em;font-size:17px;color:#4F6476">Tokens prontos para Tailwind v4 e especificação dos componentes. Telas: <a href="Overview.dc.html">Overview</a> · protótipo navegável: <a href="LearnWithHistories.dc.html">LearnWithHistories</a>.</p>
+  </header>
+
+  <section style="display:flex;flex-direction:column;gap:20px">
+    <h2 style="margin:0;font-family:'Literata',serif;font-weight:600;font-size:30px">1. O que mudou</h2>
+    <ul style="margin:0;padding-left:20px;display:flex;flex-direction:column;gap:8px;font-size:16px">
+      <li>Duas famílias em vez de três: <strong>Literata</strong> (títulos + texto da história, desenhada para leitura longa em tela) e <strong>Open Sans</strong> (interface). Montserrat e Poppins saem.</li>
+      <li>Golden-amber #C8924A tem contraste 2,3:1 sobre o fundo claro: vira cor de borda/ornamento. Para texto em destaque no claro, use <code>accent-ink</code> #8A5A1C (5,2:1).</li>
+      <li>Botão primário no claro = deep-blue com texto claro (10,8:1). No escuro = amber com texto #0F172A.</li>
+      <li>Tradução ganha um fundo próprio (<code>translation-soft</code>) além da cor copper, e usa sans-serif: fica distinta do original sem depender só da cor.</li>
+      <li>Superfície clara vai de #FFFFFF para #FFFCF7 (papel), mais acolhedor sobre o warm-sand.</li>
+    </ul>
+  </section>
+
+  <section style="display:flex;flex-direction:column;gap:24px">
+    <h2 style="margin:0;font-family:'Literata',serif;font-weight:600;font-size:30px">2. Cores</h2>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,440px),1fr));gap:24px">
+      <sc-for list="{{ palettes }}" as="p" hint-placeholder-count="2">
+        <div style="background:{{ p.bg }};color:{{ p.fg }};border-radius:16px;padding:24px;display:flex;flex-direction:column;gap:4px">
+          <h3 style="margin:0 0 12px;font-family:'Literata',serif;font-size:20px">{{ p.name }}</h3>
+          <sc-for list="{{ p.items }}" as="c" hint-placeholder-count="10">
+            <div style="display:grid;grid-template-columns:36px minmax(0,1fr) auto;gap:12px;align-items:center;padding:6px 0;border-bottom:1px solid {{ p.line }};font-size:14px">
+              <span style="width:36px;height:36px;border-radius:8px;background:{{ c.hex }};border:1px solid {{ p.line }}"></span>
+              <span style="display:flex;flex-direction:column"><code style="font-size:13px;font-weight:700">--color-{{ c.k }}</code><span style="opacity:.8;font-size:13px">{{ c.use }}</span></span>
+              <code style="font-size:13px">{{ c.hex }}</code>
+            </div>
+          </sc-for>
+        </div>
+      </sc-for>
+    </div>
+  </section>
+
+  <section style="display:flex;flex-direction:column;gap:24px">
+    <h2 style="margin:0;font-family:'Literata',serif;font-weight:600;font-size:30px">3. Tipografia</h2>
+    <div style="background:#FFFCF7;border:1px solid #E2D2B9;border-radius:16px;overflow:hidden">
+      <sc-for list="{{ type }}" as="y" hint-placeholder-count="9">
+        <div style="display:grid;grid-template-columns:minmax(0,220px) minmax(0,1fr);gap:8px 24px;padding:18px 24px;border-bottom:1px solid #E2D2B9;align-items:baseline">
+          <span style="display:flex;flex-direction:column;font-size:13px;color:#4F6476"><code style="font-weight:700;color:#1D3D5A">{{ y.k }}</code>{{ y.spec }}</span>
+          <span style="font-family:{{ y.f }};font-size:{{ y.s }};font-weight:{{ y.w }};line-height:{{ y.lh }}">{{ y.sample }}</span>
+        </div>
+      </sc-for>
+    </div>
+    <p style="margin:0;font-size:15px;color:#4F6476">Tamanhos fluidos com <code>clamp()</code>. Medida da leitura: máx. 700px (~65 caracteres). Sem <code>uppercase</code> em textos longos; FR pode ser ~25% mais longo que EN.</p>
+  </section>
+
+  <section style="display:flex;flex-direction:column;gap:24px">
+    <h2 style="margin:0;font-family:'Literata',serif;font-weight:600;font-size:30px">4. Espaçamento, raios, sombras</h2>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:20px">
+      <div style="background:#FFFCF7;border:1px solid #E2D2B9;border-radius:16px;padding:24px;display:flex;flex-direction:column;gap:10px">
+        <h3 style="margin:0 0 6px;font-size:16px">Espaçamento (base 4px)</h3>
+        <sc-for list="{{ spaces }}" as="s" hint-placeholder-count="8">
+          <div style="display:flex;align-items:center;gap:12px;font-size:13px"><code style="width:56px">{{ s.k }}</code><span style="height:10px;width:{{ s.v }}px;background:#C8924A;border-radius:2px"></span><span>{{ s.v }}px</span></div>
+        </sc-for>
+      </div>
+      <div style="background:#FFFCF7;border:1px solid #E2D2B9;border-radius:16px;padding:24px;display:flex;flex-direction:column;gap:12px">
+        <h3 style="margin:0 0 6px;font-size:16px">Raios</h3>
+        <sc-for list="{{ radii }}" as="r" hint-placeholder-count="5">
+          <div style="display:flex;align-items:center;gap:14px;font-size:13px"><span style="width:44px;height:32px;border:2px solid #1D3D5A;border-radius:{{ r.v }}"></span><code>{{ r.k }}</code><span>{{ r.v }} · {{ r.use }}</span></div>
+        </sc-for>
+      </div>
+      <div style="background:#FFFCF7;border:1px solid #E2D2B9;border-radius:16px;padding:24px;display:flex;flex-direction:column;gap:18px">
+        <h3 style="margin:0;font-size:16px">Sombras</h3>
+        <div style="height:56px;border-radius:12px;background:#fff;box-shadow:0 1px 2px rgba(29,61,90,.06);display:flex;align-items:center;padding:0 16px;font-size:13px"><code>shadow-card</code>&#160;· cards em repouso</div>
+        <div style="height:56px;border-radius:12px;background:#fff;box-shadow:0 1px 2px rgba(29,61,90,.06),0 12px 32px -16px rgba(29,61,90,.28);display:flex;align-items:center;padding:0 16px;font-size:13px"><code>shadow-raised</code>&#160;· demo, menu mobile</div>
+        <p style="margin:0;font-size:13px;color:#4F6476">No escuro as sombras usam preto (0.3 / 0.7) e a separação vem mais das bordas.</p>
+      </div>
+    </div>
+  </section>
+
+  <section style="display:flex;flex-direction:column;gap:16px">
+    <h2 style="margin:0;font-family:'Literata',serif;font-weight:600;font-size:30px">5. globals.css (Tailwind v4)</h2>
+    <p style="margin:0;font-size:15px;color:#4F6476">Variáveis semânticas em <code>:root</code> / <code>.dark</code>, mapeadas em <code>@theme inline</code> para gerar <code>bg-surface</code>, <code>text-translation</code>, <code>font-story</code> etc.</p>
+    <pre style="margin:0;background:#1D3D5A;color:#F4EBDD;border-radius:16px;padding:24px;overflow:auto;font-size:13px;line-height:1.6;font-family:ui-monospace,Menlo,monospace">{{ css }}</pre>
+  </section>
+
+  <section style="display:flex;flex-direction:column;gap:24px">
+    <h2 style="margin:0;font-family:'Literata',serif;font-weight:600;font-size:30px">6. Componentes</h2>
+    <sc-for list="{{ comps }}" as="c" hint-placeholder-count="6">
+      <div style="background:#FFFCF7;border:1px solid #E2D2B9;border-radius:16px;padding:clamp(20px,3cqi,32px);display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:20px 40px">
+        <div style="display:flex;flex-direction:column;gap:8px">
+          <h3 style="margin:0;font-family:'Literata',serif;font-size:22px;font-weight:600">{{ c.name }}</h3>
+          <p style="margin:0;font-size:15px;color:#4F6476">{{ c.desc }}</p>
+        </div>
+        <ul style="margin:0;padding-left:18px;display:flex;flex-direction:column;gap:6px;font-size:14px">
+          <sc-for list="{{ c.rules }}" as="r" hint-placeholder-count="5"><li>{{ r.d }}</li></sc-for>
+        </ul>
+      </div>
+    </sc-for>
+  </section>
+
+  <section style="display:flex;flex-direction:column;gap:16px">
+    <h2 style="margin:0;font-family:'Literata',serif;font-weight:600;font-size:30px">7. Regras de anúncio (AdSense)</h2>
+    <ul style="margin:0;padding-left:20px;display:flex;flex-direction:column;gap:8px;font-size:16px">
+      <li>Posições: Home (após o hero), Histórias (entre cabeçalho e grade), Leitura (sidebar 300×600 só no desktop + banner após "Continue lendo"). Nenhum anúncio entre segmentos.</li>
+      <li>Sempre rótulo "Publicidade / Advertisement / Publicité" acima, em caixa alta pequena.</li>
+      <li>Visual diferente de card: sem borda, sem sombra, raio 4px, fundo neutro, centralizado numa faixa própria.</li>
+      <li>Distância mínima de 24px de qualquer botão; 40px do botão "Terminar" e dos "+".</li>
+      <li>Altura reservada (min-height) antes do carregamento para não causar salto de layout (CLS).</li>
+      <li>Nada de sticky, pop-up, modal ou anchor ad manual.</li>
+    </ul>
+  </section>
+
+  <section style="display:flex;flex-direction:column;gap:16px">
+    <h2 style="margin:0;font-family:'Literata',serif;font-weight:600;font-size:30px">8. Ideias futuras (fora do escopo)</h2>
+    <ul style="margin:0;padding-left:20px;display:flex;flex-direction:column;gap:8px;font-size:16px;color:#4F6476">
+      <li>Botão "Mostrar todas as traduções" na barra de leitura.</li>
+      <li>Atalho de teclado (Espaço / setas) para abrir o próximo segmento.</li>
+      <li>Ajuste de tamanho de fonte da leitura (A− / A+), salvo no localStorage.</li>
+      <li>Filtro por nível ou tema na lista de histórias.</li>
+      <li>Áudio por segmento.</li>
+    </ul>
+  </section>
+</div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+const CSS = `@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+:root {
+  --background: #F4EBDD;      /* warm-sand */
+  --surface: #FFFCF7;
+  --surface-2: #EDE1CD;
+  --foreground: #1D3D5A;      /* deep-blue */
+  --muted: #4F6476;
+  --border: #E2D2B9;
+  --border-strong: #CDB896;
+  --accent: #C8924A;          /* golden-amber: bordas/ornamento */
+  --accent-ink: #8A5A1C;      /* amber para texto */
+  --accent-soft: #F3E1C3;
+  --translation: #8B3A1F;     /* burnt-copper */
+  --translation-soft: #F7E4D8;
+  --primary: #1D3D5A;
+  --primary-hover: #15304A;
+  --on-primary: #FFFCF7;
+  --link: #1D3D5A;
+  --ad-bg: #E9E1D3;
+  --ad-ink: #5F5A51;
+  --focus: #1D3D5A;
+}
+.dark {
+  --background: #0F172A;
+  --surface: #1E293B;
+  --surface-2: #172033;
+  --foreground: #F1F5F9;
+  --muted: #A9B6C6;
+  --border: #2C3A50;
+  --border-strong: #40516B;
+  --accent: #FCD34D;
+  --accent-ink: #FCD34D;
+  --accent-soft: #3A3422;
+  --translation: #FB7185;
+  --translation-soft: #2C1D2B;
+  --primary: #FCD34D;
+  --primary-hover: #FDE68A;
+  --on-primary: #0F172A;
+  --link: #93C5FD;
+  --ad-bg: #162033;
+  --ad-ink: #94A3B8;
+  --focus: #FCD34D;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-surface: var(--surface);
+  --color-surface-2: var(--surface-2);
+  --color-foreground: var(--foreground);
+  --color-muted: var(--muted);
+  --color-border: var(--border);
+  --color-border-strong: var(--border-strong);
+  --color-accent: var(--accent);
+  --color-accent-ink: var(--accent-ink);
+  --color-accent-soft: var(--accent-soft);
+  --color-translation: var(--translation);
+  --color-translation-soft: var(--translation-soft);
+  --color-primary: var(--primary);
+  --color-primary-hover: var(--primary-hover);
+  --color-on-primary: var(--on-primary);
+  --color-link: var(--link);
+  --color-ad: var(--ad-bg);
+  --color-ad-ink: var(--ad-ink);
+
+  --font-sans: var(--font-open-sans), system-ui, sans-serif;
+  --font-story: var(--font-literata), Georgia, serif;   /* next/font */
+
+  --text-story: clamp(1.1875rem, 1rem + 0.5vw, 1.375rem);
+  --text-story--line-height: 1.7;
+  --text-translation: clamp(0.9375rem, 0.9rem + 0.2vw, 1.0625rem);
+  --text-translation--line-height: 1.6;
+  --text-display: clamp(2.375rem, 1.6rem + 3vw, 4rem);
+  --text-display--line-height: 1.08;
+  --text-h1: clamp(2rem, 1.6rem + 1.6vw, 3rem);
+  --text-h2: clamp(1.625rem, 1.4rem + 0.8vw, 2.125rem);
+  --text-h3: 1.3125rem;
+  --text-eyebrow: 0.8125rem;
+  --text-ad-label: 0.6875rem;
+
+  --radius-ad: 4px;
+  --radius-control: 10px;
+  --radius-tr: 12px;
+  --radius-card: 16px;
+  --radius-panel: 24px;
+
+  --shadow-card: 0 1px 2px rgb(29 61 90 / .06);
+  --shadow-raised: 0 1px 2px rgb(29 61 90 / .06), 0 12px 32px -16px rgb(29 61 90 / .28);
+
+  --spacing-touch: 44px;
+  --container-reading: 700px;
+  --container-page: 1200px;
+}
+
+:focus-visible { outline: 3px solid var(--focus); outline-offset: 2px; }`;
+
+class Component extends DCLogic {
+  renderVals() {
+    const light = [['background', '#F4EBDD', 'Fundo (warm-sand)'], ['surface', '#FFFCF7', 'Cards, inputs'], ['surface-2', '#EDE1CD', 'Painéis, footer'], ['foreground', '#1D3D5A', 'Texto (deep-blue)'], ['muted', '#4F6476', 'Texto secundário · 5,0:1'], ['border', '#E2D2B9', 'Divisórias'], ['accent', '#C8924A', 'Borda do logo, "+", ornamentos'], ['accent-ink', '#8A5A1C', 'Texto em destaque · 5,2:1'], ['translation', '#8B3A1F', 'Texto da tradução · 6,9:1'], ['translation-soft', '#F7E4D8', 'Fundo da tradução'], ['primary', '#1D3D5A', 'Botão primário'], ['ad-bg', '#E9E1D3', 'Espaço de anúncio']];
+    const dark = [['background', '#0F172A', 'Fundo'], ['surface', '#1E293B', 'Cards, inputs'], ['surface-2', '#172033', 'Painéis, footer'], ['foreground', '#F1F5F9', 'Texto'], ['muted', '#A9B6C6', 'Texto secundário'], ['border', '#2C3A50', 'Divisórias'], ['accent', '#FCD34D', 'Logo, "+", ornamentos'], ['accent-ink', '#FCD34D', 'Texto em destaque'], ['translation', '#FB7185', 'Texto da tradução · 5,6:1'], ['translation-soft', '#2C1D2B', 'Fundo da tradução'], ['primary', '#FCD34D', 'Botão primário (texto #0F172A)'], ['link', '#93C5FD', 'Links (deep-blue escuro)']];
+    const m = a => a.map(([k, hex, use]) => ({ k, hex, use }));
+    const serif = "'Literata',serif", sans = "'Open Sans',sans-serif";
+    return {
+      palettes: [{ name: 'Claro', bg: '#FFFCF7', fg: '#1D3D5A', line: '#E2D2B9', items: m(light) }, { name: 'Escuro (.dark)', bg: '#0F172A', fg: '#F1F5F9', line: '#2C3A50', items: m(dark) }],
+      type: [
+        { k: 'text-display', spec: 'Literata 600 · 38→64px · 1.08', f: serif, s: '44px', w: 600, lh: 1.1, sample: 'Aprenda idiomas lendo histórias' },
+        { k: 'text-h1', spec: 'Literata 600 · 32→48px', f: serif, s: '36px', w: 600, lh: 1.15, sample: 'The Old Bookshop' },
+        { k: 'text-h2', spec: 'Literata 600 · 26→34px', f: serif, s: '28px', w: 600, lh: 1.2, sample: 'Histórias recentes' },
+        { k: 'text-h3', spec: 'Literata 600 · 21px', f: serif, s: '21px', w: 600, lh: 1.25, sample: 'Le train de nuit' },
+        { k: 'text-story', spec: 'Literata 400 · 19→22px · 1.7', f: serif, s: '20px', w: 400, lh: 1.7, sample: 'Inside, the air smelled of paper and coffee. An old man looked up from his book and smiled at her.' },
+        { k: 'text-translation', spec: 'Open Sans 400 · 15→17px · 1.6 · copper', f: sans, s: '16px', w: 400, lh: 1.6, sample: 'Lá dentro, o ar cheirava a papel e café.' },
+        { k: 'text-base', spec: 'Open Sans 400 · 16px · 1.55', f: sans, s: '16px', w: 400, lh: 1.55, sample: 'Escolha seus idiomas e comece a ler.' },
+        { k: 'text-sm', spec: 'Open Sans 400/600 · 14–15px', f: sans, s: '14px', w: 600, lh: 1.5, sample: 'Começar a ler →' },
+        { k: 'text-eyebrow / ad-label', spec: 'Open Sans 700 · 11–13px · caps · +0.12em', f: sans, s: '12px', w: 700, lh: 1.4, sample: 'PUBLICIDADE · GRÁTIS · SEM CADASTRO' }
+      ],
+      spaces: [4, 8, 12, 16, 24, 32, 48, 64, 96].map((v, i) => ({ k: ['1', '2', '3', '4', '6', '8', '12', '16', '24'][i], v })),
+      radii: [['radius-ad', '4px', 'anúncio'], ['radius-control', '10px', 'selects, menu'], ['radius-tr', '12px', 'bloco de tradução'], ['radius-card', '16px', 'cards'], ['radius-panel', '24px', 'CTAs'], ['rounded-full', '999px', 'botões, "+"']].map(([k, v, use]) => ({ k, v, use })),
+      css: CSS,
+      comps: [
+        { name: 'Header', desc: 'Sticky, 68px, fundo = background, borda inferior. Símbolo 1a (40px, ver Logo) + wordmark Literata 600 com “With” em itálico accent-ink.', rules: ['Desktop ≥1000px: nav (Início, Histórias, Sobre) · divisória · "Falo [PT▾]" "Aprendo [EN▾]" · botão de tema 44px.', 'Item ativo: peso 700 + sublinhado 2px accent; aria-current="page".', 'Mobile <1000px: logo · tema · hambúrguer 44px. Menu abre como painel abaixo do header (não modal), com links de 56px e os dois seletores com nome completo do idioma.', 'Breakpoint em 1000px (não 768) porque os rótulos em FR não cabem antes disso.', 'Leitura: barra secundária sticky em top:68px, 56px de altura: "← Voltar" + chip "Lendo em EN".'].map(d => ({ d })) },
+        { name: 'Segmento de leitura', desc: 'Grid [texto 1fr][botão 44px]. O coração do produto.', rules: ['Texto: font-story, 19→22px, line-height 1.7, coluna máx. 700px, gap entre segmentos 22→30px.', 'Botão "+": círculo 44px, borda 1.5px accent, fundo transparente. Aberto: fundo accent-soft, ícone vira "−". aria-expanded + aria-label "Mostrar/Ocultar tradução".', 'Tradução: logo abaixo do texto, na coluna do texto; fundo translation-soft, cor translation, Open Sans 15→17px, raio 12px, rótulo do idioma (PT) em 11px caps. lang="{nativo}".', 'Abrir/fechar não reposiciona o botão nem o texto acima; só empurra o conteúdo abaixo.', 'Sem anúncio entre segmentos.'].map(d => ({ d })) },
+        { name: 'Card de história', desc: 'Link inteiro clicável. surface, borda 1px, raio 16px, padding 24px.', rules: ['Marca: círculo 12px com borda accent (eco do logo).', 'Título h3 Literata 21px, descrição 15px muted, ambos com lang do idioma aprendido.', 'Variante lista: rodapé "Começar a ler →" em link color, alinhado ao fundo (cards de alturas iguais).', 'Hover: translateY(-2px) + borda accent. Foco: outline 3px focus.', 'Grade: repeat(auto-fill, minmax(min(100%,300px),1fr)), gap 20px.'].map(d => ({ d })) },
+        { name: 'Espaço de anúncio', desc: '<aside aria-label="Publicidade"> com rótulo + slot. Nunca parecido com card.', rules: ['Banner: largura 100%, máx. 970px, altura reservada 100px (mobile) → 120px (desktop), mín. 300×100.', 'Vertical: 300×600, só desktop, na sidebar da leitura abaixo de "Como usar", 40px de distância.', 'Rótulo 11px, 700, caps, +0.14em, cor ad-ink, centralizado acima.', 'Fundo ad-bg, raio 4px, sem borda/sombra. Faixa própria com 24–40px de respiro vertical.'].map(d => ({ d })) },
+        { name: 'Seletor de idioma', desc: '<select> nativo (acessível, teclado e leitor de tela de graça), estilizado.', rules: ['Header: compacto, códigos PT/EN/FR, 44px de altura, label visível "Falo"/"Aprendo".', 'Menu mobile e "Pronto para começar?": nome completo (Português, English, Français), 48–52px.', 'appearance:none + seta desenhada em CSS; raio 10–12px; borda border-strong.', 'Escolher no "Falo" o idioma igual ao "Aprendo" troca os dois (nunca ficam iguais).', 'Trocar idioma fecha as traduções abertas.'].map(d => ({ d })) },
+        { name: 'Footer', desc: 'surface-2, borda superior. Logo + frase à esquerda, links à direita (quebram em linhas), copyright abaixo de uma divisória.', rules: ['Links: Início, Histórias, Sobre, Termos de uso, Privacidade, Configurações de privacidade e cookies (abre o CMP do Google via googlefc.showRevocationMessage()).', 'Cada link com 44px de altura de toque.', 'Copyright 13px muted.'].map(d => ({ d })) }
+      ]
+    };
+  }
+}
+</script>
+</body>
+</html>

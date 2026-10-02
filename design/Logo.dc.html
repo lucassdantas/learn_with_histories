@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<meta name="design_doc_mode" content="canvas">
+<link href="https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,600;1,7..72,400&amp;family=Open+Sans:wght@400;600;700&amp;display=swap" rel="stylesheet">
+<style>body{margin:0;background:#E7DFD2}a{color:#1D3D5A}a:hover{color:#8A5A1C}</style>
+</helmet>
+<div style="padding:64px;font-family:'Open Sans',sans-serif;color:#1D3D5A;display:flex;flex-direction:column;gap:40px;width:max-content">
+  <div style="display:flex;flex-direction:column;gap:8px;max-width:1100px">
+    <h1 style="margin:0;font-family:'Literata',serif;font-size:44px;font-weight:600">Logotipo · LearnWithHistories</h1>
+    <p style="margin:0;font-size:17px;color:#4F6476">Três caminhos. O <a href="#1a">1a</a> já está aplicado no <a href="LearnWithHistories.dc.html">protótipo</a> e no <a href="Overview.dc.html">Overview</a>.</p>
+  </div>
+  <section style="display:flex;gap:40px;align-items:flex-start">
+    <sc-for list="{{ options }}" as="o" hint-placeholder-count="3">
+      <div id="{{ o.id }}" style="width:520px;background:#FFFCF7;border-radius:20px;box-shadow:0 20px 60px -24px rgba(29,61,90,.35);overflow:hidden;display:flex;flex-direction:column">
+        <div style="display:flex;align-items:center;gap:12px;padding:20px 24px;border-bottom:1px solid #E2D2B9">
+          <span style="padding:4px 10px;border-radius:999px;background:#1D3D5A;color:#FFFCF7;font-size:13px;font-weight:700">{{ o.id }}</span>
+          <h2 style="margin:0;font-family:'Literata',serif;font-size:22px;font-weight:600">{{ o.name }}</h2>
+          <sc-if value="{{ o.applied }}" hint-placeholder-val="{{ false }}"><span style="margin-left:auto;font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#8A5A1C">Aplicado</span></sc-if>
+        </div>
+        <div style="display:grid;grid-template-columns:1fr 1fr">
+          <div style="background:#F4EBDD;height:240px;display:flex;align-items:center;justify-content:center">{{ o.big }}</div>
+          <div style="background:#0F172A;height:240px;display:flex;align-items:center;justify-content:center">{{ o.bigDark }}</div>
+        </div>
+        <div style="padding:28px 24px;display:flex;flex-direction:column;gap:22px">
+          <div style="display:flex;align-items:center;gap:12px">{{ o.lock }}<span style="font-family:'Literata',serif;font-weight:600;font-size:24px;color:#1D3D5A">Learn<em style="font-weight:400;color:#8A5A1C">With</em>Histories</span></div>
+          <div style="display:flex;align-items:center;gap:12px;background:#0F172A;border-radius:12px;padding:14px 16px">{{ o.lockDark }}<span style="font-family:'Literata',serif;font-weight:600;font-size:20px;color:#F1F5F9">Learn<em style="font-weight:400;color:#FCD34D">With</em>Histories</span></div>
+          <div style="display:flex;align-items:flex-end;gap:20px;font-size:12px;color:#4F6476">
+            <span style="display:flex;flex-direction:column;align-items:center;gap:6px">{{ o.s64 }}64</span>
+            <span style="display:flex;flex-direction:column;align-items:center;gap:6px">{{ o.s32 }}32</span>
+            <span style="display:flex;flex-direction:column;align-items:center;gap:6px">{{ o.s16 }}16 · favicon</span>
+          </div>
+          <p style="margin:0;font-size:15px;line-height:1.6;color:#4F6476">{{ o.why }}</p>
+        </div>
+      </div>
+    </sc-for>
+  </section>
+  <section style="max-width:1100px;display:flex;flex-direction:column;gap:10px;font-size:15px;line-height:1.6">
+    <h2 style="margin:0;font-family:'Literata',serif;font-size:26px;font-weight:600">Regras de uso</h2>
+    <ul style="margin:0;padding-left:20px;display:flex;flex-direction:column;gap:6px">
+      <li>Cores fixas do símbolo: deep-blue #1D3D5A, sand #F4EBDD, amber #C8924A / #E0A65A / #B37A35. Não mudam no tema escuro.</li>
+      <li>Abaixo de 32px usar a versão simplificada (sem linhas de texto, trilha e anel).</li>
+      <li>Wordmark em Literata 600; "With" em itálico 400 na cor accent-ink, nunca menor que 16px.</li>
+      <li>Área de proteção: 25% do diâmetro do símbolo em volta.</li>
+    </ul>
+  </section>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+const h = React.createElement;
+const BLUE = '#1D3D5A', SAND = '#F4EBDD', AMBER = '#C8924A', AL = '#E0A65A', AD = '#B37A35';
+const book = (lines) => [
+  h('path', { key: 'bl', d: 'M12 44.5C19.5 42.2 26.5 42.8 32 46.5C37.5 42.8 44.5 42.2 52 44.5V47C44.5 44.9 37.5 45.5 32 49C26.5 45.5 19.5 44.9 12 47Z', fill: AMBER }),
+  h('path', { key: 'pl', d: 'M13 25C19.5 22 26 22.5 31 26V45C26 41.8 19.5 41.5 13 43.5Z', fill: SAND }),
+  h('path', { key: 'pr', d: 'M51 25C44.5 22 38 22.5 33 26V45C38 41.8 44.5 41.5 51 43.5Z', fill: SAND }),
+  lines && h('g', { key: 'ln', stroke: BLUE, strokeWidth: 1.6, strokeLinecap: 'round', fill: 'none' },
+    h('path', { d: 'M17 30Q22 28.6 27 30.3' }), h('path', { d: 'M17 34Q22 32.6 27 34.3' }), h('path', { d: 'M17 38Q21 36.8 25 38.1' }))
+];
+const disc = (ring) => [
+  h('circle', { key: 'c', cx: 32, cy: 32, r: 32, fill: BLUE }),
+  ring && h('circle', { key: 'r', cx: 32, cy: 32, r: 29.5, fill: 'none', stroke: AMBER, strokeWidth: 1.4 })
+];
+const MARKS = {
+  plane: (size, simple) => h('svg', { width: size, height: size, viewBox: '0 0 64 64', role: 'img', 'aria-label': 'LearnWithHistories' },
+    ...disc(!simple), ...book(!simple),
+    !simple && h('g', { key: 'rl', stroke: BLUE, strokeWidth: 1.6, strokeLinecap: 'round', fill: 'none' }, h('path', { d: 'M40 36Q44 34.9 47 35.6' }), h('path', { d: 'M37 40Q42 38.6 47 39.6' })),
+    !simple && h('path', { key: 'tr', d: 'M37 37C34.5 33 34 28.5 36 25', fill: 'none', stroke: AMBER, strokeWidth: 1.3, strokeLinecap: 'round', strokeDasharray: '1.2 2.2' }),
+    h('polygon', { key: 'w1', points: simple ? '30,24 54,10 39,27' : '33,22 53,10.5 41,25.5', fill: AL }),
+    h('polygon', { key: 'w2', points: simple ? '39,27 54,10 42,35' : '41,25.5 53,10.5 43.5,32', fill: AD })),
+  plus: (size, simple) => h('svg', { width: size, height: size, viewBox: '0 0 64 64', role: 'img', 'aria-label': 'LearnWithHistories' },
+    ...disc(!simple), ...book(!simple),
+    h('circle', { key: 'pc', cx: 44, cy: 22, r: simple ? 9.5 : 8, fill: AMBER, stroke: BLUE, strokeWidth: 2 }),
+    h('path', { key: 'pp', d: simple ? 'M44 17V27M39 22H49' : 'M44 18V26M40 22H48', stroke: BLUE, strokeWidth: simple ? 2.8 : 2.2, strokeLinecap: 'round' })),
+  mono: (size, simple) => h('svg', { width: size, height: size, viewBox: '0 0 64 64', role: 'img', 'aria-label': 'LearnWithHistories' },
+    ...disc(true),
+    h('path', { key: 'rb', d: 'M38 9H45V31L41.5 27.5L38 31Z', fill: AMBER }),
+    h('text', { key: 't', x: 30, y: 45, textAnchor: 'middle', fontFamily: 'Literata, Georgia, serif', fontWeight: 600, fontSize: 34, fill: SAND }, 'L'))
+};
+class Component extends DCLogic {
+  renderVals() {
+    const opt = (id, k, name, why, applied) => ({ id, name, why, applied,
+      big: MARKS[k](168), bigDark: MARKS[k](168), lock: MARKS[k](48), lockDark: MARKS[k](40),
+      s64: MARKS[k](64), s32: MARKS[k](32, true), s16: MARKS[k](16, true) });
+    return { options: [
+      opt('1a', 'plane', 'Livro + avião de papel', 'Evolução do logo atual: mantém a ideia do livro e do avião (a leitura que te leva a outro lugar), redesenhada em geometria limpa, com menos detalhes e legível em tamanho pequeno. O anel dourado vem da identidade atual.', true),
+      opt('1b', 'plus', 'Livro + “+”', 'O símbolo usa o próprio gesto do produto: o botão “+” que revela a tradução. Mais funcional e fácil de reconhecer, mas perde o lado de “viagem”.', false),
+      opt('1c', 'mono', 'Monograma L + marcador', 'Um “L” em serifa com uma fita de marcador de página. É o mais literário e o mais simples de todos, mas diz menos sobre idiomas.', false)
+    ] };
+  }
+}
+</script>
+</body>
+</html>

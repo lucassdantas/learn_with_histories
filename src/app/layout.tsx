@@ -1,49 +1,57 @@
 import type { Metadata, Viewport } from "next";
 
-import { Montserrat, Open_Sans, Poppins } from "next/font/google";
+import { Literata, Open_Sans } from "next/font/google";
 
 import "./globals.css";
 
 import { LanguageProvider } from "@/context/LanguageContext";
 import { ThemeProvider } from "@/context/ThemeContext";
+import { THEME_SCRIPT } from "@/lib/theme-script";
 
 import AdScript from "@/components/AdScript";
 import StructuredData from "@/components/StructuredData";
+import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { generateSEO } from "@/app/lib/seo";
 
-
-const montserrat = Montserrat({
-  variable: "--font-montserrat",
+// Two families (design system): Literata for headings + story text, Open Sans for the UI.
+// Both are variable fonts, self-hosted by next/font (no request to Google at runtime).
+const literata = Literata({
+  variable: "--font-literata",
   subsets: ["latin"],
-  weight: ["400", "700", "900"],
+  display: "swap",
 });
 
-const poppins = Poppins({
-  variable: "--font-poppins",
+// Italic is only used for "With" in the wordmark: loaded on its own, not preloaded.
+const literataItalic = Literata({
+  variable: "--font-literata-italic",
   subsets: ["latin"],
-  weight: ["400", "600", "700"],
+  style: "italic",
+  display: "swap",
+  preload: false,
 });
 
 const openSans = Open_Sans({
   variable: "--font-open-sans",
   subsets: ["latin"],
-  weight: ["400", "500", "700"],
+  display: "swap",
 });
 
 export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
-  maximumScale: 5,
   colorScheme: "light dark",
-  themeColor: "#0f172a",
+  themeColor: [
+    { media: "(prefers-color-scheme: light)", color: "#F4EBDD" },
+    { media: "(prefers-color-scheme: dark)", color: "#0F172A" },
+  ],
 };
 
 export const metadata: Metadata = generateSEO({
   title: "LearnWithHistories | Learn Languages Through Stories",
 
   description:
-    "Learn English, Portuguese, French and other languages by reading interactive stories with instant translations. Improve vocabulary, reading and comprehension for free.",
+    "Learn English, Portuguese and French by reading short stories with paragraph-by-paragraph translations. Free, no sign-up.",
 
   path: "/",
 });
@@ -55,26 +63,23 @@ export default function RootLayout({
 }>) {
   return (
     <html
-      lang="en"
+      lang="pt"
       suppressHydrationWarning
-      className={`
-        ${montserrat.variable}
-        ${poppins.variable}
-        ${openSans.variable}
-        h-full
-        antialiased
-        transition-colors
-        duration-300
-      `}
+      className={`${literata.variable} ${literataItalic.variable} ${openSans.variable} h-full`}
     >
-      <body className="min-h-full flex flex-col bg-background text-foreground font-sans transition-colors duration-300">
+      <head>
+        <script dangerouslySetInnerHTML={{ __html: THEME_SCRIPT }} />
+      </head>
+      <body className="min-h-full flex flex-col bg-background text-foreground font-sans text-base leading-normal">
         <StructuredData />
 
         <AdScript />
 
         <ThemeProvider>
           <LanguageProvider>
-            {children}
+            <Header />
+
+            <main className="flex-[1_0_auto]">{children}</main>
 
             <Footer />
           </LanguageProvider>

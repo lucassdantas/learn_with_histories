@@ -1,28 +1,21 @@
+import { SITE_NAME, SITE_URL } from "@/app/lib/seo";
+import JsonLd from "@/components/JsonLd";
+
+// Site-wide structured data (rendered once in the root layout).
 export default function StructuredData() {
   const schema = {
     "@context": "https://schema.org",
-    "@type": "WebApplication",
-    name: "LinguaStories",
-    description: "Master languages through immersive storytelling with instant translations.",
-    url: "https://linguastories.com",
-    applicationCategory: "EducationApplication",
-    offers: {
-      "@type": "Offer",
-      price: "0",
-      priceCurrency: "USD",
-    },
-    author: {
+    "@type": "WebSite",
+    name: SITE_NAME,
+    url: SITE_URL,
+    description: "Learn languages by reading short stories with paragraph-by-paragraph translations.",
+    inLanguage: ["en", "pt", "fr"],
+    publisher: {
       "@type": "Organization",
-      name: "LinguaStories",
-      url: "https://linguastories.com",
+      name: SITE_NAME,
+      url: SITE_URL,
     },
-    inLanguage: ["pt", "en", "fr"],
   };
 
-  return (
-    <script
-      type="application/ld+json"
-      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
-    />
-  );
+  return <JsonLd data={schema} />;
 }

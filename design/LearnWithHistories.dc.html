@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,500;0,7..72,600;1,7..72,400&amp;family=Open+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#E7DFD2}
+.lwh,.lwh *{box-sizing:border-box}
+.lwh button,.lwh input,.lwh select{font:inherit}
+.lwh :focus-visible{outline:3px solid var(--focus);outline-offset:2px;border-radius:6px}
+.lwh-light{--bg:#F4EBDD;--surface:#FFFCF7;--surface-2:#EDE1CD;--text:#1D3D5A;--heading:#1D3D5A;--muted:#4F6476;--border:#E2D2B9;--border-strong:#CDB896;--accent:#C8924A;--accent-ink:#8A5A1C;--accent-soft:#F3E1C3;--tr:#8B3A1F;--tr-soft:#F7E4D8;--primary:#1D3D5A;--primary-hover:#15304A;--on-primary:#FFFCF7;--link:#1D3D5A;--ad-bg:#E9E1D3;--ad-bg-2:#E2D9C9;--ad-ink:#5F5A51;--focus:#1D3D5A;--shadow-sm:0 1px 2px rgba(29,61,90,.06);--shadow-md:0 1px 2px rgba(29,61,90,.06),0 12px 32px -16px rgba(29,61,90,.28);color-scheme:light}
+.lwh-dark{--bg:#0F172A;--surface:#1E293B;--surface-2:#172033;--text:#F1F5F9;--heading:#F1F5F9;--muted:#A9B6C6;--border:#2C3A50;--border-strong:#40516B;--accent:#FCD34D;--accent-ink:#FCD34D;--accent-soft:#3A3422;--tr:#FB7185;--tr-soft:#2C1D2B;--primary:#FCD34D;--primary-hover:#FDE68A;--on-primary:#0F172A;--link:#93C5FD;--ad-bg:#162033;--ad-bg-2:#1B263B;--ad-ink:#94A3B8;--focus:#FCD34D;--shadow-sm:0 1px 2px rgba(0,0,0,.3);--shadow-md:0 1px 2px rgba(0,0,0,.3),0 16px 40px -20px rgba(0,0,0,.7);color-scheme:dark}
+</style>
+</helmet>
+<div ref="{{ rootRef }}" class="lwh {{ themeClass }}" lang="{{ native }}" style="container-type:inline-size;min-height:{{ minH }};max-width:{{ maxW }};margin:0 auto;display:flex;flex-direction:column;background:var(--bg);color:var(--text);font-family:'Open Sans',system-ui,sans-serif;font-size:16px;line-height:1.5;-webkit-font-smoothing:antialiased">
+
+  <header style="position:sticky;top:0;z-index:40;background:var(--bg);border-bottom:1px solid var(--border)">
+    <div style="max-width:1200px;margin:0 auto;padding:0 clamp(16px,4cqi,48px);height:68px;display:flex;align-items:center;gap:20px">
+      <a href="/" onClick="{{ goHome }}" style="display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--heading);min-height:44px;margin-right:auto;min-width:0">
+        <svg aria-hidden="true" width="40" height="40" viewBox="0 0 64 64" style="flex:none;display:block"><circle cx="32" cy="32" r="32" fill="#1D3D5A"></circle><circle cx="32" cy="32" r="29.5" fill="none" stroke="#C8924A" style="stroke-width:1.4"></circle><path d="M12 44.5C19.5 42.2 26.5 42.8 32 46.5C37.5 42.8 44.5 42.2 52 44.5V47C44.5 44.9 37.5 45.5 32 49C26.5 45.5 19.5 44.9 12 47Z" fill="#C8924A"></path><path d="M13 25C19.5 22 26 22.5 31 26V45C26 41.8 19.5 41.5 13 43.5Z" fill="#F4EBDD"></path><path d="M51 25C44.5 22 38 22.5 33 26V45C38 41.8 44.5 41.5 51 43.5Z" fill="#F4EBDD"></path><g fill="none" stroke="#1D3D5A" style="stroke-width:1.6;stroke-linecap:round"><path d="M17 30Q22 28.6 27 30.3"></path><path d="M17 34Q22 32.6 27 34.3"></path><path d="M17 38Q21 36.8 25 38.1"></path><path d="M40 36Q44 34.9 47 35.6"></path><path d="M37 40Q42 38.6 47 39.6"></path></g><path d="M37 37C34.5 33 34 28.5 36 25" fill="none" stroke="#C8924A" style="stroke-width:1.3;stroke-linecap:round;stroke-dasharray:1.2 2.2"></path><polygon points="33,22 53,10.5 41,25.5" fill="#E0A65A"></polygon><polygon points="41,25.5 53,10.5 43.5,32" fill="#B37A35"></polygon></svg>
+        <span style="font-family:'Literata',Georgia,serif;font-weight:600;font-size:19px;letter-spacing:-0.005em;white-space:nowrap">Learn<em style="font-style:italic;font-weight:400;color:var(--accent-ink)">With</em>Histories</span>
+      </a>
+      <sc-if value="{{ isDesktop }}" hint-placeholder-val="{{ true }}">
+        <nav aria-label="Main" style="display:flex;gap:4px">
+          <sc-for list="{{ navItems }}" as="n" hint-placeholder-count="3">
+            <a href="{{ n.href }}" onClick="{{ n.onClick }}" aria-current="{{ n.current }}" style="display:flex;align-items:center;min-height:44px;padding:0 12px;text-decoration:none;color:var(--text);font-weight:{{ n.weight }};font-size:15px;border-bottom:2px solid {{ n.line }}" style-hover="color:var(--accent-ink)">{{ n.label }}</a>
+          </sc-for>
+        </nav>
+        <div style="width:1px;height:28px;background:var(--border)"></div>
+        <div style="display:flex;align-items:center;gap:12px">
+          <label style="display:flex;align-items:center;gap:8px;font-size:13px;color:var(--muted);white-space:nowrap">{{ t.speak }}
+            <select value="{{ native }}" onChange="{{ onNative }}" style="appearance:none;min-height:44px;padding:0 32px 0 12px;border:1px solid var(--border-strong);border-radius:10px;background-color:var(--surface);color:var(--text);font-weight:600;font-size:14px;cursor:pointer;background-image:linear-gradient(45deg,transparent 50%,currentColor 50%),linear-gradient(135deg,currentColor 50%,transparent 50%);background-position:calc(100% - 17px) 52%,calc(100% - 12px) 52%;background-size:5px 5px,5px 5px;background-repeat:no-repeat">
+              <option value="pt">PT</option><option value="en">EN</option><option value="fr">FR</option>
+            </select>
+          </label>
+          <label style="display:flex;align-items:center;gap:8px;font-size:13px;color:var(--muted);white-space:nowrap">{{ t.learn }}
+            <select value="{{ learn }}" onChange="{{ onLearn }}" style="appearance:none;min-height:44px;padding:0 32px 0 12px;border:1px solid var(--border-strong);border-radius:10px;background-color:var(--surface);color:var(--text);font-weight:600;font-size:14px;cursor:pointer;background-image:linear-gradient(45deg,transparent 50%,currentColor 50%),linear-gradient(135deg,currentColor 50%,transparent 50%);background-position:calc(100% - 17px) 52%,calc(100% - 12px) 52%;background-size:5px 5px,5px 5px;background-repeat:no-repeat">
+              <option value="pt">PT</option><option value="en">EN</option><option value="fr">FR</option>
+            </select>
+          </label>
+        </div>
+      </sc-if>
+      <button onClick="{{ toggleTheme }}" aria-label="{{ themeLabel }}" title="{{ themeLabel }}" style="flex:none;width:44px;height:44px;border-radius:50%;border:1px solid var(--border-strong);background:var(--surface);color:var(--text);display:flex;align-items:center;justify-content:center;cursor:pointer" style-hover="border-color:var(--accent)">
+        <span aria-hidden="true" style="width:18px;height:18px;border-radius:50%;border:2px solid currentColor;background:linear-gradient(90deg,currentColor 50%,transparent 50%)"></span>
+      </button>
+      <sc-if value="{{ isMobile }}" hint-placeholder-val="{{ false }}">
+        <button onClick="{{ toggleMenu }}" aria-expanded="{{ menuOpen }}" aria-label="{{ menuLabel }}" style="flex:none;width:44px;height:44px;border-radius:10px;border:1px solid var(--border-strong);background:var(--surface);color:var(--text);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;cursor:pointer">
+          <sc-if value="{{ menuClosed }}" hint-placeholder-val="{{ true }}">
+            <span style="width:18px;height:2px;border-radius:2px;background:currentColor"></span>
+            <span style="width:18px;height:2px;border-radius:2px;background:currentColor"></span>
+            <span style="width:18px;height:2px;border-radius:2px;background:currentColor"></span>
+          </sc-if>
+          <sc-if value="{{ menuOpen }}" hint-placeholder-val="{{ false }}">
+            <span style="position:relative;width:18px;height:18px">
+              <span style="position:absolute;left:0;top:8px;width:18px;height:2px;border-radius:2px;background:currentColor;transform:rotate(45deg)"></span>
+              <span style="position:absolute;left:0;top:8px;width:18px;height:2px;border-radius:2px;background:currentColor;transform:rotate(-45deg)"></span>
+            </span>
+          </sc-if>
+        </button>
+      </sc-if>
+    </div>
+    <sc-if value="{{ menuVisible }}" hint-placeholder-val="{{ false }}">
+      <div style="position:absolute;left:0;right:0;top:100%;background:var(--surface);border-bottom:1px solid var(--border);box-shadow:var(--shadow-md);padding:8px 20px 24px">
+        <nav aria-label="Main" style="display:flex;flex-direction:column">
+          <sc-for list="{{ navItems }}" as="n" hint-placeholder-count="3">
+            <a href="{{ n.href }}" onClick="{{ n.onClick }}" aria-current="{{ n.current }}" style="display:flex;align-items:center;justify-content:space-between;min-height:56px;border-bottom:1px solid var(--border);text-decoration:none;color:var(--heading);font-family:'Literata',Georgia,serif;font-size:20px;font-weight:{{ n.weight }}">{{ n.label }}<span aria-hidden="true" style="width:8px;height:8px;border-radius:50%;background:{{ n.line }}"></span></a>
+          </sc-for>
+        </nav>
+        <div style="margin-top:20px;font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)">{{ t.langs }}</div>
+        <div style="margin-top:10px;display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:12px">
+          <label style="display:flex;flex-direction:column;gap:6px;font-size:14px;color:var(--muted)">{{ t.speak }}
+            <select value="{{ native }}" onChange="{{ onNative }}" style="appearance:none;min-height:48px;padding:0 34px 0 14px;border:1px solid var(--border-strong);border-radius:10px;background-color:var(--bg);color:var(--text);font-weight:600;font-size:16px;cursor:pointer;background-image:linear-gradient(45deg,transparent 50%,currentColor 50%),linear-gradient(135deg,currentColor 50%,transparent 50%);background-position:calc(100% - 18px) 52%,calc(100% - 13px) 52%;background-size:5px 5px,5px 5px;background-repeat:no-repeat">
+              <option value="pt">Português</option><option value="en">English</option><option value="fr">Français</option>
+            </select>
+          </label>
+          <label style="display:flex;flex-direction:column;gap:6px;font-size:14px;color:var(--muted)">{{ t.learn }}
+            <select value="{{ learn }}" onChange="{{ onLearn }}" style="appearance:none;min-height:48px;padding:0 34px 0 14px;border:1px solid var(--border-strong);border-radius:10px;background-color:var(--bg);color:var(--text);font-weight:600;font-size:16px;cursor:pointer;background-image:linear-gradient(45deg,transparent 50%,currentColor 50%),linear-gradient(135deg,currentColor 50%,transparent 50%);background-position:calc(100% - 18px) 52%,calc(100% - 13px) 52%;background-size:5px 5px,5px 5px;background-repeat:no-repeat">
+              <option value="pt">Português</option><option value="en">English</option><option value="fr">Français</option>
+            </select>
+          </label>
+        </div>
+      </div>
+    </sc-if>
+  </header>
+
+  <main style="flex:1 0 auto">
+
+    <sc-if value="{{ isHome }}" hint-placeholder-val="{{ true }}">
+      <section data-screen-label="Home" style="max-width:1200px;margin:0 auto;padding:clamp(40px,7cqi,96px) clamp(20px,5cqi,48px) clamp(32px,5cqi,64px);display:flex;flex-wrap:wrap;gap:clamp(36px,6cqi,80px);align-items:center">
+        <div style="flex:1 1 440px;min-width:0;display:flex;flex-direction:column;align-items:flex-start;gap:22px">
+          <span style="font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--accent-ink)">{{ t.hero.eyebrow }}</span>
+          <h1 style="margin:0;font-family:'Literata',Georgia,serif;font-weight:600;font-size:clamp(38px,5.4cqi,64px);line-height:1.08;letter-spacing:-0.015em;color:var(--heading);text-wrap:balance">{{ t.hero.title }}</h1>
+          <p style="margin:0;max-width:34em;font-size:clamp(17px,1.6cqi,19px);line-height:1.6;color:var(--muted);text-wrap:pretty">{{ t.hero.sub }}</p>
+          <a href="/stories" onClick="{{ goStories }}" style="margin-top:6px;display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:54px;padding:14px 30px;border-radius:999px;background:var(--primary);color:var(--on-primary);font-weight:600;font-size:16px;text-decoration:none;text-align:center" style-hover="background:var(--primary-hover)">{{ t.hero.cta }} <span aria-hidden="true">→</span></a>
+        </div>
+        <div style="flex:1 1 380px;min-width:0">
+          <div style="background:var(--surface);border:1px solid var(--border);border-radius:20px;box-shadow:var(--shadow-md);padding:clamp(22px,3cqi,32px);display:flex;flex-direction:column;gap:16px">
+            <div style="display:flex;align-items:center;justify-content:space-between;gap:12px;font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)">
+              <span>{{ t.hero.demo }}</span><span>{{ learnCode }} → {{ nativeCode }}</span>
+            </div>
+            <div style="display:grid;grid-template-columns:minmax(0,1fr) 44px;column-gap:16px;row-gap:14px;align-items:start">
+              <p lang="{{ learn }}" style="margin:0;font-family:'Literata',Georgia,serif;font-size:clamp(19px,1.8cqi,21px);line-height:1.65;color:var(--text);text-wrap:pretty">{{ demo.text }}</p>
+              <button onClick="{{ demo.toggle }}" aria-expanded="{{ demo.open }}" aria-label="{{ demo.label }}" style="width:44px;height:44px;border-radius:50%;border:1.5px solid var(--accent);background:{{ demo.bg }};color:var(--text);display:flex;align-items:center;justify-content:center;cursor:pointer;position:relative">
+                <span style="position:absolute;width:14px;height:2px;border-radius:2px;background:currentColor"></span>
+                <sc-if value="{{ demo.closed }}" hint-placeholder-val="{{ false }}"><span style="position:absolute;width:2px;height:14px;border-radius:2px;background:currentColor"></span></sc-if>
+              </button>
+              <sc-if value="{{ demo.open }}" hint-placeholder-val="{{ true }}">
+                <div lang="{{ native }}" style="grid-column:1 / 2;background:var(--tr-soft);color:var(--tr);border-radius:12px;padding:12px 16px;font-size:15px;line-height:1.6;display:flex;flex-direction:column;gap:4px">
+                  <span style="font-size:11px;font-weight:700;letter-spacing:.1em">{{ nativeCode }}</span>{{ demo.tr }}
+                </div>
+              </sc-if>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div style="max-width:1200px;margin:0 auto;width:100%;padding:24px clamp(20px,5cqi,48px)">
+        <aside aria-label="{{ t.ad }}" style="display:flex;flex-direction:column;align-items:center;gap:8px">
+          <span style="font-size:11px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--ad-ink)">{{ t.ad }}</span>
+          <div style="width:100%;max-width:970px;height:clamp(100px,10cqi,120px);border-radius:4px;background:repeating-linear-gradient(135deg,var(--ad-bg) 0 10px,var(--ad-bg-2) 10px 20px);display:flex;align-items:center;justify-content:center;font-family:ui-monospace,Menlo,monospace;font-size:12px;color:var(--ad-ink)">AdSense · responsive banner · min 300×100</div>
+        </aside>
+      </div>
+
+      <section style="max-width:1200px;margin:0 auto;width:100%;padding:clamp(40px,6cqi,72px) clamp(20px,5cqi,48px) 0;display:flex;flex-direction:column;gap:28px">
+        <h2 style="margin:0;font-family:'Literata',Georgia,serif;font-weight:600;font-size:clamp(26px,3cqi,34px);line-height:1.2;color:var(--heading)">{{ t.benefitsT }}</h2>
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));gap:20px">
+          <sc-for list="{{ benefits }}" as="b" hint-placeholder-count="3">
+            <div style="background:var(--surface);border:1px solid var(--border);border-radius:16px;padding:28px;display:flex;flex-direction:column;gap:10px">
+              <span style="font-family:'Literata',Georgia,serif;font-size:15px;font-weight:600;color:var(--accent-ink)">{{ b.n }}</span>
+              <h3 style="margin:0;font-family:'Literata',Georgia,serif;font-size:21px;font-weight:600;line-height:1.3;color:var(--heading)">{{ b.t }}</h3>
+              <p style="margin:0;font-size:15px;line-height:1.6;color:var(--muted);text-wrap:pretty">{{ b.d }}</p>
+            </div>
+          </sc-for>
+        </div>
+      </section>
+
+      <section style="max-width:1200px;margin:0 auto;width:100%;padding:clamp(56px,7cqi,96px) clamp(20px,5cqi,48px) 0;display:flex;flex-direction:column;gap:28px">
+        <div style="display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:12px 24px">
+          <h2 style="margin:0;font-family:'Literata',Georgia,serif;font-weight:600;font-size:clamp(26px,3cqi,34px);line-height:1.2;color:var(--heading)">{{ t.recent }}</h2>
+          <a href="/stories" onClick="{{ goStories }}" style="display:inline-flex;align-items:center;gap:6px;min-height:44px;font-weight:600;color:var(--link);text-decoration:underline;text-decoration-color:var(--accent);text-underline-offset:5px;text-decoration-thickness:2px">{{ t.seeAll }} <span aria-hidden="true">→</span></a>
+        </div>
+        <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,300px),1fr));gap:20px">
+          <sc-for list="{{ recent }}" as="s" hint-placeholder-count="6">
+            <a href="{{ s.href }}" onClick="{{ s.open }}" style="display:flex;flex-direction:column;gap:10px;padding:24px;background:var(--surface);border:1px solid var(--border);border-radius:16px;text-decoration:none;color:var(--text);box-shadow:var(--shadow-sm);transition:transform .15s ease,border-color .15s ease" style-hover="transform:translateY(-2px);border-color:var(--accent)">
+              <span aria-hidden="true" style="width:12px;height:12px;border-radius:50%;border:2px solid var(--accent)"></span>
+              <h3 lang="{{ learn }}" style="margin:0;font-family:'Literata',Georgia,serif;font-size:21px;font-weight:600;line-height:1.25;color:var(--heading)">{{ s.title }}</h3>
+              <p lang="{{ learn }}" style="margin:0;font-size:15px;line-height:1.55;color:var(--muted);text-wrap:pretty">{{ s.desc }}</p>
+            </a>
+          </sc-for>
+        </div>
+      </section>
+
+      <section style="max-width:1200px;margin:0 auto;width:100%;padding:clamp(56px,7cqi,96px) clamp(20px,5cqi,48px)">
+        <div style="background:var(--surface-2);border-radius:24px;padding:clamp(28px,5cqi,56px);display:flex;flex-wrap:wrap;gap:28px 48px;align-items:flex-end;justify-content:space-between">
+          <div style="flex:1 1 320px;min-width:0;display:flex;flex-direction:column;gap:10px">
+            <h2 style="margin:0;font-family:'Literata',Georgia,serif;font-weight:600;font-size:clamp(28px,3.4cqi,40px);line-height:1.15;color:var(--heading)">{{ t.ready.title }}</h2>
+            <p style="margin:0;font-size:16px;line-height:1.6;color:var(--muted);max-width:30em">{{ t.ready.sub }}</p>
+          </div>
+          <div style="flex:1 1 480px;min-width:0;display:flex;flex-wrap:wrap;gap:14px;align-items:flex-end">
+            <label style="flex:1 1 170px;display:flex;flex-direction:column;gap:6px;font-size:14px;font-weight:600;color:var(--text)">{{ t.ready.speak }}
+              <select value="{{ native }}" onChange="{{ onNative }}" style="appearance:none;width:100%;min-height:52px;padding:0 36px 0 16px;border:1px solid var(--border-strong);border-radius:12px;background-color:var(--surface);color:var(--text);font-weight:600;font-size:16px;cursor:pointer;background-image:linear-gradient(45deg,transparent 50%,currentColor 50%),linear-gradient(135deg,currentColor 50%,transparent 50%);background-position:calc(100% - 20px) 52%,calc(100% - 15px) 52%;background-size:5px 5px,5px 5px;background-repeat:no-repeat">
+                <option value="pt">Português</option><option value="en">English</option><option value="fr">Français</option>
+              </select>
+            </label>
+            <label style="flex:1 1 170px;display:flex;flex-direction:column;gap:6px;font-size:14px;font-weight:600;color:var(--text)">{{ t.ready.learn }}
+              <select value="{{ learn }}" onChange="{{ onLearn }}" style="appearance:none;width:100%;min-height:52px;padding:0 36px 0 16px;border:1px solid var(--border-strong);border-radius:12px;background-color:var(--surface);color:var(--text);font-weight:600;font-size:16px;cursor:pointer;background-image:linear-gradient(45deg,transparent 50%,currentColor 50%),linear-gradient(135deg,currentColor 50%,transparent 50%);background-position:calc(100% - 20px) 52%,calc(100% - 15px) 52%;background-size:5px 5px,5px 5px;background-repeat:no-repeat">
+                <option value="pt">Português</option><option value="en">English</option><option value="fr">Français</option>
+              </select>
+            </label>
+            <a href="/stories" onClick="{{ goStories }}" style="flex:1 1 170px;display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:12px 24px;border-radius:999px;background:var(--primary);color:var(--on-primary);font-weight:600;font-size:16px;text-decoration:none;text-align:center" style-hover="background:var(--primary-hover)">{{ t.ready.cta }}</a>
+          </div>
+        </div>
+      </section>
+    </sc-if>
+
+    <sc-if value="{{ isStories }}" hint-placeholder-val="{{ false }}">
+      <section data-screen-label="Stories" style="max-width:1200px;margin:0 auto;width:100%;padding:clamp(40px,6cqi,72px) clamp(20px,5cqi,48px) 8px;display:flex;flex-wrap:wrap;gap:24px 48px;align-items:flex-end;justify-content:space-between">
+        <div style="flex:1 1 360px;min-width:0;display:flex;flex-direction:column;gap:10px">
+          <h1 style="margin:0;font-family:'Literata',Georgia,serif;font-weight:600;font-size:clamp(34px,4.2cqi,52px);line-height:1.1;letter-spacing:-0.01em;color:var(--heading)">{{ t.list.title }}</h1>
+          <p style="margin:0;font-size:17px;line-height:1.55;color:var(--muted)">{{ readingLine }}</p>
+        </div>
+        <label style="flex:1 1 320px;max-width:440px;min-width:0;position:relative;display:block">
+          <span style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)">{{ t.list.search }}</span>
+          <span aria-hidden="true" style="position:absolute;left:18px;top:17px;width:14px;height:14px;border-radius:50%;border:2px solid var(--muted)"></span>
+          <span aria-hidden="true" style="position:absolute;left:30px;top:30px;width:7px;height:2px;border-radius:2px;background:var(--muted);transform:rotate(45deg)"></span>
+          <input type="search" value="{{ query }}" onChange="{{ onQuery }}" placeholder="{{ t.list.search }}" style="width:100%;min-height:52px;padding:0 20px 0 48px;border:1px solid var(--border-strong);border-radius:999px;background:var(--surface);color:var(--text);font-size:16px;outline-offset:2px">
+        </label>
+      </section>
+
+      <div style="max-width:1200px;margin:0 auto;width:100%;padding:32px clamp(20px,5cqi,48px)">
+        <aside aria-label="{{ t.ad }}" style="display:flex;flex-direction:column;align-items:center;gap:8px">
+          <span style="font-size:11px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--ad-ink)">{{ t.ad }}</span>
+          <div style="width:100%;max-width:970px;height:clamp(100px,10cqi,120px);border-radius:4px;background:repeating-linear-gradient(135deg,var(--ad-bg) 0 10px,var(--ad-bg-2) 10px 20px);display:flex;align-items:center;justify-content:center;font-family:ui-monospace,Menlo,monospace;font-size:12px;color:var(--ad-ink)">AdSense · responsive banner · min 300×100</div>
+        </aside>
+      </div>
+
+      <section style="max-width:1200px;margin:0 auto;width:100%;padding:8px clamp(20px,5cqi,48px) clamp(56px,7cqi,96px)">
+        <sc-if value="{{ hasResults }}" hint-placeholder-val="{{ true }}">
+          <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,300px),1fr));gap:20px">
+            <sc-for list="{{ filtered }}" as="s" hint-placeholder-count="6">
+              <a href="{{ s.href }}" onClick="{{ s.open }}" style="display:flex;flex-direction:column;gap:10px;padding:24px;background:var(--surface);border:1px solid var(--border);border-radius:16px;text-decoration:none;color:var(--text);box-shadow:var(--shadow-sm);transition:transform .15s ease,border-color .15s ease" style-hover="transform:translateY(-2px);border-color:var(--accent)">
+                <span aria-hidden="true" style="width:12px;height:12px;border-radius:50%;border:2px solid var(--accent)"></span>
+                <h2 lang="{{ learn }}" style="margin:0;font-family:'Literata',Georgia,serif;font-size:21px;font-weight:600;line-height:1.25;color:var(--heading)">{{ s.title }}</h2>
+                <p lang="{{ learn }}" style="margin:0;font-size:15px;line-height:1.55;color:var(--muted);text-wrap:pretty">{{ s.desc }}</p>
+                <span style="margin-top:auto;padding-top:10px;display:flex;align-items:center;gap:6px;font-size:15px;font-weight:600;color:var(--link)">{{ t.list.start }} <span aria-hidden="true">→</span></span>
+              </a>
+            </sc-for>
+          </div>
+        </sc-if>
+        <sc-if value="{{ noResults }}" hint-placeholder-val="{{ false }}">
+          <div role="status" style="border:1.5px dashed var(--border-strong);border-radius:20px;padding:clamp(40px,7cqi,72px) 24px;display:flex;flex-direction:column;align-items:center;gap:12px;text-align:center">
+            <span aria-hidden="true" style="width:44px;height:44px;border-radius:50%;border:2px solid var(--accent)"></span>
+            <h2 style="margin:8px 0 0;font-family:'Literata',Georgia,serif;font-weight:600;font-size:26px;color:var(--heading)">{{ t.list.emptyT }}</h2>
+            <p style="margin:0;max-width:30em;font-size:16px;line-height:1.6;color:var(--muted);text-wrap:pretty">{{ emptyLine }}</p>
+            <button onClick="{{ clearQuery }}" style="margin-top:8px;min-height:48px;padding:10px 24px;border-radius:999px;border:1.5px solid var(--border-strong);background:transparent;color:var(--text);font-weight:600;font-size:15px;cursor:pointer" style-hover="border-color:var(--accent)">{{ t.list.clear }}</button>
+          </div>
+        </sc-if>
+      </section>
+    </sc-if>
+
+    <sc-if value="{{ isReader }}" hint-placeholder-val="{{ false }}">
+      <div data-screen-label="Reader" style="position:sticky;top:68px;z-index:30;background:var(--bg);border-bottom:1px solid var(--border)">
+        <div style="max-width:1200px;margin:0 auto;padding:0 clamp(12px,4cqi,48px);height:56px;display:flex;align-items:center;justify-content:space-between;gap:12px">
+          <button onClick="{{ goStories }}" style="display:flex;align-items:center;gap:8px;min-height:44px;padding:0 12px 0 8px;margin-left:-4px;border:0;border-radius:10px;background:transparent;color:var(--text);font-weight:600;font-size:15px;cursor:pointer" style-hover="background:var(--surface)"><span aria-hidden="true" style="font-size:18px">←</span>{{ t.reader.back }}</button>
+          <span style="display:inline-flex;align-items:center;gap:8px;min-height:32px;padding:4px 14px;border-radius:999px;border:1px solid var(--accent);font-size:13px;color:var(--text);white-space:nowrap">{{ t.reader.readingIn }} <strong style="font-weight:700;letter-spacing:.04em">{{ learnCode }}</strong></span>
+        </div>
+      </div>
+
+      <div style="max-width:1200px;margin:0 auto;width:100%;padding:clamp(36px,5cqi,64px) clamp(20px,5cqi,48px) clamp(48px,6cqi,80px);display:flex;gap:72px;align-items:flex-start;justify-content:center">
+        <article lang="{{ learn }}" style="flex:1 1 0;min-width:0;max-width:700px">
+          <h1 style="margin:0 0 clamp(28px,4cqi,44px);font-family:'Literata',Georgia,serif;font-weight:600;font-size:clamp(32px,4cqi,48px);line-height:1.12;letter-spacing:-0.01em;color:var(--heading);text-wrap:balance">{{ story.title }}</h1>
+          <div style="display:flex;flex-direction:column;gap:clamp(22px,2.6cqi,30px)">
+            <sc-for list="{{ story.segments }}" as="s" hint-placeholder-count="5">
+              <div style="display:grid;grid-template-columns:minmax(0,1fr) 44px;column-gap:clamp(14px,2.4cqi,28px);row-gap:12px;align-items:start">
+                <p style="margin:0;font-family:'Literata',Georgia,serif;font-size:clamp(19px,1.75cqi,22px);line-height:1.7;color:var(--text);text-wrap:pretty">{{ s.text }}</p>
+                <button onClick="{{ s.toggle }}" aria-expanded="{{ s.open }}" aria-label="{{ s.label }}" title="{{ s.label }}" style="margin-top:2px;width:44px;height:44px;border-radius:50%;border:1.5px solid var(--accent);background:{{ s.bg }};color:var(--text);display:flex;align-items:center;justify-content:center;cursor:pointer;position:relative;transition:background .15s ease" style-hover="background:var(--accent-soft)">
+                  <span style="position:absolute;width:14px;height:2px;border-radius:2px;background:currentColor"></span>
+                  <sc-if value="{{ s.closed }}" hint-placeholder-val="{{ true }}"><span style="position:absolute;width:2px;height:14px;border-radius:2px;background:currentColor"></span></sc-if>
+                </button>
+                <sc-if value="{{ s.open }}" hint-placeholder-val="{{ false }}">
+                  <div lang="{{ native }}" style="grid-column:1 / 2;background:var(--tr-soft);color:var(--tr);border-radius:12px;padding:14px 18px;font-family:'Open Sans',system-ui,sans-serif;font-size:clamp(15px,1.3cqi,17px);line-height:1.6;display:flex;flex-direction:column;gap:4px;text-wrap:pretty">
+                    <span style="font-size:11px;font-weight:700;letter-spacing:.1em">{{ nativeCode }}</span>{{ s.tr }}
+                  </div>
+                </sc-if>
+              </div>
+            </sc-for>
+          </div>
+          <div style="margin-top:clamp(44px,6cqi,64px);padding-top:32px;border-top:1px solid var(--border);display:flex;flex-direction:column;align-items:center;gap:12px;text-align:center" lang="{{ native }}">
+            <sc-if value="{{ notFinished }}" hint-placeholder-val="{{ true }}">
+              <button onClick="{{ finish }}" style="min-height:54px;min-width:200px;padding:14px 32px;border-radius:999px;border:0;background:var(--primary);color:var(--on-primary);font-weight:600;font-size:16px;cursor:pointer" style-hover="background:var(--primary-hover)">{{ t.reader.finish }}</button>
+            </sc-if>
+            <sc-if value="{{ finished }}" hint-placeholder-val="{{ false }}">
+              <span aria-hidden="true" style="width:44px;height:44px;border-radius:50%;border:2px solid var(--accent);display:flex;align-items:center;justify-content:center"><span style="width:14px;height:14px;border-radius:50%;background:var(--accent)"></span></span>
+              <h2 role="status" style="margin:0;font-family:'Literata',Georgia,serif;font-weight:600;font-size:26px;color:var(--heading)">{{ t.reader.doneT }}</h2>
+              <p style="margin:0;font-size:16px;color:var(--muted)">{{ t.reader.doneD }}</p>
+            </sc-if>
+          </div>
+        </article>
+        <sc-if value="{{ isDesktop }}" hint-placeholder-val="{{ true }}">
+          <aside style="flex:0 0 300px;display:flex;flex-direction:column;gap:40px">
+            <div style="background:var(--surface);border:1px solid var(--border);border-radius:16px;padding:24px;display:flex;flex-direction:column;gap:16px">
+              <h2 style="margin:0;font-family:'Literata',Georgia,serif;font-weight:600;font-size:19px;color:var(--heading)">{{ t.reader.howT }}</h2>
+              <ol style="margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:14px">
+                <sc-for list="{{ howSteps }}" as="h" hint-placeholder-count="3">
+                  <li style="display:grid;grid-template-columns:26px minmax(0,1fr);gap:10px;font-size:14px;line-height:1.55;color:var(--muted)"><span style="width:26px;height:26px;border-radius:50%;background:var(--accent-soft);color:var(--accent-ink);font-weight:700;font-size:13px;display:flex;align-items:center;justify-content:center">{{ h.n }}</span>{{ h.d }}</li>
+                </sc-for>
+              </ol>
+            </div>
+            <div aria-label="{{ t.ad }}" role="complementary" style="display:flex;flex-direction:column;align-items:center;gap:8px">
+              <span style="font-size:11px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--ad-ink)">{{ t.ad }}</span>
+              <div style="width:300px;height:600px;border-radius:4px;background:repeating-linear-gradient(135deg,var(--ad-bg) 0 10px,var(--ad-bg-2) 10px 20px);display:flex;align-items:center;justify-content:center;font-family:ui-monospace,Menlo,monospace;font-size:12px;color:var(--ad-ink)">AdSense · 300×600</div>
+            </div>
+          </aside>
+        </sc-if>
+      </div>
+
+      <section style="border-top:1px solid var(--border);background:var(--surface-2)">
+        <div style="max-width:1200px;margin:0 auto;padding:clamp(44px,6cqi,72px) clamp(20px,5cqi,48px);display:flex;flex-direction:column;gap:24px">
+          <h2 style="margin:0;font-family:'Literata',Georgia,serif;font-weight:600;font-size:clamp(24px,2.8cqi,32px);color:var(--heading)">{{ t.reader.more }}</h2>
+          <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,280px),1fr));gap:20px">
+            <sc-for list="{{ more }}" as="s" hint-placeholder-count="3">
+              <a href="{{ s.href }}" onClick="{{ s.open }}" style="display:flex;flex-direction:column;gap:10px;padding:24px;background:var(--surface);border:1px solid var(--border);border-radius:16px;text-decoration:none;color:var(--text);box-shadow:var(--shadow-sm);transition:transform .15s ease,border-color .15s ease" style-hover="transform:translateY(-2px);border-color:var(--accent)">
+                <span aria-hidden="true" style="width:12px;height:12px;border-radius:50%;border:2px solid var(--accent)"></span>
+                <h3 lang="{{ learn }}" style="margin:0;font-family:'Literata',Georgia,serif;font-size:21px;font-weight:600;line-height:1.25;color:var(--heading)">{{ s.title }}</h3>
+                <p lang="{{ learn }}" style="margin:0;font-size:15px;line-height:1.55;color:var(--muted);text-wrap:pretty">{{ s.desc }}</p>
+              </a>
+            </sc-for>
+          </div>
+        </div>
+      </section>
+
+      <div style="max-width:1200px;margin:0 auto;width:100%;padding:40px clamp(20px,5cqi,48px)">
+        <aside aria-label="{{ t.ad }}" style="display:flex;flex-direction:column;align-items:center;gap:8px">
+          <span style="font-size:11px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--ad-ink)">{{ t.ad }}</span>
+          <div style="width:100%;max-width:970px;height:clamp(100px,10cqi,120px);border-radius:4px;background:repeating-linear-gradient(135deg,var(--ad-bg) 0 10px,var(--ad-bg-2) 10px 20px);display:flex;align-items:center;justify-content:center;font-family:ui-monospace,Menlo,monospace;font-size:12px;color:var(--ad-ink)">AdSense · responsive banner · min 300×100</div>
+        </aside>
+      </div>
+    </sc-if>
+
+    <sc-if value="{{ isAbout }}" hint-placeholder-val="{{ false }}">
+      <section data-screen-label="About" style="max-width:1200px;margin:0 auto;width:100%;padding:clamp(48px,7cqi,104px) clamp(20px,5cqi,48px) clamp(40px,5cqi,64px);display:flex;flex-direction:column;gap:20px">
+        <span style="font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--accent-ink)">{{ t.about.title }}</span>
+        <h1 style="margin:0;max-width:20em;font-family:'Literata',Georgia,serif;font-weight:500;font-size:clamp(30px,4.2cqi,52px);line-height:1.18;letter-spacing:-0.01em;color:var(--heading);text-wrap:balance">{{ t.about.lead }}</h1>
+      </section>
+      <section style="max-width:1200px;margin:0 auto;width:100%;padding:0 clamp(20px,5cqi,48px);display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr));gap:40px 64px">
+        <div style="display:flex;flex-direction:column;gap:12px;padding-top:28px;border-top:1px solid var(--border-strong)">
+          <h2 style="margin:0;font-family:'Literata',Georgia,serif;font-weight:600;font-size:clamp(24px,2.6cqi,30px);color:var(--heading)">{{ t.about.missionT }}</h2>
+          <p style="margin:0;font-size:17px;line-height:1.7;color:var(--text);text-wrap:pretty">{{ t.about.missionD }}</p>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:12px;padding-top:28px;border-top:1px solid var(--border-strong)">
+          <h2 style="margin:0;font-family:'Literata',Georgia,serif;font-weight:600;font-size:clamp(24px,2.6cqi,30px);color:var(--heading)">{{ t.about.whyT }}</h2>
+          <p style="margin:0;font-size:17px;line-height:1.7;color:var(--text);text-wrap:pretty">{{ t.about.whyD }}</p>
+        </div>
+      </section>
+      <section style="max-width:1200px;margin:0 auto;width:100%;padding:clamp(56px,7cqi,96px) clamp(20px,5cqi,48px) 0;display:flex;flex-direction:column;gap:28px">
+        <h2 style="margin:0;font-family:'Literata',Georgia,serif;font-weight:600;font-size:clamp(26px,3cqi,34px);color:var(--heading)">{{ t.about.pillarsT }}</h2>
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));gap:20px">
+          <sc-for list="{{ pillars }}" as="p" hint-placeholder-count="3">
+            <div style="background:var(--surface);border:1px solid var(--border);border-radius:16px;padding:28px;display:flex;flex-direction:column;gap:10px">
+              <span style="font-family:'Literata',Georgia,serif;font-size:15px;font-weight:600;color:var(--accent-ink)">{{ p.n }}</span>
+              <h3 style="margin:0;font-family:'Literata',Georgia,serif;font-size:22px;font-weight:600;color:var(--heading)">{{ p.t }}</h3>
+              <p style="margin:0;font-size:15px;line-height:1.6;color:var(--muted);text-wrap:pretty">{{ p.d }}</p>
+            </div>
+          </sc-for>
+        </div>
+      </section>
+      <section style="max-width:1200px;margin:0 auto;width:100%;padding:clamp(56px,7cqi,96px) clamp(20px,5cqi,48px) 0;display:flex;flex-direction:column;gap:24px">
+        <h2 style="margin:0;font-family:'Literata',Georgia,serif;font-weight:600;font-size:clamp(26px,3cqi,34px);color:var(--heading)">{{ t.about.featuresT }}</h2>
+        <ul style="margin:0;padding:0;list-style:none;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr));gap:0 48px">
+          <sc-for list="{{ features }}" as="f" hint-placeholder-count="6">
+            <li style="display:flex;align-items:baseline;gap:14px;padding:16px 0;border-bottom:1px solid var(--border);font-size:16px;line-height:1.5"><span aria-hidden="true" style="flex:none;width:10px;height:10px;border-radius:50%;background:var(--accent);transform:translateY(-1px)"></span>{{ f.d }}</li>
+          </sc-for>
+        </ul>
+      </section>
+      <section style="max-width:1200px;margin:0 auto;width:100%;padding:clamp(56px,7cqi,96px) clamp(20px,5cqi,48px)">
+        <div style="background:var(--surface-2);border-radius:24px;padding:clamp(32px,5cqi,56px);display:flex;flex-wrap:wrap;gap:24px;align-items:center;justify-content:space-between">
+          <h2 style="margin:0;flex:1 1 320px;font-family:'Literata',Georgia,serif;font-weight:600;font-size:clamp(26px,3.2cqi,38px);line-height:1.2;color:var(--heading);text-wrap:balance">{{ t.about.ctaT }}</h2>
+          <a href="/stories" onClick="{{ goStories }}" style="display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:54px;padding:14px 30px;border-radius:999px;background:var(--primary);color:var(--on-primary);font-weight:600;font-size:16px;text-decoration:none;text-align:center" style-hover="background:var(--primary-hover)">{{ t.about.ctaB }} <span aria-hidden="true">→</span></a>
+        </div>
+      </section>
+    </sc-if>
+
+    <sc-if value="{{ isLegal }}" hint-placeholder-val="{{ false }}">
+      <article data-screen-label="Legal" style="max-width:800px;margin:0 auto;width:100%;padding:clamp(48px,7cqi,96px) clamp(20px,5cqi,48px) clamp(56px,7cqi,96px)">
+        <h1 style="margin:0;font-family:'Literata',Georgia,serif;font-weight:600;font-size:clamp(34px,4.2cqi,50px);line-height:1.12;letter-spacing:-0.01em;color:var(--heading)">{{ legal.title }}</h1>
+        <p style="margin:12px 0 40px;font-size:14px;color:var(--muted)">{{ legal.updated }}</p>
+        <sc-for list="{{ legal.sections }}" as="s" hint-placeholder-count="8">
+          <section style="display:grid;grid-template-columns:clamp(32px,4cqi,48px) minmax(0,1fr);gap:4px 12px;padding:28px 0;border-top:1px solid var(--border)">
+            <span style="font-family:'Literata',Georgia,serif;font-weight:600;font-size:20px;line-height:1.35;color:var(--accent-ink)">{{ s.n }}.</span>
+            <div style="display:flex;flex-direction:column;gap:10px;align-items:flex-start">
+              <h2 style="margin:0;font-family:'Literata',Georgia,serif;font-weight:600;font-size:20px;line-height:1.35;color:var(--heading)">{{ s.t }}</h2>
+              <p style="margin:0;font-size:16px;line-height:1.7;color:var(--text);text-wrap:pretty">{{ s.d }}</p>
+              <sc-if value="{{ s.btn }}" hint-placeholder-val="{{ false }}">
+                <button onClick="{{ cookieSettings }}" style="margin-top:6px;min-height:48px;padding:10px 22px;border-radius:999px;border:1.5px solid var(--border-strong);background:var(--surface);color:var(--text);font-weight:600;font-size:15px;cursor:pointer;text-align:left" style-hover="border-color:var(--accent)">{{ t.privacy.cookieBtn }}</button>
+              </sc-if>
+            </div>
+          </section>
+        </sc-for>
+        <div style="margin-top:16px;background:var(--surface);border:1px solid var(--border);border-radius:16px;padding:28px;display:flex;flex-direction:column;gap:8px">
+          <h2 style="margin:0;font-family:'Literata',Georgia,serif;font-weight:600;font-size:20px;color:var(--heading)">{{ t.contactT }}</h2>
+          <p style="margin:0;font-size:16px;line-height:1.6;color:var(--muted)">{{ legal.contact }}</p>
+          <a href="mailto:contato@devdantas.com.br" style="align-self:flex-start;display:inline-flex;align-items:center;min-height:44px;font-weight:600;color:var(--link);text-decoration:underline;text-decoration-color:var(--accent);text-underline-offset:5px;text-decoration-thickness:2px;word-break:break-all">contato@devdantas.com.br</a>
+        </div>
+      </article>
+    </sc-if>
+
+    <sc-if value="{{ is404 }}" hint-placeholder-val="{{ false }}">
+      <section data-screen-label="404" style="max-width:720px;margin:0 auto;width:100%;padding:clamp(72px,12cqi,160px) clamp(20px,5cqi,48px);display:flex;flex-direction:column;align-items:center;gap:18px;text-align:center">
+        <span style="font-family:'Literata',Georgia,serif;font-weight:500;font-size:clamp(72px,12cqi,128px);line-height:1;color:var(--accent);letter-spacing:-0.03em">404</span>
+        <h1 style="margin:0;font-family:'Literata',Georgia,serif;font-weight:600;font-size:clamp(28px,3.6cqi,40px);line-height:1.2;color:var(--heading);text-wrap:balance">{{ t.nf.title }}</h1>
+        <p style="margin:0;max-width:30em;font-size:17px;line-height:1.6;color:var(--muted);text-wrap:pretty">{{ t.nf.d }}</p>
+        <div style="margin-top:12px;display:flex;flex-wrap:wrap;justify-content:center;gap:12px">
+          <a href="/stories" onClick="{{ goStories }}" style="display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:12px 28px;border-radius:999px;background:var(--primary);color:var(--on-primary);font-weight:600;text-decoration:none" style-hover="background:var(--primary-hover)">{{ t.nf.stories }}</a>
+          <a href="/" onClick="{{ goHome }}" style="display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:12px 28px;border-radius:999px;border:1.5px solid var(--border-strong);color:var(--text);font-weight:600;text-decoration:none" style-hover="border-color:var(--accent)">{{ t.nf.home }}</a>
+        </div>
+      </section>
+    </sc-if>
+  </main>
+
+  <footer style="border-top:1px solid var(--border);background:var(--surface-2)">
+    <div style="max-width:1200px;margin:0 auto;padding:48px clamp(20px,5cqi,48px) 28px;display:flex;flex-direction:column;gap:32px">
+      <div style="display:flex;flex-wrap:wrap;gap:24px 48px;justify-content:space-between;align-items:flex-start">
+        <div style="display:flex;flex-direction:column;gap:10px;flex:1 1 240px">
+          <div style="display:flex;align-items:center;gap:10px">
+            <svg aria-hidden="true" width="36" height="36" viewBox="0 0 64 64" style="flex:none;display:block"><circle cx="32" cy="32" r="32" fill="#1D3D5A"></circle><circle cx="32" cy="32" r="29.5" fill="none" stroke="#C8924A" style="stroke-width:1.4"></circle><path d="M12 44.5C19.5 42.2 26.5 42.8 32 46.5C37.5 42.8 44.5 42.2 52 44.5V47C44.5 44.9 37.5 45.5 32 49C26.5 45.5 19.5 44.9 12 47Z" fill="#C8924A"></path><path d="M13 25C19.5 22 26 22.5 31 26V45C26 41.8 19.5 41.5 13 43.5Z" fill="#F4EBDD"></path><path d="M51 25C44.5 22 38 22.5 33 26V45C38 41.8 44.5 41.5 51 43.5Z" fill="#F4EBDD"></path><g fill="none" stroke="#1D3D5A" style="stroke-width:1.6;stroke-linecap:round"><path d="M17 30Q22 28.6 27 30.3"></path><path d="M17 34Q22 32.6 27 34.3"></path><path d="M17 38Q21 36.8 25 38.1"></path><path d="M40 36Q44 34.9 47 35.6"></path><path d="M37 40Q42 38.6 47 39.6"></path></g><path d="M37 37C34.5 33 34 28.5 36 25" fill="none" stroke="#C8924A" style="stroke-width:1.3;stroke-linecap:round;stroke-dasharray:1.2 2.2"></path><polygon points="33,22 53,10.5 41,25.5" fill="#E0A65A"></polygon><polygon points="41,25.5 53,10.5 43.5,32" fill="#B37A35"></polygon></svg>
+            <span style="font-family:'Literata',Georgia,serif;font-weight:600;font-size:18px;color:var(--heading)">Learn<em style="font-style:italic;font-weight:400;color:var(--accent-ink)">With</em>Histories</span>
+          </div>
+          <p style="margin:0;font-size:14px;color:var(--muted);max-width:22em">{{ t.footer.tag }}</p>
+        </div>
+        <nav aria-label="Footer" style="flex:2 1 420px;display:flex;flex-wrap:wrap;gap:0 24px;justify-content:flex-end">
+          <sc-for list="{{ footerLinks }}" as="l" hint-placeholder-count="6">
+            <a href="{{ l.href }}" onClick="{{ l.onClick }}" style="display:inline-flex;align-items:center;min-height:44px;font-size:14px;color:var(--text);text-decoration:none" style-hover="text-decoration:underline;text-decoration-color:var(--accent);text-underline-offset:4px">{{ l.label }}</a>
+          </sc-for>
+        </nav>
+      </div>
+      <div style="padding-top:20px;border-top:1px solid var(--border);font-size:13px;color:var(--muted)">© 2026 LearnWithHistories. {{ t.footer.rights }}</div>
+    </div>
+  </footer>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;page&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;home&quot;,&quot;stories&quot;,&quot;reader&quot;,&quot;about&quot;,&quot;terms&quot;,&quot;privacy&quot;,&quot;404&quot;],&quot;default&quot;:&quot;home&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Estado&quot;},&quot;theme&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;light&quot;,&quot;dark&quot;],&quot;default&quot;:&quot;light&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Estado&quot;},&quot;viewport&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;auto&quot;,&quot;desktop&quot;,&quot;mobile&quot;],&quot;default&quot;:&quot;auto&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Estado&quot;},&quot;native&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;pt&quot;,&quot;en&quot;,&quot;fr&quot;],&quot;default&quot;:&quot;pt&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Idiomas&quot;},&quot;learn&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;pt&quot;,&quot;en&quot;,&quot;fr&quot;],&quot;default&quot;:&quot;en&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Idiomas&quot;},&quot;menuOpen&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:false,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Estados&quot;},&quot;openSegments&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:false,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Estados&quot;},&quot;query&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Estados&quot;},&quot;embedded&quot;:{&quot;editor&quot;:null,&quot;tsType&quot;:&quot;boolean&quot;}}">
+const LANGS = ['pt', 'en', 'fr'];
+const CODES = { pt: 'PT', en: 'EN', fr: 'FR' };
+const I18N = {
+  pt: {
+    nav: ['Início', 'Histórias', 'Sobre'], speak: 'Falo', learn: 'Aprendo', langs: 'Idiomas',
+    toLight: 'Ativar tema claro', toDark: 'Ativar tema escuro', menu: 'Abrir menu', closeMenu: 'Fechar menu', ad: 'Publicidade',
+    names: { pt: 'português', en: 'inglês', fr: 'francês' },
+    hero: { eyebrow: 'Grátis · Sem cadastro', title: 'Aprenda idiomas lendo histórias curtas', sub: 'Leia no idioma que você está aprendendo e revele a tradução de cada trecho só quando precisar.', cta: 'Começar a ler', demo: 'Exemplo' },
+    benefitsT: 'Como funciona',
+    benefits: [['Contexto real', 'Palavras novas aparecem dentro de uma história, e o sentido vem do contexto.'], ['Tradução quando precisar', 'Cada trecho tem sua tradução escondida. Tente entender primeiro; confira depois.'], ['Grátis e sem cadastro', 'Escolha os idiomas e comece a ler. Sem conta, sem senha.']],
+    recent: 'Histórias recentes', seeAll: 'Ver todas',
+    ready: { title: 'Pronto para começar?', sub: 'Escolha seus idiomas. Você pode trocá-los a qualquer momento no topo da página.', speak: 'Eu falo', learn: 'Quero aprender', cta: 'Começar a ler' },
+    list: { title: 'Histórias', line: 'Lendo em {l} com traduções em {n}', search: 'Buscar histórias', start: 'Começar a ler', emptyT: 'Nenhum resultado', emptyD: 'Não encontramos histórias para “{q}”. Tente outra palavra.', clear: 'Limpar busca' },
+    reader: { back: 'Voltar', readingIn: 'Lendo em', show: 'Mostrar tradução', hide: 'Ocultar tradução', finish: 'Terminar', doneT: 'Fim da história', doneD: 'Bom trabalho. Que tal a próxima?', howT: 'Como usar', how: ['Leia cada trecho com calma, no idioma que você está aprendendo.', 'Tente entender pelo contexto antes de abrir a tradução.', 'Toque em + para ver a tradução daquele trecho.'], more: 'Continue lendo' },
+    about: { title: 'Sobre', lead: 'O LearnWithHistories é um site gratuito para aprender idiomas lendo histórias curtas.', missionT: 'Nossa missão', missionD: 'Tornar a leitura em outro idioma algo leve e possível desde o primeiro dia, com apoio na hora certa e sem barreiras de cadastro ou pagamento.', whyT: 'Por que histórias?', whyD: 'Uma história dá motivo para continuar lendo. Personagens, lugares e situações criam contexto, e o contexto ajuda a memorizar palavras e estruturas sem listas decoradas.', pillarsT: 'Três pilares', pillars: [['Contextual', 'Cada palavra aparece em uma frase com sentido, dentro de uma cena.'], ['Cultural', 'As histórias trazem costumes, lugares e expressões de quem fala o idioma.'], ['Progressão natural', 'Trechos curtos e tradução sob demanda deixam você avançar no seu ritmo.']], featuresT: 'Recursos', features: ['Histórias divididas em trechos de 2 a 3 frases', 'Tradução de cada trecho com um toque', 'Português, inglês e francês, em qualquer combinação', 'Tema claro e escuro', 'Funciona no celular e no computador', 'Gratuito e sem cadastro'], ctaT: 'Comece pela sua primeira história', ctaB: 'Ver histórias' },
+    terms: { title: 'Termos de uso', updated: 'Última atualização: outubro de 2026', contact: 'Dúvidas sobre estes termos? Escreva para:', sections: [['Aceitação dos termos', 'Ao acessar e usar o LearnWithHistories, você concorda com estes termos. Se não concordar, não utilize o site.'], ['Descrição do serviço', 'O site oferece, gratuitamente, histórias curtas para leitura em diferentes idiomas, com tradução por trecho.'], ['Uso permitido', 'Você pode usar o conteúdo para estudo pessoal e não comercial. Não é permitido copiar, revender ou redistribuir as histórias sem autorização.'], ['Propriedade intelectual', 'Textos, traduções, marca e layout pertencem ao LearnWithHistories, salvo indicação em contrário.'], ['Publicidade', 'O site exibe anúncios do Google AdSense para continuar gratuito. Não nos responsabilizamos pelo conteúdo de sites de terceiros.'], ['Isenção de garantias', 'O conteúdo é oferecido “como está”. Fazemos o possível para manter as traduções corretas, mas podem existir erros.'], ['Limitação de responsabilidade', 'Não respondemos por danos decorrentes do uso ou da impossibilidade de uso do site.'], ['Alterações nos termos', 'Podemos atualizar estes termos a qualquer momento. A data no topo indica a versão vigente.']] },
+    privacy: { title: 'Política de privacidade', updated: 'Última atualização: outubro de 2026', contact: 'Dúvidas sobre esta política? Escreva para:', cookieBtn: 'Configurações de privacidade e cookies', sections: [['Informações que coletamos', 'Não pedimos cadastro nem dados pessoais. Dados técnicos, como tipo de navegador e páginas visitadas, podem ser coletados automaticamente.'], ['Cookies', 'Usamos cookies para lembrar suas preferências de idioma e tema e para exibir anúncios.'], ['Google AdSense', 'O Google pode usar cookies para exibir anúncios com base em visitas anteriores a este e a outros sites.'], ['Como usamos as informações', 'Para manter o site funcionando, entender o uso de forma agregada e exibir anúncios.'], ['Compartilhamento', 'Não vendemos dados. Informações técnicas podem ser processadas pelo Google conforme as políticas dele.'], ['Seus direitos', 'Você pode limpar os cookies do navegador e desativar anúncios personalizados nas configurações de anúncios do Google.'], ['Seu consentimento (GDPR)', 'Visitantes do Espaço Econômico Europeu e do Reino Unido podem revisar e alterar seu consentimento a qualquer momento.']] },
+    contactT: 'Contato',
+    nf: { title: 'Esta página saiu da história', d: 'O endereço pode ter mudado ou nunca ter existido. Que tal voltar para uma página conhecida?', stories: 'Ver histórias', home: 'Ir para o início' },
+    footer: { tag: 'Aprenda idiomas lendo histórias curtas.', terms: 'Termos de uso', privacy: 'Privacidade', cookies: 'Configurações de privacidade e cookies', rights: 'Todos os direitos reservados.' }
+  },
+  en: {
+    nav: ['Home', 'Stories', 'About'], speak: 'I speak', learn: 'Learning', langs: 'Languages',
+    toLight: 'Switch to light theme', toDark: 'Switch to dark theme', menu: 'Open menu', closeMenu: 'Close menu', ad: 'Advertisement',
+    names: { pt: 'Portuguese', en: 'English', fr: 'French' },
+    hero: { eyebrow: 'Free · No sign-up', title: 'Learn languages by reading short stories', sub: 'Read in the language you’re learning and reveal the translation of each passage only when you need it.', cta: 'Start reading', demo: 'Example' },
+    benefitsT: 'How it works',
+    benefits: [['Real context', 'New words appear inside a story, and their meaning comes from context.'], ['Translation on demand', 'Every passage keeps its translation hidden. Try to understand first, then check.'], ['Free, no sign-up', 'Pick your languages and start reading. No account, no password.']],
+    recent: 'Recent stories', seeAll: 'See all',
+    ready: { title: 'Ready to start?', sub: 'Choose your languages. You can change them anytime at the top of the page.', speak: 'I speak', learn: 'I want to learn', cta: 'Start reading' },
+    list: { title: 'Stories', line: 'Reading in {l} with translations in {n}', search: 'Search stories', start: 'Start reading', emptyT: 'No results', emptyD: 'We couldn’t find stories for “{q}”. Try another word.', clear: 'Clear search' },
+    reader: { back: 'Back', readingIn: 'Reading in', show: 'Show translation', hide: 'Hide translation', finish: 'Finish', doneT: 'The end', doneD: 'Well done. Ready for the next one?', howT: 'How to use', how: ['Read each passage calmly, in the language you’re learning.', 'Try to understand from context before opening the translation.', 'Tap + to see the translation of that passage.'], more: 'Keep reading' },
+    about: { title: 'About', lead: 'LearnWithHistories is a free website for learning languages by reading short stories.', missionT: 'Our mission', missionD: 'Make reading in another language feel light and possible from day one, with help at the right moment and no sign-up or payment barriers.', whyT: 'Why stories?', whyD: 'A story gives you a reason to keep reading. Characters, places and situations create context, and context helps you remember words and structures without memorized lists.', pillarsT: 'Three pillars', pillars: [['Contextual', 'Every word appears in a meaningful sentence, inside a scene.'], ['Cultural', 'Stories bring the customs, places and expressions of the people who speak the language.'], ['Natural progression', 'Short passages and on-demand translation let you move at your own pace.']], featuresT: 'Features', features: ['Stories split into passages of 2–3 sentences', 'One-tap translation for every passage', 'Portuguese, English and French, in any combination', 'Light and dark themes', 'Works on phone and desktop', 'Free, no sign-up'], ctaT: 'Start with your first story', ctaB: 'Browse stories' },
+    terms: { title: 'Terms of Use', updated: 'Last updated: October 2026', contact: 'Questions about these terms? Write to:', sections: [['Acceptance of terms', 'By accessing and using LearnWithHistories, you agree to these terms. If you do not agree, please do not use the site.'], ['Description of the service', 'The site offers short stories to read in different languages, with passage-by-passage translations, free of charge.'], ['Permitted use', 'You may use the content for personal, non-commercial study. Copying, reselling or redistributing the stories without permission is not allowed.'], ['Intellectual property', 'Texts, translations, brand and layout belong to LearnWithHistories unless stated otherwise.'], ['Advertising', 'The site shows Google AdSense ads to stay free. We are not responsible for the content of third-party websites.'], ['Disclaimer of warranties', 'Content is provided “as is”. We do our best to keep translations accurate, but errors may exist.'], ['Limitation of liability', 'We are not liable for damages arising from the use of, or inability to use, the site.'], ['Changes to these terms', 'We may update these terms at any time. The date at the top shows the current version.']] },
+    privacy: { title: 'Privacy Policy', updated: 'Last updated: October 2026', contact: 'Questions about this policy? Write to:', cookieBtn: 'Privacy and cookie settings', sections: [['Information we collect', 'We don’t ask for sign-up or personal data. Technical data, such as browser type and pages visited, may be collected automatically.'], ['Cookies', 'We use cookies to remember your language and theme preferences and to show ads.'], ['Google AdSense', 'Google may use cookies to show ads based on previous visits to this and other websites.'], ['How we use information', 'To keep the site running, understand usage in aggregate and show ads.'], ['Sharing', 'We don’t sell data. Technical information may be processed by Google under its own policies.'], ['Your rights', 'You can clear your browser cookies and turn off personalized ads in Google’s ad settings.'], ['Your consent (GDPR)', 'Visitors from the European Economic Area and the United Kingdom can review and change their consent at any time.']] },
+    contactT: 'Contact',
+    nf: { title: 'This page wandered out of the story', d: 'The address may have changed or never existed. Let’s get you back somewhere familiar.', stories: 'Browse stories', home: 'Go to home' },
+    footer: { tag: 'Learn languages by reading short stories.', terms: 'Terms of Use', privacy: 'Privacy', cookies: 'Privacy and cookie settings', rights: 'All rights reserved.' }
+  },
+  fr: {
+    nav: ['Accueil', 'Histoires', 'À propos'], speak: 'Je parle', learn: 'J’apprends', langs: 'Langues',
+    toLight: 'Activer le thème clair', toDark: 'Activer le thème sombre', menu: 'Ouvrir le menu', closeMenu: 'Fermer le menu', ad: 'Publicité',
+    names: { pt: 'portugais', en: 'anglais', fr: 'français' },
+    hero: { eyebrow: 'Gratuit · Sans inscription', title: 'Apprenez les langues en lisant de courtes histoires', sub: 'Lisez dans la langue que vous apprenez et affichez la traduction de chaque passage seulement quand vous en avez besoin.', cta: 'Commencer à lire', demo: 'Exemple' },
+    benefitsT: 'Comment ça marche',
+    benefits: [['Un vrai contexte', 'Les nouveaux mots apparaissent au fil d’une histoire, et leur sens vient du contexte.'], ['La traduction à la demande', 'Chaque passage cache sa traduction. Essayez d’abord de comprendre, puis vérifiez.'], ['Gratuit et sans inscription', 'Choisissez vos langues et commencez à lire. Pas de compte, pas de mot de passe.']],
+    recent: 'Histoires récentes', seeAll: 'Tout voir',
+    ready: { title: 'Prêt à commencer ?', sub: 'Choisissez vos langues. Vous pouvez les modifier à tout moment en haut de la page.', speak: 'Je parle', learn: 'Je veux apprendre', cta: 'Commencer à lire' },
+    list: { title: 'Histoires', line: 'Lecture en {l} avec traductions en {n}', search: 'Rechercher une histoire', start: 'Commencer à lire', emptyT: 'Aucun résultat', emptyD: 'Nous n’avons trouvé aucune histoire pour « {q} ». Essayez un autre mot.', clear: 'Effacer la recherche' },
+    reader: { back: 'Retour', readingIn: 'Lecture en', show: 'Afficher la traduction', hide: 'Masquer la traduction', finish: 'Terminer', doneT: 'Fin de l’histoire', doneD: 'Bravo. On passe à la suivante ?', howT: 'Mode d’emploi', how: ['Lisez chaque passage tranquillement, dans la langue que vous apprenez.', 'Essayez de comprendre grâce au contexte avant d’ouvrir la traduction.', 'Touchez + pour afficher la traduction de ce passage.'], more: 'Continuer à lire' },
+    about: { title: 'À propos', lead: 'LearnWithHistories est un site gratuit pour apprendre les langues en lisant de courtes histoires.', missionT: 'Notre mission', missionD: 'Rendre la lecture dans une autre langue légère et accessible dès le premier jour, avec de l’aide au bon moment et sans inscription ni paiement.', whyT: 'Pourquoi des histoires ?', whyD: 'Une histoire donne envie de continuer à lire. Les personnages, les lieux et les situations créent un contexte, et ce contexte aide à retenir les mots et les structures sans listes à apprendre par cœur.', pillarsT: 'Trois piliers', pillars: [['Contextuel', 'Chaque mot apparaît dans une phrase qui a du sens, au cœur d’une scène.'], ['Culturel', 'Les histoires font découvrir les coutumes, les lieux et les expressions de ceux qui parlent la langue.'], ['Progression naturelle', 'Des passages courts et une traduction à la demande vous permettent d’avancer à votre rythme.']], featuresT: 'Fonctionnalités', features: ['Histoires découpées en passages de 2 à 3 phrases', 'Traduction de chaque passage en un geste', 'Portugais, anglais et français, dans toutes les combinaisons', 'Thème clair et thème sombre', 'Fonctionne sur mobile et sur ordinateur', 'Gratuit et sans inscription'], ctaT: 'Commencez par votre première histoire', ctaB: 'Voir les histoires' },
+    terms: { title: 'Conditions d’utilisation', updated: 'Dernière mise à jour : octobre 2026', contact: 'Des questions sur ces conditions ? Écrivez à :', sections: [['Acceptation des conditions', 'En accédant à LearnWithHistories et en l’utilisant, vous acceptez ces conditions. Si vous ne les acceptez pas, veuillez ne pas utiliser le site.'], ['Description du service', 'Le site propose gratuitement de courtes histoires à lire dans différentes langues, avec une traduction passage par passage.'], ['Utilisation autorisée', 'Vous pouvez utiliser le contenu pour un apprentissage personnel et non commercial. Il est interdit de copier, revendre ou redistribuer les histoires sans autorisation.'], ['Propriété intellectuelle', 'Les textes, les traductions, la marque et la mise en page appartiennent à LearnWithHistories, sauf mention contraire.'], ['Publicité', 'Le site affiche des annonces Google AdSense pour rester gratuit. Nous ne sommes pas responsables du contenu des sites tiers.'], ['Absence de garantie', 'Le contenu est fourni « en l’état ». Nous faisons de notre mieux pour que les traductions soient exactes, mais des erreurs peuvent subsister.'], ['Limitation de responsabilité', 'Nous ne saurions être tenus responsables des dommages liés à l’utilisation ou à l’impossibilité d’utiliser le site.'], ['Modification des conditions', 'Nous pouvons mettre à jour ces conditions à tout moment. La date en haut de la page indique la version en vigueur.']] },
+    privacy: { title: 'Politique de confidentialité', updated: 'Dernière mise à jour : octobre 2026', contact: 'Des questions sur cette politique ? Écrivez à :', cookieBtn: 'Paramètres de confidentialité et des cookies', sections: [['Informations collectées', 'Nous ne demandons ni inscription ni données personnelles. Des données techniques, comme le type de navigateur et les pages consultées, peuvent être collectées automatiquement.'], ['Cookies', 'Nous utilisons des cookies pour mémoriser vos préférences de langue et de thème et pour afficher des annonces.'], ['Google AdSense', 'Google peut utiliser des cookies pour afficher des annonces en fonction de vos visites précédentes sur ce site et sur d’autres.'], ['Utilisation des informations', 'Pour faire fonctionner le site, comprendre son utilisation de façon agrégée et afficher des annonces.'], ['Partage', 'Nous ne vendons pas de données. Les informations techniques peuvent être traitées par Google selon ses propres règles.'], ['Vos droits', 'Vous pouvez effacer les cookies de votre navigateur et désactiver les annonces personnalisées dans les paramètres publicitaires de Google.'], ['Votre consentement (RGPD)', 'Les visiteurs de l’Espace économique européen et du Royaume-Uni peuvent consulter et modifier leur consentement à tout moment.']] },
+    contactT: 'Contact',
+    nf: { title: 'Cette page s’est perdue en route', d: 'L’adresse a peut-être changé ou n’a jamais existé. Revenons à un endroit connu.', stories: 'Voir les histoires', home: 'Retour à l’accueil' },
+    footer: { tag: 'Apprenez les langues en lisant de courtes histoires.', terms: 'Conditions d’utilisation', privacy: 'Confidentialité', cookies: 'Paramètres de confidentialité et des cookies', rights: 'Tous droits réservés.' }
+  }
+};
+// [pt, en, fr]
+const STORIES = [
+  { slug: 'the-old-bookshop', t: ['A velha livraria', 'The Old Bookshop', 'La vieille librairie'], d: ['Uma livraria em Lisboa onde cada livro espera pelo próximo leitor.', 'A bookshop in Lisbon where every book is waiting for its next reader.', 'Une librairie de Lisbonne où chaque livre attend son prochain lecteur.'], seg: [
+    ['Em uma rua estreita de Lisboa, havia uma livraria que parecia nunca fechar. Suas janelas estavam sempre acesas com uma luz amarela e quente.', 'On a narrow street in Lisbon, there was a bookshop that never seemed to close. Its windows were always warm with yellow light.', 'Dans une rue étroite de Lisbonne, il y avait une librairie qui ne semblait jamais fermer. Ses vitrines brillaient toujours d’une lumière jaune et chaleureuse.'],
+    ['Inês passava por ela todas as noites, a caminho de casa. Numa noite chuvosa, ela finalmente abriu a porta.', 'Inês walked past it every evening on her way home. One rainy night, she finally opened the door.', 'Inês passait devant chaque soir en rentrant chez elle. Un soir de pluie, elle a enfin poussé la porte.'],
+    ['Lá dentro, o ar cheirava a papel e café. Um senhor idoso ergueu os olhos do livro e sorriu para ela.', 'Inside, the air smelled of paper and coffee. An old man looked up from his book and smiled at her.', 'À l’intérieur, l’air sentait le papier et le café. Un vieil homme a levé les yeux de son livre et lui a souri.'],
+    ['“Todos os livros aqui já foram lidos pelo menos uma vez”, disse ele. “Alguns ainda esperam pelo segundo leitor.”', '“Every book here has been read at least once,” he said. “Some of them are waiting for their second reader.”', '« Chaque livre ici a été lu au moins une fois », a-t-il dit. « Certains attendent leur deuxième lecteur. »'],
+    ['Inês escolheu um pequeno livro azul com a capa rasgada. Ao abri-lo, encontrou um bilhete escrito a lápis: “Para quem vier depois.”', 'Inês chose a small blue book with a torn cover. When she opened it, she found a note written in pencil: “For whoever comes next.”', 'Inês a choisi un petit livre bleu à la couverture déchirée. En l’ouvrant, elle a trouvé un mot écrit au crayon : « Pour celui ou celle qui viendra ensuite. »']
+  ] },
+  { slug: 'the-night-train', t: ['O trem noturno', 'The Night Train', 'Le train de nuit'], d: ['Uma viagem a Paris, uma cesta de laranjas e uma pergunta inesperada.', 'A journey to Paris, a basket of oranges and an unexpected question.', 'Un voyage vers Paris, un panier d’oranges et une question inattendue.'], seg: [
+    ['O trem noturno para Paris partia às onze. Tomás encontrou seu lugar perto da janela e colocou a pequena mala acima da cabeça.', 'The night train to Paris left at eleven. Tomás found his seat by the window and placed his small suitcase above his head.', 'Le train de nuit pour Paris partait à vingt-trois heures. Tomás a trouvé sa place près de la fenêtre et a posé sa petite valise au-dessus de sa tête.'],
+    ['À sua frente estava sentada uma mulher com uma cesta de laranjas. Ela lhe ofereceu uma sem dizer nada.', 'Across from him sat a woman with a basket of oranges. She offered him one without saying a word.', 'En face de lui était assise une femme avec un panier d’oranges. Elle lui en a offert une sans dire un mot.'],
+    ['Lá fora, os vilarejos passavam como pequenas ilhas de luz. Tomás descascou a laranja devagar, e o vagão inteiro ficou com cheiro de verão.', 'Outside, the villages passed like little islands of light. Tomás peeled the orange slowly, and the whole carriage smelled of summer.', 'Dehors, les villages défilaient comme de petites îles de lumière. Tomás a épluché l’orange lentement, et tout le wagon sentait l’été.'],
+    ['“Você está indo para casa ou saindo de casa?”, perguntou a mulher, por fim. Tomás pensou nisso por um longo momento.', '“Are you going home or leaving home?” the woman asked at last. Tomás thought about it for a long moment.', '« Vous rentrez chez vous ou vous partez de chez vous ? » a fini par demander la femme. Tomás y a réfléchi un long moment.'],
+    ['“Ainda não sei”, respondeu ele. Ela riu baixinho. “Então é uma boa viagem.”', '“I’m not sure yet,” he answered. She laughed softly. “Then it’s a good trip.”', '« Je ne sais pas encore », a-t-il répondu. Elle a ri doucement. « Alors c’est un bon voyage. »']
+  ] },
+  { slug: 'the-paper-boat', t: ['O barco de papel', 'The Paper Boat', 'Le bateau en papier'], d: ['Uma criança manda uma mensagem rio abaixo e espera uma resposta.', 'A child sends a message down the river and waits for an answer.', 'Un enfant confie un message à la rivière et attend une réponse.'] },
+  { slug: 'grandmothers-recipe', t: ['A receita da avó', 'Grandmother’s Recipe', 'La recette de grand-mère'], d: ['Um caderno manchado guarda um segredo de família.', 'A stained notebook hides a family secret.', 'Un carnet taché cache un secret de famille.'] },
+  { slug: 'market-morning', t: ['Manhã de feira', 'Market Morning', 'Matin de marché'], d: ['Aprendendo o nome das frutas, uma banca de cada vez.', 'Learning the names of fruits, one stall at a time.', 'Apprendre le nom des fruits, un étal après l’autre.'] },
+  { slug: 'the-lighthouse-keeper', t: ['O faroleiro', 'The Lighthouse Keeper', 'Le gardien du phare'], d: ['Por quarenta anos, a luz nunca falhou. Até esta noite.', 'For forty years, the light never failed. Until tonight.', 'Pendant quarante ans, la lumière ne s’est jamais éteinte. Jusqu’à ce soir.'] },
+  { slug: 'the-red-umbrella', t: ['O guarda-chuva vermelho', 'The Red Umbrella', 'Le parapluie rouge'], d: ['Um guarda-chuva atravessa a cidade, passando de mão em mão.', 'An umbrella crosses the city, passing from hand to hand.', 'Un parapluie traverse la ville, de main en main.'] },
+  { slug: 'first-snow', t: ['A primeira neve', 'First Snow', 'La première neige'], d: ['Dois vizinhos que nunca se falaram se encontram numa manhã branca.', 'Two neighbors who never spoke meet on a white morning.', 'Deux voisins qui ne s’étaient jamais parlé se croisent un matin blanc.'] }
+];
+const norm = s => (s || '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
+
+class Component extends DCLogic {
+  state = {
+    page: this.props.page || 'home', slug: 'the-old-bookshop', theme: this.props.theme || 'light',
+    native: this.props.native || 'pt', learn: this.props.learn || 'en',
+    menu: !!this.props.menuOpen, query: this.props.query || '',
+    open: this.props.openSegments ? { 0: true, 2: true } : {}, demoOpen: true, finished: false, w: 1280
+  };
+  rootRef = React.createRef();
+  componentDidMount() {
+    const el = this.rootRef.current;
+    if (!el) return;
+    const m = () => this.setState({ w: el.clientWidth });
+    m();
+    this.ro = new ResizeObserver(m);
+    this.ro.observe(el);
+  }
+  componentWillUnmount() { this.ro && this.ro.disconnect(); }
+  componentDidUpdate(p) {
+    const up = {};
+    ['page', 'theme', 'native', 'learn'].forEach(k => { if (p[k] !== this.props[k] && this.props[k]) up[k] = this.props[k]; });
+    if (p.menuOpen !== this.props.menuOpen) up.menu = !!this.props.menuOpen;
+    if (p.query !== this.props.query) up.query = this.props.query || '';
+    if (p.openSegments !== this.props.openSegments) up.open = this.props.openSegments ? { 0: true, 2: true } : {};
+    if (Object.keys(up).length) this.setState(up);
+  }
+  go(page, slug) {
+    this.setState({ page, slug: slug || this.state.slug, menu: false, open: {}, finished: false });
+    if (!this.props.embedded && typeof window !== 'undefined') window.scrollTo(0, 0);
+  }
+  link(page, slug) { return e => { if (e && e.preventDefault) e.preventDefault(); this.go(page, slug); }; }
+  setLang(kind, v) {
+    let { native, learn } = this.state;
+    if (kind === 'native') { if (v === learn) learn = native; native = v; }
+    else { if (v === native) native = learn; learn = v; }
+    this.setState({ native, learn, open: {} });
+  }
+  renderVals() {
+    const { page, theme, native, learn, menu, query, open, finished, slug, w } = this.state;
+    const t = I18N[native] || I18N.pt;
+    const ni = LANGS.indexOf(native), li = LANGS.indexOf(learn);
+    const vp = this.props.viewport || 'auto';
+    const isMobile = vp === 'mobile' || (vp !== 'desktop' && w < 1000);
+    const card = s => ({ title: s.t[li], desc: s.d[li], href: '/stories/' + s.slug, open: this.link('reader', s.slug) });
+    const cur = STORIES.find(s => s.slug === slug) || STORIES[0];
+    const segs = cur.seg || STORIES[STORIES.indexOf(cur) % 2].seg;
+    const q = norm(query.trim());
+    const filtered = STORIES.filter(s => !q || norm(s.t[li] + ' ' + s.d[li]).includes(q)).map(card);
+    const nav = [['home', '/'], ['stories', '/stories'], ['about', '/about']];
+    const navActive = page === 'reader' ? 'stories' : page;
+    const legalKey = page === 'terms' ? 'terms' : 'privacy';
+    const L = t[legalKey];
+    const d0 = STORIES[0].seg[0];
+    return {
+      rootRef: this.rootRef,
+      themeClass: theme === 'dark' ? 'lwh-dark' : 'lwh-light',
+      minH: this.props.embedded ? 'auto' : '100vh',
+      maxW: vp === 'mobile' && !this.props.embedded ? '420px' : 'none',
+      t, native, learn, learnCode: CODES[learn], nativeCode: CODES[native],
+      isMobile, isDesktop: !isMobile,
+      menuOpen: menu, menuClosed: !menu, menuVisible: isMobile && menu,
+      menuLabel: menu ? t.closeMenu : t.menu,
+      toggleMenu: () => this.setState({ menu: !menu }),
+      themeLabel: theme === 'dark' ? t.toLight : t.toDark,
+      toggleTheme: () => this.setState({ theme: theme === 'dark' ? 'light' : 'dark' }),
+      onNative: e => this.setLang('native', e.target.value),
+      onLearn: e => this.setLang('learn', e.target.value),
+      navItems: nav.map(([k, href], i) => ({ label: t.nav[i], href, onClick: this.link(k), current: navActive === k ? 'page' : undefined, weight: navActive === k ? 700 : 500, line: navActive === k ? 'var(--accent)' : 'transparent' })),
+      goHome: this.link('home'), goStories: this.link('stories'),
+      isHome: page === 'home', isStories: page === 'stories', isReader: page === 'reader', isAbout: page === 'about',
+      isLegal: page === 'terms' || page === 'privacy', is404: page === '404',
+      demo: { text: d0[li], tr: d0[ni], open: this.state.demoOpen, closed: !this.state.demoOpen, bg: this.state.demoOpen ? 'var(--accent-soft)' : 'transparent', label: this.state.demoOpen ? t.reader.hide : t.reader.show, toggle: () => this.setState({ demoOpen: !this.state.demoOpen }) },
+      benefits: t.benefits.map((b, i) => ({ n: '0' + (i + 1), t: b[0], d: b[1] })),
+      recent: STORIES.slice(0, 6).map(card),
+      readingLine: t.list.line.replace('{l}', t.names[learn]).replace('{n}', t.names[native]),
+      query, onQuery: e => this.setState({ query: e.target.value }), clearQuery: () => this.setState({ query: '' }),
+      filtered, hasResults: filtered.length > 0, noResults: filtered.length === 0,
+      emptyLine: t.list.emptyD.replace('{q}', query.trim()),
+      story: { title: cur.t[li], segments: segs.map((s, i) => ({ text: s[li], tr: s[ni], open: !!open[i], closed: !open[i], bg: open[i] ? 'var(--accent-soft)' : 'transparent', label: open[i] ? t.reader.hide : t.reader.show, toggle: () => this.setState(st => ({ open: { ...st.open, [i]: !st.open[i] } })) })) },
+      finished, notFinished: !finished, finish: () => this.setState({ finished: true }),
+      howSteps: t.reader.how.map((d, i) => ({ n: i + 1, d })),
+      more: STORIES.filter(s => s.slug !== cur.slug).slice(0, 3).map(card),
+      pillars: t.about.pillars.map((p, i) => ({ n: '0' + (i + 1), t: p[0], d: p[1] })),
+      features: t.about.features.map(d => ({ d })),
+      legal: { title: L.title, updated: L.updated, contact: L.contact, sections: L.sections.map((s, i) => ({ n: i + 1, t: s[0], d: s[1], btn: legalKey === 'privacy' && i === 6 })) },
+      cookieSettings: () => { if (typeof window !== 'undefined' && window.googlefc && window.googlefc.showRevocationMessage) window.googlefc.showRevocationMessage(); },
+      footerLinks: [
+        { label: t.nav[0], href: '/', onClick: this.link('home') },
+        { label: t.nav[1], href: '/stories', onClick: this.link('stories') },
+        { label: t.nav[2], href: '/about', onClick: this.link('about') },
+        { label: t.footer.terms, href: '/terms', onClick: this.link('terms') },
+        { label: t.footer.privacy, href: '/privacy', onClick: this.link('privacy') },
+        { label: t.footer.cookies, href: '#cookies', onClick: e => { e.preventDefault(); if (typeof window !== 'undefined' && window.googlefc && window.googlefc.showRevocationMessage) window.googlefc.showRevocationMessage(); } }
+      ]
+    };
+  }
+}
+</script>
+</body>
+</html>

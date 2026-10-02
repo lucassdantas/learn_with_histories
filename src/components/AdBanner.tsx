@@ -2,47 +2,36 @@
 
 import React, { useEffect, useRef } from 'react';
 import { ADS_CONFIG } from '@/config/ads';
+import { useLanguage } from '@/context/LanguageContext';
+import { getTranslation } from '@/config/translations';
+import { pushAd } from '@/lib/ads';
 
-declare global {
-  interface Window {
-    adsbygoogle: any[];
-  }
-}
-
-export default function AdBanner() {
+// Responsive banner in its own band. Height is reserved up front (100px → 120px) to avoid
+// layout shift (CLS); styled unlike a story card (no border/shadow, 4px radius) per AdSense rules.
+export default function AdBanner({ className = '' }: Readonly<{ className?: string }>) {
+  const { nativeLanguage } = useLanguage();
   const adRef = useRef<boolean>(false);
+  const label = getTranslation(nativeLanguage, 'common.ad');
 
   useEffect(() => {
-    // Only push once and if the element is present and visible
-    if (!adRef.current) {
-      try {
-        const adsbygoogle = window.adsbygoogle || [];
-        adsbygoogle.push({});
-        adRef.current = true;
-      } catch (e) {
-        console.error('AdSense error:', e);
-      }
-    }
+    if (!adRef.current) adRef.current = pushAd();
   }, []);
 
   return (
-    <div className="w-full bg-gray-50 dark:bg-gray-900 flex flex-col items-center justify-center my-4 p-2 overflow-hidden min-h-[100px]">
-      <span className="text-[10px] text-gray-400 uppercase mb-1">Advertisement</span>
-      <div className="w-full flex justify-center min-w-[300px] min-h-[100px]">
-        <ins
-          className="adsbygoogle"
-          style={{ display: 'block', minWidth: '300px', minHeight: '100px' }}
-          data-ad-client={ADS_CONFIG.publisherId}
-          data-ad-slot={ADS_CONFIG.slots.banner}
-          data-ad-format="auto"
-          data-full-width-responsive="true"
-        />
-      </div>
-      {ADS_CONFIG.isTest && (
-        <div className="mt-1 text-[8px] text-gray-300">
-          Test ID: {ADS_CONFIG.slots.banner}
+    <div className={`page ${className}`}>
+      <aside aria-label={label} className="flex flex-col items-center gap-2">
+        <span className="text-ad-label font-bold tracking-[0.14em] uppercase text-ad-ink">{label}</span>
+        <div className="w-full max-w-[970px] min-h-[100px] nav:min-h-[120px] rounded-ad bg-ad overflow-hidden">
+          <ins
+            className="adsbygoogle"
+            style={{ display: 'block', width: '100%' }}
+            data-ad-client={ADS_CONFIG.publisherId}
+            data-ad-slot={ADS_CONFIG.slots.banner}
+            data-ad-format="horizontal"
+            data-full-width-responsive="false"
+          />
         </div>
-      )}
+      </aside>
     </div>
   );
 }

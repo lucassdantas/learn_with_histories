@@ -1,42 +1,154 @@
 @import "tailwindcss";
-
-@theme {
-  --font-sans: "Open Sans", ui-sans-serif, system-ui, sans-serif;
-  --font-display: "Montserrat", sans-serif;
-  --font-accent: "Poppins", sans-serif;
-
-  --color-deep-blue: #1D3D5A;
-  --color-golden-amber: #C8924A;
-  --color-burnt-copper: #8B3A1F;
-  --color-warm-sand: #F4EBDD;
-
-  --color-background: #F4EBDD;
-  --color-foreground: #1D3D5A;
-  --color-surface: #FFFFFF;
-}
-
 @custom-variant dark (&:where(.dark, .dark *));
 
+/* Design tokens — design/Design System.dc.html. Semantic vars in :root / .dark,
+   mapped in @theme inline so Tailwind generates bg-surface, text-translation, font-story… */
+:root {
+  --background: #F4EBDD;      /* warm-sand */
+  --surface: #FFFCF7;
+  --surface-2: #EDE1CD;
+  --foreground: #1D3D5A;      /* deep-blue */
+  --muted: #4F6476;
+  --border: #E2D2B9;
+  --border-strong: #CDB896;
+  --accent: #C8924A;          /* golden-amber: borders/ornaments only (low contrast on sand) */
+  --accent-ink: #8A5A1C;      /* amber for text */
+  --accent-soft: #F3E1C3;
+  --translation: #8B3A1F;     /* burnt-copper */
+  --translation-soft: #F7E4D8;
+  --primary: #1D3D5A;
+  --primary-hover: #15304A;
+  --on-primary: #FFFCF7;
+  --link: #1D3D5A;
+  --ad-bg: #E9E1D3;
+  --ad-ink: #5F5A51;
+  --focus: #1D3D5A;
+  --shadow-color: 29 61 90;
+  color-scheme: light;
+}
 .dark {
-  --color-background: #0F172A;
-  --color-foreground: #F1F5F9;
-  --color-surface: #1E293B;
-  --color-deep-blue: #93C5FD;
-  --color-golden-amber: #FCD34D;
-  --color-burnt-copper: #FB7185;
-  --color-warm-sand: #1E293B;
+  --background: #0F172A;
+  --surface: #1E293B;
+  --surface-2: #172033;
+  --foreground: #F1F5F9;
+  --muted: #A9B6C6;
+  --border: #2C3A50;
+  --border-strong: #40516B;
+  --accent: #FCD34D;
+  --accent-ink: #FCD34D;
+  --accent-soft: #3A3422;
+  --translation: #FB7185;
+  --translation-soft: #2C1D2B;
+  --primary: #FCD34D;
+  --primary-hover: #FDE68A;
+  --on-primary: #0F172A;
+  --link: #93C5FD;
+  --ad-bg: #162033;
+  --ad-ink: #94A3B8;
+  --focus: #FCD34D;
+  --shadow-color: 0 0 0;
+  color-scheme: dark;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-surface: var(--surface);
+  --color-surface-2: var(--surface-2);
+  --color-foreground: var(--foreground);
+  --color-muted: var(--muted);
+  --color-border: var(--border);
+  --color-border-strong: var(--border-strong);
+  --color-accent: var(--accent);
+  --color-accent-ink: var(--accent-ink);
+  --color-accent-soft: var(--accent-soft);
+  --color-translation: var(--translation);
+  --color-translation-soft: var(--translation-soft);
+  --color-primary: var(--primary);
+  --color-primary-hover: var(--primary-hover);
+  --color-on-primary: var(--on-primary);
+  --color-link: var(--link);
+  --color-ad: var(--ad-bg);
+  --color-ad-ink: var(--ad-ink);
+
+  --font-sans: var(--font-open-sans), system-ui, sans-serif;
+  --font-story: var(--font-literata), Georgia, serif;
+
+  --text-story: clamp(1.1875rem, 1rem + 0.5vw, 1.375rem);
+  --text-story--line-height: 1.7;
+  --text-tr: clamp(0.9375rem, 0.9rem + 0.2vw, 1.0625rem);
+  --text-tr--line-height: 1.6;
+  --text-display: clamp(2.375rem, 1.6rem + 3vw, 4rem);
+  --text-display--line-height: 1.08;
+  --text-h1: clamp(2rem, 1.6rem + 1.6vw, 3rem);
+  --text-h1--line-height: 1.12;
+  --text-h2: clamp(1.625rem, 1.4rem + 0.8vw, 2.125rem);
+  --text-h2--line-height: 1.2;
+  --text-h3: 1.3125rem;
+  --text-h3--line-height: 1.25;
+  --text-eyebrow: 0.8125rem;
+  --text-ad-label: 0.6875rem;
+
+  --radius-ad: 4px;
+  --radius-control: 10px;
+  --radius-translation: 12px;
+  --radius-card: 16px;
+  --radius-panel: 24px;
+
+  --shadow-card: 0 1px 2px rgb(var(--shadow-color) / .06);
+  --shadow-raised: 0 1px 2px rgb(var(--shadow-color) / .06), 0 12px 32px -16px rgb(var(--shadow-color) / .28);
+
+  --spacing-touch: 44px;
+  --container-reading: 700px;
+  --container-page: 1200px;
+}
+
+/* Header switches from hamburger to full nav at 1000px (FR labels don't fit earlier). */
+@theme {
+  --breakpoint-nav: 1000px;
 }
 
 body {
-  background-color: var(--color-background);
-  color: var(--color-foreground);
-  font-family: var(--font-sans);
+  background-color: var(--background);
+  color: var(--foreground);
+  -webkit-font-smoothing: antialiased;
 }
 
-h1, h2, h3, h4, .font-display {
-  font-family: var(--font-display);
+:focus-visible {
+  outline: 3px solid var(--focus);
+  outline-offset: 2px;
 }
 
-.font-accent {
-  font-family: var(--font-accent);
+/* Page container: 1200px max, fluid side padding. */
+@utility page {
+  width: 100%;
+  max-width: var(--container-page);
+  margin-inline: auto;
+  padding-inline: clamp(20px, 5vw, 48px);
+}
+
+/* Native <select> with a CSS-drawn arrow. */
+@utility select-arrow {
+  appearance: none;
+  cursor: pointer;
+  background-image:
+    linear-gradient(45deg, transparent 50%, currentColor 50%),
+    linear-gradient(135deg, currentColor 50%, transparent 50%);
+  background-position: calc(100% - 18px) 52%, calc(100% - 13px) 52%;
+  background-size: 5px 5px, 5px 5px;
+  background-repeat: no-repeat;
+}
+
+/* Eyebrow / small caps label. */
+@utility eyebrow {
+  font-size: var(--text-eyebrow);
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+  }
 }
