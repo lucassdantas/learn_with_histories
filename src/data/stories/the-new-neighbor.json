@@ -1,0 +1,141 @@
+{
+  "id": "13",
+  "slug": "the-new-neighbor",
+  "level": "beginner",
+  "title": {
+    "en": "The New Neighbor",
+    "pt": "A Nova Vizinha",
+    "fr": "La Nouvelle Voisine",
+    "es": "La Nueva Vecina"
+  },
+  "description": {
+    "en": "A big truck, many boxes and a friendly hello on moving day.",
+    "pt": "Um caminhão grande, muitas caixas e um oi simpático no dia da mudança.",
+    "fr": "Un grand camion, beaucoup de cartons et un bonjour sympathique le jour du déménagement.",
+    "es": "Un camión grande, muchas cajas y un saludo amable el día de la mudanza."
+  },
+  "content": [
+    {
+      "id": "s1",
+      "text": {
+        "en": "On Saturday morning, a big white truck stops in front of Leo's building. Two men open the back and start to carry boxes, chairs and a green sofa.",
+        "pt": "No sábado de manhã, um caminhão branco e grande para na frente do prédio do Leo. Dois homens abrem a parte de trás e começam a carregar caixas, cadeiras e um sofá verde.",
+        "fr": "Samedi matin, un grand camion blanc s'arrête devant l'immeuble de Leo. Deux hommes ouvrent l'arrière et commencent à porter des cartons, des chaises et un canapé vert.",
+        "es": "El sábado por la mañana, un camión blanco y grande se detiene frente al edificio de Leo. Dos hombres abren la parte de atrás y empiezan a cargar cajas, sillas y un sofá verde."
+      }
+    },
+    {
+      "id": "s2",
+      "text": {
+        "en": "Leo lives on the third floor. From his window, he sees a woman and a little girl. The girl is holding a box with holes in the top.",
+        "pt": "Leo mora no terceiro andar. Da janela, ele vê uma mulher e uma menininha. A menina está segurando uma caixa com furos na tampa.",
+        "fr": "Leo habite au troisième étage. De sa fenêtre, il voit une femme et une petite fille. La fillette tient une boîte avec des trous sur le dessus.",
+        "es": "Leo vive en el tercer piso. Desde su ventana, ve a una mujer y a una niña pequeña. La niña lleva una caja con agujeros en la tapa."
+      }
+    },
+    {
+      "id": "s3",
+      "text": {
+        "en": "In the afternoon, someone knocks on his door. It is the woman from the truck. “Hi, I'm Nina, your new neighbor. Sorry, do you have a screwdriver?”",
+        "pt": "À tarde, alguém bate na porta dele. É a mulher do caminhão. “Oi, eu sou a Nina, sua nova vizinha. Desculpe, você tem uma chave de fenda?”",
+        "fr": "L'après-midi, quelqu'un frappe à sa porte. C'est la femme du camion. « Bonjour, je suis Nina, votre nouvelle voisine. Excusez-moi, vous avez un tournevis ? »",
+        "es": "Por la tarde, alguien toca a su puerta. Es la mujer del camión. “Hola, soy Nina, tu nueva vecina. Perdona, ¿tienes un destornillador?”"
+      }
+    },
+    {
+      "id": "s4",
+      "text": {
+        "en": "Leo finds his toolbox and goes with her. Her apartment is full of boxes. Nothing is in its place yet, and the bed is still in pieces on the floor.",
+        "pt": "Leo pega a caixa de ferramentas e vai com ela. O apartamento dela está cheio de caixas. Nada está no lugar ainda, e a cama continua desmontada no chão.",
+        "fr": "Leo prend sa boîte à outils et la suit. Son appartement est plein de cartons. Rien n'est encore à sa place, et le lit est toujours en pièces par terre.",
+        "es": "Leo busca su caja de herramientas y va con ella. Su apartamento está lleno de cajas. Todavía nada está en su lugar, y la cama sigue desarmada en el suelo."
+      }
+    },
+    {
+      "id": "s5",
+      "text": {
+        "en": "Together, they put the bed together. The little girl, Bia, watches them and asks a lot of questions. “Do you have a dog? Do you like pizza? Where is the park?”",
+        "pt": "Juntos, eles montam a cama. A menininha, Bia, observa os dois e faz muitas perguntas. “Você tem cachorro? Você gosta de pizza? Onde fica o parque?”",
+        "fr": "Ensemble, ils montent le lit. La petite fille, Bia, les regarde et pose beaucoup de questions. « Tu as un chien ? Tu aimes la pizza ? Où est le parc ? »",
+        "es": "Juntos, arman la cama. La niña, Bia, los observa y hace muchas preguntas. “¿Tienes perro? ¿Te gusta la pizza? ¿Dónde está el parque?”"
+      }
+    },
+    {
+      "id": "s6",
+      "text": {
+        "en": "Leo laughs. “No dog, yes pizza, and the park is at the end of the street, next to the bakery.” Bia smiles and opens the box with holes. Inside, there is a small gray rabbit.",
+        "pt": "Leo ri. “Cachorro não, pizza sim, e o parque fica no fim da rua, ao lado da padaria.” Bia sorri e abre a caixa com furos. Dentro, tem um coelhinho cinza.",
+        "fr": "Leo rit. « Pas de chien, oui à la pizza, et le parc est au bout de la rue, à côté de la boulangerie. » Bia sourit et ouvre la boîte à trous. Dedans, il y a un petit lapin gris.",
+        "es": "Leo se ríe. “Perro no, pizza sí, y el parque está al final de la calle, al lado de la panadería.” Bia sonríe y abre la caja con agujeros. Adentro hay un conejito gris."
+      }
+    },
+    {
+      "id": "s7",
+      "text": {
+        "en": "In the evening, Nina knocks again. This time she has a pizza in her hands. “Thank you for your help. Do you want to have dinner with us?”",
+        "pt": "À noite, Nina bate de novo. Desta vez, ela está com uma pizza nas mãos. “Obrigada pela ajuda. Quer jantar com a gente?”",
+        "fr": "Le soir, Nina frappe à nouveau. Cette fois, elle a une pizza dans les mains. « Merci pour votre aide. Vous voulez dîner avec nous ? »",
+        "es": "Por la noche, Nina vuelve a tocar. Esta vez trae una pizza en las manos. “Gracias por tu ayuda. ¿Quieres cenar con nosotras?”"
+      }
+    },
+    {
+      "id": "s8",
+      "text": {
+        "en": "They eat on the floor, between the boxes, because the table is not ready yet. Leo thinks it is the best dinner of the month.",
+        "pt": "Eles comem no chão, entre as caixas, porque a mesa ainda não está montada. Leo acha que é o melhor jantar do mês.",
+        "fr": "Ils mangent par terre, entre les cartons, parce que la table n'est pas encore prête. Leo pense que c'est le meilleur dîner du mois.",
+        "es": "Comen en el suelo, entre las cajas, porque la mesa todavía no está lista. Leo piensa que es la mejor cena del mes."
+      }
+    }
+  ],
+  "vocabulary": [
+    {
+      "en": "truck",
+      "pt": "caminhão",
+      "fr": "camion",
+      "es": "camión"
+    },
+    {
+      "en": "box",
+      "pt": "caixa",
+      "fr": "carton",
+      "es": "caja"
+    },
+    {
+      "en": "floor (of a building)",
+      "pt": "andar",
+      "fr": "étage",
+      "es": "piso"
+    },
+    {
+      "en": "neighbor",
+      "pt": "vizinha",
+      "fr": "voisine",
+      "es": "vecina"
+    },
+    {
+      "en": "screwdriver",
+      "pt": "chave de fenda",
+      "fr": "tournevis",
+      "es": "destornillador"
+    },
+    {
+      "en": "toolbox",
+      "pt": "caixa de ferramentas",
+      "fr": "boîte à outils",
+      "es": "caja de herramientas"
+    },
+    {
+      "en": "rabbit",
+      "pt": "coelho",
+      "fr": "lapin",
+      "es": "conejo"
+    },
+    {
+      "en": "bakery",
+      "pt": "padaria",
+      "fr": "boulangerie",
+      "es": "panadería"
+    }
+  ]
+}

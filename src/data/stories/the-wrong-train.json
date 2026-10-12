@@ -1,0 +1,156 @@
+{
+  "id": "24",
+  "slug": "the-wrong-train",
+  "level": "intermediate",
+  "title": {
+    "en": "The Wrong Train",
+    "pt": "O Trem Errado",
+    "fr": "Le Mauvais Train",
+    "es": "El Tren Equivocado"
+  },
+  "description": {
+    "en": "One distracted moment at the station leads to an unexpected day in a town that wasn't in the plan.",
+    "pt": "Um momento de distração na estação leva a um dia inesperado numa cidade que não estava nos planos.",
+    "fr": "Un moment d'inattention à la gare mène à une journée inattendue dans une ville qui n'était pas prévue.",
+    "es": "Un momento de distracción en la estación lleva a un día inesperado en un pueblo que no estaba en los planes."
+  },
+  "content": [
+    {
+      "id": "s1",
+      "text": {
+        "en": "Marta's train to the capital left at 9:15 from platform four. She arrived at the station at nine, bought a coffee and sat down to answer some emails.",
+        "pt": "O trem de Marta para a capital saía às 9h15 da plataforma quatro. Ela chegou à estação às nove, comprou um café e se sentou para responder alguns e-mails.",
+        "fr": "Le train de Marta pour la capitale partait à 9 h 15 du quai numéro quatre. Elle est arrivée à la gare à neuf heures, a acheté un café et s'est assise pour répondre à quelques e-mails.",
+        "es": "El tren de Marta a la capital salía a las 9:15 del andén cuatro. Llegó a la estación a las nueve, compró un café y se sentó a responder algunos correos."
+      }
+    },
+    {
+      "id": "s2",
+      "text": {
+        "en": "At 9:14, she looked up, saw a train at platform four and jumped on just before the doors closed. She found a seat, opened her laptop and went on working.",
+        "pt": "Às 9h14, ela levantou os olhos, viu um trem na plataforma quatro e entrou pouco antes de as portas fecharem. Achou um lugar, abriu o notebook e continuou trabalhando.",
+        "fr": "À 9 h 14, elle a levé les yeux, a vu un train au quai numéro quatre et est montée juste avant la fermeture des portes. Elle a trouvé une place, a ouvert son ordinateur portable et a continué à travailler.",
+        "es": "A las 9:14, levantó la vista, vio un tren en el andén cuatro y subió justo antes de que se cerraran las puertas. Encontró un asiento, abrió su computadora portátil y siguió trabajando."
+      }
+    },
+    {
+      "id": "s3",
+      "text": {
+        "en": "Half an hour later, the conductor checked her ticket and frowned. “I'm sorry, madam, this ticket is for the capital. This train is going to the coast. Your train changed platforms this morning.”",
+        "pt": "Meia hora depois, o fiscal conferiu a passagem dela e franziu a testa. “Desculpe, senhora, esta passagem é para a capital. Este trem vai para o litoral. O seu trem mudou de plataforma hoje de manhã.”",
+        "fr": "Une demi-heure plus tard, le contrôleur a vérifié son billet et a froncé les sourcils. « Je suis désolé, madame, ce billet est pour la capitale. Ce train va vers la côte. Votre train a changé de quai ce matin. »",
+        "es": "Media hora después, el revisor miró su boleto y frunció el ceño. “Lo siento, señora, este boleto es para la capital. Este tren va a la costa. Su tren cambió de andén esta mañana.”"
+      }
+    },
+    {
+      "id": "s4",
+      "text": {
+        "en": "Marta felt her face go red. She had an important meeting at two. The conductor explained that the next stop was a small town, and that a train back would leave from there at five in the afternoon.",
+        "pt": "Marta sentiu o rosto ficar vermelho. Ela tinha uma reunião importante às duas. O fiscal explicou que a próxima parada era uma cidadezinha e que de lá sairia um trem de volta às cinco da tarde.",
+        "fr": "Marta a senti son visage rougir. Elle avait une réunion importante à quatorze heures. Le contrôleur lui a expliqué que le prochain arrêt était une petite ville et qu'un train de retour en partirait à dix-sept heures.",
+        "es": "Marta sintió que se le ponía la cara roja. Tenía una reunión importante a las dos. El revisor le explicó que la siguiente parada era un pueblo pequeño y que desde allí salía un tren de regreso a las cinco de la tarde."
+      }
+    },
+    {
+      "id": "s5",
+      "text": {
+        "en": "She got off in a town with one street, one church and a beach she had never heard of. She called her boss, apologized and turned the meeting into a video call.",
+        "pt": "Ela desceu numa cidade com uma rua, uma igreja e uma praia de que nunca tinha ouvido falar. Ligou para o chefe, pediu desculpas e transformou a reunião numa videochamada.",
+        "fr": "Elle est descendue dans une ville avec une seule rue, une église et une plage dont elle n'avait jamais entendu parler. Elle a appelé son chef, s'est excusée et a transformé la réunion en visioconférence.",
+        "es": "Se bajó en un pueblo con una calle, una iglesia y una playa de la que nunca había oído hablar. Llamó a su jefe, se disculpó y cambió la reunión por una videollamada."
+      }
+    },
+    {
+      "id": "s6",
+      "text": {
+        "en": "With hours to wait, she walked to the beach. It was empty except for an old man repairing a fishing net. He invited her to sit, and soon they were talking like old friends.",
+        "pt": "Com horas pela frente, ela caminhou até a praia. Estava vazia, a não ser por um senhor consertando uma rede de pesca. Ele a convidou para se sentar, e logo os dois conversavam como velhos amigos.",
+        "fr": "Avec des heures devant elle, elle a marché jusqu'à la plage. Elle était vide, à part un vieil homme qui réparait un filet de pêche. Il l'a invitée à s'asseoir, et bientôt ils parlaient comme de vieux amis.",
+        "es": "Con horas por delante, caminó hasta la playa. Estaba vacía, salvo por un señor que arreglaba una red de pesca. La invitó a sentarse, y pronto estaban conversando como viejos amigos."
+      }
+    },
+    {
+      "id": "s7",
+      "text": {
+        "en": "At two o'clock, she joined the video call from a little café by the sea. The meeting went well, maybe because she felt calmer than she had in months.",
+        "pt": "Às duas, ela entrou na videochamada de um pequeno café à beira-mar. A reunião correu bem, talvez porque ela se sentia mais calma do que em muitos meses.",
+        "fr": "À quatorze heures, elle a rejoint la visioconférence depuis un petit café au bord de la mer. La réunion s'est bien passée, peut-être parce qu'elle se sentait plus calme que depuis des mois.",
+        "es": "A las dos, se conectó a la videollamada desde un pequeño café junto al mar. La reunión salió bien, quizá porque se sentía más tranquila que en muchos meses."
+      }
+    },
+    {
+      "id": "s8",
+      "text": {
+        "en": "At five, she took the train back. Through the window, she watched the sea disappear behind the hills. She had lost a morning, but she had found a place.",
+        "pt": "Às cinco, ela pegou o trem de volta. Pela janela, viu o mar desaparecer atrás dos morros. Tinha perdido uma manhã, mas tinha encontrado um lugar.",
+        "fr": "À dix-sept heures, elle a repris le train. Par la fenêtre, elle a regardé la mer disparaître derrière les collines. Elle avait perdu une matinée, mais elle avait trouvé un endroit.",
+        "es": "A las cinco, tomó el tren de regreso. Por la ventana, vio cómo el mar desaparecía detrás de las colinas. Había perdido una mañana, pero había encontrado un lugar."
+      }
+    },
+    {
+      "id": "s9",
+      "text": {
+        "en": "A month later, on a free Saturday, Marta bought a ticket to the little town on the coast. This time, she checked the platform twice.",
+        "pt": "Um mês depois, num sábado livre, Marta comprou uma passagem para a cidadezinha do litoral. Desta vez, conferiu a plataforma duas vezes.",
+        "fr": "Un mois plus tard, un samedi de libre, Marta a acheté un billet pour la petite ville de la côte. Cette fois, elle a vérifié le quai deux fois.",
+        "es": "Un mes después, un sábado libre, Marta compró un boleto para el pueblito de la costa. Esta vez, revisó el andén dos veces."
+      }
+    }
+  ],
+  "vocabulary": [
+    {
+      "en": "platform",
+      "pt": "plataforma",
+      "fr": "quai",
+      "es": "andén"
+    },
+    {
+      "en": "ticket",
+      "pt": "passagem",
+      "fr": "billet",
+      "es": "boleto"
+    },
+    {
+      "en": "conductor (on a train)",
+      "pt": "fiscal",
+      "fr": "contrôleur",
+      "es": "revisor"
+    },
+    {
+      "en": "stop (station)",
+      "pt": "parada",
+      "fr": "arrêt",
+      "es": "parada"
+    },
+    {
+      "en": "to get off",
+      "pt": "descer",
+      "fr": "descendre",
+      "es": "bajarse"
+    },
+    {
+      "en": "meeting",
+      "pt": "reunião",
+      "fr": "réunion",
+      "es": "reunión"
+    },
+    {
+      "en": "video call",
+      "pt": "videochamada",
+      "fr": "visioconférence",
+      "es": "videollamada"
+    },
+    {
+      "en": "fishing net",
+      "pt": "rede de pesca",
+      "fr": "filet de pêche",
+      "es": "red de pesca"
+    },
+    {
+      "en": "coast",
+      "pt": "litoral",
+      "fr": "côte",
+      "es": "costa"
+    }
+  ]
+}

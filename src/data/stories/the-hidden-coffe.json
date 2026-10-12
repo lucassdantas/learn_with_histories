@@ -1,6 +1,7 @@
 {
   "id": "3",
   "slug": "the-hidden-cafe",
+  "level": "beginner",
   "title": {
     "en": "The Hidden Cafe",
     "pt": "O Café Escondido",
@@ -49,6 +50,92 @@
         "fr": "Je me suis assis près de la fenêtre et j'ai regardé la pluie commencer à tomber. Pendant un instant, j'ai oublié mes réunions et j'ai juste profité de la paix.",
         "es": "Me senté junto a la ventana y vi cómo empezaba a llover. Por un momento, me olvidé de mis reuniones y simplemente disfruté de la paz."
       }
+    },
+    {
+      "id": "s5",
+      "text": {
+        "en": "An old woman came to my table with a small menu. “Today we have apple pie and hot chocolate,” she said. I ordered both, even though it was only eight in the morning.",
+        "pt": "Uma senhora veio até a minha mesa com um cardápio pequeno. “Hoje temos torta de maçã e chocolate quente”, ela disse. Pedi os dois, mesmo sendo só oito da manhã.",
+        "fr": "Une vieille dame est venue à ma table avec une petite carte. « Aujourd'hui, nous avons de la tarte aux pommes et du chocolat chaud », a-t-elle dit. J'ai commandé les deux, même s'il n'était que huit heures du matin.",
+        "es": "Una señora mayor se acercó a mi mesa con una carta pequeña. “Hoy tenemos tarta de manzana y chocolate caliente”, dijo. Pedí las dos cosas, aunque eran solo las ocho de la mañana."
+      }
+    },
+    {
+      "id": "s6",
+      "text": {
+        "en": "She told me that the cafe had been there for fifty years. “People find it when they need it,” she said with a smile. I didn't understand, but I liked the idea.",
+        "pt": "Ela me contou que o café estava ali havia cinquenta anos. “As pessoas o encontram quando precisam”, disse sorrindo. Eu não entendi, mas gostei da ideia.",
+        "fr": "Elle m'a raconté que le café était là depuis cinquante ans. « Les gens le trouvent quand ils en ont besoin », a-t-elle dit en souriant. Je n'ai pas compris, mais l'idée m'a plu.",
+        "es": "Me contó que el café estaba allí desde hacía cincuenta años. “La gente lo encuentra cuando lo necesita”, dijo sonriendo. No lo entendí, pero me gustó la idea."
+      }
+    },
+    {
+      "id": "s7",
+      "text": {
+        "en": "When I finally looked at the clock, I was already late. I paid, said goodbye and ran to the office. My boss was surprised to see me so calm.",
+        "pt": "Quando finalmente olhei o relógio, já estava atrasado. Paguei, me despedi e corri para o escritório. Meu chefe ficou surpreso ao me ver tão calmo.",
+        "fr": "Quand j'ai enfin regardé l'horloge, j'étais déjà en retard. J'ai payé, j'ai dit au revoir et j'ai couru au bureau. Mon chef a été surpris de me voir si calme.",
+        "es": "Cuando por fin miré el reloj, ya llegaba tarde. Pagué, me despedí y corrí a la oficina. Mi jefe se sorprendió de verme tan tranquilo."
+      }
+    },
+    {
+      "id": "s8",
+      "text": {
+        "en": "Now I take the different path every Friday. The wooden door is always there, behind the green plants, and the cafe is always quiet, waiting for me.",
+        "pt": "Agora pego o caminho diferente toda sexta-feira. A porta de madeira está sempre lá, atrás das plantas verdes, e o café está sempre tranquilo, esperando por mim.",
+        "fr": "Maintenant, je prends l'autre chemin chaque vendredi. La porte en bois est toujours là, derrière les plantes vertes, et le café est toujours calme, comme s'il m'attendait.",
+        "es": "Ahora tomo el camino diferente todos los viernes. La puerta de madera siempre está allí, detrás de las plantas verdes, y el café siempre está tranquilo, esperándome."
+      }
+    }
+  ],
+  "vocabulary": [
+    {
+      "en": "narrow street",
+      "pt": "rua estreita",
+      "fr": "rue étroite",
+      "es": "calle estrecha"
+    },
+    {
+      "en": "office",
+      "pt": "escritório",
+      "fr": "bureau",
+      "es": "oficina"
+    },
+    {
+      "en": "path",
+      "pt": "caminho",
+      "fr": "chemin",
+      "es": "camino"
+    },
+    {
+      "en": "wooden door",
+      "pt": "porta de madeira",
+      "fr": "porte en bois",
+      "es": "puerta de madera"
+    },
+    {
+      "en": "fresh bread",
+      "pt": "pão fresco",
+      "fr": "pain frais",
+      "es": "pan recién hecho"
+    },
+    {
+      "en": "cinnamon",
+      "pt": "canela",
+      "fr": "cannelle",
+      "es": "canela"
+    },
+    {
+      "en": "window",
+      "pt": "janela",
+      "fr": "fenêtre",
+      "es": "ventana"
+    },
+    {
+      "en": "meeting",
+      "pt": "reunião",
+      "fr": "réunion",
+      "es": "reunión"
     }
   ]
 }

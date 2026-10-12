@@ -19,5 +19,11 @@
   "reader.how3": "Toca + para ver la traducción de ese fragmento.",
   "reader.more": "Sigue leyendo",
   "reader.textNotAvailable": "Texto no disponible en este idioma.",
-  "reader.translationNotAvailable": "Traducción no disponible en este idioma."
+  "reader.translationNotAvailable": "Traducción no disponible en este idioma.",
+  "stories.filterLabel": "Filtrar por nivel",
+  "stories.filterAll": "Todas",
+  "level.beginner": "Principiante",
+  "level.intermediate": "Intermedio",
+  "reader.vocabTitle": "Vocabulario",
+  "reader.vocabDesc": "Palabras clave de esta historia, en {l} y {n}."
 }

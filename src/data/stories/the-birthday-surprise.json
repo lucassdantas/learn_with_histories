@@ -1,0 +1,147 @@
+{
+  "id": "15",
+  "slug": "the-birthday-surprise",
+  "level": "beginner",
+  "title": {
+    "en": "The Birthday Surprise",
+    "pt": "A Festa Surpresa",
+    "fr": "La Fête Surprise",
+    "es": "La Fiesta Sorpresa"
+  },
+  "description": {
+    "en": "Grandpa turns eighty, and the whole family has a secret.",
+    "pt": "O vovô vai fazer oitenta anos, e a família inteira tem um segredo.",
+    "fr": "Grand-père va avoir quatre-vingts ans, et toute la famille a un secret.",
+    "es": "El abuelo cumple ochenta años, y toda la familia tiene un secreto."
+  },
+  "content": [
+    {
+      "id": "s1",
+      "text": {
+        "en": "Grandpa Joe turns eighty on Sunday. He says he doesn't want a party. “At my age, a quiet day with a good book is enough,” he says.",
+        "pt": "O vovô Joe faz oitenta anos no domingo. Ele diz que não quer festa. “Na minha idade, um dia tranquilo com um bom livro já basta”, ele diz.",
+        "fr": "Grand-père Joe a quatre-vingts ans dimanche. Il dit qu'il ne veut pas de fête. « À mon âge, une journée tranquille avec un bon livre, ça suffit », dit-il.",
+        "es": "El abuelo Joe cumple ochenta años el domingo. Dice que no quiere fiesta. “A mi edad, un día tranquilo con un buen libro es suficiente”, dice."
+      }
+    },
+    {
+      "id": "s2",
+      "text": {
+        "en": "But his granddaughter Lia has a plan. She calls her aunts, her uncles and her cousins. “It's a surprise. Don't tell Grandpa!” she says to everyone.",
+        "pt": "Mas a neta dele, a Lia, tem um plano. Ela liga para as tias, os tios e os primos. “É surpresa. Não contem para o vovô!”, ela diz para todo mundo.",
+        "fr": "Mais sa petite-fille Lia a un plan. Elle appelle ses tantes, ses oncles et ses cousins. « C'est une surprise. Ne dites rien à grand-père ! » dit-elle à tout le monde.",
+        "es": "Pero su nieta Lia tiene un plan. Llama a sus tías, a sus tíos y a sus primos. “Es una sorpresa. ¡No le digan nada al abuelo!”, les dice a todos."
+      }
+    },
+    {
+      "id": "s3",
+      "text": {
+        "en": "On Saturday, the family cooks all day. Aunt Rosa makes a big chocolate cake, Uncle Paulo prepares rice and chicken, and the cousins blow up forty balloons.",
+        "pt": "No sábado, a família cozinha o dia inteiro. A tia Rosa faz um bolo grande de chocolate, o tio Paulo prepara arroz com frango, e os primos enchem quarenta balões.",
+        "fr": "Le samedi, la famille cuisine toute la journée. Tante Rosa fait un grand gâteau au chocolat, oncle Paulo prépare du riz au poulet, et les cousins gonflent quarante ballons.",
+        "es": "El sábado, la familia cocina todo el día. La tía Rosa hace un pastel grande de chocolate, el tío Paulo prepara arroz con pollo y los primos inflan cuarenta globos."
+      }
+    },
+    {
+      "id": "s4",
+      "text": {
+        "en": "On Sunday afternoon, Lia takes Grandpa for a walk in the park. “Just one hour,” she says. Meanwhile, everybody hides in his living room.",
+        "pt": "No domingo à tarde, a Lia leva o vovô para passear no parque. “Só uma horinha”, ela diz. Enquanto isso, todo mundo se esconde na sala dele.",
+        "fr": "Le dimanche après-midi, Lia emmène grand-père se promener au parc. « Juste une heure », dit-elle. Pendant ce temps, tout le monde se cache dans son salon.",
+        "es": "El domingo por la tarde, Lia lleva al abuelo a pasear por el parque. “Solo una hora”, dice. Mientras tanto, todos se esconden en su sala."
+      }
+    },
+    {
+      "id": "s5",
+      "text": {
+        "en": "When Grandpa opens the door, the room is dark and silent. He turns on the light, and thirty people shout: “Surprise! Happy birthday!”",
+        "pt": "Quando o vovô abre a porta, a sala está escura e silenciosa. Ele acende a luz, e trinta pessoas gritam: “Surpresa! Feliz aniversário!”",
+        "fr": "Quand grand-père ouvre la porte, le salon est sombre et silencieux. Il allume la lumière, et trente personnes crient : « Surprise ! Joyeux anniversaire ! »",
+        "es": "Cuando el abuelo abre la puerta, la sala está oscura y en silencio. Enciende la luz, y treinta personas gritan: “¡Sorpresa! ¡Feliz cumpleaños!”"
+      }
+    },
+    {
+      "id": "s6",
+      "text": {
+        "en": "Grandpa puts his hand on his heart. For a moment he says nothing. Then he laughs and says: “I said no party… but I'm very happy you didn't listen.”",
+        "pt": "O vovô põe a mão no coração. Por um momento, não diz nada. Depois ri e diz: “Eu falei que não queria festa… mas estou muito feliz que vocês não me ouviram.”",
+        "fr": "Grand-père pose la main sur son cœur. Pendant un instant, il ne dit rien. Puis il rit et dit : « J'avais dit pas de fête… mais je suis très heureux que vous ne m'ayez pas écouté. »",
+        "es": "El abuelo se pone la mano en el corazón. Por un momento no dice nada. Luego se ríe y dice: “Dije que no quería fiesta… pero estoy muy feliz de que no me hicieran caso.”"
+      }
+    },
+    {
+      "id": "s7",
+      "text": {
+        "en": "They sing “Happy Birthday” and Grandpa blows out the candles. There are not eighty candles on the cake, only an eight and a zero. Everyone claps.",
+        "pt": "Eles cantam “Parabéns pra você”, e o vovô apaga as velas. Não há oitenta velas no bolo, só um oito e um zero. Todo mundo bate palmas.",
+        "fr": "Ils chantent « Joyeux anniversaire » et grand-père souffle les bougies. Il n'y a pas quatre-vingts bougies sur le gâteau, seulement un huit et un zéro. Tout le monde applaudit.",
+        "es": "Cantan “Cumpleaños feliz” y el abuelo sopla las velas. No hay ochenta velas en el pastel, solo un ocho y un cero. Todos aplauden."
+      }
+    },
+    {
+      "id": "s8",
+      "text": {
+        "en": "Later, Lia gives him her present: a new book. Grandpa smiles. “Perfect. Tomorrow I will have my quiet day.”",
+        "pt": "Mais tarde, a Lia dá o presente dela: um livro novo. O vovô sorri. “Perfeito. Amanhã vou ter meu dia tranquilo.”",
+        "fr": "Plus tard, Lia lui offre son cadeau : un nouveau livre. Grand-père sourit. « Parfait. Demain, j'aurai ma journée tranquille. »",
+        "es": "Más tarde, Lia le da su regalo: un libro nuevo. El abuelo sonríe. “Perfecto. Mañana tendré mi día tranquilo.”"
+      }
+    }
+  ],
+  "vocabulary": [
+    {
+      "en": "birthday",
+      "pt": "aniversário",
+      "fr": "anniversaire",
+      "es": "cumpleaños"
+    },
+    {
+      "en": "granddaughter",
+      "pt": "neta",
+      "fr": "petite-fille",
+      "es": "nieta"
+    },
+    {
+      "en": "cousin",
+      "pt": "primo",
+      "fr": "cousin",
+      "es": "primo"
+    },
+    {
+      "en": "cake",
+      "pt": "bolo",
+      "fr": "gâteau",
+      "es": "pastel"
+    },
+    {
+      "en": "balloon",
+      "pt": "balão",
+      "fr": "ballon",
+      "es": "globo"
+    },
+    {
+      "en": "living room",
+      "pt": "sala",
+      "fr": "salon",
+      "es": "sala"
+    },
+    {
+      "en": "to hide",
+      "pt": "esconder-se",
+      "fr": "se cacher",
+      "es": "esconderse"
+    },
+    {
+      "en": "candle",
+      "pt": "vela",
+      "fr": "bougie",
+      "es": "vela"
+    },
+    {
+      "en": "present (gift)",
+      "pt": "presente",
+      "fr": "cadeau",
+      "es": "regalo"
+    }
+  ]
+}

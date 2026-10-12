@@ -9,10 +9,12 @@ type Props = Readonly<{
   as?: 'h2' | 'h3';
   /** Optional footer, e.g. "Começar a ler →" on the stories page. */
   cta?: string;
+  /** Level label shown next to the circle mark ("Iniciante", "Intermediate"…). */
+  badge?: string;
 }>;
 
 // Whole card is the link. Circle mark echoes the logo.
-export default function StoryCard({ story, lang, as: Heading = 'h3', cta }: Props) {
+export default function StoryCard({ story, lang, as: Heading = 'h3', cta, badge }: Props) {
   const title = story.title[lang] || story.title.en;
   const description = story.description[lang] || story.description.en;
 
@@ -21,7 +23,10 @@ export default function StoryCard({ story, lang, as: Heading = 'h3', cta }: Prop
       href={`/stories/${story.slug}`}
       className="group flex flex-col gap-2.5 p-6 bg-surface border border-border rounded-card shadow-card text-foreground transition-[transform,border-color] duration-150 hover:-translate-y-0.5 hover:border-accent"
     >
-      <span aria-hidden="true" className="size-3 rounded-full border-2 border-accent" />
+      <span className="flex items-center gap-2">
+        <span aria-hidden="true" className="size-3 rounded-full border-2 border-accent" />
+        {badge && <span className="text-xs font-semibold tracking-[0.06em] uppercase text-accent-ink">{badge}</span>}
+      </span>
       <Heading lang={lang} className="font-story text-h3 font-semibold">
         {title}
       </Heading>

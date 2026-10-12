@@ -77,7 +77,7 @@ export default function HomePage({ latestStories, demo }: Props) {
         </div>
         <div className="grid grid-cols-[repeat(auto-fill,minmax(min(100%,300px),1fr))] gap-5">
           {latestStories.map((story) => (
-            <StoryCard key={story.id} story={story} lang={learningLanguage} />
+            <StoryCard key={story.id} story={story} lang={learningLanguage} badge={t(`level.${story.level}`)} />
           ))}
         </div>
       </section>

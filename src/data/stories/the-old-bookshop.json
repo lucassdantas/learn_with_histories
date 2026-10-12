@@ -1,0 +1,150 @@
+{
+  "id": "20",
+  "slug": "the-old-bookshop",
+  "level": "intermediate",
+  "title": {
+    "en": "The Old Bookshop",
+    "pt": "A Velha Livraria",
+    "fr": "La Vieille Librairie",
+    "es": "La Vieja Librería"
+  },
+  "description": {
+    "en": "A bookshop in Lisbon where every book is waiting for its next reader.",
+    "pt": "Uma livraria em Lisboa onde cada livro espera pelo próximo leitor.",
+    "fr": "Une librairie de Lisbonne où chaque livre attend son prochain lecteur.",
+    "es": "Una librería en Lisboa donde cada libro espera a su próximo lector."
+  },
+  "content": [
+    {
+      "id": "s1",
+      "text": {
+        "en": "On a narrow street in Lisbon, there was a bookshop that never seemed to close. Its windows were always warm with yellow light.",
+        "pt": "Em uma rua estreita de Lisboa, havia uma livraria que parecia nunca fechar. Suas janelas estavam sempre acesas com uma luz amarela e quente.",
+        "fr": "Dans une rue étroite de Lisbonne, il y avait une librairie qui ne semblait jamais fermer. Ses vitrines brillaient toujours d'une lumière jaune et chaleureuse.",
+        "es": "En una calle estrecha de Lisboa, había una librería que parecía no cerrar nunca. Sus ventanas siempre brillaban con una luz amarilla y cálida."
+      }
+    },
+    {
+      "id": "s2",
+      "text": {
+        "en": "Inês walked past it every evening on her way home. One rainy night, she finally opened the door.",
+        "pt": "Inês passava por ela todas as noites, a caminho de casa. Numa noite chuvosa, ela finalmente abriu a porta.",
+        "fr": "Inês passait devant chaque soir en rentrant chez elle. Un soir de pluie, elle a enfin poussé la porte.",
+        "es": "Inês pasaba por delante todas las noches, de camino a casa. Una noche lluviosa, por fin abrió la puerta."
+      }
+    },
+    {
+      "id": "s3",
+      "text": {
+        "en": "Inside, the air smelled of paper and coffee. An old man looked up from his book and smiled at her.",
+        "pt": "Lá dentro, o ar cheirava a papel e café. Um senhor idoso ergueu os olhos do livro e sorriu para ela.",
+        "fr": "À l'intérieur, l'air sentait le papier et le café. Un vieil homme a levé les yeux de son livre et lui a souri.",
+        "es": "Adentro, el aire olía a papel y a café. Un señor mayor levantó la vista de su libro y le sonrió."
+      }
+    },
+    {
+      "id": "s4",
+      "text": {
+        "en": "“Every book here has been read at least once,” he said. “Some of them are waiting for their second reader.”",
+        "pt": "“Todos os livros aqui já foram lidos pelo menos uma vez”, disse ele. “Alguns ainda esperam pelo segundo leitor.”",
+        "fr": "« Chaque livre ici a été lu au moins une fois », a-t-il dit. « Certains attendent leur deuxième lecteur. »",
+        "es": "“Todos los libros de aquí se han leído al menos una vez”, dijo. “Algunos están esperando a su segundo lector.”"
+      }
+    },
+    {
+      "id": "s5",
+      "text": {
+        "en": "Inês chose a small blue book with a torn cover. When she opened it, she found a note written in pencil: “For whoever comes next.”",
+        "pt": "Inês escolheu um pequeno livro azul com a capa rasgada. Ao abri-lo, encontrou um bilhete escrito a lápis: “Para quem vier depois.”",
+        "fr": "Inês a choisi un petit livre bleu à la couverture déchirée. En l'ouvrant, elle a trouvé un mot écrit au crayon : « Pour celui ou celle qui viendra ensuite. »",
+        "es": "Inês eligió un pequeño libro azul con la tapa rota. Al abrirlo, encontró una nota escrita a lápiz: “Para quien venga después.”"
+      }
+    },
+    {
+      "id": "s6",
+      "text": {
+        "en": "The note continued on the back: “Read this book slowly, underline the sentence you like most, and leave it here for someone else.” Six sentences were already underlined, each in a different color.",
+        "pt": "O bilhete continuava no verso: “Leia este livro devagar, sublinhe a frase de que mais gostar e deixe-o aqui para outra pessoa.” Já havia seis frases sublinhadas, cada uma de uma cor diferente.",
+        "fr": "Le mot continuait au dos : « Lis ce livre lentement, souligne la phrase que tu préfères et laisse-le ici pour quelqu'un d'autre. » Six phrases étaient déjà soulignées, chacune d'une couleur différente.",
+        "es": "La nota seguía en el reverso: “Lee este libro despacio, subraya la frase que más te guste y déjalo aquí para otra persona.” Ya había seis frases subrayadas, cada una de un color distinto."
+      }
+    },
+    {
+      "id": "s7",
+      "text": {
+        "en": "For a week, Inês read a few pages every night on the tram. The book told the story of a woman who traveled around the world looking for her sister.",
+        "pt": "Durante uma semana, Inês leu algumas páginas todas as noites no bonde. O livro contava a história de uma mulher que viajou pelo mundo à procura da irmã.",
+        "fr": "Pendant une semaine, Inês a lu quelques pages chaque soir dans le tramway. Le livre racontait l'histoire d'une femme qui avait fait le tour du monde à la recherche de sa sœur.",
+        "es": "Durante una semana, Inês leyó unas páginas cada noche en el tranvía. El libro contaba la historia de una mujer que viajó por el mundo buscando a su hermana."
+      }
+    },
+    {
+      "id": "s8",
+      "text": {
+        "en": "On the last page, she found her sentence: “We are never lost if someone is waiting for us.” She underlined it in green and smiled.",
+        "pt": "Na última página, ela encontrou a sua frase: “Nunca estamos perdidos se alguém está esperando por nós.” Ela a sublinhou de verde e sorriu.",
+        "fr": "À la dernière page, elle a trouvé sa phrase : « On n'est jamais perdu si quelqu'un nous attend. » Elle l'a soulignée en vert et a souri.",
+        "es": "En la última página, encontró su frase: “Nunca estamos perdidos si alguien nos espera.” La subrayó en verde y sonrió."
+      }
+    },
+    {
+      "id": "s9",
+      "text": {
+        "en": "The next evening, she returned the book to the shelf. The old man nodded, as if he already knew. Outside, it had stopped raining, and the street smelled of wet stones.",
+        "pt": "Na noite seguinte, ela devolveu o livro à estante. O senhor fez que sim com a cabeça, como se já soubesse. Lá fora, tinha parado de chover, e a rua cheirava a pedra molhada.",
+        "fr": "Le lendemain soir, elle a remis le livre sur l'étagère. Le vieil homme a hoché la tête, comme s'il le savait déjà. Dehors, il avait cessé de pleuvoir, et la rue sentait la pierre mouillée.",
+        "es": "La noche siguiente, devolvió el libro a la estantería. El señor asintió con la cabeza, como si ya lo supiera. Afuera había dejado de llover, y la calle olía a piedra mojada."
+      }
+    }
+  ],
+  "vocabulary": [
+    {
+      "en": "bookshop",
+      "pt": "livraria",
+      "fr": "librairie",
+      "es": "librería"
+    },
+    {
+      "en": "reader",
+      "pt": "leitor",
+      "fr": "lecteur",
+      "es": "lector"
+    },
+    {
+      "en": "cover (of a book)",
+      "pt": "capa",
+      "fr": "couverture",
+      "es": "tapa"
+    },
+    {
+      "en": "pencil",
+      "pt": "lápis",
+      "fr": "crayon",
+      "es": "lápiz"
+    },
+    {
+      "en": "to underline",
+      "pt": "sublinhar",
+      "fr": "souligner",
+      "es": "subrayar"
+    },
+    {
+      "en": "sentence",
+      "pt": "frase",
+      "fr": "phrase",
+      "es": "frase"
+    },
+    {
+      "en": "tram",
+      "pt": "bonde",
+      "fr": "tramway",
+      "es": "tranvía"
+    },
+    {
+      "en": "shelf",
+      "pt": "estante",
+      "fr": "étagère",
+      "es": "estantería"
+    }
+  ]
+}

@@ -1,0 +1,147 @@
+{
+  "id": "27",
+  "slug": "the-library-card",
+  "level": "beginner",
+  "title": {
+    "en": "The Library Card",
+    "pt": "A Carteirinha da Biblioteca",
+    "fr": "La Carte de Bibliothèque",
+    "es": "El Carné de la Biblioteca"
+  },
+  "description": {
+    "en": "Days of the week, opening hours and a new favorite place: Igor discovers the public library.",
+    "pt": "Dias da semana, horários e um novo lugar favorito: Igor descobre a biblioteca pública.",
+    "fr": "Les jours de la semaine, les horaires et un nouvel endroit préféré : Igor découvre la bibliothèque municipale.",
+    "es": "Los días de la semana, los horarios y un nuevo lugar favorito: Igor descubre la biblioteca pública."
+  },
+  "content": [
+    {
+      "id": "s1",
+      "text": {
+        "en": "Igor is new in the city. On Monday, he walks past a big old building with a sign: “Public Library. Open Tuesday to Saturday, from 9 a.m. to 7 p.m.”",
+        "pt": "Igor é novo na cidade. Na segunda-feira, ele passa na frente de um prédio grande e antigo com uma placa: “Biblioteca Pública. Aberta de terça a sábado, das 9h às 19h.”",
+        "fr": "Igor est nouveau dans la ville. Lundi, il passe devant un grand bâtiment ancien avec un panneau : « Bibliothèque municipale. Ouverte du mardi au samedi, de 9 h à 19 h. »",
+        "es": "Igor es nuevo en la ciudad. El lunes pasa frente a un edificio grande y antiguo con un letrero: “Biblioteca Pública. Abierta de martes a sábado, de 9 a 19 h.”"
+      }
+    },
+    {
+      "id": "s2",
+      "text": {
+        "en": "It is closed on Mondays, so he comes back on Tuesday morning. Inside, it is quiet and bright. There are long wooden tables, green lamps and books from the floor to the ceiling.",
+        "pt": "Às segundas ela fica fechada, então ele volta na terça de manhã. Lá dentro, é silencioso e claro. Há mesas compridas de madeira, luminárias verdes e livros do chão ao teto.",
+        "fr": "Elle est fermée le lundi, alors il revient mardi matin. À l'intérieur, c'est calme et lumineux. Il y a de longues tables en bois, des lampes vertes et des livres du sol au plafond.",
+        "es": "Los lunes está cerrada, así que vuelve el martes por la mañana. Adentro, todo es tranquilo y luminoso. Hay mesas largas de madera, lámparas verdes y libros del suelo al techo."
+      }
+    },
+    {
+      "id": "s3",
+      "text": {
+        "en": "At the front desk, a young librarian says hello. “Can I help you?” “Yes, I'd like to borrow some books. What do I need?” asks Igor.",
+        "pt": "No balcão, um bibliotecário jovem cumprimenta. “Posso ajudar?” “Sim, eu queria pegar alguns livros emprestados. Do que eu preciso?”, pergunta Igor.",
+        "fr": "À l'accueil, un jeune bibliothécaire le salue. « Je peux vous aider ? » « Oui, je voudrais emprunter des livres. Qu'est-ce qu'il me faut ? » demande Igor.",
+        "es": "En el mostrador, un bibliotecario joven lo saluda. “¿Puedo ayudarte?” “Sí, quisiera llevarme algunos libros prestados. ¿Qué necesito?”, pregunta Igor."
+      }
+    },
+    {
+      "id": "s4",
+      "text": {
+        "en": "“Just a library card. It's free. I need your ID and your address,” the librarian answers. Five minutes later, Igor has a blue card with his name on it.",
+        "pt": "“Só a carteirinha da biblioteca. É de graça. Preciso do seu documento e do seu endereço”, responde o bibliotecário. Cinco minutos depois, Igor tem uma carteirinha azul com o nome dele.",
+        "fr": "« Juste une carte de bibliothèque. C'est gratuit. J'ai besoin de votre pièce d'identité et de votre adresse », répond le bibliothécaire. Cinq minutes plus tard, Igor a une carte bleue à son nom.",
+        "es": "“Solo el carné de la biblioteca. Es gratis. Necesito tu identificación y tu dirección”, responde el bibliotecario. Cinco minutos después, Igor tiene un carné azul con su nombre."
+      }
+    },
+    {
+      "id": "s5",
+      "text": {
+        "en": "“You can take up to five books for three weeks,” the librarian explains. “If you need more time, you can renew them online. And on Thursdays, at six, there is a conversation club.”",
+        "pt": "“Você pode levar até cinco livros por três semanas”, explica o bibliotecário. “Se precisar de mais tempo, pode renovar pela internet. E às quintas, às seis, tem um clube de conversação.”",
+        "fr": "« Vous pouvez emprunter jusqu'à cinq livres pendant trois semaines », explique le bibliothécaire. « Si vous avez besoin de plus de temps, vous pouvez les prolonger en ligne. Et le jeudi, à dix-huit heures, il y a un club de conversation. »",
+        "es": "“Puedes llevarte hasta cinco libros por tres semanas”, explica el bibliotecario. “Si necesitas más tiempo, puedes renovarlos por internet. Y los jueves, a las seis, hay un club de conversación.”"
+      }
+    },
+    {
+      "id": "s6",
+      "text": {
+        "en": "Igor chooses a cookbook, a city guide and three novels. At home, he reads every evening. The city guide helps him discover parks, markets and a cheap bus line to the beach.",
+        "pt": "Igor escolhe um livro de receitas, um guia da cidade e três romances. Em casa, ele lê todas as noites. O guia ajuda a descobrir parques, feiras e uma linha de ônibus barata até a praia.",
+        "fr": "Igor choisit un livre de cuisine, un guide de la ville et trois romans. Chez lui, il lit tous les soirs. Le guide l'aide à découvrir des parcs, des marchés et une ligne de bus bon marché jusqu'à la plage.",
+        "es": "Igor elige un libro de cocina, una guía de la ciudad y tres novelas. En casa, lee todas las noches. La guía lo ayuda a descubrir parques, mercados y una línea de autobús barata hasta la playa."
+      }
+    },
+    {
+      "id": "s7",
+      "text": {
+        "en": "On Thursday, he goes to the conversation club. There are eight people from five countries. They talk about food, music and the strange habits of their new city, and they laugh a lot.",
+        "pt": "Na quinta, ele vai ao clube de conversação. Há oito pessoas de cinco países. Elas conversam sobre comida, música e os costumes estranhos da nova cidade, e riem muito.",
+        "fr": "Jeudi, il va au club de conversation. Il y a huit personnes de cinq pays. Ils parlent de cuisine, de musique et des habitudes bizarres de leur nouvelle ville, et ils rient beaucoup.",
+        "es": "El jueves va al club de conversación. Hay ocho personas de cinco países. Hablan de comida, de música y de las costumbres raras de su nueva ciudad, y se ríen mucho."
+      }
+    },
+    {
+      "id": "s8",
+      "text": {
+        "en": "Three weeks later, Igor returns the books on time. He doesn't feel new in the city anymore. Now he has a card, a favorite chair by the window and a group of friends every Thursday.",
+        "pt": "Três semanas depois, Igor devolve os livros no prazo. Ele já não se sente novo na cidade. Agora tem uma carteirinha, uma cadeira favorita perto da janela e um grupo de amigos toda quinta-feira.",
+        "fr": "Trois semaines plus tard, Igor rend les livres à temps. Il ne se sent plus nouveau dans la ville. Maintenant, il a une carte, une chaise préférée près de la fenêtre et un groupe d'amis tous les jeudis.",
+        "es": "Tres semanas después, Igor devuelve los libros a tiempo. Ya no se siente nuevo en la ciudad. Ahora tiene un carné, una silla favorita junto a la ventana y un grupo de amigos cada jueves."
+      }
+    }
+  ],
+  "vocabulary": [
+    {
+      "en": "library",
+      "pt": "biblioteca",
+      "fr": "bibliothèque",
+      "es": "biblioteca"
+    },
+    {
+      "en": "closed",
+      "pt": "fechado",
+      "fr": "fermé",
+      "es": "cerrado"
+    },
+    {
+      "en": "librarian",
+      "pt": "bibliotecário",
+      "fr": "bibliothécaire",
+      "es": "bibliotecario"
+    },
+    {
+      "en": "to borrow",
+      "pt": "pegar emprestado",
+      "fr": "emprunter",
+      "es": "tomar prestado"
+    },
+    {
+      "en": "library card",
+      "pt": "carteirinha da biblioteca",
+      "fr": "carte de bibliothèque",
+      "es": "carné de la biblioteca"
+    },
+    {
+      "en": "to renew",
+      "pt": "renovar",
+      "fr": "prolonger",
+      "es": "renovar"
+    },
+    {
+      "en": "novel",
+      "pt": "romance",
+      "fr": "roman",
+      "es": "novela"
+    },
+    {
+      "en": "ceiling",
+      "pt": "teto",
+      "fr": "plafond",
+      "es": "techo"
+    },
+    {
+      "en": "on time",
+      "pt": "no prazo",
+      "fr": "à temps",
+      "es": "a tiempo"
+    }
+  ]
+}

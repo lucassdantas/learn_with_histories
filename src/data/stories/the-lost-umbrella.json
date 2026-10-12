@@ -1,6 +1,7 @@
 {
   "id": "7",
   "slug": "the-lost-umbrella",
+  "level": "beginner",
   "title": {
     "en": "The Lost Umbrella",
     "pt": "O Guarda-Chuva Perdido",
@@ -85,6 +86,56 @@
         "fr": "Le lendemain matin, Ana voit le vieil homme à l'arrêt de bus. Elle lui offre un café et le remercie. Maintenant, chaque lundi, ils discutent dans le bus.",
         "es": "A la mañana siguiente, Ana ve al señor en la parada de autobús. Lo invita a un café y le da las gracias. Ahora, todos los lunes, conversan en el autobús."
       }
+    }
+  ],
+  "vocabulary": [
+    {
+      "en": "umbrella",
+      "pt": "guarda-chuva",
+      "fr": "parapluie",
+      "es": "paraguas"
+    },
+    {
+      "en": "bus stop",
+      "pt": "ponto de ônibus",
+      "fr": "arrêt de bus",
+      "es": "parada de autobús"
+    },
+    {
+      "en": "newspaper",
+      "pt": "jornal",
+      "fr": "journal",
+      "es": "periódico"
+    },
+    {
+      "en": "wet",
+      "pt": "molhado",
+      "fr": "mouillé",
+      "es": "mojado"
+    },
+    {
+      "en": "to get up",
+      "pt": "levantar-se",
+      "fr": "se lever",
+      "es": "levantarse"
+    },
+    {
+      "en": "gift",
+      "pt": "presente",
+      "fr": "cadeau",
+      "es": "regalo"
+    },
+    {
+      "en": "driver",
+      "pt": "motorista",
+      "fr": "chauffeur",
+      "es": "conductor"
+    },
+    {
+      "en": "to thank",
+      "pt": "agradecer",
+      "fr": "remercier",
+      "es": "dar las gracias"
     }
   ]
 }

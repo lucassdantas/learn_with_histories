@@ -1,0 +1,162 @@
+{
+  "id": "22",
+  "slug": "the-violinist-in-the-square",
+  "level": "intermediate",
+  "title": {
+    "en": "The Violinist in the Square",
+    "pt": "A Violinista da Praça",
+    "fr": "La Violoniste de la Place",
+    "es": "La Violinista de la Plaza"
+  },
+  "description": {
+    "en": "A shy violinist, a busy square and one song that stopped the crowd.",
+    "pt": "Uma violinista tímida, uma praça movimentada e uma canção que fez a multidão parar.",
+    "fr": "Une violoniste timide, une place animée et une chanson qui a arrêté la foule.",
+    "es": "Una violinista tímida, una plaza llena de gente y una canción que detuvo a la multitud."
+  },
+  "content": [
+    {
+      "id": "s1",
+      "text": {
+        "en": "Every Saturday, the main square was full of noise: children running, pigeons flying, sellers shouting the prices of corn and balloons. Elisa watched it all from her window with her violin on her lap.",
+        "pt": "Todo sábado, a praça principal ficava cheia de barulho: crianças correndo, pombos voando, vendedores gritando o preço do milho e dos balões. Elisa observava tudo da janela, com o violino no colo.",
+        "fr": "Chaque samedi, la place principale était pleine de bruit : des enfants qui couraient, des pigeons qui s'envolaient, des vendeurs qui criaient le prix du maïs et des ballons. Elisa regardait tout cela de sa fenêtre, son violon sur les genoux.",
+        "es": "Todos los sábados, la plaza principal se llenaba de ruido: niños corriendo, palomas volando, vendedores gritando el precio del maíz y de los globos. Elisa lo miraba todo desde su ventana, con el violín sobre las piernas."
+      }
+    },
+    {
+      "id": "s2",
+      "text": {
+        "en": "She had studied music for twelve years, but she had never played in front of strangers. When people looked at her, her hands started to shake and she forgot every note.",
+        "pt": "Ela tinha estudado música por doze anos, mas nunca tinha tocado na frente de desconhecidos. Quando as pessoas olhavam para ela, as mãos começavam a tremer e ela esquecia todas as notas.",
+        "fr": "Elle avait étudié la musique pendant douze ans, mais elle n'avait jamais joué devant des inconnus. Quand les gens la regardaient, ses mains se mettaient à trembler et elle oubliait toutes les notes.",
+        "es": "Había estudiado música durante doce años, pero nunca había tocado delante de desconocidos. Cuando la gente la miraba, le empezaban a temblar las manos y se le olvidaban todas las notas."
+      }
+    },
+    {
+      "id": "s3",
+      "text": {
+        "en": "Her teacher had given her a strange piece of advice: “Don't play for the crowd. Choose one person and play only for them.” Elisa did not know if it would work.",
+        "pt": "A professora dela tinha dado um conselho estranho: “Não toque para a multidão. Escolha uma pessoa e toque só para ela.” Elisa não sabia se ia funcionar.",
+        "fr": "Son professeur lui avait donné un drôle de conseil : « Ne joue pas pour la foule. Choisis une personne et joue seulement pour elle. » Elisa ne savait pas si ça marcherait.",
+        "es": "Su profesora le había dado un consejo extraño: “No toques para la multitud. Elige a una persona y toca solo para ella.” Elisa no sabía si funcionaría."
+      }
+    },
+    {
+      "id": "s4",
+      "text": {
+        "en": "That Saturday, she finally went down. She opened the violin case on the ground, took a deep breath and looked around the square for her one person.",
+        "pt": "Naquele sábado, ela finalmente desceu. Abriu o estojo do violino no chão, respirou fundo e procurou pela praça a sua única pessoa.",
+        "fr": "Ce samedi-là, elle est enfin descendue. Elle a ouvert l'étui de son violon par terre, a respiré profondément et a cherché sur la place sa seule personne.",
+        "es": "Ese sábado, por fin bajó. Abrió el estuche del violín en el suelo, respiró hondo y buscó en la plaza a su única persona."
+      }
+    },
+    {
+      "id": "s5",
+      "text": {
+        "en": "On a bench near the fountain, an old woman was feeding the pigeons. She looked tired and a little sad. Elisa lifted the violin and started to play for her.",
+        "pt": "Num banco perto do chafariz, uma senhora dava comida aos pombos. Parecia cansada e um pouco triste. Elisa levantou o violino e começou a tocar para ela.",
+        "fr": "Sur un banc près de la fontaine, une vieille dame donnait à manger aux pigeons. Elle avait l'air fatiguée et un peu triste. Elisa a levé son violon et a commencé à jouer pour elle.",
+        "es": "En un banco cerca de la fuente, una señora mayor les daba de comer a las palomas. Parecía cansada y un poco triste. Elisa levantó el violín y empezó a tocar para ella."
+      }
+    },
+    {
+      "id": "s6",
+      "text": {
+        "en": "It was an old waltz, slow and sweet. At first, nobody noticed. Then the old woman raised her head, closed her eyes and began to move her hand to the music.",
+        "pt": "Era uma valsa antiga, lenta e doce. No começo, ninguém percebeu. Depois, a senhora levantou a cabeça, fechou os olhos e começou a mexer a mão no ritmo da música.",
+        "fr": "C'était une vieille valse, lente et douce. Au début, personne n'a remarqué. Puis la vieille dame a levé la tête, a fermé les yeux et a commencé à bouger la main au rythme de la musique.",
+        "es": "Era un vals antiguo, lento y dulce. Al principio, nadie se dio cuenta. Luego la señora levantó la cabeza, cerró los ojos y empezó a mover la mano al ritmo de la música."
+      }
+    },
+    {
+      "id": "s7",
+      "text": {
+        "en": "Little by little, the square grew quieter. The sellers stopped shouting, the children stopped running, and a small crowd formed around the fountain. Elisa did not see them. She was playing for one person only.",
+        "pt": "Aos poucos, a praça foi ficando mais silenciosa. Os vendedores pararam de gritar, as crianças pararam de correr, e uma pequena multidão se formou em volta do chafariz. Elisa não os via. Ela só tocava para uma pessoa.",
+        "fr": "Peu à peu, la place est devenue plus calme. Les vendeurs ont cessé de crier, les enfants ont arrêté de courir, et une petite foule s'est formée autour de la fontaine. Elisa ne les voyait pas. Elle ne jouait que pour une seule personne.",
+        "es": "Poco a poco, la plaza se fue quedando en silencio. Los vendedores dejaron de gritar, los niños dejaron de correr y se formó una pequeña multitud alrededor de la fuente. Elisa no los veía. Solo tocaba para una persona."
+      }
+    },
+    {
+      "id": "s8",
+      "text": {
+        "en": "When the last note ended, there was a moment of silence, and then applause. Elisa opened her eyes, surprised. Her case was full of coins and flowers.",
+        "pt": "Quando a última nota terminou, houve um momento de silêncio e, depois, aplausos. Elisa abriu os olhos, surpresa. O estojo estava cheio de moedas e flores.",
+        "fr": "Quand la dernière note s'est éteinte, il y a eu un moment de silence, puis des applaudissements. Elisa a ouvert les yeux, surprise. Son étui était plein de pièces et de fleurs.",
+        "es": "Cuando terminó la última nota, hubo un momento de silencio y luego aplausos. Elisa abrió los ojos, sorprendida. Su estuche estaba lleno de monedas y flores."
+      }
+    },
+    {
+      "id": "s9",
+      "text": {
+        "en": "The old woman walked up to her slowly. “My husband and I danced to that waltz at our wedding,” she said. “Thank you for bringing him back for a few minutes.”",
+        "pt": "A senhora se aproximou devagar. “Meu marido e eu dançamos essa valsa no nosso casamento”, ela disse. “Obrigada por trazê-lo de volta por alguns minutos.”",
+        "fr": "La vieille dame s'est approchée lentement. « Mon mari et moi avons dansé sur cette valse à notre mariage », a-t-elle dit. « Merci de l'avoir fait revenir quelques minutes. »",
+        "es": "La señora se acercó despacio. “Mi esposo y yo bailamos ese vals en nuestra boda”, dijo. “Gracias por traerlo de vuelta unos minutos.”"
+      }
+    }
+  ],
+  "vocabulary": [
+    {
+      "en": "square (in a town)",
+      "pt": "praça",
+      "fr": "place",
+      "es": "plaza"
+    },
+    {
+      "en": "pigeon",
+      "pt": "pombo",
+      "fr": "pigeon",
+      "es": "paloma"
+    },
+    {
+      "en": "stranger",
+      "pt": "desconhecido",
+      "fr": "inconnu",
+      "es": "desconocido"
+    },
+    {
+      "en": "advice",
+      "pt": "conselho",
+      "fr": "conseil",
+      "es": "consejo"
+    },
+    {
+      "en": "crowd",
+      "pt": "multidão",
+      "fr": "foule",
+      "es": "multitud"
+    },
+    {
+      "en": "violin case",
+      "pt": "estojo do violino",
+      "fr": "étui à violon",
+      "es": "estuche del violín"
+    },
+    {
+      "en": "bench",
+      "pt": "banco",
+      "fr": "banc",
+      "es": "banco"
+    },
+    {
+      "en": "fountain",
+      "pt": "chafariz",
+      "fr": "fontaine",
+      "es": "fuente"
+    },
+    {
+      "en": "waltz",
+      "pt": "valsa",
+      "fr": "valse",
+      "es": "vals"
+    },
+    {
+      "en": "wedding",
+      "pt": "casamento",
+      "fr": "mariage",
+      "es": "boda"
+    }
+  ]
+}

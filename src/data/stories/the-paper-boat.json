@@ -1,0 +1,156 @@
+{
+  "id": "21",
+  "slug": "the-paper-boat",
+  "level": "intermediate",
+  "title": {
+    "en": "The Paper Boat",
+    "pt": "O Barco de Papel",
+    "fr": "Le Bateau en Papier",
+    "es": "El Barco de Papel"
+  },
+  "description": {
+    "en": "A child sends a message down the river and waits for an answer.",
+    "pt": "Uma criança manda uma mensagem rio abaixo e espera uma resposta.",
+    "fr": "Un enfant confie un message à la rivière et attend une réponse.",
+    "es": "Un niño envía un mensaje río abajo y espera una respuesta."
+  },
+  "content": [
+    {
+      "id": "s1",
+      "text": {
+        "en": "Kai lived in a small house next to a river. Every afternoon after school, he sat on the wooden pier and watched the water carry leaves, branches and sometimes a lost ball.",
+        "pt": "Kai morava numa casa pequena ao lado de um rio. Todas as tardes, depois da escola, ele se sentava no píer de madeira e via a água levar folhas, galhos e, às vezes, uma bola perdida.",
+        "fr": "Kai habitait une petite maison au bord d'une rivière. Chaque après-midi, après l'école, il s'asseyait sur le ponton en bois et regardait l'eau emporter des feuilles, des branches et parfois un ballon perdu.",
+        "es": "Kai vivía en una casa pequeña junto a un río. Todas las tardes, después de la escuela, se sentaba en el muelle de madera y miraba cómo el agua se llevaba hojas, ramas y, a veces, una pelota perdida."
+      }
+    },
+    {
+      "id": "s2",
+      "text": {
+        "en": "“Where does the river go?” he asked his grandmother one day. “To many places,” she said. “Villages, cities and, at the end, the sea.”",
+        "pt": "“Para onde vai o rio?”, ele perguntou um dia à avó. “Para muitos lugares”, ela disse. “Vilarejos, cidades e, no fim, o mar.”",
+        "fr": "« Où va la rivière ? » a-t-il demandé un jour à sa grand-mère. « Dans beaucoup d'endroits », a-t-elle répondu. « Des villages, des villes et, à la fin, la mer. »",
+        "es": "“¿Adónde va el río?”, le preguntó un día a su abuela. “A muchos lugares”, dijo ella. “Pueblos, ciudades y, al final, el mar.”"
+      }
+    },
+    {
+      "id": "s3",
+      "text": {
+        "en": "That evening, Kai took a sheet of paper and wrote in big letters: “Hello! My name is Kai. Who are you?” Then he folded the paper into a boat, just as his grandmother had taught him.",
+        "pt": "Naquela noite, Kai pegou uma folha de papel e escreveu com letras grandes: “Oi! Meu nome é Kai. Quem é você?” Depois dobrou o papel em forma de barco, do jeito que a avó tinha ensinado.",
+        "fr": "Ce soir-là, Kai a pris une feuille de papier et a écrit en grosses lettres : « Bonjour ! Je m'appelle Kai. Qui es-tu ? » Puis il a plié la feuille en forme de bateau, comme sa grand-mère le lui avait appris.",
+        "es": "Esa noche, Kai tomó una hoja de papel y escribió con letras grandes: “¡Hola! Me llamo Kai. ¿Quién eres?” Después dobló el papel en forma de barco, como le había enseñado su abuela."
+      }
+    },
+    {
+      "id": "s4",
+      "text": {
+        "en": "The next morning, he put the boat on the water. It turned twice, as if it were saying goodbye, and then the current carried it away behind the trees.",
+        "pt": "Na manhã seguinte, ele pôs o barco na água. O barquinho girou duas vezes, como se estivesse se despedindo, e depois a correnteza o levou para trás das árvores.",
+        "fr": "Le lendemain matin, il a posé le bateau sur l'eau. Il a tourné deux fois, comme pour dire au revoir, puis le courant l'a emporté derrière les arbres.",
+        "es": "A la mañana siguiente, puso el barco en el agua. Giró dos veces, como si se despidiera, y luego la corriente se lo llevó detrás de los árboles."
+      }
+    },
+    {
+      "id": "s5",
+      "text": {
+        "en": "Every day, Kai waited on the pier. A week passed, and nothing happened. “A river doesn't flow backwards,” his grandmother said gently. “Answers take other roads.”",
+        "pt": "Todos os dias, Kai esperava no píer. Passou uma semana, e nada aconteceu. “O rio não corre para trás”, disse a avó com carinho. “As respostas pegam outros caminhos.”",
+        "fr": "Chaque jour, Kai attendait sur le ponton. Une semaine a passé, et rien ne s'est produit. « Une rivière ne remonte pas », a dit doucement sa grand-mère. « Les réponses prennent d'autres chemins. »",
+        "es": "Todos los días, Kai esperaba en el muelle. Pasó una semana y no ocurrió nada. “Un río no corre hacia atrás”, le dijo su abuela con cariño. “Las respuestas toman otros caminos.”"
+      }
+    },
+    {
+      "id": "s6",
+      "text": {
+        "en": "Far away, in a village downstream, a girl named Noor found a wet paper boat caught in the reeds. She unfolded it, dried it in the sun and read the message with a big smile.",
+        "pt": "Bem longe, num vilarejo rio abaixo, uma menina chamada Noor encontrou um barco de papel molhado preso entre os juncos. Ela o desdobrou, secou ao sol e leu a mensagem com um sorriso enorme.",
+        "fr": "Loin de là, dans un village en aval, une fille nommée Noor a trouvé un bateau en papier mouillé, coincé dans les roseaux. Elle l'a déplié, l'a fait sécher au soleil et a lu le message avec un grand sourire.",
+        "es": "Muy lejos, en un pueblo río abajo, una niña llamada Noor encontró un barco de papel mojado atrapado entre los juncos. Lo desdobló, lo secó al sol y leyó el mensaje con una gran sonrisa."
+      }
+    },
+    {
+      "id": "s7",
+      "text": {
+        "en": "Noor wrote her answer on the other side and gave it to old Mr. Ruiz, who took his ferry up the river every Saturday. “Please look for a boy called Kai,” she asked.",
+        "pt": "Noor escreveu a resposta do outro lado e entregou ao velho seu Ruiz, que subia o rio com a balsa todo sábado. “Por favor, procure um menino chamado Kai”, ela pediu.",
+        "fr": "Noor a écrit sa réponse de l'autre côté et l'a donnée au vieux monsieur Ruiz, qui remontait la rivière avec son bac chaque samedi. « S'il vous plaît, cherchez un garçon qui s'appelle Kai », a-t-elle demandé.",
+        "es": "Noor escribió su respuesta del otro lado y se la dio al viejo señor Ruiz, que subía el río con su balsa todos los sábados. “Por favor, busque a un niño que se llama Kai”, le pidió."
+      }
+    },
+    {
+      "id": "s8",
+      "text": {
+        "en": "That Saturday, the ferry stopped next to Kai's pier. Mr. Ruiz held up a wrinkled piece of paper. “Are you Kai? I have a letter for you,” he said.",
+        "pt": "Naquele sábado, a balsa parou ao lado do píer de Kai. Seu Ruiz levantou um papel amassado. “Você é o Kai? Tenho uma carta para você”, ele disse.",
+        "fr": "Ce samedi-là, le bac s'est arrêté à côté du ponton de Kai. Monsieur Ruiz a brandi un papier froissé. « Tu es Kai ? J'ai une lettre pour toi », a-t-il dit.",
+        "es": "Ese sábado, la balsa se detuvo junto al muelle de Kai. El señor Ruiz levantó un papel arrugado. “¿Eres Kai? Tengo una carta para ti”, dijo."
+      }
+    },
+    {
+      "id": "s9",
+      "text": {
+        "en": "“Hello, Kai! I'm Noor. I live where the river meets the big bridge,” the letter said. “Send me another boat. I'll be waiting.” From that day on, the river and the old ferry carried their letters every week.",
+        "pt": "“Oi, Kai! Eu sou a Noor. Moro onde o rio encontra a ponte grande”, dizia a carta. “Mande outro barco. Vou ficar esperando.” Desde aquele dia, o rio e a velha balsa levaram as cartas deles toda semana.",
+        "fr": "« Bonjour, Kai ! Je suis Noor. J'habite là où la rivière rencontre le grand pont », disait la lettre. « Envoie-moi un autre bateau. Je t'attendrai. » Depuis ce jour-là, la rivière et le vieux bac ont porté leurs lettres chaque semaine.",
+        "es": "“¡Hola, Kai! Soy Noor. Vivo donde el río se encuentra con el puente grande”, decía la carta. “Mándame otro barco. Te estaré esperando.” Desde ese día, el río y la vieja balsa llevaron sus cartas cada semana."
+      }
+    }
+  ],
+  "vocabulary": [
+    {
+      "en": "river",
+      "pt": "rio",
+      "fr": "rivière",
+      "es": "río"
+    },
+    {
+      "en": "pier",
+      "pt": "píer",
+      "fr": "ponton",
+      "es": "muelle"
+    },
+    {
+      "en": "to fold",
+      "pt": "dobrar",
+      "fr": "plier",
+      "es": "doblar"
+    },
+    {
+      "en": "current",
+      "pt": "correnteza",
+      "fr": "courant",
+      "es": "corriente"
+    },
+    {
+      "en": "downstream",
+      "pt": "rio abaixo",
+      "fr": "en aval",
+      "es": "río abajo"
+    },
+    {
+      "en": "reeds",
+      "pt": "juncos",
+      "fr": "roseaux",
+      "es": "juncos"
+    },
+    {
+      "en": "ferry",
+      "pt": "balsa",
+      "fr": "bac",
+      "es": "balsa"
+    },
+    {
+      "en": "wrinkled",
+      "pt": "amassado",
+      "fr": "froissé",
+      "es": "arrugado"
+    },
+    {
+      "en": "bridge",
+      "pt": "ponte",
+      "fr": "pont",
+      "es": "puente"
+    }
+  ]
+}

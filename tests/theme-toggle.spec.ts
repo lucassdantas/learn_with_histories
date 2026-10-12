@@ -62,3 +62,19 @@ test('Spanish works as UI language and as learning language', async ({ page }) =
   await page.getByRole('button', { name: 'Mostrar traducción' }).first().click(); // UI in Spanish
   await expect(page.getByText('Durante cuarenta años, el señor Bernard', { exact: false })).toBeVisible();
 });
+
+test('story shows its level and vocabulary; the list filters by level', async ({ page }) => {
+  await page.goto(`${BASE}/stories/the-paper-boat`);
+  await expect(page.locator('article').getByText('Intermediário', { exact: true })).toBeVisible();
+  const vocabulary = page.locator('section[aria-labelledby="vocabulary"]');
+  await expect(vocabulary.locator('dt', { hasText: 'river' })).toBeVisible(); // learning: en
+  await expect(vocabulary.locator('dd', { hasText: 'rio' }).first()).toBeVisible(); // native: pt
+
+  await page.goto(`${BASE}/stories`);
+  const cards = page.locator('main a[href^="/stories/"]');
+  const total = await cards.count();
+  await page.getByRole('button', { name: 'Iniciante' }).click();
+  const beginner = await cards.count();
+  expect(beginner).toBeGreaterThan(0);
+  expect(beginner).toBeLessThan(total);
+});

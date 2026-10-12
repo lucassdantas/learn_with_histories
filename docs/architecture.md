@@ -57,9 +57,10 @@ src/
     not-found.tsx           # 404 (também usado por notFound() de slug inexistente)
     stories/
       page.tsx              # server: lê as histórias, metadata → StoriesList
-      StoriesList.tsx       # client: busca (ignora acentos), anúncio, grade, estado vazio
+      StoriesList.tsx       # client: busca (ignora acentos), filtro por nível, anúncio, grade, estado vazio
       [slug]/page.tsx       # server: generateStaticParams, generateMetadata, JSON-LD, notFound()
-      [slug]/StoryReader.tsx# client: barra "Voltar/Lendo em", segmentos, "Terminar", sidebar, "Continue lendo"
+      [slug]/StoryReader.tsx# client: barra "Voltar/Lendo em", selo de nível, segmentos, vocabulário,
+                            # "Terminar", sidebar, "Continue lendo"
     about/ terms/ privacy/  # page.tsx + layout.tsx (só exporta metadata)
     api/stories/…           # GET das histórias em JSON. Não usado pelo site hoje.
     lib/seo.ts              # generateSEO(), SITE_URL, SITE_NAME

@@ -55,6 +55,8 @@ export default async function StoryPage({ params }: Props) {
       mainEntityOfPage: url,
       inLanguage: Object.keys(story.title),
       isAccessibleForFree: true,
+      educationalLevel: story.level === 'beginner' ? 'Beginner' : 'Intermediate',
+      keywords: story.vocabulary.map((v) => v.en).join(', '),
       learningResourceType: 'Short story',
       author: { '@type': 'Organization', name: SITE_NAME, url: SITE_URL },
       publisher: { '@type': 'Organization', name: SITE_NAME, url: SITE_URL },

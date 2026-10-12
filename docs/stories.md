@@ -10,14 +10,16 @@ automaticamente — não precisa registrar em lugar nenhum. A home, a lista, o s
 > uma história.
 
 1. **Descubra o próximo `id`**: o maior `id` existente + 1 (ver tabela no fim ou rodar o script de
-   validação abaixo). `id` é string: `"13"`.
+   validação abaixo). `id` é string: `"29"`.
 2. **Escolha o `slug`**: em inglês, minúsculas e hífens, igual ao título em inglês
-   (`"The Old Bookshop"` → `the-old-bookshop`). Precisa ser único.
+   (`"The Clockmaker"` → `the-clockmaker`). Precisa ser único.
 3. **Crie `src/data/stories/<slug>.json`** copiando o modelo abaixo.
-4. **Escreva em todos os idiomas existentes** — hoje `en`, `pt`, `fr`, `es`. Todo `title`, `description` e
-   todo segmento de `content` precisa ter os quatro. (Se um idioma novo for adicionado ao site, ver
+4. **Escreva em todos os idiomas existentes** — hoje `en`, `pt`, `fr`, `es`. Todo `title`, `description`,
+   todo segmento de `content` e todo item de `vocabulary` precisa ter os quatro.
+   Defina o `level` (`beginner` ou `intermediate`) e 8–10 itens de `vocabulary`.
+   (Se um idioma novo for adicionado ao site, ver
    [i18n.md](i18n.md), toda história precisa recebê-lo.)
-5. **Rode a validação** (script abaixo) — deve mostrar `faltando: nenhum` e nenhum `DUP`.
+5. **Rode a validação** (script abaixo) — deve mostrar `faltando: nenhum` e nenhum `DUP`/`ERRO`.
 6. **Confira no navegador**: `npm run dev` → `/stories/<slug>`, troque os idiomas no Header.
 7. **Deploy.** As páginas são geradas no build: a história só aparece em produção depois de um novo
    build.
@@ -26,13 +28,14 @@ automaticamente — não precisa registrar em lugar nenhum. A home, a lista, o s
 
 ```json
 {
-  "id": "13",
-  "slug": "the-old-bookshop",
+  "id": "29",
+  "slug": "the-clockmaker",
+  "level": "intermediate",
   "title": {
-    "en": "The Old Bookshop",
-    "pt": "A Velha Livraria",
-    "fr": "La Vieille Librairie",
-    "es": "La Vieja Librería"
+    "en": "The Clockmaker",
+    "pt": "O Relojoeiro",
+    "fr": "L'Horloger",
+    "es": "El Relojero"
   },
   "description": {
     "en": "One sentence that makes people want to read it.",
@@ -54,6 +57,10 @@ automaticamente — não precisa registrar em lugar nenhum. A home, a lista, o s
       "id": "s2",
       "text": { "en": "...", "pt": "...", "fr": "...", "es": "..." }
     }
+  ],
+  "vocabulary": [
+    { "en": "clock", "pt": "relógio", "fr": "horloge", "es": "reloj" },
+    { "en": "to repair", "pt": "consertar", "fr": "réparer", "es": "reparar" }
   ]
 }
 ```
@@ -76,6 +83,12 @@ automaticamente — não precisa registrar em lugar nenhum. A home, a lista, o s
   espaço antes de `: ; ! ?` (`Bonjour !`).
 - `\n\n` dentro do texto cria quebra de parágrafo (é respeitado na tela). Use pouco.
 - `description` em uma frase; ela aparece na lista e vira a meta description da página (SEO).
+- **Vocabulário**: 8–10 palavras ou expressões **que aparecem no texto**, na forma de dicionário
+  (verbo no infinitivo: `to fold` / `dobrar` / `plier` / `doblar`). Se a palavra for ambígua em inglês,
+  esclareça entre parênteses: `floor (of a building)`. O `en` precisa ser único dentro da história (é a
+  chave da lista). Aparece no fim da leitura como "palavra no idioma aprendido → tradução no nativo".
+- **Nível** (`level`): `beginner` = presente, frases curtas, vocabulário do dia a dia; `intermediate` =
+  passado, frases mais longas, mais enredo. Aparece como selo nos cards, na leitura e no filtro da lista.
 - Ideal: um tema de vocabulário claro por história (comida, viagem, trabalho, casa, clima…), e variar
   temas entre histórias.
 
@@ -88,9 +101,13 @@ cd src/data/stories && node -e "
 const fs=require('fs');const L=['pt','en','fr','es'];const ids=new Set(),slugs=new Set();
 for(const f of fs.readdirSync('.')){const s=JSON.parse(fs.readFileSync(f,'utf8'));
 if(ids.has(s.id)||slugs.has(s.slug))console.log('DUP',f);ids.add(s.id);slugs.add(s.slug);
-const miss=[...L.filter(l=>!s.title[l]||!s.description[l]),...s.content.filter(p=>L.some(l=>!p.text[l])).map(p=>p.id)];
+if(!['beginner','intermediate'].includes(s.level))console.log('ERRO level',f);
+if(!Array.isArray(s.vocabulary)||s.vocabulary.length<8)console.log('ERRO vocabulary (mín. 8)',f);
+const miss=[...L.filter(l=>!s.title[l]||!s.description[l]),...s.content.filter(p=>L.some(l=>!p.text[l])).map(p=>p.id),
+  ...(s.vocabulary||[]).filter(v=>L.some(l=>!v[l])).map((v,i)=>'vocab'+i)];
 const pids=s.content.map(p=>p.id);if(new Set(pids).size!==pids.length)console.log('DUP segmento',f);
-console.log(s.id.padStart(2),s.slug.padEnd(24),'segs',s.content.length,'faltando:',miss.join(',')||'nenhum')}"
+const vk=(s.vocabulary||[]).map(v=>v.en);if(new Set(vk).size!==vk.length)console.log('DUP vocabulary',f);
+console.log(s.id.padStart(2),s.slug.padEnd(30),s.level,'segs',s.content.length,'faltando:',miss.join(',')||'nenhum')}"
 ```
 
 Se o JSON estiver inválido (vírgula sobrando, aspas `"` sem escapar dentro do texto), o comando quebra
@@ -98,34 +115,54 @@ apontando o arquivo. Dentro do texto, use as aspas tipográficas `“ ”` e nã
 
 ## Referência do formato
 
-Tipos em `src/lib/stories.ts` (`Story`, `StoryParagraph`, `StorySummary`).
+Tipos em `src/lib/stories.ts` (`Story`, `StoryParagraph`, `StorySummary`, `StoryLevel`, `VocabularyItem`).
 
 | Campo | Regra |
 |---|---|
 | `id` | Único, string numérica. Define a ordem: **maior id aparece primeiro** na home e na lista. |
 | `slug` | Único; vira a URL `/stories/<slug>`. |
+| `level` | `beginner` ou `intermediate`. Selo + filtro na lista + `educationalLevel` no JSON-LD. |
 | `title`, `description` | Um valor por idioma. Se faltar, a interface cai para `en`. O SEO usa sempre `en`. |
 | `content[]` | Segmentos da história, na ordem de leitura. |
 | `content[].id` | Único dentro da história (`s1`, `s2`, …). Controla qual tradução está aberta. |
 | `content[].text` | O mesmo trecho em cada idioma. |
+| `vocabulary[]` | 8–10 itens `{ en, pt, fr, es }`. Também vira `keywords` no JSON-LD (usa o `en`). |
 
 O nome do arquivo não importa para o site (ex.: `the-hidden-coffe.json` tem slug `the-hidden-cafe`),
 mas mantenha nome = slug.
 
 ## Histórias atuais
 
-| id | slug | Segmentos | Tema |
-|---|---|---|---|
-| 12 | the-lighthouse-keeper | 8 | tempestade, mar (passado) |
-| 11 | grandmas-recipe | 8 | cozinha, ingredientes (passado) |
-| 10 | the-night-train | 8 | viagem de trem (passado) |
-| 9 | the-first-day-at-work | 8 | escritório, apresentações (presente) |
-| 8 | the-saturday-market | 8 | feira, números, preços (presente) |
-| 7 | the-lost-umbrella | 8 | ônibus, chuva (presente) |
-| 6 | the-silver-watch | 10 | mistério |
-| 5 | the-starlit-archive | 10 | fantasia |
-| 4 | the-forgotten-garden | 4 | — |
-| 3 | the-hidden-cafe | 4 | — |
-| 2 | daily-routine | 4 | rotina |
+27 histórias, todas com `pt`, `en`, `fr`, `es`, nível e vocabulário. Maior id aparece primeiro.
 
-Todas com `pt`, `en`, `fr` e `es` completos. As de 4 segmentos são boas candidatas a serem expandidas.
+| id | slug | Nível | Trechos | Tema |
+|---|---|---|---|---|
+| 28 | the-first-snow | beginner | 8 | neve, inverno, vizinhos |
+| 27 | the-library-card | beginner | 8 | biblioteca, dias da semana, horários |
+| 26 | the-night-of-the-blackout | intermediate | 9 | apagão, vizinhos, prédio |
+| 25 | the-music-box | intermediate | 9 | antiguidades, conserto, família |
+| 24 | the-wrong-train | intermediate | 9 | estação, trem, trabalho |
+| 23 | the-mountain-trail | intermediate | 9 | trilha, natureza, orientação |
+| 22 | the-violinist-in-the-square | intermediate | 9 | música, praça, coragem |
+| 21 | the-paper-boat | intermediate | 9 | rio, cartas, amizade |
+| 20 | the-old-bookshop | intermediate | 9 | livros, Lisboa, leitura |
+| 19 | the-message-in-a-bottle | intermediate | 9 | mar, cartas, correio |
+| 18 | lunch-at-the-restaurant | beginner | 8 | restaurante, pedir comida |
+| 17 | the-lost-cat | beginner | 8 | preposições (em cima, embaixo, atrás) |
+| 16 | at-the-doctor | beginner | 8 | saúde, corpo, farmácia |
+| 15 | the-birthday-surprise | beginner | 8 | família, festa, números |
+| 14 | a-day-at-the-beach | beginner | 8 | praia, verão, comida |
+| 13 | the-new-neighbor | beginner | 8 | mudança, casa, apresentações |
+| 12 | the-lighthouse-keeper | intermediate | 8 | tempestade, mar |
+| 11 | grandmas-recipe | intermediate | 8 | cozinha, ingredientes |
+| 10 | the-night-train | intermediate | 8 | viagem de trem |
+| 9 | the-first-day-at-work | beginner | 8 | escritório, apresentações |
+| 8 | the-saturday-market | beginner | 8 | feira, números, preços |
+| 7 | the-lost-umbrella | beginner | 8 | ônibus, chuva |
+| 6 | the-silver-watch | intermediate | 10 | mistério |
+| 5 | the-starlit-archive | intermediate | 10 | ficção científica |
+| 4 | the-forgotten-garden | intermediate | 4 | natureza, jardim |
+| 3 | the-hidden-cafe | beginner | 8 | cidade, café |
+| 2 | daily-routine | beginner | 8 | rotina, dias da semana |
+
+`the-forgotten-garden` é a única com 4 trechos (mas trechos longos) — candidata a ser expandida.

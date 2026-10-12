@@ -1,6 +1,7 @@
 {
   "id": "12",
   "slug": "the-lighthouse-keeper",
+  "level": "intermediate",
   "title": {
     "en": "The Lighthouse Keeper",
     "pt": "O Faroleiro",
@@ -85,6 +86,56 @@
         "fr": "Le matin, les pêcheurs sont venus le remercier, et le maire est venu aussi. Le phare n'a pas été fermé. Et monsieur Bernard monte toujours l'escalier chaque soir.",
         "es": "Por la mañana, los pescadores vinieron a darle las gracias, y el alcalde también vino. El faro no se cerró. Y el señor Bernard todavía sube la escalera todas las noches."
       }
+    }
+  ],
+  "vocabulary": [
+    {
+      "en": "lighthouse",
+      "pt": "farol",
+      "fr": "phare",
+      "es": "faro"
+    },
+    {
+      "en": "step (of a staircase)",
+      "pt": "degrau",
+      "fr": "marche",
+      "es": "escalón"
+    },
+    {
+      "en": "storm",
+      "pt": "tempestade",
+      "fr": "tempête",
+      "es": "tormenta"
+    },
+    {
+      "en": "wave",
+      "pt": "onda",
+      "fr": "vague",
+      "es": "ola"
+    },
+    {
+      "en": "fishing boat",
+      "pt": "barco de pesca",
+      "fr": "bateau de pêche",
+      "es": "barco pesquero"
+    },
+    {
+      "en": "rocks",
+      "pt": "rochas",
+      "fr": "rochers",
+      "es": "rocas"
+    },
+    {
+      "en": "oil lamp",
+      "pt": "lamparina a óleo",
+      "fr": "lampe à huile",
+      "es": "lámpara de aceite"
+    },
+    {
+      "en": "mayor",
+      "pt": "prefeito",
+      "fr": "maire",
+      "es": "alcalde"
     }
   ]
 }

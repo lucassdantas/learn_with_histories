@@ -1,0 +1,156 @@
+{
+  "id": "25",
+  "slug": "the-music-box",
+  "level": "intermediate",
+  "title": {
+    "en": "The Music Box",
+    "pt": "A Caixinha de Música",
+    "fr": "La Boîte à Musique",
+    "es": "La Caja de Música"
+  },
+  "description": {
+    "en": "A broken music box, a repair shop and a song that crosses three generations.",
+    "pt": "Uma caixinha de música quebrada, uma oficina de consertos e uma canção que atravessa três gerações.",
+    "fr": "Une boîte à musique cassée, un atelier de réparation et une mélodie qui traverse trois générations.",
+    "es": "Una caja de música rota, un taller de reparaciones y una canción que atraviesa tres generaciones."
+  },
+  "content": [
+    {
+      "id": "s1",
+      "text": {
+        "en": "When Helena cleaned her grandmother's attic, she found a wooden box covered in dust. On the lid there was a painted ballerina, and on the side, a small golden key.",
+        "pt": "Quando Helena limpou o sótão da avó, encontrou uma caixa de madeira coberta de poeira. Na tampa, havia uma bailarina pintada e, na lateral, uma pequena chave dourada.",
+        "fr": "En nettoyant le grenier de sa grand-mère, Helena a trouvé une boîte en bois couverte de poussière. Sur le couvercle, il y avait une danseuse peinte, et sur le côté, une petite clé dorée.",
+        "es": "Cuando Helena limpió el ático de su abuela, encontró una caja de madera cubierta de polvo. En la tapa había una bailarina pintada y, en un costado, una pequeña llave dorada."
+      }
+    },
+    {
+      "id": "s2",
+      "text": {
+        "en": "She turned the key, but nothing happened. The ballerina did not move and there was no music. Inside, a piece of paper said: “For Helena, when she is old enough.”",
+        "pt": "Ela girou a chave, mas nada aconteceu. A bailarina não se mexeu, e não houve música. Dentro, um papel dizia: “Para Helena, quando ela tiver idade suficiente.”",
+        "fr": "Elle a tourné la clé, mais rien ne s'est passé. La danseuse n'a pas bougé et il n'y a pas eu de musique. À l'intérieur, un papier disait : « Pour Helena, quand elle sera assez grande. »",
+        "es": "Giró la llave, pero no pasó nada. La bailarina no se movió y no hubo música. Adentro, un papel decía: “Para Helena, cuando tenga edad suficiente.”"
+      }
+    },
+    {
+      "id": "s3",
+      "text": {
+        "en": "Helena was thirty-two. She smiled, a little sad. Her grandmother had died the year before, and she had never mentioned the box.",
+        "pt": "Helena tinha trinta e dois anos. Sorriu, um pouco triste. A avó tinha morrido no ano anterior e nunca tinha falado da caixinha.",
+        "fr": "Helena avait trente-deux ans. Elle a souri, un peu triste. Sa grand-mère était morte l'année précédente et n'avait jamais parlé de la boîte.",
+        "es": "Helena tenía treinta y dos años. Sonrió, un poco triste. Su abuela había muerto el año anterior y nunca le había hablado de la caja."
+      }
+    },
+    {
+      "id": "s4",
+      "text": {
+        "en": "The next day, she took it to a repair shop in the old part of town. The repairman, a quiet man with thick glasses, opened it with tiny tools and studied the mechanism for a long time.",
+        "pt": "No dia seguinte, ela levou a caixinha a uma oficina de consertos no centro antigo. O técnico, um homem calado de óculos grossos, abriu-a com ferramentas minúsculas e estudou o mecanismo por um bom tempo.",
+        "fr": "Le lendemain, elle l'a apportée dans un atelier de réparation de la vieille ville. Le réparateur, un homme silencieux aux lunettes épaisses, l'a ouverte avec de minuscules outils et a longtemps étudié le mécanisme.",
+        "es": "Al día siguiente, la llevó a un taller de reparaciones en el casco antiguo. El técnico, un hombre callado de lentes gruesos, la abrió con herramientas diminutas y estudió el mecanismo durante un buen rato."
+      }
+    },
+    {
+      "id": "s5",
+      "text": {
+        "en": "“A spring is broken, and a small piece is missing,” he said. “I can make a new one, but I need two weeks.” Helena agreed. She was curious to hear the song.",
+        "pt": "“Uma mola está quebrada, e falta uma pecinha”, ele disse. “Posso fazer uma nova, mas preciso de duas semanas.” Helena concordou. Estava curiosa para ouvir a música.",
+        "fr": "« Un ressort est cassé, et il manque une petite pièce », a-t-il dit. « Je peux en fabriquer une nouvelle, mais il me faut deux semaines. » Helena a accepté. Elle était curieuse d'entendre la mélodie.",
+        "es": "“Un resorte está roto y falta una piecita”, dijo. “Puedo hacer una nueva, pero necesito dos semanas.” Helena aceptó. Tenía curiosidad por oír la canción."
+      }
+    },
+    {
+      "id": "s6",
+      "text": {
+        "en": "When she came back, the repairman turned the key and the ballerina began to spin. A soft melody filled the shop. Helena's eyes filled with tears: it was the song her grandmother used to hum while she cooked.",
+        "pt": "Quando ela voltou, o técnico girou a chave, e a bailarina começou a rodar. Uma melodia suave encheu a oficina. Os olhos de Helena se encheram de lágrimas: era a canção que a avó cantarolava enquanto cozinhava.",
+        "fr": "Quand elle est revenue, le réparateur a tourné la clé et la danseuse s'est mise à tourner. Une douce mélodie a rempli l'atelier. Les yeux d'Helena se sont remplis de larmes : c'était la chanson que sa grand-mère fredonnait en cuisinant.",
+        "es": "Cuando volvió, el técnico giró la llave y la bailarina empezó a girar. Una melodía suave llenó el taller. A Helena se le llenaron los ojos de lágrimas: era la canción que su abuela tarareaba mientras cocinaba."
+      }
+    },
+    {
+      "id": "s7",
+      "text": {
+        "en": "“I know this box,” the repairman said quietly. “My father repaired it in 1965 for a young mother. She told him that, one day, she would keep it for a granddaughter.”",
+        "pt": "“Eu conheço esta caixinha”, disse o técnico, baixinho. “Meu pai a consertou em 1965 para uma jovem mãe. Ela disse a ele que, um dia, ia guardá-la para uma neta.”",
+        "fr": "« Je connais cette boîte », a dit doucement le réparateur. « Mon père l'a réparée en 1965 pour une jeune mère. Elle lui avait dit qu'un jour, elle la garderait pour une petite-fille. »",
+        "es": "“Conozco esta caja”, dijo el técnico en voz baja. “Mi padre la reparó en 1965 para una madre joven. Ella le dijo que algún día la guardaría para una nieta.”"
+      }
+    },
+    {
+      "id": "s8",
+      "text": {
+        "en": "He refused to take her money. “Some repairs are paid for in advance,” he said with a smile. “Your grandmother paid for this one sixty years ago.”",
+        "pt": "Ele se recusou a aceitar o dinheiro dela. “Alguns consertos são pagos adiantado”, disse sorrindo. “Sua avó pagou este há sessenta anos.”",
+        "fr": "Il a refusé son argent. « Certaines réparations sont payées d'avance », a-t-il dit avec un sourire. « Votre grand-mère a payé celle-ci il y a soixante ans. »",
+        "es": "No quiso aceptar su dinero. “Algunas reparaciones se pagan por adelantado”, dijo sonriendo. “Su abuela pagó esta hace sesenta años.”"
+      }
+    },
+    {
+      "id": "s9",
+      "text": {
+        "en": "Today, the music box sits on a shelf in Helena's kitchen. Every Sunday, while she cooks, she turns the little golden key, and the ballerina dances again.",
+        "pt": "Hoje, a caixinha de música fica na prateleira da cozinha de Helena. Todo domingo, enquanto cozinha, ela gira a chavinha dourada, e a bailarina dança de novo.",
+        "fr": "Aujourd'hui, la boîte à musique est posée sur une étagère de la cuisine d'Helena. Chaque dimanche, pendant qu'elle cuisine, elle tourne la petite clé dorée, et la danseuse danse de nouveau.",
+        "es": "Hoy la caja de música está en un estante de la cocina de Helena. Cada domingo, mientras cocina, gira la llavecita dorada, y la bailarina vuelve a bailar."
+      }
+    }
+  ],
+  "vocabulary": [
+    {
+      "en": "attic",
+      "pt": "sótão",
+      "fr": "grenier",
+      "es": "ático"
+    },
+    {
+      "en": "dust",
+      "pt": "poeira",
+      "fr": "poussière",
+      "es": "polvo"
+    },
+    {
+      "en": "lid",
+      "pt": "tampa",
+      "fr": "couvercle",
+      "es": "tapa"
+    },
+    {
+      "en": "key",
+      "pt": "chave",
+      "fr": "clé",
+      "es": "llave"
+    },
+    {
+      "en": "repair shop",
+      "pt": "oficina de consertos",
+      "fr": "atelier de réparation",
+      "es": "taller de reparaciones"
+    },
+    {
+      "en": "spring (metal)",
+      "pt": "mola",
+      "fr": "ressort",
+      "es": "resorte"
+    },
+    {
+      "en": "to hum",
+      "pt": "cantarolar",
+      "fr": "fredonner",
+      "es": "tararear"
+    },
+    {
+      "en": "in advance",
+      "pt": "adiantado",
+      "fr": "d'avance",
+      "es": "por adelantado"
+    },
+    {
+      "en": "shelf",
+      "pt": "prateleira",
+      "fr": "étagère",
+      "es": "estante"
+    }
+  ]
+}

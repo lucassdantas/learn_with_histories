@@ -1,0 +1,156 @@
+{
+  "id": "26",
+  "slug": "the-night-of-the-blackout",
+  "level": "intermediate",
+  "title": {
+    "en": "The Night of the Blackout",
+    "pt": "A Noite do Apagão",
+    "fr": "La Nuit de la Panne",
+    "es": "La Noche del Apagón"
+  },
+  "description": {
+    "en": "When the power goes out, the neighbors of a quiet building finally meet.",
+    "pt": "Quando a luz acaba, os vizinhos de um prédio silencioso finalmente se conhecem.",
+    "fr": "Quand le courant est coupé, les voisins d'un immeuble tranquille font enfin connaissance.",
+    "es": "Cuando se va la luz, los vecinos de un edificio tranquilo por fin se conocen."
+  },
+  "content": [
+    {
+      "id": "s1",
+      "text": {
+        "en": "It was a Thursday in July, and the whole city was very hot. At eight in the evening, the lights went out in every apartment of the Aurora building at the same time.",
+        "pt": "Era uma quinta-feira de julho, e a cidade inteira estava muito quente. Às oito da noite, as luzes se apagaram ao mesmo tempo em todos os apartamentos do Edifício Aurora.",
+        "fr": "C'était un jeudi de juillet, et il faisait très chaud dans toute la ville. À vingt heures, la lumière s'est éteinte en même temps dans tous les appartements de l'immeuble Aurora.",
+        "es": "Era un jueves de julio, y en toda la ciudad hacía mucho calor. A las ocho de la noche, las luces se apagaron al mismo tiempo en todos los apartamentos del edificio Aurora."
+      }
+    },
+    {
+      "id": "s2",
+      "text": {
+        "en": "No fans, no television, no internet. One by one, the residents opened their windows and then their doors, looking for some fresh air and some news.",
+        "pt": "Nada de ventilador, televisão ou internet. Um por um, os moradores abriram as janelas e depois as portas, procurando um pouco de ar fresco e alguma notícia.",
+        "fr": "Plus de ventilateur, plus de télévision, plus d'internet. Un par un, les habitants ont ouvert leurs fenêtres, puis leurs portes, à la recherche d'un peu d'air frais et de nouvelles.",
+        "es": "Sin ventiladores, sin televisión, sin internet. Uno por uno, los vecinos abrieron las ventanas y luego las puertas, buscando un poco de aire fresco y alguna noticia."
+      }
+    },
+    {
+      "id": "s3",
+      "text": {
+        "en": "In the stairwell, people who had lived side by side for years introduced themselves for the first time. “I'm Carla, from the fifth floor.” “Oh, so you're the one who plays the piano!”",
+        "pt": "Na escada, pessoas que moravam lado a lado havia anos se apresentaram pela primeira vez. “Eu sou a Carla, do quinto andar.” “Ah, então é você que toca piano!”",
+        "fr": "Dans la cage d'escalier, des gens qui vivaient côte à côte depuis des années se sont présentés pour la première fois. « Je suis Carla, du cinquième étage. » « Ah, c'est donc vous qui jouez du piano ! »",
+        "es": "En la escalera, personas que vivían una al lado de la otra desde hacía años se presentaron por primera vez. “Soy Carla, del quinto piso.” “¡Ah, entonces eres tú la que toca el piano!”"
+      }
+    },
+    {
+      "id": "s4",
+      "text": {
+        "en": "Mr. Otto from the second floor brought candles. A family from the fourth floor brought a big bottle of lemonade. Someone found an old battery radio and put it on the steps.",
+        "pt": "O seu Otto, do segundo andar, trouxe velas. Uma família do quarto andar trouxe uma garrafa grande de limonada. Alguém achou um rádio velho a pilha e o colocou na escada.",
+        "fr": "Monsieur Otto, du deuxième étage, a apporté des bougies. Une famille du quatrième a apporté une grande bouteille de citronnade. Quelqu'un a trouvé une vieille radio à piles et l'a posée sur les marches.",
+        "es": "El señor Otto, del segundo piso, trajo velas. Una familia del cuarto piso trajo una botella grande de limonada. Alguien encontró una radio vieja a pilas y la puso en los escalones."
+      }
+    },
+    {
+      "id": "s5",
+      "text": {
+        "en": "The radio said that a storm had damaged the power lines and that the electricity would come back only after midnight. Nobody complained. Somebody suggested a picnic in the courtyard.",
+        "pt": "O rádio disse que uma tempestade tinha danificado a rede elétrica e que a energia só voltaria depois da meia-noite. Ninguém reclamou. Alguém sugeriu um piquenique no pátio.",
+        "fr": "La radio a annoncé qu'un orage avait endommagé les lignes électriques et que le courant ne reviendrait qu'après minuit. Personne ne s'est plaint. Quelqu'un a proposé un pique-nique dans la cour.",
+        "es": "La radio dijo que una tormenta había dañado las líneas eléctricas y que la luz no volvería hasta después de la medianoche. Nadie se quejó. Alguien propuso un pícnic en el patio."
+      }
+    },
+    {
+      "id": "s6",
+      "text": {
+        "en": "In the courtyard, under the stars, each family shared what they had in the fridge before it got warm: cheese, fruit, cold chicken, a chocolate cake. It was a strange dinner, and a delicious one.",
+        "pt": "No pátio, sob as estrelas, cada família dividiu o que tinha na geladeira antes que esquentasse: queijo, frutas, frango frio, um bolo de chocolate. Foi um jantar estranho, e delicioso.",
+        "fr": "Dans la cour, sous les étoiles, chaque famille a partagé ce qu'elle avait dans le frigo avant que tout ne se réchauffe : du fromage, des fruits, du poulet froid, un gâteau au chocolat. C'était un dîner étrange, et délicieux.",
+        "es": "En el patio, bajo las estrellas, cada familia compartió lo que tenía en el refrigerador antes de que se calentara: queso, fruta, pollo frío, un pastel de chocolate. Fue una cena extraña, y deliciosa."
+      }
+    },
+    {
+      "id": "s7",
+      "text": {
+        "en": "Carla brought down her guitar, because she needed light to read the music for the piano. The children danced, Mr. Otto told stories about the building in the sixties, and nobody looked at a phone.",
+        "pt": "Carla desceu com o violão, porque para tocar piano ela precisava de luz para ler a partitura. As crianças dançaram, o seu Otto contou histórias do prédio nos anos sessenta, e ninguém olhou para o celular.",
+        "fr": "Carla est descendue avec sa guitare, parce qu'il lui fallait de la lumière pour lire ses partitions de piano. Les enfants ont dansé, monsieur Otto a raconté des histoires sur l'immeuble dans les années soixante, et personne n'a regardé son téléphone.",
+        "es": "Carla bajó con su guitarra, porque para tocar el piano necesitaba luz para leer la partitura. Los niños bailaron, el señor Otto contó historias del edificio en los años sesenta y nadie miró el celular."
+      }
+    },
+    {
+      "id": "s8",
+      "text": {
+        "en": "At half past twelve, the lights came back all at once. Everyone cheered, but nobody went upstairs right away. They stayed a little longer, talking softly in the warm night.",
+        "pt": "À meia-noite e meia, as luzes voltaram todas de uma vez. Todo mundo comemorou, mas ninguém subiu logo. Eles ficaram mais um pouco, conversando baixinho na noite quente.",
+        "fr": "À minuit et demi, la lumière est revenue d'un coup. Tout le monde a applaudi, mais personne n'est remonté tout de suite. Ils sont restés encore un peu, à parler doucement dans la nuit chaude.",
+        "es": "A las doce y media, las luces volvieron todas de golpe. Todos celebraron, pero nadie subió enseguida. Se quedaron un rato más, conversando en voz baja en la noche cálida."
+      }
+    },
+    {
+      "id": "s9",
+      "text": {
+        "en": "Since that night, there has been a picnic in the courtyard of the Aurora building on the first Thursday of every month. The lights stay on, but the phones stay in people's pockets.",
+        "pt": "Desde aquela noite, na primeira quinta-feira de cada mês, há um piquenique no pátio do Edifício Aurora. A luz continua acesa, mas os celulares ficam no bolso.",
+        "fr": "Depuis cette nuit-là, il y a un pique-nique dans la cour de l'immeuble Aurora le premier jeudi de chaque mois. Il y a de la lumière, mais les téléphones restent dans les poches.",
+        "es": "Desde esa noche, el primer jueves de cada mes hay un pícnic en el patio del edificio Aurora. La luz sigue encendida, pero los celulares se quedan en el bolsillo."
+      }
+    }
+  ],
+  "vocabulary": [
+    {
+      "en": "blackout",
+      "pt": "apagão",
+      "fr": "panne de courant",
+      "es": "apagón"
+    },
+    {
+      "en": "fan",
+      "pt": "ventilador",
+      "fr": "ventilateur",
+      "es": "ventilador"
+    },
+    {
+      "en": "stairwell",
+      "pt": "escada",
+      "fr": "cage d'escalier",
+      "es": "escalera"
+    },
+    {
+      "en": "candle",
+      "pt": "vela",
+      "fr": "bougie",
+      "es": "vela"
+    },
+    {
+      "en": "battery",
+      "pt": "pilha",
+      "fr": "pile",
+      "es": "pila"
+    },
+    {
+      "en": "power lines",
+      "pt": "rede elétrica",
+      "fr": "lignes électriques",
+      "es": "líneas eléctricas"
+    },
+    {
+      "en": "courtyard",
+      "pt": "pátio",
+      "fr": "cour",
+      "es": "patio"
+    },
+    {
+      "en": "midnight",
+      "pt": "meia-noite",
+      "fr": "minuit",
+      "es": "medianoche"
+    },
+    {
+      "en": "to complain",
+      "pt": "reclamar",
+      "fr": "se plaindre",
+      "es": "quejarse"
+    }
+  ]
+}

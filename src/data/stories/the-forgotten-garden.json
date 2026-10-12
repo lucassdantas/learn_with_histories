@@ -1,6 +1,7 @@
 {
   "id": "4",
   "slug": "the-forgotten-garden",
+  "level": "intermediate",
   "title": {
     "en": "The Forgotten Garden",
     "pt": "O Jardim Esquecido",
@@ -49,6 +50,56 @@
         "fr": "J'ai passé tout l'après-midi à explorer les sentiers sinueux. J'ai trouvé un petit étang couvert de nénuphars et je m'y suis assis pour écrire dans mon journal. C'était la première fois depuis des mois que je me sentais vraiment inspiré. J'ai réalisé alors que certaines choses sont plus belles quand elles sont laissées à l'état sauvage et à l'abri du monde extérieur.",
         "es": "Pasé toda la tarde explorando los senderos sinuosos. Encontré un pequeño estanque cubierto de nenúfares y me senté allí a escribir en mi diario. Era la primera vez en meses que me sentía realmente inspirado. Entonces me di cuenta de que algunas cosas son más bellas cuando se dejan salvajes y libres del mundo exterior."
       }
+    }
+  ],
+  "vocabulary": [
+    {
+      "en": "countryside",
+      "pt": "campo",
+      "fr": "campagne",
+      "es": "campo"
+    },
+    {
+      "en": "wall",
+      "pt": "muro",
+      "fr": "mur",
+      "es": "muro"
+    },
+    {
+      "en": "ivy",
+      "pt": "hera",
+      "fr": "lierre",
+      "es": "hiedra"
+    },
+    {
+      "en": "gate",
+      "pt": "portão",
+      "fr": "grille",
+      "es": "reja"
+    },
+    {
+      "en": "rusted",
+      "pt": "enferrujado",
+      "fr": "rouillé",
+      "es": "oxidado"
+    },
+    {
+      "en": "greenhouse",
+      "pt": "estufa",
+      "fr": "serre",
+      "es": "invernadero"
+    },
+    {
+      "en": "pond",
+      "pt": "lago",
+      "fr": "étang",
+      "es": "estanque"
+    },
+    {
+      "en": "journal (diary)",
+      "pt": "diário",
+      "fr": "journal",
+      "es": "diario"
     }
   ]
 }

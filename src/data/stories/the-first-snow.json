@@ -1,0 +1,147 @@
+{
+  "id": "28",
+  "slug": "the-first-snow",
+  "level": "beginner",
+  "title": {
+    "en": "First Snow",
+    "pt": "A Primeira Neve",
+    "fr": "La Première Neige",
+    "es": "La Primera Nevada"
+  },
+  "description": {
+    "en": "Two neighbors who never spoke meet on a white morning.",
+    "pt": "Dois vizinhos que nunca se falaram se encontram numa manhã branca.",
+    "fr": "Deux voisins qui ne s'étaient jamais parlé se croisent un matin blanc.",
+    "es": "Dos vecinos que nunca se habían hablado se encuentran una mañana blanca."
+  },
+  "content": [
+    {
+      "id": "s1",
+      "text": {
+        "en": "When Hanna opens the curtains on Saturday morning, the world is white. It is the first snow of the year, and the street, the cars and the trees are all covered.",
+        "pt": "Quando Hanna abre as cortinas no sábado de manhã, o mundo está branco. É a primeira neve do ano, e a rua, os carros e as árvores estão todos cobertos.",
+        "fr": "Quand Hanna ouvre les rideaux samedi matin, le monde est blanc. C'est la première neige de l'année, et la rue, les voitures et les arbres sont tous recouverts.",
+        "es": "Cuando Hanna abre las cortinas el sábado por la mañana, el mundo está blanco. Es la primera nevada del año, y la calle, los autos y los árboles están todos cubiertos."
+      }
+    },
+    {
+      "id": "s2",
+      "text": {
+        "en": "She puts on her boots, her coat, a hat and gloves, and goes outside with a shovel. The snow is soft and very deep. It comes up to her knees.",
+        "pt": "Ela calça as botas, veste o casaco, põe um gorro e luvas e sai com uma pá. A neve está fofa e muito funda. Chega até os joelhos dela.",
+        "fr": "Elle met ses bottes, son manteau, un bonnet et des gants, et sort avec une pelle. La neige est douce et très profonde. Elle lui arrive aux genoux.",
+        "es": "Se pone las botas, el abrigo, un gorro y los guantes, y sale con una pala. La nieve está blanda y muy profunda. Le llega a las rodillas."
+      }
+    },
+    {
+      "id": "s3",
+      "text": {
+        "en": "An old man lives across the street. Hanna sees him every day, but they never talk. Today, he is at his door, looking at the snow with a worried face.",
+        "pt": "Do outro lado da rua mora um senhor. Hanna o vê todos os dias, mas eles nunca conversam. Hoje, ele está na porta, olhando para a neve com uma cara preocupada.",
+        "fr": "En face habite un vieil homme. Hanna le voit tous les jours, mais ils ne se parlent jamais. Aujourd'hui, il est devant sa porte et regarde la neige d'un air inquiet.",
+        "es": "Enfrente vive un señor mayor. Hanna lo ve todos los días, pero nunca hablan. Hoy está en la puerta, mirando la nieve con cara de preocupación."
+      }
+    },
+    {
+      "id": "s4",
+      "text": {
+        "en": "Hanna crosses the street. “Good morning! Do you need help?” she asks. “My back hurts, and I can't use the shovel,” he says. “I need to go to the pharmacy today.”",
+        "pt": "Hanna atravessa a rua. “Bom dia! O senhor precisa de ajuda?”, pergunta. “Minhas costas doem, e não consigo usar a pá”, ele diz. “Preciso ir à farmácia hoje.”",
+        "fr": "Hanna traverse la rue. « Bonjour ! Vous avez besoin d'aide ? » demande-t-elle. « J'ai mal au dos, et je ne peux pas utiliser la pelle », dit-il. « Je dois aller à la pharmacie aujourd'hui. »",
+        "es": "Hanna cruza la calle. “¡Buenos días! ¿Necesita ayuda?”, pregunta. “Me duele la espalda y no puedo usar la pala”, dice él. “Tengo que ir a la farmacia hoy.”"
+      }
+    },
+    {
+      "id": "s5",
+      "text": {
+        "en": "Hanna clears the snow in front of his door and makes a path to the sidewalk. It takes half an hour. Her cheeks are red and her hands are cold, but she is happy.",
+        "pt": "Hanna tira a neve da frente da porta dele e abre um caminho até a calçada. Leva meia hora. As bochechas dela estão vermelhas e as mãos, geladas, mas ela está feliz.",
+        "fr": "Hanna déblaie la neige devant sa porte et fait un chemin jusqu'au trottoir. Cela prend une demi-heure. Elle a les joues rouges et les mains froides, mais elle est contente.",
+        "es": "Hanna quita la nieve frente a su puerta y abre un camino hasta la acera. Le lleva media hora. Tiene las mejillas rojas y las manos frías, pero está contenta."
+      }
+    },
+    {
+      "id": "s6",
+      "text": {
+        "en": "Then they walk to the pharmacy together, very slowly, arm in arm. His name is Ivo. He was a teacher for forty years, and he knows the name of every tree in the street.",
+        "pt": "Depois, eles vão juntos à farmácia, bem devagar, de braços dados. O nome dele é Ivo. Ele foi professor por quarenta anos e sabe o nome de todas as árvores da rua.",
+        "fr": "Ensuite, ils vont ensemble à la pharmacie, très lentement, bras dessus bras dessous. Il s'appelle Ivo. Il a été professeur pendant quarante ans, et il connaît le nom de chaque arbre de la rue.",
+        "es": "Después van juntos a la farmacia, muy despacio, del brazo. Se llama Ivo. Fue maestro durante cuarenta años y sabe el nombre de cada árbol de la calle."
+      }
+    },
+    {
+      "id": "s7",
+      "text": {
+        "en": "When they come back, Ivo invites her in for a hot chocolate. His house is warm and full of books and plants. On the wall, there are photos of the street covered in snow, from fifty years ago.",
+        "pt": "Quando eles voltam, Ivo a convida para entrar e tomar um chocolate quente. A casa dele é quentinha e cheia de livros e plantas. Na parede, há fotos da rua coberta de neve, de cinquenta anos atrás.",
+        "fr": "Quand ils reviennent, Ivo l'invite à entrer pour boire un chocolat chaud. Sa maison est chaude et pleine de livres et de plantes. Au mur, il y a des photos de la rue sous la neige, d'il y a cinquante ans.",
+        "es": "Cuando vuelven, Ivo la invita a pasar a tomar un chocolate caliente. Su casa es cálida y está llena de libros y plantas. En la pared hay fotos de la calle cubierta de nieve, de hace cincuenta años."
+      }
+    },
+    {
+      "id": "s8",
+      "text": {
+        "en": "“The first snow always brings something new,” Ivo says. Hanna smiles. Outside, it starts to snow again, but now she knows she has a friend across the street.",
+        "pt": "“A primeira neve sempre traz algo novo”, diz Ivo. Hanna sorri. Lá fora, começa a nevar de novo, mas agora ela sabe que tem um amigo do outro lado da rua.",
+        "fr": "« La première neige apporte toujours quelque chose de nouveau », dit Ivo. Hanna sourit. Dehors, il recommence à neiger, mais maintenant, elle sait qu'elle a un ami en face.",
+        "es": "“La primera nevada siempre trae algo nuevo”, dice Ivo. Hanna sonríe. Afuera empieza a nevar otra vez, pero ahora sabe que tiene un amigo al otro lado de la calle."
+      }
+    }
+  ],
+  "vocabulary": [
+    {
+      "en": "snow",
+      "pt": "neve",
+      "fr": "neige",
+      "es": "nieve"
+    },
+    {
+      "en": "curtains",
+      "pt": "cortinas",
+      "fr": "rideaux",
+      "es": "cortinas"
+    },
+    {
+      "en": "boots",
+      "pt": "botas",
+      "fr": "bottes",
+      "es": "botas"
+    },
+    {
+      "en": "gloves",
+      "pt": "luvas",
+      "fr": "gants",
+      "es": "guantes"
+    },
+    {
+      "en": "shovel",
+      "pt": "pá",
+      "fr": "pelle",
+      "es": "pala"
+    },
+    {
+      "en": "knee",
+      "pt": "joelho",
+      "fr": "genou",
+      "es": "rodilla"
+    },
+    {
+      "en": "back (body)",
+      "pt": "costas",
+      "fr": "dos",
+      "es": "espalda"
+    },
+    {
+      "en": "sidewalk",
+      "pt": "calçada",
+      "fr": "trottoir",
+      "es": "acera"
+    },
+    {
+      "en": "hot chocolate",
+      "pt": "chocolate quente",
+      "fr": "chocolat chaud",
+      "es": "chocolate caliente"
+    }
+  ]
+}

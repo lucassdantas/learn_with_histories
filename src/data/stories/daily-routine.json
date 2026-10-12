@@ -1,6 +1,7 @@
 {
   "id": "2",
   "slug": "daily-routine",
+  "level": "beginner",
   "title": {
     "en": "Daily Routine",
     "pt": "Rotina Diária",
@@ -49,6 +50,92 @@
         "fr": "Le week-end, ma routine change un peu. Je me réveille plus tard et je passe plus de temps avec ma famille et mes amis.\n\nNous allons souvent au restaurant, visitons de nouveaux endroits ou restons simplement à la maison à discuter pendant des heures.",
         "es": "Los fines de semana, mi rutina cambia un poco. Me despierto más tarde y paso más tiempo con mi familia y mis amigos.\n\nA menudo vamos a restaurantes, visitamos lugares nuevos o simplemente nos quedamos en casa conversando durante horas."
       }
+    },
+    {
+      "id": "s5",
+      "text": {
+        "en": "On Mondays, I go to the gym after work. I don't like it very much, but I always feel better after an hour of exercise.",
+        "pt": "Às segundas-feiras, vou à academia depois do trabalho. Não gosto muito, mas sempre me sinto melhor depois de uma hora de exercício.",
+        "fr": "Le lundi, je vais à la salle de sport après le travail. Je n'aime pas beaucoup ça, mais je me sens toujours mieux après une heure d'exercice.",
+        "es": "Los lunes voy al gimnasio después del trabajo. No me gusta mucho, pero siempre me siento mejor después de una hora de ejercicio."
+      }
+    },
+    {
+      "id": "s6",
+      "text": {
+        "en": "On Wednesdays, I go to the supermarket. I buy vegetables, fruit, rice, eggs and milk for the week. I always make a list, but I always forget something.",
+        "pt": "Às quartas-feiras, vou ao supermercado. Compro legumes, frutas, arroz, ovos e leite para a semana. Sempre faço uma lista, mas sempre esqueço alguma coisa.",
+        "fr": "Le mercredi, je vais au supermarché. J'achète des légumes, des fruits, du riz, des œufs et du lait pour la semaine. Je fais toujours une liste, mais j'oublie toujours quelque chose.",
+        "es": "Los miércoles voy al supermercado. Compro verduras, fruta, arroz, huevos y leche para la semana. Siempre hago una lista, pero siempre me olvido de algo."
+      }
+    },
+    {
+      "id": "s7",
+      "text": {
+        "en": "On Friday evenings, I call my parents. They live in another city, so we talk for a long time about the week, the weather and our plans.",
+        "pt": "Nas sextas à noite, ligo para os meus pais. Eles moram em outra cidade, então conversamos bastante sobre a semana, o tempo e os nossos planos.",
+        "fr": "Le vendredi soir, j'appelle mes parents. Ils habitent dans une autre ville, alors nous parlons longtemps de la semaine, du temps et de nos projets.",
+        "es": "Los viernes por la noche llamo a mis padres. Viven en otra ciudad, así que hablamos mucho rato de la semana, del tiempo y de nuestros planes."
+      }
+    },
+    {
+      "id": "s8",
+      "text": {
+        "en": "My routine is simple, but I like it. Every day is a little different, and small things, like a good coffee in the morning, make me happy.",
+        "pt": "Minha rotina é simples, mas eu gosto dela. Cada dia é um pouco diferente, e coisas pequenas, como um bom café de manhã, me deixam feliz.",
+        "fr": "Ma routine est simple, mais je l'aime bien. Chaque jour est un peu différent, et les petites choses, comme un bon café le matin, me rendent heureux.",
+        "es": "Mi rutina es sencilla, pero me gusta. Cada día es un poco diferente, y las cosas pequeñas, como un buen café por la mañana, me hacen feliz."
+      }
+    }
+  ],
+  "vocabulary": [
+    {
+      "en": "to wake up",
+      "pt": "acordar",
+      "fr": "se réveiller",
+      "es": "despertarse"
+    },
+    {
+      "en": "kitchen",
+      "pt": "cozinha",
+      "fr": "cuisine",
+      "es": "cocina"
+    },
+    {
+      "en": "breakfast",
+      "pt": "café da manhã",
+      "fr": "petit-déjeuner",
+      "es": "desayuno"
+    },
+    {
+      "en": "in the afternoon",
+      "pt": "à tarde",
+      "fr": "l'après-midi",
+      "es": "por la tarde"
+    },
+    {
+      "en": "to go for a walk",
+      "pt": "passear",
+      "fr": "se promener",
+      "es": "dar un paseo"
+    },
+    {
+      "en": "dinner",
+      "pt": "jantar",
+      "fr": "dîner",
+      "es": "cena"
+    },
+    {
+      "en": "to relax",
+      "pt": "relaxar",
+      "fr": "se détendre",
+      "es": "relajarse"
+    },
+    {
+      "en": "weekend",
+      "pt": "fim de semana",
+      "fr": "week-end",
+      "es": "fin de semana"
     }
   ]
 }

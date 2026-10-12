@@ -1,0 +1,147 @@
+{
+  "id": "16",
+  "slug": "at-the-doctor",
+  "level": "beginner",
+  "title": {
+    "en": "At the Doctor's",
+    "pt": "No Médico",
+    "fr": "Chez le Médecin",
+    "es": "En el Médico"
+  },
+  "description": {
+    "en": "A sore throat, a fever and a visit to the doctor: useful words about health.",
+    "pt": "Dor de garganta, febre e uma ida ao médico: palavras úteis sobre saúde.",
+    "fr": "Un mal de gorge, de la fièvre et une visite chez le médecin : des mots utiles sur la santé.",
+    "es": "Dolor de garganta, fiebre y una visita al médico: palabras útiles sobre la salud."
+  },
+  "content": [
+    {
+      "id": "s1",
+      "text": {
+        "en": "Marco wakes up on Tuesday and feels terrible. His throat hurts, his head is heavy, and he is very cold, even under two blankets.",
+        "pt": "Marco acorda na terça-feira e se sente péssimo. A garganta dói, a cabeça está pesada, e ele está com muito frio, mesmo debaixo de dois cobertores.",
+        "fr": "Marco se réveille mardi et se sent très mal. Il a mal à la gorge, sa tête est lourde et il a très froid, même sous deux couvertures.",
+        "es": "Marco se despierta el martes y se siente fatal. Le duele la garganta, tiene la cabeza pesada y tiene mucho frío, incluso debajo de dos mantas."
+      }
+    },
+    {
+      "id": "s2",
+      "text": {
+        "en": "He takes his temperature: thirty-eight and a half degrees. “I have a fever,” he thinks. He calls the clinic and makes an appointment for ten o'clock.",
+        "pt": "Ele mede a temperatura: trinta e oito e meio. “Estou com febre”, pensa. Ele liga para a clínica e marca uma consulta para as dez horas.",
+        "fr": "Il prend sa température : trente-huit et demi. « J'ai de la fièvre », pense-t-il. Il appelle le cabinet médical et prend rendez-vous pour dix heures.",
+        "es": "Se toma la temperatura: treinta y ocho y medio. “Tengo fiebre”, piensa. Llama a la clínica y pide una cita para las diez."
+      }
+    },
+    {
+      "id": "s3",
+      "text": {
+        "en": "In the waiting room, there are three other people. A baby is crying, and an old man is reading a magazine. Marco waits for twenty minutes.",
+        "pt": "Na sala de espera, há outras três pessoas. Um bebê está chorando, e um senhor está lendo uma revista. Marco espera vinte minutos.",
+        "fr": "Dans la salle d'attente, il y a trois autres personnes. Un bébé pleure, et un vieil homme lit un magazine. Marco attend vingt minutes.",
+        "es": "En la sala de espera hay otras tres personas. Un bebé está llorando, y un señor mayor está leyendo una revista. Marco espera veinte minutos."
+      }
+    },
+    {
+      "id": "s4",
+      "text": {
+        "en": "Finally, the doctor calls his name. She is a tall woman with kind eyes. “Good morning, Marco. What's the matter?” she asks.",
+        "pt": "Finalmente, a médica chama o nome dele. Ela é uma mulher alta, de olhar gentil. “Bom dia, Marco. O que você está sentindo?”, ela pergunta.",
+        "fr": "Enfin, la médecin appelle son nom. C'est une grande femme au regard doux. « Bonjour, Marco. Qu'est-ce qui ne va pas ? » demande-t-elle.",
+        "es": "Por fin, la doctora dice su nombre. Es una mujer alta de mirada amable. “Buenos días, Marco. ¿Qué le pasa?”, pregunta."
+      }
+    },
+    {
+      "id": "s5",
+      "text": {
+        "en": "“My throat hurts, I have a fever and I feel very tired,” Marco explains. The doctor looks at his throat with a little light and listens to his chest.",
+        "pt": "“Minha garganta dói, estou com febre e me sinto muito cansado”, explica Marco. A médica olha a garganta dele com uma lanterninha e escuta o peito.",
+        "fr": "« J'ai mal à la gorge, j'ai de la fièvre et je me sens très fatigué », explique Marco. La médecin regarde sa gorge avec une petite lampe et écoute sa poitrine.",
+        "es": "“Me duele la garganta, tengo fiebre y me siento muy cansado”, explica Marco. La doctora le mira la garganta con una linternita y le escucha el pecho."
+      }
+    },
+    {
+      "id": "s6",
+      "text": {
+        "en": "“It's a throat infection. Nothing serious,” she says. She writes a prescription. “Take this medicine three times a day, after meals, for five days.”",
+        "pt": "“É uma infecção de garganta. Nada grave”, ela diz. Ela escreve uma receita. “Tome este remédio três vezes por dia, depois das refeições, durante cinco dias.”",
+        "fr": "« C'est une infection de la gorge. Rien de grave », dit-elle. Elle rédige une ordonnance. « Prenez ce médicament trois fois par jour, après les repas, pendant cinq jours. »",
+        "es": "“Es una infección de garganta. Nada grave”, dice. Escribe una receta. “Tome este medicamento tres veces al día, después de las comidas, durante cinco días.”"
+      }
+    },
+    {
+      "id": "s7",
+      "text": {
+        "en": "“And drink a lot of water, and rest. No work until Friday,” she adds with a smile. Marco smiles too. It is the first good news of the day.",
+        "pt": "“E beba bastante água e descanse. Nada de trabalho até sexta-feira”, ela acrescenta, sorrindo. Marco também sorri. É a primeira boa notícia do dia.",
+        "fr": "« Et buvez beaucoup d'eau, et reposez-vous. Pas de travail avant vendredi », ajoute-t-elle avec un sourire. Marco sourit aussi. C'est la première bonne nouvelle de la journée.",
+        "es": "“Y beba mucha agua y descanse. Nada de trabajo hasta el viernes”, añade con una sonrisa. Marco también sonríe. Es la primera buena noticia del día."
+      }
+    },
+    {
+      "id": "s8",
+      "text": {
+        "en": "On the way home, he stops at the pharmacy and buys the medicine. Then he goes to bed with a cup of tea and sleeps for the whole afternoon.",
+        "pt": "No caminho de volta, ele passa na farmácia e compra o remédio. Depois vai para a cama com uma xícara de chá e dorme a tarde inteira.",
+        "fr": "Sur le chemin du retour, il s'arrête à la pharmacie et achète le médicament. Puis il se couche avec une tasse de thé et dort tout l'après-midi.",
+        "es": "De camino a casa, pasa por la farmacia y compra el medicamento. Después se mete en la cama con una taza de té y duerme toda la tarde."
+      }
+    }
+  ],
+  "vocabulary": [
+    {
+      "en": "throat",
+      "pt": "garganta",
+      "fr": "gorge",
+      "es": "garganta"
+    },
+    {
+      "en": "fever",
+      "pt": "febre",
+      "fr": "fièvre",
+      "es": "fiebre"
+    },
+    {
+      "en": "blanket",
+      "pt": "cobertor",
+      "fr": "couverture",
+      "es": "manta"
+    },
+    {
+      "en": "appointment",
+      "pt": "consulta",
+      "fr": "rendez-vous",
+      "es": "cita"
+    },
+    {
+      "en": "waiting room",
+      "pt": "sala de espera",
+      "fr": "salle d'attente",
+      "es": "sala de espera"
+    },
+    {
+      "en": "chest",
+      "pt": "peito",
+      "fr": "poitrine",
+      "es": "pecho"
+    },
+    {
+      "en": "prescription",
+      "pt": "receita",
+      "fr": "ordonnance",
+      "es": "receta"
+    },
+    {
+      "en": "medicine",
+      "pt": "remédio",
+      "fr": "médicament",
+      "es": "medicamento"
+    },
+    {
+      "en": "pharmacy",
+      "pt": "farmácia",
+      "fr": "pharmacie",
+      "es": "farmacia"
+    }
+  ]
+}

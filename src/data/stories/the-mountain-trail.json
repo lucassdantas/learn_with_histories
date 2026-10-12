@@ -1,0 +1,156 @@
+{
+  "id": "23",
+  "slug": "the-mountain-trail",
+  "level": "intermediate",
+  "title": {
+    "en": "The Mountain Trail",
+    "pt": "A Trilha da Montanha",
+    "fr": "Le Sentier de Montagne",
+    "es": "El Sendero de la Montaña"
+  },
+  "description": {
+    "en": "Two friends, a paper map and a fog that changes everything.",
+    "pt": "Dois amigos, um mapa de papel e uma neblina que muda tudo.",
+    "fr": "Deux amis, une carte en papier et un brouillard qui change tout.",
+    "es": "Dos amigos, un mapa de papel y una niebla que lo cambia todo."
+  },
+  "content": [
+    {
+      "id": "s1",
+      "text": {
+        "en": "Rafa and Ben started the hike at six in the morning. Their plan was simple: climb to the top of the mountain, look at the lake from above and come back before dark.",
+        "pt": "Rafa e Ben começaram a trilha às seis da manhã. O plano era simples: subir até o topo da montanha, ver o lago lá de cima e voltar antes de escurecer.",
+        "fr": "Rafa et Ben ont commencé la randonnée à six heures du matin. Leur plan était simple : monter au sommet de la montagne, admirer le lac d'en haut et redescendre avant la nuit.",
+        "es": "Rafa y Ben empezaron la caminata a las seis de la mañana. Su plan era sencillo: subir a la cima de la montaña, ver el lago desde arriba y volver antes del anochecer."
+      }
+    },
+    {
+      "id": "s2",
+      "text": {
+        "en": "They had backpacks with water, sandwiches, a raincoat and an old paper map. “Our phones won't have signal up there,” Rafa had said. “A map never runs out of battery.”",
+        "pt": "Eles levavam mochilas com água, sanduíches, uma capa de chuva e um velho mapa de papel. “Lá em cima o celular não vai ter sinal”, Rafa tinha dito. “Mapa nunca fica sem bateria.”",
+        "fr": "Ils avaient des sacs à dos avec de l'eau, des sandwichs, un imperméable et une vieille carte en papier. « Là-haut, nos téléphones n'auront pas de réseau », avait dit Rafa. « Une carte, ça ne tombe jamais en panne de batterie. »",
+        "es": "Llevaban mochilas con agua, sándwiches, un impermeable y un viejo mapa de papel. “Allá arriba los celulares no van a tener señal”, había dicho Rafa. “Un mapa nunca se queda sin batería.”"
+      }
+    },
+    {
+      "id": "s3",
+      "text": {
+        "en": "The first hours were beautiful. The trail went through a pine forest, crossed two streams and climbed slowly between big gray rocks. The air was cold and smelled of resin.",
+        "pt": "As primeiras horas foram lindas. A trilha atravessava uma floresta de pinheiros, cruzava dois riachos e subia devagar entre grandes pedras cinzentas. O ar era frio e cheirava a resina.",
+        "fr": "Les premières heures ont été magnifiques. Le sentier traversait une forêt de pins, franchissait deux ruisseaux et montait lentement entre de gros rochers gris. L'air était froid et sentait la résine.",
+        "es": "Las primeras horas fueron preciosas. El sendero atravesaba un bosque de pinos, cruzaba dos arroyos y subía despacio entre grandes rocas grises. El aire era frío y olía a resina."
+      }
+    },
+    {
+      "id": "s4",
+      "text": {
+        "en": "They reached the top at eleven. From there, they could see three valleys and a blue lake far below. Ben took dozens of photos while Rafa ate his sandwich in silence.",
+        "pt": "Eles chegaram ao topo às onze. Lá de cima, dava para ver três vales e um lago azul lá embaixo. Ben tirou dezenas de fotos enquanto Rafa comia o sanduíche em silêncio.",
+        "fr": "Ils sont arrivés au sommet à onze heures. De là, ils voyaient trois vallées et un lac bleu tout en bas. Ben a pris des dizaines de photos pendant que Rafa mangeait son sandwich en silence.",
+        "es": "Llegaron a la cima a las once. Desde allí se veían tres valles y un lago azul muy abajo. Ben sacó decenas de fotos mientras Rafa se comía su sándwich en silencio."
+      }
+    },
+    {
+      "id": "s5",
+      "text": {
+        "en": "On the way down, a thick fog came up from the valley. In a few minutes, they could not see more than five meters ahead. The trail disappeared into the white.",
+        "pt": "Na descida, uma neblina espessa subiu do vale. Em poucos minutos, eles não conseguiam ver mais do que cinco metros à frente. A trilha sumiu no branco.",
+        "fr": "Pendant la descente, un épais brouillard est monté de la vallée. En quelques minutes, ils ne voyaient plus à plus de cinq mètres devant eux. Le sentier a disparu dans le blanc.",
+        "es": "Durante el descenso, una niebla espesa subió desde el valle. En pocos minutos, no podían ver a más de cinco metros. El sendero desapareció en lo blanco."
+      }
+    },
+    {
+      "id": "s6",
+      "text": {
+        "en": "“Let's stop,” said Rafa. He opened the map and took the compass out of his backpack. “The trail follows the stream down to the parking lot. If we find the water, we find the way.”",
+        "pt": "“Vamos parar”, disse Rafa. Ele abriu o mapa e tirou a bússola da mochila. “A trilha acompanha o riacho até o estacionamento. Se acharmos a água, achamos o caminho.”",
+        "fr": "« Arrêtons-nous », a dit Rafa. Il a ouvert la carte et a sorti la boussole de son sac. « Le sentier suit le ruisseau jusqu'au parking. Si on trouve l'eau, on trouve le chemin. »",
+        "es": "“Paremos”, dijo Rafa. Abrió el mapa y sacó la brújula de la mochila. “El sendero sigue el arroyo hasta el estacionamiento. Si encontramos el agua, encontramos el camino.”"
+      }
+    },
+    {
+      "id": "s7",
+      "text": {
+        "en": "They walked slowly, listening. After twenty long minutes, Ben heard it first: the sound of running water. They followed it and found the stream and, next to it, a small yellow trail sign.",
+        "pt": "Eles andaram devagar, prestando atenção aos sons. Depois de vinte longos minutos, Ben ouviu primeiro: o barulho de água correndo. Eles seguiram o som e encontraram o riacho e, ao lado dele, uma pequena placa amarela da trilha.",
+        "fr": "Ils ont marché lentement, en écoutant. Au bout de vingt longues minutes, Ben l'a entendu le premier : le bruit de l'eau qui coulait. Ils l'ont suivi et ont trouvé le ruisseau et, à côté, un petit panneau jaune du sentier.",
+        "es": "Caminaron despacio, escuchando. Después de veinte largos minutos, Ben lo oyó primero: el sonido del agua corriendo. Lo siguieron y encontraron el arroyo y, a su lado, un pequeño letrero amarillo del sendero."
+      }
+    },
+    {
+      "id": "s8",
+      "text": {
+        "en": "When they arrived at the car, the fog was already lifting, and the sun was setting behind the mountain. Ben looked at his photos from the top. In all of them, the sky was perfectly clear.",
+        "pt": "Quando chegaram ao carro, a neblina já estava se dissipando, e o sol se punha atrás da montanha. Ben olhou as fotos do topo. Em todas, o céu estava perfeitamente limpo.",
+        "fr": "Quand ils sont arrivés à la voiture, le brouillard se levait déjà, et le soleil se couchait derrière la montagne. Ben a regardé ses photos du sommet. Sur toutes, le ciel était parfaitement dégagé.",
+        "es": "Cuando llegaron al auto, la niebla ya se estaba disipando y el sol se ponía detrás de la montaña. Ben miró sus fotos de la cima. En todas, el cielo estaba perfectamente despejado."
+      }
+    },
+    {
+      "id": "s9",
+      "text": {
+        "en": "“Next time,” he said, “I'll carry the map.” Rafa laughed. “Next time, we'll check the weather forecast first.”",
+        "pt": "“Da próxima vez”, ele disse, “eu levo o mapa.” Rafa riu. “Da próxima vez, a gente vê a previsão do tempo antes.”",
+        "fr": "« La prochaine fois, a-t-il dit, c'est moi qui porterai la carte. » Rafa a ri. « La prochaine fois, on regardera d'abord la météo. »",
+        "es": "“La próxima vez”, dijo, “yo llevo el mapa.” Rafa se rió. “La próxima vez, primero miramos el pronóstico del tiempo.”"
+      }
+    }
+  ],
+  "vocabulary": [
+    {
+      "en": "hike",
+      "pt": "trilha",
+      "fr": "randonnée",
+      "es": "caminata"
+    },
+    {
+      "en": "backpack",
+      "pt": "mochila",
+      "fr": "sac à dos",
+      "es": "mochila"
+    },
+    {
+      "en": "signal (phone)",
+      "pt": "sinal",
+      "fr": "réseau",
+      "es": "señal"
+    },
+    {
+      "en": "stream",
+      "pt": "riacho",
+      "fr": "ruisseau",
+      "es": "arroyo"
+    },
+    {
+      "en": "top (of a mountain)",
+      "pt": "topo",
+      "fr": "sommet",
+      "es": "cima"
+    },
+    {
+      "en": "valley",
+      "pt": "vale",
+      "fr": "vallée",
+      "es": "valle"
+    },
+    {
+      "en": "fog",
+      "pt": "neblina",
+      "fr": "brouillard",
+      "es": "niebla"
+    },
+    {
+      "en": "compass",
+      "pt": "bússola",
+      "fr": "boussole",
+      "es": "brújula"
+    },
+    {
+      "en": "weather forecast",
+      "pt": "previsão do tempo",
+      "fr": "météo",
+      "es": "pronóstico del tiempo"
+    }
+  ]
+}

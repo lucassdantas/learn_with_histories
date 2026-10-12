@@ -3,19 +3,26 @@ export interface StoryParagraph {
   text: Record<string, string>; // language code -> text
 }
 
+export type StoryLevel = 'beginner' | 'intermediate';
+
+// One key word/expression from the story, written in every language (language code -> term).
+export type VocabularyItem = Record<string, string>;
+
 export interface Story {
   id: string;
   slug: string;
+  level: StoryLevel;
   title: Record<string, string>;
   description: Record<string, string>;
   content: StoryParagraph[];
+  vocabulary: VocabularyItem[];
 }
 
 // What lists and links need — keeps the full text out of the client payload.
-export type StorySummary = Pick<Story, 'id' | 'slug' | 'title' | 'description'>;
+export type StorySummary = Pick<Story, 'id' | 'slug' | 'level' | 'title' | 'description'>;
 
-export function toSummary({ id, slug, title, description }: Story): StorySummary {
-  return { id, slug, title, description };
+export function toSummary({ id, slug, level, title, description }: Story): StorySummary {
+  return { id, slug, level, title, description };
 }
 
 import fs from 'fs';

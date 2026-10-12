@@ -1,6 +1,7 @@
 {
   "id": "10",
   "slug": "the-night-train",
+  "level": "intermediate",
   "title": {
     "en": "The Night Train",
     "pt": "O Trem Noturno",
@@ -85,6 +86,56 @@
         "fr": "Avant de descendre, la dame a donné l'écharpe rouge à Hugo. « Il fait froid ici, en haut », a-t-elle dit avec un sourire. « Bienvenue chez vous. »",
         "es": "Antes de bajar, la señora le dio a Hugo la bufanda roja. “Aquí arriba hace frío”, dijo con una sonrisa. “Bienvenido a casa.”"
       }
+    }
+  ],
+  "vocabulary": [
+    {
+      "en": "ticket",
+      "pt": "passagem",
+      "fr": "billet",
+      "es": "boleto"
+    },
+    {
+      "en": "platform",
+      "pt": "plataforma",
+      "fr": "quai",
+      "es": "andén"
+    },
+    {
+      "en": "compartment",
+      "pt": "cabine",
+      "fr": "compartiment",
+      "es": "compartimento"
+    },
+    {
+      "en": "to knit",
+      "pt": "tricotar",
+      "fr": "tricoter",
+      "es": "tejer"
+    },
+    {
+      "en": "scarf",
+      "pt": "cachecol",
+      "fr": "écharpe",
+      "es": "bufanda"
+    },
+    {
+      "en": "teacher",
+      "pt": "professora",
+      "fr": "institutrice",
+      "es": "maestra"
+    },
+    {
+      "en": "dawn",
+      "pt": "amanhecer",
+      "fr": "aube",
+      "es": "amanecer"
+    },
+    {
+      "en": "to get off",
+      "pt": "descer",
+      "fr": "descendre",
+      "es": "bajar"
     }
   ]
 }

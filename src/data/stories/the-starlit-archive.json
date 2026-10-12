@@ -1,6 +1,7 @@
 {
   "id": "5",
   "slug": "the-starlit-archive",
+  "level": "intermediate",
   "title": {
     "en": "The Starlit Archive",
     "pt": "O Arquivo Estelar",
@@ -103,6 +104,56 @@
         "fr": "Alors qu'ils s'apprêtaient à partir, Elena regarda en arrière une dernière fois. L'archive était redevenue silencieuse, attendant les prochains voyageurs qui chercheraient ses anciens secrets.",
         "es": "Mientras se preparaban para partir, Elena miró hacia atrás por última vez. El archivo volvía a estar en silencio, esperando a los próximos viajeros que buscaran sus antiguos secretos."
       }
+    }
+  ],
+  "vocabulary": [
+    {
+      "en": "spaceship",
+      "pt": "nave espacial",
+      "fr": "vaisseau spatial",
+      "es": "nave espacial"
+    },
+    {
+      "en": "crew",
+      "pt": "tripulação",
+      "fr": "équipage",
+      "es": "tripulación"
+    },
+    {
+      "en": "summit",
+      "pt": "topo",
+      "fr": "sommet",
+      "es": "cima"
+    },
+    {
+      "en": "steep",
+      "pt": "íngreme",
+      "fr": "raide",
+      "es": "empinado"
+    },
+    {
+      "en": "mist",
+      "pt": "névoa",
+      "fr": "brume",
+      "es": "niebla"
+    },
+    {
+      "en": "crystal",
+      "pt": "cristal",
+      "fr": "cristal",
+      "es": "cristal"
+    },
+    {
+      "en": "guardian",
+      "pt": "guardião",
+      "fr": "gardien",
+      "es": "guardián"
+    },
+    {
+      "en": "knowledge",
+      "pt": "conhecimento",
+      "fr": "connaissance",
+      "es": "conocimiento"
     }
   ]
 }

@@ -2,21 +2,23 @@
 
 import React, { useState } from 'react';
 import { useLanguage } from '@/context/LanguageContext';
-import type { StorySummary } from '@/lib/stories';
+import type { StoryLevel, StorySummary } from '@/lib/stories';
 import { getTranslation, languageNames } from '@/config/translations';
 import AdBanner from '@/components/AdBanner';
 import StoryCard from '@/components/StoryCard';
 
 // Accent- and case-insensitive ("cafe" finds "Café").
-const normalize = (s: string) => s.normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase();
+const normalize = (s: string) => s.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
 
 export default function StoriesList({ stories }: Readonly<{ stories: StorySummary[] }>) {
   const { learningLanguage, nativeLanguage } = useLanguage();
   const [query, setQuery] = useState('');
+  const [level, setLevel] = useState<StoryLevel | 'all'>('all');
   const t = (key: string, params?: Record<string, string>) => getTranslation(nativeLanguage, key, params);
 
   const q = normalize(query.trim());
   const filtered = stories.filter((story) => {
+    if (level !== 'all' && story.level !== level) return false;
     if (!q) return true;
     const title = story.title[learningLanguage] || story.title.en;
     const description = story.description[learningLanguage] || story.description.en;
@@ -50,13 +52,33 @@ export default function StoriesList({ stories }: Readonly<{ stories: StorySummar
         </label>
       </section>
 
+      <div className="page pt-6">
+        <div role="group" aria-label={t('stories.filterLabel')} className="flex flex-wrap gap-2">
+          {(['all', 'beginner', 'intermediate'] as const).map((value) => (
+            <button
+              key={value}
+              type="button"
+              aria-pressed={level === value}
+              onClick={() => setLevel(value)}
+              className={`min-h-touch px-4.5 rounded-full border text-sm font-semibold cursor-pointer transition-colors ${
+                level === value
+                  ? 'bg-primary text-on-primary border-primary'
+                  : 'bg-surface text-foreground border-border-strong hover:border-accent'
+              }`}
+            >
+              {value === 'all' ? t('stories.filterAll') : t(`level.${value}`)}
+            </button>
+          ))}
+        </div>
+      </div>
+
       <AdBanner className="py-8" />
 
       <section className="page pt-2 pb-[clamp(56px,7vw,96px)]">
         {filtered.length > 0 ? (
           <div className="grid grid-cols-[repeat(auto-fill,minmax(min(100%,300px),1fr))] gap-5">
             {filtered.map((story) => (
-              <StoryCard key={story.id} story={story} lang={learningLanguage} as="h2" cta={t('stories.start')} />
+              <StoryCard key={story.id} story={story} lang={learningLanguage} as="h2" cta={t('stories.start')} badge={t(`level.${story.level}`)} />
             ))}
           </div>
         ) : (
@@ -66,7 +88,10 @@ export default function StoriesList({ stories }: Readonly<{ stories: StorySummar
             <p className="max-w-[30em] leading-relaxed text-muted text-pretty">{t('stories.emptyDesc', { q: query.trim() })}</p>
             <button
               type="button"
-              onClick={() => setQuery('')}
+              onClick={() => {
+                setQuery('');
+                setLevel('all');
+              }}
               className="mt-2 min-h-12 px-6 py-2.5 rounded-full border-[1.5px] border-border-strong bg-transparent font-semibold text-[15px] cursor-pointer hover:border-accent"
             >
               {t('stories.clear')}

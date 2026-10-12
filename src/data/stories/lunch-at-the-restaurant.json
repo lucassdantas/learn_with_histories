@@ -1,0 +1,147 @@
+{
+  "id": "18",
+  "slug": "lunch-at-the-restaurant",
+  "level": "beginner",
+  "title": {
+    "en": "Lunch at the Restaurant",
+    "pt": "Almoço no Restaurante",
+    "fr": "Déjeuner au Restaurant",
+    "es": "Almuerzo en el Restaurante"
+  },
+  "description": {
+    "en": "Two friends, one menu and many questions: how to order food politely.",
+    "pt": "Duas amigas, um cardápio e muitas perguntas: como pedir comida com educação.",
+    "fr": "Deux amies, un menu et beaucoup de questions : comment commander poliment.",
+    "es": "Dos amigas, un menú y muchas preguntas: cómo pedir comida con amabilidad."
+  },
+  "content": [
+    {
+      "id": "s1",
+      "text": {
+        "en": "Julia and Mei meet at a small restaurant near the river. It is one o'clock, and the place is full. A waiter comes to them with a smile.",
+        "pt": "Julia e Mei se encontram em um pequeno restaurante perto do rio. É uma hora da tarde, e o lugar está cheio. Um garçom vem até elas sorrindo.",
+        "fr": "Julia et Mei se retrouvent dans un petit restaurant près de la rivière. Il est treize heures, et l'endroit est plein. Un serveur vient vers elles avec un sourire.",
+        "es": "Julia y Mei se encuentran en un pequeño restaurante cerca del río. Es la una de la tarde y el lugar está lleno. Un mesero se acerca a ellas con una sonrisa."
+      }
+    },
+    {
+      "id": "s2",
+      "text": {
+        "en": "“Good afternoon. A table for two?” he asks. “Yes, please. Near the window, if possible,” says Julia. He takes them to a table with a view of the water.",
+        "pt": "“Boa tarde. Mesa para duas?”, ele pergunta. “Sim, por favor. Perto da janela, se possível”, diz Julia. Ele as leva a uma mesa com vista para a água.",
+        "fr": "« Bonjour. Une table pour deux ? » demande-t-il. « Oui, s'il vous plaît. Près de la fenêtre, si possible », dit Julia. Il les conduit à une table avec vue sur l'eau.",
+        "es": "“Buenas tardes. ¿Mesa para dos?”, pregunta. “Sí, por favor. Cerca de la ventana, si es posible”, dice Julia. Las lleva a una mesa con vista al agua."
+      }
+    },
+    {
+      "id": "s3",
+      "text": {
+        "en": "The menu has three parts: starters, main courses and desserts. Mei reads it twice. “Everything looks good. I can't decide!” she laughs.",
+        "pt": "O cardápio tem três partes: entradas, pratos principais e sobremesas. Mei lê duas vezes. “Tudo parece bom. Não consigo escolher!”, ela ri.",
+        "fr": "Le menu a trois parties : les entrées, les plats principaux et les desserts. Mei le lit deux fois. « Tout a l'air bon. Je n'arrive pas à choisir ! » rit-elle.",
+        "es": "El menú tiene tres partes: entradas, platos principales y postres. Mei lo lee dos veces. “Todo se ve rico. ¡No puedo decidir!”, se ríe."
+      }
+    },
+    {
+      "id": "s4",
+      "text": {
+        "en": "When the waiter comes back, Julia orders first. “I'd like the vegetable soup and then the grilled fish, please.” “And to drink?” “Sparkling water, please.”",
+        "pt": "Quando o garçom volta, Julia pede primeiro. “Eu queria a sopa de legumes e depois o peixe grelhado, por favor.” “E para beber?” “Água com gás, por favor.”",
+        "fr": "Quand le serveur revient, Julia commande en premier. « Je voudrais la soupe de légumes, puis le poisson grillé, s'il vous plaît. » « Et comme boisson ? » « De l'eau gazeuse, s'il vous plaît. »",
+        "es": "Cuando vuelve el mesero, Julia pide primero. “Quisiera la sopa de verduras y después el pescado a la plancha, por favor.” “¿Y para tomar?” “Agua con gas, por favor.”"
+      }
+    },
+    {
+      "id": "s5",
+      "text": {
+        "en": "“Is the pasta spicy?” asks Mei. “Just a little,” answers the waiter. “Then I'll have the pasta with tomato sauce, and an orange juice.”",
+        "pt": "“A massa é apimentada?”, pergunta Mei. “Só um pouco”, responde o garçom. “Então eu vou querer a massa ao molho de tomate e um suco de laranja.”",
+        "fr": "« Les pâtes sont épicées ? » demande Mei. « Juste un peu », répond le serveur. « Alors je prends les pâtes à la sauce tomate et un jus d'orange. »",
+        "es": "“¿La pasta es picante?”, pregunta Mei. “Solo un poco”, responde el mesero. “Entonces voy a pedir la pasta con salsa de tomate y un jugo de naranja.”"
+      }
+    },
+    {
+      "id": "s6",
+      "text": {
+        "en": "The food arrives quickly. The fish is fresh and the pasta smells wonderful. The two friends eat slowly and talk about work, travel and their families.",
+        "pt": "A comida chega rápido. O peixe está fresco, e a massa tem um cheiro maravilhoso. As duas amigas comem devagar e conversam sobre trabalho, viagens e família.",
+        "fr": "Les plats arrivent vite. Le poisson est frais et les pâtes sentent merveilleusement bon. Les deux amies mangent lentement et parlent de travail, de voyages et de leurs familles.",
+        "es": "La comida llega rápido. El pescado está fresco y la pasta huele de maravilla. Las dos amigas comen despacio y hablan del trabajo, de viajes y de sus familias."
+      }
+    },
+    {
+      "id": "s7",
+      "text": {
+        "en": "For dessert, they share a chocolate mousse with two spoons. “This is the best part of the day,” says Mei, and Julia agrees.",
+        "pt": "De sobremesa, elas dividem uma musse de chocolate com duas colheres. “Esta é a melhor parte do dia”, diz Mei, e Julia concorda.",
+        "fr": "En dessert, elles partagent une mousse au chocolat avec deux cuillères. « C'est le meilleur moment de la journée », dit Mei, et Julia est d'accord.",
+        "es": "De postre, comparten una mousse de chocolate con dos cucharas. “Esta es la mejor parte del día”, dice Mei, y Julia está de acuerdo."
+      }
+    },
+    {
+      "id": "s8",
+      "text": {
+        "en": "At the end, Julia asks: “Could we have the bill, please?” They pay, leave a tip on the table and walk out into the sunny afternoon.",
+        "pt": "No final, Julia pede: “Pode trazer a conta, por favor?” Elas pagam, deixam uma gorjeta na mesa e saem para a tarde ensolarada.",
+        "fr": "À la fin, Julia demande : « L'addition, s'il vous plaît ? » Elles paient, laissent un pourboire sur la table et sortent dans l'après-midi ensoleillé.",
+        "es": "Al final, Julia pregunta: “¿Nos trae la cuenta, por favor?” Pagan, dejan una propina en la mesa y salen a la tarde soleada."
+      }
+    }
+  ],
+  "vocabulary": [
+    {
+      "en": "waiter",
+      "pt": "garçom",
+      "fr": "serveur",
+      "es": "mesero"
+    },
+    {
+      "en": "menu",
+      "pt": "cardápio",
+      "fr": "menu",
+      "es": "menú"
+    },
+    {
+      "en": "starter",
+      "pt": "entrada",
+      "fr": "entrée",
+      "es": "entrada"
+    },
+    {
+      "en": "main course",
+      "pt": "prato principal",
+      "fr": "plat principal",
+      "es": "plato principal"
+    },
+    {
+      "en": "I'd like…",
+      "pt": "Eu queria…",
+      "fr": "Je voudrais…",
+      "es": "Quisiera…"
+    },
+    {
+      "en": "spicy",
+      "pt": "apimentado",
+      "fr": "épicé",
+      "es": "picante"
+    },
+    {
+      "en": "dessert",
+      "pt": "sobremesa",
+      "fr": "dessert",
+      "es": "postre"
+    },
+    {
+      "en": "the bill",
+      "pt": "a conta",
+      "fr": "l'addition",
+      "es": "la cuenta"
+    },
+    {
+      "en": "tip",
+      "pt": "gorjeta",
+      "fr": "pourboire",
+      "es": "propina"
+    }
+  ]
+}

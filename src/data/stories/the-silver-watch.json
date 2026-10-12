@@ -1,6 +1,7 @@
 {
   "id": "6",
   "slug": "the-silver-watch",
+  "level": "intermediate",
   "title": {
     "en": "The Silver Watch",
     "pt": "O Relógio de Prata",
@@ -103,6 +104,56 @@
         "fr": "Lucas rangea la montre dans un tiroir et le verrouilla. Il réalisa que le temps est précieux précisément parce qu'il ne s'arrête jamais pour personne.",
         "es": "Lucas guardó el reloj en un cajón y lo cerró con llave. Se dio cuenta de que el tiempo es valioso precisamente porque nunca se detiene por nadie."
       }
+    }
+  ],
+  "vocabulary": [
+    {
+      "en": "antique shop",
+      "pt": "loja de antiguidades",
+      "fr": "boutique d'antiquités",
+      "es": "tienda de antigüedades"
+    },
+    {
+      "en": "pocket watch",
+      "pt": "relógio de bolso",
+      "fr": "montre à gousset",
+      "es": "reloj de bolsillo"
+    },
+    {
+      "en": "engraving",
+      "pt": "gravura",
+      "fr": "gravure",
+      "es": "grabado"
+    },
+    {
+      "en": "shopkeeper",
+      "pt": "lojista",
+      "fr": "marchand",
+      "es": "vendedor"
+    },
+    {
+      "en": "button",
+      "pt": "botão",
+      "fr": "bouton",
+      "es": "botón"
+    },
+    {
+      "en": "frozen (still)",
+      "pt": "congelado",
+      "fr": "figé",
+      "es": "congelado"
+    },
+    {
+      "en": "sidewalk",
+      "pt": "calçada",
+      "fr": "trottoir",
+      "es": "acera"
+    },
+    {
+      "en": "drawer",
+      "pt": "gaveta",
+      "fr": "tiroir",
+      "es": "cajón"
     }
   ]
 }

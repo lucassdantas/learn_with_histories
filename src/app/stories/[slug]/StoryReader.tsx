@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 import Link from 'next/link';
 import { useLanguage } from '@/context/LanguageContext';
 import type { Story, StorySummary } from '@/lib/stories';
-import { getTranslation } from '@/config/translations';
+import { getTranslation, languageNames } from '@/config/translations';
 import AdBanner from '@/components/AdBanner';
 import AdSidebar from '@/components/AdSidebar';
 import Segment from '@/components/Segment';
@@ -18,9 +18,10 @@ type Props = Readonly<{
 export default function StoryReader({ story, moreStories }: Props) {
   const { learningLanguage, nativeLanguage } = useLanguage();
   const [finished, setFinished] = useState(false);
-  const t = (key: string) => getTranslation(nativeLanguage, key);
+  const t = (key: string, params?: Record<string, string>) => getTranslation(nativeLanguage, key, params);
 
   const title = story.title[learningLanguage] || story.title.en;
+  const names = languageNames[nativeLanguage] ?? languageNames.en;
 
   return (
     <>
@@ -42,6 +43,9 @@ export default function StoryReader({ story, moreStories }: Props) {
 
       <div className="page pt-[clamp(36px,5vw,64px)] pb-[clamp(48px,6vw,80px)] flex gap-18 items-start justify-center">
         <article lang={learningLanguage} className="flex-[1_1_0] min-w-0 max-w-reading">
+          <span lang={nativeLanguage} className="inline-flex mb-3 px-3 py-1 rounded-full bg-accent-soft text-accent-ink text-xs font-bold tracking-[0.06em] uppercase">
+            {t(`level.${story.level}`)}
+          </span>
           <h1 className="mb-[clamp(28px,4vw,44px)] font-story font-semibold text-h1 tracking-[-0.01em] text-balance">{title}</h1>
 
           {/* Remount on language change so open translations close (design rule). */}
@@ -50,6 +54,23 @@ export default function StoryReader({ story, moreStories }: Props) {
               <Segment key={segment.id} text={segment.text} />
             ))}
           </div>
+
+          {story.vocabulary.length > 0 && (
+            <section lang={nativeLanguage} aria-labelledby="vocabulary" className="mt-[clamp(44px,6vw,64px)] bg-surface border border-border rounded-card p-[clamp(20px,3vw,28px)]">
+              <h2 id="vocabulary" className="font-story font-semibold text-[clamp(22px,2.4vw,26px)]">{t('reader.vocabTitle')}</h2>
+              <p className="mt-1 text-sm text-muted">
+                {t('reader.vocabDesc', { l: names[learningLanguage], n: names[nativeLanguage] })}
+              </p>
+              <dl className="mt-5 grid grid-cols-[repeat(auto-fill,minmax(min(100%,260px),1fr))] gap-x-8">
+                {story.vocabulary.map((item) => (
+                  <div key={item.en} className="flex items-baseline justify-between gap-4 py-2.5 border-b border-border">
+                    <dt lang={learningLanguage} className="font-story text-[17px] font-semibold">{item[learningLanguage]}</dt>
+                    <dd lang={nativeLanguage} className="text-[15px] text-translation text-right">{item[nativeLanguage]}</dd>
+                  </div>
+                ))}
+              </dl>
+            </section>
+          )}
 
           <div lang={nativeLanguage} className="mt-[clamp(44px,6vw,64px)] pt-8 border-t border-border flex flex-col items-center gap-3 text-center">
             {finished ? (
@@ -96,7 +117,7 @@ export default function StoryReader({ story, moreStories }: Props) {
             <h2 className="font-story font-semibold text-[clamp(24px,2.8vw,32px)]">{t('reader.more')}</h2>
             <div className="grid grid-cols-[repeat(auto-fit,minmax(min(100%,280px),1fr))] gap-5">
               {moreStories.map((s) => (
-                <StoryCard key={s.id} story={s} lang={learningLanguage} />
+                <StoryCard key={s.id} story={s} lang={learningLanguage} badge={t(`level.${s.level}`)} />
               ))}
             </div>
           </div>

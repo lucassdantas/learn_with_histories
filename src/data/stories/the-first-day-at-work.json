@@ -1,6 +1,7 @@
 {
   "id": "9",
   "slug": "the-first-day-at-work",
+  "level": "beginner",
   "title": {
     "en": "The First Day at Work",
     "pt": "O Primeiro Dia de Trabalho",
@@ -85,6 +86,56 @@
         "fr": "À dix-huit heures, Pedro regarde ses dessins. « Excellent travail pour un premier jour ! » dit-il. Clara rentre chez elle fatiguée, mais très heureuse.",
         "es": "A las seis, Pedro mira sus dibujos. “¡Excelente trabajo para un primer día!”, dice. Clara vuelve a casa cansada, pero muy feliz."
       }
+    }
+  ],
+  "vocabulary": [
+    {
+      "en": "nervous",
+      "pt": "nervoso",
+      "fr": "nerveux",
+      "es": "nervioso"
+    },
+    {
+      "en": "floor (of a building)",
+      "pt": "andar",
+      "fr": "étage",
+      "es": "piso"
+    },
+    {
+      "en": "manager",
+      "pt": "gerente",
+      "fr": "responsable",
+      "es": "gerente"
+    },
+    {
+      "en": "meeting room",
+      "pt": "sala de reunião",
+      "fr": "salle de réunion",
+      "es": "sala de reuniones"
+    },
+    {
+      "en": "desk",
+      "pt": "mesa",
+      "fr": "bureau",
+      "es": "escritorio"
+    },
+    {
+      "en": "colleague",
+      "pt": "colega",
+      "fr": "collègue",
+      "es": "compañero"
+    },
+    {
+      "en": "lunch",
+      "pt": "almoço",
+      "fr": "déjeuner",
+      "es": "almuerzo"
+    },
+    {
+      "en": "task",
+      "pt": "tarefa",
+      "fr": "mission",
+      "es": "tarea"
     }
   ]
 }

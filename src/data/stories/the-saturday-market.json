@@ -1,6 +1,7 @@
 {
   "id": "8",
   "slug": "the-saturday-market",
+  "level": "beginner",
   "title": {
     "en": "The Saturday Market",
     "pt": "A Feira de Sábado",
@@ -85,6 +86,56 @@
         "fr": "À la maison, Tom pose tout sur la table. Son sac est lourd, mais sa liste est complète, avec un petit extra : les fraises pour le dessert.",
         "es": "En casa, Tom pone todo sobre la mesa. Su bolsa pesa, pero su lista está completa, con un pequeño extra: las fresas para el postre."
       }
+    }
+  ],
+  "vocabulary": [
+    {
+      "en": "market",
+      "pt": "feira",
+      "fr": "marché",
+      "es": "mercado"
+    },
+    {
+      "en": "stall",
+      "pt": "banca",
+      "fr": "stand",
+      "es": "puesto"
+    },
+    {
+      "en": "How much is it?",
+      "pt": "Quanto custa?",
+      "fr": "Combien ça coûte ?",
+      "es": "¿Cuánto cuesta?"
+    },
+    {
+      "en": "a kilo",
+      "pt": "um quilo",
+      "fr": "un kilo",
+      "es": "un kilo"
+    },
+    {
+      "en": "onion",
+      "pt": "cebola",
+      "fr": "oignon",
+      "es": "cebolla"
+    },
+    {
+      "en": "ripe",
+      "pt": "maduro",
+      "fr": "mûr",
+      "es": "maduro"
+    },
+    {
+      "en": "strawberry",
+      "pt": "morango",
+      "fr": "fraise",
+      "es": "fresa"
+    },
+    {
+      "en": "cheese",
+      "pt": "queijo",
+      "fr": "fromage",
+      "es": "queso"
     }
   ]
 }

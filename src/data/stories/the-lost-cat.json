@@ -1,0 +1,147 @@
+{
+  "id": "17",
+  "slug": "the-lost-cat",
+  "level": "beginner",
+  "title": {
+    "en": "The Lost Cat",
+    "pt": "O Gato Perdido",
+    "fr": "Le Chat Perdu",
+    "es": "El Gato Perdido"
+  },
+  "description": {
+    "en": "A missing cat, a map of the street and many places to look: in, on, under, behind.",
+    "pt": "Um gato sumido, um mapa da rua e muitos lugares para procurar: dentro, em cima, embaixo, atrás.",
+    "fr": "Un chat disparu, un plan de la rue et beaucoup d'endroits où chercher : dans, sur, sous, derrière.",
+    "es": "Un gato perdido, un mapa de la calle y muchos lugares donde buscar: dentro, encima, debajo, detrás."
+  },
+  "content": [
+    {
+      "id": "s1",
+      "text": {
+        "en": "When Sara comes home from school, her cat Pepper is not in the house. He is not on the sofa, not under the bed and not in his basket.",
+        "pt": "Quando Sara volta da escola, o gato dela, o Pepper, não está em casa. Ele não está em cima do sofá, nem embaixo da cama, nem na cestinha dele.",
+        "fr": "Quand Sara rentre de l'école, son chat Pepper n'est pas à la maison. Il n'est pas sur le canapé, ni sous le lit, ni dans son panier.",
+        "es": "Cuando Sara vuelve de la escuela, su gato Pepper no está en casa. No está encima del sofá, ni debajo de la cama, ni en su canasta."
+      }
+    },
+    {
+      "id": "s2",
+      "text": {
+        "en": "The kitchen window is open. “Oh no, he went outside!” says Sara. She takes a piece of paper and draws a map of the street with all the houses and shops.",
+        "pt": "A janela da cozinha está aberta. “Ah, não, ele saiu!”, diz Sara. Ela pega uma folha de papel e desenha um mapa da rua com todas as casas e lojas.",
+        "fr": "La fenêtre de la cuisine est ouverte. « Oh non, il est sorti ! » dit Sara. Elle prend une feuille de papier et dessine un plan de la rue avec toutes les maisons et les magasins.",
+        "es": "La ventana de la cocina está abierta. “¡Ay, no, se salió!”, dice Sara. Toma una hoja de papel y dibuja un mapa de la calle con todas las casas y tiendas."
+      }
+    },
+    {
+      "id": "s3",
+      "text": {
+        "en": "First, she looks in the garden, behind the trees and under the old car. She finds a ball and a shoe, but no cat.",
+        "pt": "Primeiro, ela procura no jardim, atrás das árvores e embaixo do carro velho. Encontra uma bola e um sapato, mas nenhum gato.",
+        "fr": "D'abord, elle cherche dans le jardin, derrière les arbres et sous la vieille voiture. Elle trouve un ballon et une chaussure, mais pas de chat.",
+        "es": "Primero, busca en el jardín, detrás de los árboles y debajo del auto viejo. Encuentra una pelota y un zapato, pero ningún gato."
+      }
+    },
+    {
+      "id": "s4",
+      "text": {
+        "en": "Then she goes to the bakery on the corner. “Have you seen a black cat with white feet?” she asks. The baker shakes his head. “Sorry, not today.”",
+        "pt": "Depois, ela vai à padaria da esquina. “O senhor viu um gato preto com as patas brancas?”, pergunta. O padeiro balança a cabeça. “Desculpe, hoje não.”",
+        "fr": "Ensuite, elle va à la boulangerie du coin. « Vous avez vu un chat noir avec des pattes blanches ? » demande-t-elle. Le boulanger secoue la tête. « Désolé, pas aujourd'hui. »",
+        "es": "Luego va a la panadería de la esquina. “¿Ha visto un gato negro con las patas blancas?”, pregunta. El panadero niega con la cabeza. “Lo siento, hoy no.”"
+      }
+    },
+    {
+      "id": "s5",
+      "text": {
+        "en": "Sara puts posters on the trees and at the bus stop: “LOST CAT – Pepper – black with white feet.” She writes her phone number at the bottom.",
+        "pt": "Sara coloca cartazes nas árvores e no ponto de ônibus: “GATO PERDIDO – Pepper – preto com patas brancas.” Ela escreve o número do telefone embaixo.",
+        "fr": "Sara colle des affiches sur les arbres et à l'arrêt de bus : « CHAT PERDU – Pepper – noir aux pattes blanches. » Elle écrit son numéro de téléphone en bas.",
+        "es": "Sara pega carteles en los árboles y en la parada de autobús: “GATO PERDIDO – Pepper – negro con patas blancas.” Escribe su número de teléfono abajo."
+      }
+    },
+    {
+      "id": "s6",
+      "text": {
+        "en": "It starts to get dark. Sara is tired and sad. She sits on the steps in front of her house and looks at the empty street.",
+        "pt": "Começa a escurecer. Sara está cansada e triste. Ela se senta nos degraus na frente de casa e olha para a rua vazia.",
+        "fr": "Il commence à faire nuit. Sara est fatiguée et triste. Elle s'assoit sur les marches devant sa maison et regarde la rue vide.",
+        "es": "Empieza a oscurecer. Sara está cansada y triste. Se sienta en los escalones frente a su casa y mira la calle vacía."
+      }
+    },
+    {
+      "id": "s7",
+      "text": {
+        "en": "Suddenly, her phone rings. It is Mrs. Lima, the neighbor next door. “Sara, I think your cat is on my roof. He is meowing very loudly!”",
+        "pt": "De repente, o telefone toca. É a dona Lima, a vizinha do lado. “Sara, acho que o seu gato está no meu telhado. Ele está miando muito alto!”",
+        "fr": "Soudain, son téléphone sonne. C'est madame Lima, la voisine d'à côté. « Sara, je crois que ton chat est sur mon toit. Il miaule très fort ! »",
+        "es": "De repente, suena su teléfono. Es la señora Lima, la vecina de al lado. “Sara, creo que tu gato está en mi techo. ¡Está maullando muy fuerte!”"
+      }
+    },
+    {
+      "id": "s8",
+      "text": {
+        "en": "Sara runs next door. Pepper is on the roof, next to the chimney, looking down at her. With a ladder and a lot of patience, they bring him home safe and sound.",
+        "pt": "Sara corre até a casa ao lado. O Pepper está no telhado, ao lado da chaminé, olhando para ela. Com uma escada e muita paciência, elas trazem o gato para casa são e salvo.",
+        "fr": "Sara court chez la voisine. Pepper est sur le toit, à côté de la cheminée, et la regarde d'en haut. Avec une échelle et beaucoup de patience, elles le ramènent à la maison sain et sauf.",
+        "es": "Sara corre a la casa de al lado. Pepper está en el techo, junto a la chimenea, mirándola desde arriba. Con una escalera y mucha paciencia, lo llevan a casa sano y salvo."
+      }
+    }
+  ],
+  "vocabulary": [
+    {
+      "en": "under",
+      "pt": "embaixo de",
+      "fr": "sous",
+      "es": "debajo de"
+    },
+    {
+      "en": "behind",
+      "pt": "atrás de",
+      "fr": "derrière",
+      "es": "detrás de"
+    },
+    {
+      "en": "on (top of)",
+      "pt": "em cima de",
+      "fr": "sur",
+      "es": "encima de"
+    },
+    {
+      "en": "next to",
+      "pt": "ao lado de",
+      "fr": "à côté de",
+      "es": "al lado de"
+    },
+    {
+      "en": "corner",
+      "pt": "esquina",
+      "fr": "coin",
+      "es": "esquina"
+    },
+    {
+      "en": "poster",
+      "pt": "cartaz",
+      "fr": "affiche",
+      "es": "cartel"
+    },
+    {
+      "en": "roof",
+      "pt": "telhado",
+      "fr": "toit",
+      "es": "techo"
+    },
+    {
+      "en": "ladder",
+      "pt": "escada",
+      "fr": "échelle",
+      "es": "escalera"
+    },
+    {
+      "en": "safe and sound",
+      "pt": "são e salvo",
+      "fr": "sain et sauf",
+      "es": "sano y salvo"
+    }
+  ]
+}

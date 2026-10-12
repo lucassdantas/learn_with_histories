@@ -1,0 +1,147 @@
+{
+  "id": "14",
+  "slug": "a-day-at-the-beach",
+  "level": "beginner",
+  "title": {
+    "en": "A Day at the Beach",
+    "pt": "Um Dia na Praia",
+    "fr": "Une Journée à la Plage",
+    "es": "Un Día en la Playa"
+  },
+  "description": {
+    "en": "Sun, sand and a sandcastle: summer vocabulary for a perfect day.",
+    "pt": "Sol, areia e um castelo de areia: vocabulário de verão para um dia perfeito.",
+    "fr": "Du soleil, du sable et un château de sable : le vocabulaire de l'été pour une journée parfaite.",
+    "es": "Sol, arena y un castillo de arena: vocabulario de verano para un día perfecto."
+  },
+  "content": [
+    {
+      "id": "s1",
+      "text": {
+        "en": "It is a hot day in January, and the Silva family goes to the beach. Dad carries the beach umbrella, Mom carries the cooler, and the kids carry their buckets and spades.",
+        "pt": "É um dia quente de janeiro, e a família Silva vai à praia. O pai leva o guarda-sol, a mãe leva o isopor, e as crianças levam os baldinhos e as pazinhas.",
+        "fr": "C'est une chaude journée de janvier, et la famille Silva va à la plage. Le père porte le parasol, la mère porte la glacière, et les enfants portent leurs seaux et leurs pelles.",
+        "es": "Es un día caluroso de enero, y la familia Silva va a la playa. El papá lleva la sombrilla, la mamá lleva la hielera y los niños llevan sus baldes y palas."
+      }
+    },
+    {
+      "id": "s2",
+      "text": {
+        "en": "The sand is very hot, so everyone runs to the water. The sea is calm and blue. Little Gabi screams when the first wave touches her feet: “It's cold!”",
+        "pt": "A areia está muito quente, então todo mundo corre para a água. O mar está calmo e azul. A pequena Gabi grita quando a primeira onda toca os pés dela: “Tá gelada!”",
+        "fr": "Le sable est très chaud, alors tout le monde court vers l'eau. La mer est calme et bleue. La petite Gabi crie quand la première vague touche ses pieds : « Elle est froide ! »",
+        "es": "La arena está muy caliente, así que todos corren al agua. El mar está tranquilo y azul. La pequeña Gabi grita cuando la primera ola le toca los pies: “¡Está fría!”"
+      }
+    },
+    {
+      "id": "s3",
+      "text": {
+        "en": "Mom puts sunscreen on everyone. “Again?” asks Theo. “Yes, again. The sun is very strong today,” she answers, and she gives him a cap.",
+        "pt": "A mãe passa protetor solar em todo mundo. “De novo?”, pergunta o Theo. “Sim, de novo. O sol está muito forte hoje”, ela responde, e entrega um boné para ele.",
+        "fr": "La mère met de la crème solaire à tout le monde. « Encore ? » demande Theo. « Oui, encore. Le soleil est très fort aujourd'hui », répond-elle, et elle lui donne une casquette.",
+        "es": "La mamá les pone protector solar a todos. “¿Otra vez?”, pregunta Theo. “Sí, otra vez. Hoy el sol está muy fuerte”, responde ella, y le da una gorra."
+      }
+    },
+    {
+      "id": "s4",
+      "text": {
+        "en": "The kids decide to build a sandcastle. Theo makes the towers, and Gabi brings water in her bucket. Dad helps them dig a moat around the castle.",
+        "pt": "As crianças decidem construir um castelo de areia. O Theo faz as torres, e a Gabi traz água no baldinho. O pai ajuda a cavar um fosso em volta do castelo.",
+        "fr": "Les enfants décident de construire un château de sable. Theo fait les tours, et Gabi apporte de l'eau dans son seau. Le père les aide à creuser des douves autour du château.",
+        "es": "Los niños deciden construir un castillo de arena. Theo hace las torres y Gabi trae agua en su balde. El papá los ayuda a cavar un foso alrededor del castillo."
+      }
+    },
+    {
+      "id": "s5",
+      "text": {
+        "en": "At lunchtime, they eat sandwiches, fruit and cold juice under the umbrella. A seller walks by with ice cream, and Mom buys four: two chocolate and two coconut.",
+        "pt": "Na hora do almoço, eles comem sanduíches, frutas e suco gelado embaixo do guarda-sol. Um vendedor passa com sorvete, e a mãe compra quatro: dois de chocolate e dois de coco.",
+        "fr": "À midi, ils mangent des sandwichs, des fruits et du jus bien frais sous le parasol. Un vendeur passe avec des glaces, et la mère en achète quatre : deux au chocolat et deux à la noix de coco.",
+        "es": "A la hora del almuerzo, comen sándwiches, fruta y jugo frío bajo la sombrilla. Pasa un vendedor de helados, y la mamá compra cuatro: dos de chocolate y dos de coco."
+      }
+    },
+    {
+      "id": "s6",
+      "text": {
+        "en": "In the afternoon, the wind gets stronger and the clouds arrive. The waves are bigger now, and the lifeguard raises a red flag. Nobody can swim.",
+        "pt": "À tarde, o vento fica mais forte e as nuvens chegam. As ondas estão maiores agora, e o salva-vidas levanta uma bandeira vermelha. Ninguém pode nadar.",
+        "fr": "L'après-midi, le vent devient plus fort et les nuages arrivent. Les vagues sont plus grandes maintenant, et le maître-nageur lève un drapeau rouge. Personne ne peut se baigner.",
+        "es": "Por la tarde, el viento se hace más fuerte y llegan las nubes. Ahora las olas son más grandes, y el salvavidas levanta una bandera roja. Nadie puede nadar."
+      }
+    },
+    {
+      "id": "s7",
+      "text": {
+        "en": "The family packs everything: the towels, the toys, the cooler and the umbrella. Gabi is sad because the sea will take their castle.",
+        "pt": "A família guarda tudo: as toalhas, os brinquedos, o isopor e o guarda-sol. A Gabi fica triste porque o mar vai levar o castelo.",
+        "fr": "La famille range tout : les serviettes, les jouets, la glacière et le parasol. Gabi est triste parce que la mer va emporter leur château.",
+        "es": "La familia recoge todo: las toallas, los juguetes, la hielera y la sombrilla. Gabi está triste porque el mar se va a llevar su castillo."
+      }
+    },
+    {
+      "id": "s8",
+      "text": {
+        "en": "Before they leave, Theo takes a photo of the castle. “Now it lives forever,” he says. Gabi laughs, and they walk home with sand in their shoes.",
+        "pt": "Antes de ir embora, o Theo tira uma foto do castelo. “Agora ele vive para sempre”, diz. A Gabi ri, e eles voltam para casa com areia nos sapatos.",
+        "fr": "Avant de partir, Theo prend une photo du château. « Maintenant, il vivra pour toujours », dit-il. Gabi rit, et ils rentrent à la maison avec du sable dans les chaussures.",
+        "es": "Antes de irse, Theo le toma una foto al castillo. “Ahora vive para siempre”, dice. Gabi se ríe, y vuelven a casa con arena en los zapatos."
+      }
+    }
+  ],
+  "vocabulary": [
+    {
+      "en": "beach",
+      "pt": "praia",
+      "fr": "plage",
+      "es": "playa"
+    },
+    {
+      "en": "sand",
+      "pt": "areia",
+      "fr": "sable",
+      "es": "arena"
+    },
+    {
+      "en": "wave",
+      "pt": "onda",
+      "fr": "vague",
+      "es": "ola"
+    },
+    {
+      "en": "sunscreen",
+      "pt": "protetor solar",
+      "fr": "crème solaire",
+      "es": "protector solar"
+    },
+    {
+      "en": "sandcastle",
+      "pt": "castelo de areia",
+      "fr": "château de sable",
+      "es": "castillo de arena"
+    },
+    {
+      "en": "bucket",
+      "pt": "balde",
+      "fr": "seau",
+      "es": "balde"
+    },
+    {
+      "en": "ice cream",
+      "pt": "sorvete",
+      "fr": "glace",
+      "es": "helado"
+    },
+    {
+      "en": "lifeguard",
+      "pt": "salva-vidas",
+      "fr": "maître-nageur",
+      "es": "salvavidas"
+    },
+    {
+      "en": "towel",
+      "pt": "toalha",
+      "fr": "serviette",
+      "es": "toalla"
+    }
+  ]
+}

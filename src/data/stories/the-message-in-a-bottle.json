@@ -1,0 +1,156 @@
+{
+  "id": "19",
+  "slug": "the-message-in-a-bottle",
+  "level": "intermediate",
+  "title": {
+    "en": "The Message in a Bottle",
+    "pt": "A Mensagem na Garrafa",
+    "fr": "Le Message dans la Bouteille",
+    "es": "El Mensaje en la Botella"
+  },
+  "description": {
+    "en": "A bottle on the beach carries a letter written forty years ago.",
+    "pt": "Uma garrafa na praia traz uma carta escrita há quarenta anos.",
+    "fr": "Une bouteille sur la plage apporte une lettre écrite il y a quarante ans.",
+    "es": "Una botella en la playa trae una carta escrita hace cuarenta años."
+  },
+  "content": [
+    {
+      "id": "s1",
+      "text": {
+        "en": "After the storm, the beach was covered with seaweed, pieces of wood and plastic. Iris walked slowly along the water with a bag, picking up the trash, as she did every Sunday.",
+        "pt": "Depois da tempestade, a praia estava coberta de algas, pedaços de madeira e plástico. Iris caminhava devagar à beira da água com uma sacola, recolhendo o lixo, como fazia todo domingo.",
+        "fr": "Après la tempête, la plage était couverte d'algues, de morceaux de bois et de plastique. Iris marchait lentement au bord de l'eau avec un sac et ramassait les déchets, comme chaque dimanche.",
+        "es": "Después de la tormenta, la playa estaba cubierta de algas, trozos de madera y plástico. Iris caminaba despacio por la orilla con una bolsa, recogiendo la basura, como hacía todos los domingos."
+      }
+    },
+    {
+      "id": "s2",
+      "text": {
+        "en": "Near the rocks, something green was shining in the sun. It was an old glass bottle, closed with a cork. Inside, she could see a rolled piece of paper.",
+        "pt": "Perto das pedras, algo verde brilhava ao sol. Era uma garrafa velha de vidro, fechada com uma rolha. Dentro, dava para ver um papel enrolado.",
+        "fr": "Près des rochers, quelque chose de vert brillait au soleil. C'était une vieille bouteille en verre, fermée par un bouchon. À l'intérieur, elle voyait un papier roulé.",
+        "es": "Cerca de las rocas, algo verde brillaba al sol. Era una vieja botella de vidrio, cerrada con un corcho. Adentro se veía un papel enrollado."
+      }
+    },
+    {
+      "id": "s3",
+      "text": {
+        "en": "At home, she opened it carefully. The paper was yellow and fragile. The letter was written in blue ink, with a date at the top: June 12, 1986.",
+        "pt": "Em casa, ela a abriu com cuidado. O papel estava amarelado e frágil. A carta estava escrita com tinta azul, com uma data no alto: 12 de junho de 1986.",
+        "fr": "À la maison, elle l'a ouverte avec précaution. Le papier était jaune et fragile. La lettre était écrite à l'encre bleue, avec une date en haut : le 12 juin 1986.",
+        "es": "En casa, la abrió con cuidado. El papel estaba amarillento y frágil. La carta estaba escrita con tinta azul, con una fecha arriba: 12 de junio de 1986."
+      }
+    },
+    {
+      "id": "s4",
+      "text": {
+        "en": "“My name is Tomás and I am ten years old,” it said. “I live in a fishing village. If you find this bottle, please write to me and tell me about your country.”",
+        "pt": "“Meu nome é Tomás e eu tenho dez anos”, dizia. “Moro numa vila de pescadores. Se você encontrar esta garrafa, por favor, me escreva e me conte sobre o seu país.”",
+        "fr": "« Je m'appelle Tomás et j'ai dix ans », disait la lettre. « J'habite dans un village de pêcheurs. Si tu trouves cette bouteille, écris-moi, s'il te plaît, et parle-moi de ton pays. »",
+        "es": "“Me llamo Tomás y tengo diez años”, decía. “Vivo en un pueblo de pescadores. Si encuentras esta botella, por favor escríbeme y cuéntame sobre tu país.”"
+      }
+    },
+    {
+      "id": "s5",
+      "text": {
+        "en": "There was an address at the bottom of the page. Iris looked for the village on the internet. It still existed, on the other side of the ocean.",
+        "pt": "No pé da página havia um endereço. Iris procurou a vila na internet. Ela ainda existia, do outro lado do oceano.",
+        "fr": "Il y avait une adresse en bas de la page. Iris a cherché le village sur internet. Il existait toujours, de l'autre côté de l'océan.",
+        "es": "Al pie de la página había una dirección. Iris buscó el pueblo en internet. Todavía existía, al otro lado del océano."
+      }
+    },
+    {
+      "id": "s6",
+      "text": {
+        "en": "That night, she wrote a long letter. She described her city, the beach after the storm and the green bottle. She did not know if anyone would read it.",
+        "pt": "Naquela noite, ela escreveu uma carta longa. Descreveu sua cidade, a praia depois da tempestade e a garrafa verde. Não sabia se alguém ia ler.",
+        "fr": "Ce soir-là, elle a écrit une longue lettre. Elle a décrit sa ville, la plage après la tempête et la bouteille verte. Elle ne savait pas si quelqu'un la lirait.",
+        "es": "Esa noche, escribió una carta larga. Describió su ciudad, la playa después de la tormenta y la botella verde. No sabía si alguien la iba a leer."
+      }
+    },
+    {
+      "id": "s7",
+      "text": {
+        "en": "Two months later, an envelope arrived with foreign stamps. Inside there was a photo of a gray-haired man in front of a blue boat, and a short letter.",
+        "pt": "Dois meses depois, chegou um envelope com selos estrangeiros. Dentro, havia a foto de um homem de cabelos grisalhos na frente de um barco azul e uma carta curta.",
+        "fr": "Deux mois plus tard, une enveloppe est arrivée avec des timbres étrangers. Dedans, il y avait la photo d'un homme aux cheveux gris devant un bateau bleu, et une courte lettre.",
+        "es": "Dos meses después, llegó un sobre con sellos extranjeros. Adentro había una foto de un hombre de pelo canoso frente a un barco azul, y una carta corta."
+      }
+    },
+    {
+      "id": "s8",
+      "text": {
+        "en": "“I waited forty years for an answer,” Tomás wrote. “I am a fisherman now, like my father. Thank you for finding my bottle. The ocean is big, but not that big.”",
+        "pt": "“Esperei quarenta anos por uma resposta”, escreveu Tomás. “Hoje sou pescador, como meu pai. Obrigado por encontrar minha garrafa. O oceano é grande, mas não tão grande assim.”",
+        "fr": "« J'ai attendu une réponse pendant quarante ans », a écrit Tomás. « Je suis pêcheur maintenant, comme mon père. Merci d'avoir trouvé ma bouteille. L'océan est grand, mais pas tant que ça. »",
+        "es": "“Esperé cuarenta años una respuesta”, escribió Tomás. “Ahora soy pescador, como mi padre. Gracias por encontrar mi botella. El océano es grande, pero no tanto.”"
+      }
+    },
+    {
+      "id": "s9",
+      "text": {
+        "en": "Iris put the photo on her fridge. Since then, every year in June, she writes a letter to the fisherman, and every year in August, a reply arrives.",
+        "pt": "Iris colocou a foto na geladeira. Desde então, todo ano, em junho, ela escreve uma carta para o pescador, e todo ano, em agosto, chega uma resposta.",
+        "fr": "Iris a mis la photo sur son frigo. Depuis, chaque année en juin, elle écrit une lettre au pêcheur, et chaque année en août, une réponse arrive.",
+        "es": "Iris puso la foto en su refrigerador. Desde entonces, cada año en junio le escribe una carta al pescador, y cada año en agosto llega una respuesta."
+      }
+    }
+  ],
+  "vocabulary": [
+    {
+      "en": "storm",
+      "pt": "tempestade",
+      "fr": "tempête",
+      "es": "tormenta"
+    },
+    {
+      "en": "seaweed",
+      "pt": "alga",
+      "fr": "algue",
+      "es": "alga"
+    },
+    {
+      "en": "bottle",
+      "pt": "garrafa",
+      "fr": "bouteille",
+      "es": "botella"
+    },
+    {
+      "en": "cork",
+      "pt": "rolha",
+      "fr": "bouchon",
+      "es": "corcho"
+    },
+    {
+      "en": "ink",
+      "pt": "tinta",
+      "fr": "encre",
+      "es": "tinta"
+    },
+    {
+      "en": "fishing village",
+      "pt": "vila de pescadores",
+      "fr": "village de pêcheurs",
+      "es": "pueblo de pescadores"
+    },
+    {
+      "en": "envelope",
+      "pt": "envelope",
+      "fr": "enveloppe",
+      "es": "sobre"
+    },
+    {
+      "en": "stamp",
+      "pt": "selo",
+      "fr": "timbre",
+      "es": "sello"
+    },
+    {
+      "en": "reply",
+      "pt": "resposta",
+      "fr": "réponse",
+      "es": "respuesta"
+    }
+  ]
+}

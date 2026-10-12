@@ -19,5 +19,11 @@
   "reader.how3": "Tap + to see the translation of that passage.",
   "reader.more": "Keep reading",
   "reader.textNotAvailable": "Text not available in this language.",
-  "reader.translationNotAvailable": "Translation not available in this language."
+  "reader.translationNotAvailable": "Translation not available in this language.",
+  "stories.filterLabel": "Filter by level",
+  "stories.filterAll": "All",
+  "level.beginner": "Beginner",
+  "level.intermediate": "Intermediate",
+  "reader.vocabTitle": "Vocabulary",
+  "reader.vocabDesc": "Key words from this story, in {l} and {n}."
 }
