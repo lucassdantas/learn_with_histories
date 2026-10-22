@@ -14,7 +14,8 @@ test('theme toggle switches and persists without a light flash', async ({ page }
 
   await toggle.click();
   await expect(html).toHaveClass(/dark/);
-  expect(await bg(page)).toBe('rgb(15, 23, 42)'); // #0F172A
+  // Colors glide for ~350ms after the toggle (.theme-anim), so poll until they settle.
+  await expect.poll(() => bg(page)).toBe('rgb(15, 23, 42)'); // #0F172A
 
   // Reload: the inline theme script applies .dark before hydration.
   await page.reload();
@@ -22,7 +23,7 @@ test('theme toggle switches and persists without a light flash', async ({ page }
 
   await page.getByRole('button', { name: /tema claro|light theme|thème clair/i }).click();
   await expect(html).not.toHaveClass(/dark/);
-  expect(await bg(page)).toBe('rgb(244, 235, 221)'); // #F4EBDD
+  await expect.poll(() => bg(page)).toBe('rgb(244, 235, 221)'); // #F4EBDD
 });
 
 test('a segment reveals and hides its translation', async ({ page }) => {

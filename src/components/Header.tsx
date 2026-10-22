@@ -34,7 +34,7 @@ export default function Header() {
   }, [menuOpen]);
 
   return (
-    <header className="sticky top-0 z-40 bg-background border-b border-border">
+    <header className="header-scroll sticky top-0 z-40 bg-background border-b border-border">
       <div className="page h-17 flex items-center gap-5">
         <Link href="/" onClick={closeMenu} className="mr-auto flex items-center gap-2.5 min-h-touch min-w-0 text-foreground no-underline">
           <LogoMark size={40} />
@@ -100,7 +100,7 @@ export default function Header() {
       </div>
 
       {menuOpen && (
-        <div id="mobile-menu" className="nav:hidden absolute inset-x-0 top-full bg-surface border-b border-border shadow-raised px-5 pt-2 pb-6">
+        <div id="mobile-menu" className="animate-drop-in nav:hidden absolute inset-x-0 top-full bg-surface border-b border-border shadow-raised px-5 pt-2 pb-6">
           <nav aria-label="Main" className="flex flex-col">
             {NAV_LINKS.map((link) => {
               const active = isActive(link.href);

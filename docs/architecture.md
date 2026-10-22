@@ -123,6 +123,33 @@ A classe `dark` no `<html>` é a fonte da verdade. `src/lib/theme-script.ts` é 
 `<head>` que aplica o tema salvo (ou o do sistema) **antes da primeira pintura** — sem flash branco no
 tema escuro. `ThemeContext` só lê/alterna a classe e salva em `localStorage('theme')`.
 
+## Animações
+
+CSS primeiro (`src/app/globals.css`, seção "Motion"); JS só no `RevealObserver` e na troca de tema.
+
+| Recurso | Como | Onde |
+|---|---|---|
+| Transição entre páginas | React `<ViewTransition>` (`experimental.viewTransition` no `next.config.ts`) em `app/template.tsx` e `app/stories/template.tsx`; CSS `page-out`/`page-in` | toda navegação interna: a página antiga some (140ms), a nova aparece (260ms); header e rodapé não piscam |
+| `animate-rise` | fade + sobe ao carregar; escalonar com `[--delay:120ms]` | topo de cada página |
+| `stagger` | filhos de um grid entram em cascata ao carregar | grade da lista de histórias |
+| `reveal` | elementos abaixo da dobra sobem quando entram na tela, uma vez, em cascata (`RevealObserver`, IntersectionObserver) | seções, cards, vocabulário |
+| `animate-drop-in` | fade curto de cima para baixo | tradução do trecho, menu mobile |
+| `header-scroll` | sombra no header ao rolar (CSS scroll timeline) | header |
+| `reading-progress` | barra de progresso de leitura (CSS scroll timeline) | barra "Voltar" da história |
+| `.theme-anim` | cores deslizam por 350ms ao trocar o tema | `ThemeContext` |
+| Rolagem suave | `scroll-behavior: smooth` + `data-scroll-behavior="smooth"` no `<html>` (o Next desliga durante a troca de página) | âncoras |
+
+- **Na história**, de propósito, o texto não anima: só a barra de progresso, a tradução, o "+" → "−" e o
+  bloco de vocabulário.
+- `reveal` nunca esconde o que já está na tela ao carregar (sem "piscar") e, sem JS, não esconde nada.
+  Card dentro de um grid `stagger` usa `<StoryCard reveal={false}>` para não animar duas vezes.
+- Sombra do header e barra de progresso usam scroll timelines: navegador sem suporte (Firefox hoje)
+  simplesmente não mostra.
+- As keyframes animam `transform`; hovers do Tailwind v4 usam `translate`/`scale` e não brigam. Em
+  transições, use `transition-[translate,…]` (não `transform`).
+- `prefers-reduced-motion: reduce` desliga tudo (inclusive as transições de página).
+- Medido: CLS ≤ 0,01 e LCP < 0,55s no mobile com CPU 4× mais lenta.
+
 ## Desempenho
 
 - Tudo estático (SSG) no build; nenhuma página depende de dados em tempo de requisição.

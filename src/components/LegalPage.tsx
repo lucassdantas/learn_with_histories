@@ -24,14 +24,14 @@ export default function LegalPage({ prefix, sectionCount, extras = {}, anchors =
 
   return (
     <article className="max-w-[800px] mx-auto w-full px-[clamp(20px,5vw,48px)] pt-[clamp(48px,7vw,96px)] pb-[clamp(56px,7vw,96px)]">
-      <h1 className="font-story font-semibold text-[clamp(34px,4.2vw,50px)] leading-[1.12] tracking-[-0.01em]">{t(`${prefix}.title`)}</h1>
-      <p className="mt-3 mb-10 text-sm text-muted">{t(`${prefix}.updated`)}</p>
+      <h1 className="animate-rise font-story font-semibold text-[clamp(34px,4.2vw,50px)] leading-[1.12] tracking-[-0.01em]">{t(`${prefix}.title`)}</h1>
+      <p className="animate-rise [--delay:80ms] mt-3 mb-10 text-sm text-muted">{t(`${prefix}.updated`)}</p>
 
       {Array.from({ length: sectionCount }, (_, i) => i + 1).map((n) => (
         <section
           key={n}
           id={anchors[n]}
-          className="scroll-mt-24 grid grid-cols-[clamp(32px,4vw,48px)_minmax(0,1fr)] gap-x-3 gap-y-1 py-7 border-t border-border"
+          className="reveal scroll-mt-24 grid grid-cols-[clamp(32px,4vw,48px)_minmax(0,1fr)] gap-x-3 gap-y-1 py-7 border-t border-border"
         >
           <span className="font-story font-semibold text-xl leading-[1.35] text-accent-ink">{n}.</span>
           <div className="flex flex-col gap-2.5 items-start">

@@ -27,12 +27,14 @@ export default function StoryReader({ story, moreStories }: Props) {
     <>
       {/* Secondary bar, sticks right under the 68px header */}
       <div className="sticky top-17 z-30 bg-background border-b border-border">
+        {/* Reading progress: fills as the page scrolls (CSS scroll timeline, hidden where unsupported). */}
+        <span aria-hidden="true" className="reading-progress absolute left-0 right-0 -bottom-px h-0.5 bg-accent" />
         <div className="page h-14 flex items-center justify-between gap-3">
           <Link
             href="/stories"
-            className="-ml-1 flex items-center gap-2 min-h-touch pl-2 pr-3 rounded-control font-semibold text-[15px] hover:bg-surface"
+            className="group -ml-1 flex items-center gap-2 min-h-touch pl-2 pr-3 rounded-control font-semibold text-[15px] hover:bg-surface"
           >
-            <span aria-hidden="true" className="text-lg">←</span>
+            <span aria-hidden="true" className="text-lg inline-block transition-[translate] duration-200 group-hover:-translate-x-1">←</span>
             {t('reader.back')}
           </Link>
           <span className="inline-flex items-center gap-2 min-h-8 px-3.5 py-1 rounded-full border border-accent text-eyebrow whitespace-nowrap">
@@ -43,10 +45,10 @@ export default function StoryReader({ story, moreStories }: Props) {
 
       <div className="page pt-[clamp(36px,5vw,64px)] pb-[clamp(48px,6vw,80px)] flex gap-18 items-start justify-center">
         <article lang={learningLanguage} className="flex-[1_1_0] min-w-0 max-w-reading">
-          <span lang={nativeLanguage} className="inline-flex mb-3 px-3 py-1 rounded-full bg-accent-soft text-accent-ink text-xs font-bold tracking-[0.06em] uppercase">
+          <span lang={nativeLanguage} className="animate-rise inline-flex mb-3 px-3 py-1 rounded-full bg-accent-soft text-accent-ink text-xs font-bold tracking-[0.06em] uppercase">
             {t(`level.${story.level}`)}
           </span>
-          <h1 className="mb-[clamp(28px,4vw,44px)] font-story font-semibold text-h1 tracking-[-0.01em] text-balance">{title}</h1>
+          <h1 className="animate-rise [--delay:80ms] mb-[clamp(28px,4vw,44px)] font-story font-semibold text-h1 tracking-[-0.01em] text-balance">{title}</h1>
 
           {/* Remount on language change so open translations close (design rule). */}
           <div key={`${learningLanguage}-${nativeLanguage}`} className="flex flex-col gap-[clamp(22px,2.6vw,30px)]">
@@ -56,7 +58,7 @@ export default function StoryReader({ story, moreStories }: Props) {
           </div>
 
           {story.vocabulary.length > 0 && (
-            <section lang={nativeLanguage} aria-labelledby="vocabulary" className="mt-[clamp(44px,6vw,64px)] bg-surface border border-border rounded-card p-[clamp(20px,3vw,28px)]">
+            <section lang={nativeLanguage} aria-labelledby="vocabulary" className="reveal mt-[clamp(44px,6vw,64px)] bg-surface border border-border rounded-card p-[clamp(20px,3vw,28px)]">
               <h2 id="vocabulary" className="font-story font-semibold text-[clamp(22px,2.4vw,26px)]">{t('reader.vocabTitle')}</h2>
               <p className="mt-1 text-sm text-muted">
                 {t('reader.vocabDesc', { l: names[learningLanguage], n: names[nativeLanguage] })}
@@ -75,17 +77,17 @@ export default function StoryReader({ story, moreStories }: Props) {
           <div lang={nativeLanguage} className="mt-[clamp(44px,6vw,64px)] pt-8 border-t border-border flex flex-col items-center gap-3 text-center">
             {finished ? (
               <>
-                <span aria-hidden="true" className="size-touch rounded-full border-2 border-accent flex items-center justify-center">
+                <span aria-hidden="true" className="animate-rise size-touch rounded-full border-2 border-accent flex items-center justify-center">
                   <span className="size-3.5 rounded-full bg-accent" />
                 </span>
-                <h2 role="status" className="font-story font-semibold text-[26px]">{t('reader.doneTitle')}</h2>
-                <p className="text-muted">{t('reader.doneDesc')}</p>
+                <h2 role="status" className="animate-rise [--delay:80ms] font-story font-semibold text-[26px]">{t('reader.doneTitle')}</h2>
+                <p className="animate-rise [--delay:160ms] text-muted">{t('reader.doneDesc')}</p>
               </>
             ) : (
               <button
                 type="button"
                 onClick={() => setFinished(true)}
-                className="min-h-[54px] min-w-[200px] px-8 py-3.5 rounded-full bg-primary text-on-primary font-semibold cursor-pointer hover:bg-primary-hover"
+                className="min-h-[54px] min-w-[200px] px-8 py-3.5 rounded-full bg-primary text-on-primary font-semibold cursor-pointer hover:bg-primary-hover transition-[background-color,scale] active:scale-[0.97]"
               >
                 {t('reader.finish')}
               </button>

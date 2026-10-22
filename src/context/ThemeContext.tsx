@@ -30,7 +30,12 @@ export function ThemeProvider({ children }: Readonly<{ children: React.ReactNode
       theme,
       toggleTheme: () => {
         const next = theme === 'light' ? 'dark' : 'light';
-        document.documentElement.classList.toggle('dark', next === 'dark');
+        const root = document.documentElement;
+        // Let colors glide for a moment (.theme-anim in globals.css), then drop the class so it
+        // doesn't slow down every hover afterwards.
+        root.classList.add('theme-anim');
+        root.classList.toggle('dark', next === 'dark');
+        window.setTimeout(() => root.classList.remove('theme-anim'), 400);
         try {
           localStorage.setItem('theme', next);
         } catch {

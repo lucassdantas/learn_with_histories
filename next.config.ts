@@ -2,6 +2,10 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   /* config options here */
+  // React <ViewTransition> integration: route changes crossfade (see src/app/template.tsx).
+  experimental: {
+    viewTransition: true,
+  },
   compress: true,
   poweredByHeader: false,
   headers: async () => {

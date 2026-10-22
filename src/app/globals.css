@@ -146,9 +146,138 @@ body {
   text-transform: uppercase;
 }
 
+/* ---------- Motion ----------
+   CSS-first; the only JS is RevealObserver (scroll reveals) and the theme toggle class.
+   Keyframes animate `transform`, while Tailwind v4's translate/scale utilities use the separate
+   `translate`/`scale` properties, so hover effects keep working after an animation ends.
+   Everything is switched off for prefers-reduced-motion (end of the file). */
+
+html {
+  scroll-behavior: smooth; /* in-page jumps; route changes stay instant (data-scroll-behavior) */
+}
+
+@keyframes rise {
+  from { opacity: 0; transform: translateY(18px); }
+  to { opacity: 1; transform: none; }
+}
+
+@keyframes drop-in {
+  from { opacity: 0; transform: translateY(-6px); }
+  to { opacity: 1; transform: none; }
+}
+
+@keyframes fade-out {
+  to { opacity: 0; }
+}
+
+@keyframes fade-in {
+  from { opacity: 0; }
+}
+
+/* On page load: fade + rise. Stagger with an arbitrary delay, e.g. `animate-rise [--delay:120ms]`. */
+@utility animate-rise {
+  animation: rise 650ms cubic-bezier(0.2, 0.7, 0.2, 1) both;
+  animation-delay: var(--delay, 0ms);
+}
+
+/* Small panels that open on demand (translation block, mobile menu). */
+@utility animate-drop-in {
+  animation: drop-in 200ms ease-out both;
+}
+
+/* Grid whose children cascade in on load (stories page). Children past the 12th share the last delay. */
+@utility stagger {
+  & > * { animation: rise 600ms cubic-bezier(0.2, 0.7, 0.2, 1) both; }
+  & > :nth-child(2) { animation-delay: 60ms; }
+  & > :nth-child(3) { animation-delay: 120ms; }
+  & > :nth-child(4) { animation-delay: 180ms; }
+  & > :nth-child(5) { animation-delay: 240ms; }
+  & > :nth-child(6) { animation-delay: 300ms; }
+  & > :nth-child(7) { animation-delay: 340ms; }
+  & > :nth-child(8) { animation-delay: 380ms; }
+  & > :nth-child(9) { animation-delay: 420ms; }
+  & > :nth-child(n + 10) { animation-delay: 450ms; }
+}
+
+/* Scroll reveal (driven by src/components/RevealObserver.tsx). Elements already on screen when
+   the page loads are left alone (no flash); only off-screen ones get `is-pending` and then rise
+   in, once, in a small cascade. Without JS nothing is hidden. */
+.reveal.is-pending {
+  opacity: 0;
+}
+.reveal.is-revealed {
+  animation: rise 700ms cubic-bezier(0.2, 0.7, 0.2, 1) both;
+  animation-delay: var(--reveal-delay, 0ms);
+}
+
+/* Reading progress bar: hidden unless scroll timelines are supported (enabled just below). */
+.reading-progress {
+  display: none;
+}
+
+/* Header gains a soft shadow once the page scrolls (scroll-driven; no-op where unsupported). */
+@supports (animation-timeline: scroll()) {
+  .header-scroll {
+    animation: header-lift linear both;
+    animation-timeline: scroll(root);
+    animation-range: 0 80px;
+  }
+  @keyframes header-lift {
+    to { box-shadow: 0 8px 24px -16px rgb(var(--shadow-color) / 0.45); }
+  }
+
+  /* Reading progress bar on the story page. */
+  .reading-progress {
+    display: block;
+    transform-origin: 0 50%;
+    animation: grow-x linear both;
+    animation-timeline: scroll(root);
+  }
+  @keyframes grow-x {
+    from { transform: scaleX(0); }
+    to { transform: scaleX(1); }
+  }
+}
+
+/* Theme switch: colors glide for a moment (class added by ThemeContext for ~400ms). */
+.theme-anim,
+.theme-anim * {
+  transition: background-color 350ms ease, color 350ms ease, border-color 350ms ease !important;
+}
+
+/* Route changes (React <ViewTransition> in app/template.tsx): the old page fades out, the new one
+   fades in. The rest of the page (header, footer) swaps instantly so it never flickers. */
+::view-transition-old(root) {
+  display: none;
+}
+::view-transition-new(root) {
+  animation: none;
+}
+::view-transition-old(.page-out) {
+  animation: 140ms ease-in both fade-out;
+}
+::view-transition-new(.page-in) {
+  animation: 260ms ease-out 60ms both fade-in;
+}
+
 @media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
   *, *::before, *::after {
     transition-duration: 0.01ms !important;
     animation-duration: 0.01ms !important;
+  }
+  .animate-rise, .animate-drop-in, .stagger > *, .reveal.is-revealed, .header-scroll {
+    animation: none !important;
+  }
+  .reading-progress {
+    animation-duration: auto !important; /* tied to scroll position, not motion */
+  }
+  ::view-transition-old(*),
+  ::view-transition-new(*),
+  ::view-transition-group(*) {
+    animation-duration: 0s !important;
+    animation-delay: 0s !important;
   }
 }

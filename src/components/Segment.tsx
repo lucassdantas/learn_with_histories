@@ -45,13 +45,17 @@ export default function Segment({ text, defaultOpen = false, compact = false }: 
         }`}
       >
         <span aria-hidden="true" className="absolute w-3.5 h-0.5 rounded bg-current" />
-        {!open && <span aria-hidden="true" className="absolute w-0.5 h-3.5 rounded bg-current" />}
+        {/* The vertical bar collapses so "+" turns into "−". */}
+        <span
+          aria-hidden="true"
+          className={`absolute w-0.5 h-3.5 rounded bg-current transition-[scale] duration-200 ${open ? 'scale-y-0' : 'scale-y-100'}`}
+        />
       </button>
 
       {open && (
         <div
           lang={nativeLanguage}
-          className={`col-start-1 bg-translation-soft text-translation rounded-translation flex flex-col gap-1 text-pretty whitespace-pre-line ${
+          className={`animate-drop-in col-start-1 bg-translation-soft text-translation rounded-translation flex flex-col gap-1 text-pretty whitespace-pre-line ${
             compact ? 'px-4 py-3 text-[15px] leading-relaxed' : 'px-4.5 py-3.5 text-tr'
           }`}
         >

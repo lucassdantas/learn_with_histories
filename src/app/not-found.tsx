@@ -11,10 +11,10 @@ export default function NotFound() {
 
   return (
     <section className="max-w-[720px] mx-auto w-full px-[clamp(20px,5vw,48px)] py-[clamp(72px,12vw,160px)] flex flex-col items-center gap-4.5 text-center">
-      <span className="font-story font-medium text-[clamp(72px,12vw,128px)] leading-none text-accent tracking-[-0.03em]">404</span>
-      <h1 className="font-story font-semibold text-[clamp(28px,3.6vw,40px)] leading-[1.2] text-balance">{t('nf.title')}</h1>
-      <p className="max-w-[30em] text-[17px] leading-relaxed text-muted text-pretty">{t('nf.desc')}</p>
-      <div className="mt-3 flex flex-wrap justify-center gap-3">
+      <span className="animate-rise font-story font-medium text-[clamp(72px,12vw,128px)] leading-none text-accent tracking-[-0.03em]">404</span>
+      <h1 className="animate-rise [--delay:100ms] font-story font-semibold text-[clamp(28px,3.6vw,40px)] leading-[1.2] text-balance">{t('nf.title')}</h1>
+      <p className="animate-rise [--delay:180ms] max-w-[30em] text-[17px] leading-relaxed text-muted text-pretty">{t('nf.desc')}</p>
+      <div className="animate-rise [--delay:260ms] mt-3 flex flex-wrap justify-center gap-3">
         <Link
           href="/stories"
           className="inline-flex items-center justify-center min-h-[52px] px-7 py-3 rounded-full bg-primary text-on-primary font-semibold hover:bg-primary-hover"

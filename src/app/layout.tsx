@@ -12,6 +12,7 @@ import AdScript from "@/components/AdScript";
 import StructuredData from "@/components/StructuredData";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import RevealObserver from "@/components/RevealObserver";
 import { generateSEO } from "@/app/lib/seo";
 
 // Two families (design system): Literata for headings + story text, Open Sans for the UI.
@@ -64,6 +65,7 @@ export default function RootLayout({
   return (
     <html
       lang="pt"
+      data-scroll-behavior="smooth"
       suppressHydrationWarning
       className={`${literata.variable} ${literataItalic.variable} ${openSans.variable} h-full`}
     >
@@ -82,6 +84,8 @@ export default function RootLayout({
             <main className="flex-[1_0_auto]">{children}</main>
 
             <Footer />
+
+            <RevealObserver />
           </LanguageProvider>
         </ThemeProvider>
       </body>
